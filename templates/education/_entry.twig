@@ -1,0 +1,41 @@
+{% extends "_layouts/default.twig" %}
+
+{% block bodyTag %}
+  {{ parent()|attr({
+    class: 'bg-[#1D1D1D]'
+  }) }}
+{% endblock %}
+
+{% block content %}
+{% block header %}{% include '_partials/header.twig' %}{% endblock %}
+<div class="bg-white">
+  <div class="max-w-screen-xl min-w-screen-xl mx-auto py-[100px]">
+    <img src="{{entry.courseHero.one().url}}" class="h-[360px] mx-auto" alt="CPIM course" />
+    <div class="mt-[50px] {% if entry.courseCalendar.all() != null %}flex flex-row gap-[58px]{% endif %}">
+      <div class="basis-2/3"><!--body-->
+        <p class="mb-[10px] text-[38px] text-[#292929]">{{entry.title}}</p>
+        <span class="text-[18px] font-light">{{entry.courseDescription}}</span>
+      </div>
+      {% if entry.courseCalendar.all() != null %}
+      <div class="basis-1/3"><!--right sidebar-->
+        {% set course_color = entry.courseColor %}
+        {% for course in entry.courseCalendar.all() %}
+        <div class="bg-[#F2F2F2] w-[404px] pl-[40px] py-[35px] mb-[30px] rounded border-t-[5px] border-[#{{course_color}}]">
+          <div><!-- text -->
+            <p class="mb-[10px] text-[24px] text-[#292929]">{{course.title}}</p>
+            <p class="mb-[10px] font-bold text-[#006B36]">{{course.courseStartDate}}</p>
+            <p class="font-light text-[#292929]">{{course.courseShortDesc}}</p>
+          </div>
+          <div class="mt-[35px] flex gap-[25px]">
+            <a href="{{course.courseRegLink}}" class="h-max w-max bg-[#82C341] pt-[9px] pb-[11px] pl-[20px] pr-[20px] text-white text-lg font-semibold">Register</a>
+          </div>
+        </div>
+        {% endfor %}
+      </div>
+      {% endif %}
+    </div>
+  </div>
+</div>
+{% block apics_cta %}{% include '_partials/apics_cta.twig' %}{% endblock %}
+{% block footer %}{% include '_partials/footer.twig' %}{% endblock %}
+{% endblock %}

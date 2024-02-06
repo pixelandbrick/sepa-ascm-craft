@@ -1,0 +1,6 @@
+siteUid: null
+sortOrder: 2
+template: /about
+uriParts:
+  - board
+uriPattern: board

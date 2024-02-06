@@ -1,0 +1,49 @@
+{% extends "_layouts/default.twig" %}
+
+{% block bodyTag %}
+  {{ parent()|attr({
+    class: 'bg-[#1D1D1D]'
+  }) }}
+{% endblock %}
+
+{% block content %}
+{% block header %}{% include '_partials/header.twig' %}{% endblock %}
+<div class="bg-white">
+  <div class="max-w-[828px] min-w-[828px] mx-auto pt-[60px] pb-[100px]">
+  {% block image_block %}{% include '_partials/image_block.twig' %}{% endblock %}
+  <h2 class="text-[38px] leading-10 mt-[50px] mb-[30px]">The Janet Hillier Scholarship</h2>
+  <div class="bg-white"><p class="text-[18px] font-light leading-[24px] text-[#292929] mb-[10px]">The Janet Hillier Scholarship has been created to encourage students to pursue higher education towards furthering their career in Supply Chain Management. The Scholarship will award $2,500 towards any educational expenses, including books & supplies to one student per year. The winner of the Scholarship will be selected by the ASCM Southeastern Pennsylvania Alliance Chapter “ASCM-SEPA” Board of Directors and the award will be announced on November 30, 2023. Funds can be used towards any educational expenses, and not restricted to tuition only.</p>
+<p class="text-[18px] font-light leading-[24px] text-[#292929] mb-[12px]">Please submit all applications to the “ASCM-SEPA” Executive Vice President at ntillingerapics@gmail.com Submissions should include the application, one-page essay, copy of the student resume, and transcript. The letter of recommendation must be submitted directly by the faculty member to the same email address. The application submission deadline is October 31st, 2023.</p>
+<p class="text-[18px] font-light leading-[24px] text-[#292929] mb-[12px]">Criteria:</p>
+<ul class="list-disc list-inside mb-[12px]">
+  <li>Applicant must be pursuing an undergraduate degree in or related to Supply Chain Management, Logistics, or Transportation.</li>
+  <li>Must be a full-time student enrolled at an accredited college, university or junior college with a graduation date of 2024 or later.</li>
+  <li>Must be a student member of “ASCM-SEPA” (can register through apics.org for free).</li>
+  <li>Minimum of a 3.0 GPA on a 4.0 scale. Must attach the most recent school transcript.</li>
+  <li>Applicant must complete the “ASCM-SEPA” Supply Chain Scholarship application.</li>
+  <li>Must submit a copy of student resume.</li>
+  <li>Faculty member must submit one letter of recommendation directly to ntillingerapics@gmail.com</li>
+  <li>Must submit a one-page essay submission (250 to 500 words) on an explanation of your goals and desired roles in supply chain management and how this scholarship will help you.</li>
+</ul>
+<p class="text-[18px] font-light leading-[24px] text-[#292929] mb-[12px]">Download the 2023 Janet Hillier Scholarship Application</p>
+
+<p class="text-[18px] font-light leading-[24px] text-[#292929] mb-[12px]">APICS is an organization at York College of Pennsylvania that is open to all Business majors. It is geared toward students with a focus in Supply Chain & Operations Management but includes all business majors from Economics to Marketing! The board organizes plant tours to various companies in the Central PA area. We bring in guest speakers that have traveled the globe to speak to students about their experiences. We host and attend networking events for both students and practitioners in the area.</p>
+  
+  <div class="flex gap-0 mt-[50px]">
+    <div class="rounded-l min-w-[360px] h-[360px] bg-cover" style="background-image: url(/dist/headshots/1701393072707-1.jpg)"></div>
+    <div class="bg-[#F2F2F2] w-full pl-[40px] rounded-r">
+      <div><!-- text -->
+        <div class="mt-[35px] mb-[10px]"><p class="text-[38px] text-[#292929]">Rhea Kumar</p></div>
+        <div class="mb-[10px]"><p class="text-lg font-bold text-[#006B36]">2023 SCHOLARSHIP RECIPIENT</p></div>
+        <div class="max-w-[747px]"><p class="text-lg font-light text-[#292929]">The ASCM SEPA Chapter is thrilled to award the winner of the 
+        2023 Janet Hillier Scholarship to Rhea Kumar—a Senior in the Fox Honors and University Honors programs at Temple University.</p></div>
+      </div>
+      <div class="mt-[35px] flex gap-[25px]">
+        <a href="/scholarship-recipient" class="h-max w-max bg-[#82C341] pt-[9px] pb-[11px] pl-[20px] pr-[20px] text-white text-lg font-semibold">Read&nbsp;More</a>
+      </div>
+    </div>
+  </div>
+</div>
+  </div>
+{% block footer %}{% include '_partials/footer.twig' %}{% endblock %}
+{% endblock %}

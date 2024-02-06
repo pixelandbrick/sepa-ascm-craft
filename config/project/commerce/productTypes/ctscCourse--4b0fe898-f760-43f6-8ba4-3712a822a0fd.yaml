@@ -1,0 +1,97 @@
+descriptionFormat: '{product.title} - {title}'
+handle: ctscCourse
+hasDimensions: false
+hasProductTitleField: true
+hasVariantTitleField: true
+hasVariants: true
+name: 'CTSC Course'
+productFieldLayouts:
+  73f29143-5a34-4dd1-9947-1ffb225fa1c3:
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            autocapitalize: true
+            autocomplete: false
+            autocorrect: true
+            class: null
+            disabled: false
+            elementCondition: null
+            id: null
+            inputType: null
+            instructions: null
+            label: null
+            max: null
+            min: null
+            name: null
+            orientation: null
+            placeholder: null
+            readonly: false
+            requirable: false
+            size: null
+            step: null
+            tip: null
+            title: null
+            type: craft\commerce\fieldlayoutelements\ProductTitleField
+            uid: 82d8e972-5e09-42de-8a69-5a6330de23b7
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\commerce\fieldlayoutelements\VariantsField
+            uid: e79d31f0-2cc2-45b9-ada8-24450fecb7fc
+            userCondition: null
+            warning: null
+        name: Content
+        uid: d8781c0c-427f-4643-93c7-596393213875
+        userCondition: null
+productTitleFormat: ''
+siteSettings:
+  246ac9e2-0535-4ba5-b543-66b2eb9d969f: # ASCM Southeastern Pennsylvania
+    hasUrls: true
+    template: ''
+    uriFormat: 'ctsc-course/{slug}'
+skuFormat: ''
+variantFieldLayouts:
+  30e04588-0d33-406e-b7ea-8f46d848a557:
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            autocapitalize: true
+            autocomplete: false
+            autocorrect: true
+            class: null
+            disabled: false
+            elementCondition: null
+            id: null
+            inputType: null
+            instructions: null
+            label: null
+            max: null
+            min: null
+            name: null
+            orientation: null
+            placeholder: null
+            readonly: false
+            requirable: false
+            size: null
+            step: null
+            tip: null
+            title: null
+            type: craft\commerce\fieldlayoutelements\VariantTitleField
+            uid: a28a02f3-3877-4b86-986a-4f2224b0d07d
+            userCondition: null
+            warning: null
+            width: 100
+        name: Content
+        uid: f13c594b-c4f5-493f-bc80-8b997933d2c5
+        userCondition: null
+variantTitleFormat: '{product.title}'

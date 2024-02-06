@@ -1,0 +1,47 @@
+fieldLayouts:
+  57407e2f-50d1-41c4-9ece-ff5875fb3e95:
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            autocapitalize: true
+            autocomplete: false
+            autocorrect: true
+            class: null
+            disabled: false
+            elementCondition: null
+            id: null
+            inputType: null
+            instructions: null
+            label: null
+            max: null
+            min: null
+            name: null
+            orientation: null
+            placeholder: null
+            readonly: false
+            requirable: false
+            size: null
+            step: null
+            tip: null
+            title: null
+            type: craft\fieldlayoutelements\entries\EntryTitleField
+            uid: a848d64e-1dbe-46f3-b915-3e2ef5147fa9
+            userCondition: null
+            warning: null
+            width: 100
+        name: Content
+        uid: 2375d45d-b3f7-460a-a7f7-48524c4c70b2
+        userCondition: null
+handle: scholarshipRecipient
+hasTitleField: false
+name: 'Scholarship Recipient'
+section: 3d45aa92-c581-48a7-a9da-4d32426798f9 # Scholarship Recipient
+showStatusField: true
+slugTranslationKeyFormat: null
+slugTranslationMethod: site
+sortOrder: 1
+titleFormat: '{section.name|raw}'
+titleTranslationKeyFormat: null
+titleTranslationMethod: site

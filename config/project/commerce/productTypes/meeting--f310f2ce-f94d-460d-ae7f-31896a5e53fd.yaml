@@ -1,0 +1,97 @@
+descriptionFormat: '{product.title} - {title}'
+handle: meeting
+hasDimensions: false
+hasProductTitleField: true
+hasVariantTitleField: true
+hasVariants: true
+name: Meeting
+productFieldLayouts:
+  43b1065e-bcdb-42b7-8048-463c9affedf3:
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            autocapitalize: true
+            autocomplete: false
+            autocorrect: true
+            class: null
+            disabled: false
+            elementCondition: null
+            id: null
+            inputType: null
+            instructions: null
+            label: null
+            max: null
+            min: null
+            name: null
+            orientation: null
+            placeholder: null
+            readonly: false
+            requirable: false
+            size: null
+            step: null
+            tip: null
+            title: null
+            type: craft\commerce\fieldlayoutelements\ProductTitleField
+            uid: 21513807-a4cc-4aac-87fe-67f798d15b3d
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\commerce\fieldlayoutelements\VariantsField
+            uid: 9f342dde-97d6-4901-94b0-0f8bea5b248b
+            userCondition: null
+            warning: null
+        name: Content
+        uid: cf92af4c-a738-4b6f-95ea-a812038abb26
+        userCondition: null
+productTitleFormat: ''
+siteSettings:
+  246ac9e2-0535-4ba5-b543-66b2eb9d969f: # ASCM Southeastern Pennsylvania
+    hasUrls: true
+    template: ''
+    uriFormat: 'meeting/{slug}'
+skuFormat: ''
+variantFieldLayouts:
+  92688115-eab1-4504-8144-d7113a38ecc8:
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            autocapitalize: true
+            autocomplete: false
+            autocorrect: true
+            class: null
+            disabled: false
+            elementCondition: null
+            id: null
+            inputType: null
+            instructions: null
+            label: null
+            max: null
+            min: null
+            name: null
+            orientation: null
+            placeholder: null
+            readonly: false
+            requirable: false
+            size: null
+            step: null
+            tip: null
+            title: null
+            type: craft\commerce\fieldlayoutelements\VariantTitleField
+            uid: 8d1ae1d8-7a02-4c3d-a95d-9e9981879f69
+            userCondition: null
+            warning: null
+            width: 100
+        name: Content
+        uid: d52ba219-6744-4675-9e06-585bacacbbe1
+        userCondition: null
+variantTitleFormat: '{product.title}'

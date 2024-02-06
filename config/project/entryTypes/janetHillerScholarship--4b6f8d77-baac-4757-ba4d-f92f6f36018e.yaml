@@ -1,0 +1,47 @@
+fieldLayouts:
+  605ba0d7-1fb3-417a-882b-b157d27618ca:
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            autocapitalize: true
+            autocomplete: false
+            autocorrect: true
+            class: null
+            disabled: false
+            elementCondition: null
+            id: null
+            inputType: null
+            instructions: null
+            label: null
+            max: null
+            min: null
+            name: null
+            orientation: null
+            placeholder: null
+            readonly: false
+            requirable: false
+            size: null
+            step: null
+            tip: null
+            title: null
+            type: craft\fieldlayoutelements\entries\EntryTitleField
+            uid: 5da03c86-a8cf-422a-84bb-9f35854c8beb
+            userCondition: null
+            warning: null
+            width: 100
+        name: Content
+        uid: cf93a59d-3112-46b5-a6cb-28b7de958bab
+        userCondition: null
+handle: janetHillerScholarship
+hasTitleField: false
+name: 'Janet Hiller Scholarship'
+section: e3daa05b-c819-442e-91fe-e39c500166d7 # Janet Hiller Scholarship
+showStatusField: true
+slugTranslationKeyFormat: null
+slugTranslationMethod: site
+sortOrder: 1
+titleFormat: '{section.name|raw}'
+titleTranslationKeyFormat: null
+titleTranslationMethod: site

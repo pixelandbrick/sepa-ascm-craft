@@ -1,0 +1,20 @@
+{% extends "_layouts/default.twig" %}
+
+{% block bodyTag %}
+  {{ parent()|attr({
+    class: 'bg-[#1D1D1D]'
+  }) }}
+{% endblock %}
+
+{% block content %}
+{% block header %}{% include '_partials/header.twig' %}{% endblock %}
+<div class="bg-white">
+  <div class="max-w-[828px] min-w-[828px] mx-auto pt-[60px] pb-[100px]">
+  {% block image_block %}{% include '_partials/image_block.twig' %}{% endblock %}
+  <h2 class="text-[38px] leading-10 mt-[50px] mb-[30px]">ASCM Southeastern Pennsylvania Alliance Chapter Bylaws</h2>
+  <div class="bg-white"><p class="text-[18px] font-light leading-[24px] text-[#292929] mb-[10px]">
+  {{entry.richText}}
+  </div>
+  </div>
+{% block footer %}{% include '_partials/footer.twig' %}{% endblock %}
+{% endblock %}

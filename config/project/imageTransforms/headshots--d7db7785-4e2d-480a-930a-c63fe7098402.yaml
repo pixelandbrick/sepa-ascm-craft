@@ -1,0 +1,11 @@
+fill: null
+format: webp
+handle: headshots
+height: 260
+interlace: none
+mode: crop
+name: Headshots
+position: center-center
+quality: null
+upscale: true
+width: 260

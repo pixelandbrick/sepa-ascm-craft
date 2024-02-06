@@ -1,0 +1,46 @@
+columnSuffix: null
+contentColumnType: string(27)
+fieldGroup: 2f5d7ffc-4d16-47d1-a440-318d7f4ea068 # Common
+handle: courseRegistrationType
+instructions: null
+name: 'Course Registration Type'
+searchable: false
+settings:
+  columnType: null
+  options:
+    -
+      __assoc__:
+        -
+          - label
+          - 'Learning System'
+        -
+          - value
+          - learningSystem
+        -
+          - default
+          - '1'
+    -
+      __assoc__:
+        -
+          - label
+          - Exam
+        -
+          - value
+          - exam
+        -
+          - default
+          - ''
+    -
+      __assoc__:
+        -
+          - label
+          - 'Learning System + 2 Exam Vouchers'
+        -
+          - value
+          - learningSystem2ExamVouchers
+        -
+          - default
+          - ''
+translationKeyFormat: null
+translationMethod: none
+type: craft\fields\RadioButtons

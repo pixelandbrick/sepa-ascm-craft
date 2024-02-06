@@ -1,0 +1,71 @@
+{% extends "_layouts/default.twig" %}
+
+{% block bodyTag %}
+  {{ parent()|attr({
+    class: 'bg-[#1D1D1D]'
+  }) }}
+{% endblock %}
+
+{% block content %}
+{% block header %}{% include '_partials/header.twig' %}{% endblock %}
+<div class="bg-white">
+  <div class="max-w-screen-xl min-w-screen-xl mx-auto py-[100px]">
+      <div class="grid grid-cols-2 gap-[58px] items-center">
+        <div><!--img-->
+          <img src="/dist/jpg/2024-hero-cpim-new.jpeg" alt="CPIM course" />
+        </div>
+        <div><!--text-->
+          <div class="mb-[10px]"><p class="text-[38px] text-[#292929]">CPIM – Certified Production and Inventory Management</p></div>
+          <p class="text-xl font-light mb-[20px]">Since 1973, the CPIM program has educated more than 90,000 manufacturing professionals 
+          on essential terminology, concepts, and strategies related to demand management, procurement and supplier planning, 
+          material requirements planning, capacity requirements planning, sales and operations planning, master scheduling, 
+          performance measurements, supplier relationships, quality control, and continuous improvement.</p>
+          <a href="education/cpim" class="h-max w-max bg-white mt-[20px] pt-[9px] pb-[11px] pl-[20px] pr-[16px] border border-black text-lg font-semibold">View the Certification »</a>
+        </div>
+      </div>
+      <div class="grid grid-cols-2 gap-[58px] items-center mt-[100px]">
+        <div><!--text-->
+          <div class="mb-[10px]"><p class="text-[38px] text-[#292929]">CSCP – Certified Supply Chain Professional</p></div>
+          <p class="text-xl font-light mb-[20px]">Now more than ever before, supply chain is essential for businesses to run, consumers 
+          to get the goods they need and society to function. APICS Certified Supply Chain Certification (CSCP) is the playbook 
+          you need to understand and deliver this critical process. The comprehensive program covers everything you need to know 
+          across the global supply chain, from suppliers to customers and back again. Earning your CSCP designation shows that 
+          you have the skills to prepare for and overcome disruption, manage risk, and evaluate and implement modern supply chain 
+          technologies.</p>
+          <a href="education/cscp" class="h-max w-max bg-white mt-[20px] pt-[9px] pb-[11px] pl-[20px] pr-[16px] border border-black text-lg font-semibold">View the Certification »</a>
+        </div>
+        <div><!--img-->
+          <img src="/dist/jpg/2024-hero-cscp-new.jpeg" alt="CTSC course" />
+        </div>
+      </div>
+      <div class="grid grid-cols-2 gap-[58px] items-center mt-[100px]">
+        <div><!--img-->
+          <img src="/dist/jpg/2024-hero-cltd-new.jpeg" alt="CLTD course" />
+        </div>
+        <div><!--text-->
+          <div class="mb-[10px]"><p class="text-[38px] text-[#292929]">CLTD – Certified in Logistics, Transportation, and Distribution</p></div>
+          <p class="text-xl font-light mb-[20px]">Logistics is top-of-mind for EVERY company delivering products to customers. By earning 
+          the Certified in Logistics, Transportation and Distribution (CLTD) designation, you’ll learn best practices along with 
+          the latest strategies and trends so you can lead in the logistics, transportation and distribution sectors.</p>
+          <a href="education/cltd" class="h-max w-max bg-white mt-[20px] pt-[9px] pb-[11px] pl-[20px] pr-[16px] border border-black text-lg font-semibold">View the Certification »</a>
+        </div>
+      </div>
+      <div class="grid grid-cols-2 gap-[58px] items-center mt-[100px]">
+        <div><!--text-->
+          <div class="mb-[10px]"><p class="text-[38px] text-[#292929]">CTSC – Certified in Transformation for Supply Chain</p></div>
+          <p class="text-xl font-light mb-[20px]">Supply chains have faced significant disruptions in recent years. Now more than ever before, 
+          supply chain professionals need to become transformational leaders with skills in systems thinking, digital 
+          fluency and analytical methods for all types of supply chains. Earning the CTSC demonstrates your expertise 
+          in supply chain strategy, proves your ability to lead a major transformation project and sets you apart from 
+          the competition—paving the way for new professional opportunities.</p>
+          <a href="education/ctsc" class="h-max w-max bg-white pt-[9px] pb-[11px] pl-[20px] pr-[16px] border border-black text-lg font-semibold">View the Certification »</a>
+        </div>
+        <div><!--img-->
+          <img src="/dist/jpg/2024-hero-ctsc-new.jpeg" alt="CTSC course" />
+        </div>
+      </div>
+  </div>
+</div>
+{% block apics_cta %}{% include '_partials/apics_cta.twig' %}{% endblock %}
+{% block footer %}{% include '_partials/footer.twig' %}{% endblock %}
+{% endblock %}

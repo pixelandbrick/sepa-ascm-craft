@@ -1,0 +1,47 @@
+fieldLayouts:
+  4784fef3-5c31-4351-b28d-5f717234cea1:
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            autocapitalize: true
+            autocomplete: false
+            autocorrect: true
+            class: null
+            disabled: false
+            elementCondition: null
+            id: null
+            inputType: null
+            instructions: null
+            label: null
+            max: null
+            min: null
+            name: null
+            orientation: null
+            placeholder: null
+            readonly: false
+            requirable: false
+            size: null
+            step: null
+            tip: null
+            title: null
+            type: craft\fieldlayoutelements\entries\EntryTitleField
+            uid: 944455b3-0a1e-4223-8110-a9a5d272f6b2
+            userCondition: null
+            warning: null
+            width: 100
+        name: Content
+        uid: f3d970a4-9bc6-4132-958d-5f5443024532
+        userCondition: null
+handle: articles
+hasTitleField: false
+name: 'President''s Letter'
+section: 953c55cb-288a-4b71-9c39-335102a1ae30 # President's Letter
+showStatusField: true
+slugTranslationKeyFormat: null
+slugTranslationMethod: site
+sortOrder: 1
+titleFormat: '{section.name|raw}'
+titleTranslationKeyFormat: null
+titleTranslationMethod: site

@@ -1,0 +1,19 @@
+{% extends "_layouts/default.twig" %}
+
+{% block bodyTag %}
+  {{ parent()|attr({
+    class: 'bg-[#1D1D1D]'
+  }) }}
+{% endblock %}
+
+{% block content %}
+{% block header %}{% include '_partials/header.twig' %}{% endblock %}
+{% block hero %}{% include '_partials/hero.twig' %}{% endblock %}
+<div class="bg-white">
+  <div class="max-w-screen-xl min-w-screen-xl mx-auto py-[100px]">
+  {% block item_full %}{% include '_partials/item_full.twig' %}{% endblock %}
+  </div>
+</div>
+{% block apics_cta %}{% include '_partials/apics_cta.twig' %}{% endblock %}
+{% block footer %}{% include '_partials/footer.twig' %}{% endblock %}
+{% endblock %}

@@ -1,0 +1,155 @@
+field: bbcdeff7-1fe8-429b-b47c-34a269db0479 # Board Members
+fieldLayouts:
+  84278f94-4d2f-43d6-bbc8-2d14fb5633ed:
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            elementCondition: null
+            fieldUid: a5cb9abe-21ca-4274-8128-8a1565d7b476 # Name
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: fca8cafc-33ba-451a-80c4-3777b6084ffe
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: ebea49c4-f0cb-43c5-9c43-e0a7229319db # Title
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 3005a373-ee92-4038-a880-202cdc1dd6d2
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: 46995c3e-2705-448e-9959-bc44abdced57 # Headshot
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 5697e185-a0f2-4548-b6cb-21e02ecec413
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: ac32b609-961c-4607-9f0a-3a60d6f9fb7a # LinkedIn URL
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 9c7cb289-9e14-4226-8d9c-9db43349d0c5
+            userCondition: null
+            warning: null
+            width: 100
+        name: Content
+        uid: 3c42ba01-a0b7-4d2a-b9f8-84bedb2b5f91
+        userCondition: null
+fields:
+  46995c3e-2705-448e-9959-bc44abdced57: # Headshot
+    columnSuffix: null
+    contentColumnType: string
+    fieldGroup: null
+    handle: headshot
+    instructions: null
+    name: Headshot
+    searchable: false
+    settings:
+      allowSelfRelations: false
+      allowSubfolders: false
+      allowUploads: true
+      allowedKinds: null
+      branchLimit: null
+      defaultUploadLocationSource: 'volume:d348dd30-7179-4a4e-b45e-cc72b17f29f7' # Board Members
+      defaultUploadLocationSubpath: '@webroot/dist/headshots'
+      localizeRelations: false
+      maintainHierarchy: false
+      maxRelations: 1
+      minRelations: 0
+      previewMode: full
+      restrictFiles: false
+      restrictLocation: false
+      restrictedDefaultUploadSubpath: null
+      restrictedLocationSource: 'volume:1d1cac83-523d-465d-95dd-f268196920aa' # Meeting Images
+      restrictedLocationSubpath: null
+      selectionLabel: null
+      showSiteMenu: true
+      showUnpermittedFiles: false
+      showUnpermittedVolumes: false
+      sources:
+        - 'volume:d348dd30-7179-4a4e-b45e-cc72b17f29f7' # Board Members
+      targetSiteId: null
+      validateRelatedElements: false
+      viewMode: list
+    translationKeyFormat: null
+    translationMethod: site
+    type: craft\fields\Assets
+  a5cb9abe-21ca-4274-8128-8a1565d7b476: # Name
+    columnSuffix: iyfhuodb
+    contentColumnType: text
+    fieldGroup: null
+    handle: boardMemberName
+    instructions: null
+    name: Name
+    searchable: false
+    settings:
+      byteLimit: null
+      charLimit: null
+      code: false
+      columnType: null
+      initialRows: 4
+      multiline: false
+      placeholder: null
+      uiMode: normal
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\PlainText
+  ac32b609-961c-4607-9f0a-3a60d6f9fb7a: # LinkedIn URL
+    columnSuffix: babcwvft
+    contentColumnType: string(255)
+    fieldGroup: null
+    handle: linkedinUrl
+    instructions: null
+    name: 'LinkedIn URL'
+    searchable: false
+    settings:
+      maxLength: 255
+      types:
+        - url
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\Url
+  ebea49c4-f0cb-43c5-9c43-e0a7229319db: # Title
+    columnSuffix: gzihnmrq
+    contentColumnType: text
+    fieldGroup: null
+    handle: boardMemberTitle
+    instructions: null
+    name: Title
+    searchable: false
+    settings:
+      byteLimit: null
+      charLimit: null
+      code: false
+      columnType: null
+      initialRows: 4
+      multiline: false
+      placeholder: null
+      uiMode: normal
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\PlainText
+handle: boardMember
+name: 'Board Member'
+sortOrder: 1

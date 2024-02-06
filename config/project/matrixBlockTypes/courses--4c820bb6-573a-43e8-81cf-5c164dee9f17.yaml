@@ -1,0 +1,164 @@
+field: 1e07231d-34bb-441b-ba8a-d7a4d389c027 # Course Calendar
+fieldLayouts:
+  8710a672-7bd1-4262-a4eb-4d38c334d874:
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            elementCondition: null
+            fieldUid: 5dee5e0e-253c-4592-aee3-a972def5d20d # Course Title
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 28505b1e-bddd-40ff-9526-9fbf9f9ec04c
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: d295751f-17c5-4b41-9631-47ff6821c636 # Course Start Date
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 3a5bfcaa-6ca9-440f-9426-38ef7d9d1032
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: ac9208bf-f7d4-4820-82ec-5ff13af16e86 # Course Short Description
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 00054e01-4f6d-4fa1-9e41-207c5cfa3f10
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: 114b147f-c6ee-45c3-b1f0-0c93db41ba4d # Course Registration Link
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 84669eba-c92d-4164-9fe6-f75eba3819f4
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: 0906910f-3fd1-43b1-94a6-38f94a55ce30 # Course Learn More Link
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: c567a3d2-1fa5-428b-aaa8-6b6f592512b1
+            userCondition: null
+            warning: null
+            width: 100
+        name: Content
+        uid: 554af1e4-1c1e-4fad-bafc-4affd66a4416
+        userCondition: null
+fields:
+  5dee5e0e-253c-4592-aee3-a972def5d20d: # Course Title
+    columnSuffix: iyaidiho
+    contentColumnType: text
+    fieldGroup: null
+    handle: courseTitle
+    instructions: null
+    name: 'Course Title'
+    searchable: false
+    settings:
+      byteLimit: null
+      charLimit: null
+      code: false
+      columnType: null
+      initialRows: 4
+      multiline: false
+      placeholder: null
+      uiMode: normal
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\PlainText
+  114b147f-c6ee-45c3-b1f0-0c93db41ba4d: # Course Registration Link
+    columnSuffix: vjsdkqvo
+    contentColumnType: string(255)
+    fieldGroup: null
+    handle: courseRegLink
+    instructions: null
+    name: 'Course Registration Link'
+    searchable: false
+    settings:
+      maxLength: 255
+      types:
+        - url
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\Url
+  0906910f-3fd1-43b1-94a6-38f94a55ce30: # Course Learn More Link
+    columnSuffix: iczadcje
+    contentColumnType: string(255)
+    fieldGroup: null
+    handle: courseLearnMoreLink
+    instructions: null
+    name: 'Course Learn More Link'
+    searchable: false
+    settings:
+      maxLength: 255
+      types:
+        - url
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\Url
+  ac9208bf-f7d4-4820-82ec-5ff13af16e86: # Course Short Description
+    columnSuffix: xqwgefwi
+    contentColumnType: text
+    fieldGroup: null
+    handle: courseShortDesc
+    instructions: null
+    name: 'Course Short Description'
+    searchable: false
+    settings:
+      byteLimit: null
+      charLimit: null
+      code: false
+      columnType: null
+      initialRows: 4
+      multiline: false
+      placeholder: null
+      uiMode: normal
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\PlainText
+  d295751f-17c5-4b41-9631-47ff6821c636: # Course Start Date
+    columnSuffix: jnpecgaj
+    contentColumnType: text
+    fieldGroup: null
+    handle: courseStartDate
+    instructions: null
+    name: 'Course Start Date'
+    searchable: false
+    settings:
+      byteLimit: null
+      charLimit: null
+      code: false
+      columnType: null
+      initialRows: 4
+      multiline: false
+      placeholder: null
+      uiMode: normal
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\PlainText
+handle: courses
+name: Courses
+sortOrder: 1

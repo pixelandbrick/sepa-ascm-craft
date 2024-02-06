@@ -1,0 +1,109 @@
+descriptionFormat: '{product.title} - {title}'
+handle: cpimCourse
+hasDimensions: false
+hasProductTitleField: true
+hasVariantTitleField: false
+hasVariants: true
+name: 'CPIM Course'
+productFieldLayouts:
+  b6b4e899-c10b-4a9a-b69e-ed1dadda3342:
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            autocapitalize: true
+            autocomplete: false
+            autocorrect: true
+            class: null
+            disabled: false
+            elementCondition: null
+            id: null
+            inputType: null
+            instructions: null
+            label: Date
+            max: null
+            min: null
+            name: null
+            orientation: null
+            placeholder: null
+            readonly: false
+            requirable: false
+            size: null
+            step: null
+            tip: null
+            title: null
+            type: craft\commerce\fieldlayoutelements\ProductTitleField
+            uid: cf96bb58-54eb-466f-b1d7-99bfb5ddc407
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\commerce\fieldlayoutelements\VariantsField
+            uid: 4b17c41b-e8df-4437-8107-f725b3222204
+            userCondition: null
+            warning: null
+        name: Content
+        uid: 1559bbd1-276d-4420-a344-3df9ffc7b800
+        userCondition: null
+productTitleFormat: ''
+siteSettings:
+  246ac9e2-0535-4ba5-b543-66b2eb9d969f: # ASCM Southeastern Pennsylvania
+    hasUrls: true
+    template: ''
+    uriFormat: 'cpim-course/{slug}'
+skuFormat: ''
+variantFieldLayouts:
+  6ee3779d-dd7f-4f8b-b008-2f2a2d752a78:
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            autocapitalize: true
+            autocomplete: false
+            autocorrect: true
+            class: null
+            disabled: false
+            elementCondition: null
+            id: null
+            inputType: null
+            instructions: null
+            label: null
+            max: null
+            min: null
+            name: null
+            orientation: null
+            placeholder: null
+            readonly: false
+            requirable: false
+            size: null
+            step: null
+            tip: null
+            title: null
+            type: craft\commerce\fieldlayoutelements\VariantTitleField
+            uid: 25e2e914-4b91-4549-9a5b-e8775215545b
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: b4398781-df44-412a-8ce5-5f97d0be7fcc # Course Registration Type
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: df03838d-4e3d-4dde-8d25-8d1ae01ae429
+            userCondition: null
+            warning: null
+            width: 100
+        name: Content
+        uid: 0be054ef-ecd5-4044-8d43-ce6a88d38c1e
+        userCondition: null
+variantTitleFormat: '{product.title}'

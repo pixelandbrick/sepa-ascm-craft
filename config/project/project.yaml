@@ -1,0 +1,150 @@
+dateModified: 1707254544
+email:
+  fromEmail: ryan@pixel-brick.com
+  fromName: 'ASCM Southeastern Pennsylvania'
+  transportType: craft\mail\transportadapters\Sendmail
+fs:
+  boardMembers:
+    hasUrls: true
+    name: 'Board Members'
+    settings:
+      path: '@root/src/public/headshots'
+    type: craft\fs\Local
+    url: '@web/dist/headshots'
+  colleges:
+    hasUrls: true
+    name: Colleges
+    settings:
+      path: '@root/src/public/colleges'
+    type: craft\fs\Local
+    url: '@web/dist/colleges'
+  courses:
+    hasUrls: true
+    name: Courses
+    settings:
+      path: '@root/src/public/courses'
+    type: craft\fs\Local
+    url: '@web/dist/courses'
+  images:
+    hasUrls: true
+    name: Images
+    settings:
+      path: '@root/src/public/uploads'
+    type: craft\fs\Local
+    url: '@web/dist/uploads'
+graphql:
+  publicToken:
+    enabled: false
+    expiryDate: null
+meta:
+  __names__:
+    1bde4bcb-f5ce-4123-99fb-6754cc9b43b1: 'College Name' # College Name
+    1bfa717a-239a-4aa9-9b76-00d5936c193a: 'Course Color' # Course Color
+    1d1cac83-523d-465d-95dd-f268196920aa: 'Meeting Images' # Meeting Images
+    1e07231d-34bb-441b-ba8a-d7a4d389c027: 'Course Calendar' # Course Calendar
+    2ddaa113-a114-43df-b425-a821047ed5b9: 'CPIM Course' # CPIM Course
+    2f5d7ffc-4d16-47d1-a440-318d7f4ea068: Common # Common
+    3a5ae57e-468f-4688-84d4-ea2608a3be1d: 'Course Description' # Course Description
+    3affc63b-0b69-4d19-bcb8-a7f34b74c8b9: 'College Photo' # College Photo
+    3d45aa92-c581-48a7-a9da-4d32426798f9: 'Scholarship Recipient' # Scholarship Recipient
+    4b0fe898-f760-43f6-8ba4-3712a822a0fd: 'CTSC Course' # CTSC Course
+    4b6f8d77-baac-4757-ba4d-f92f6f36018e: 'Janet Hiller Scholarship' # Janet Hiller Scholarship
+    4c820bb6-573a-43e8-81cf-5c164dee9f17: Courses # Courses
+    4e37e30d-d1e5-4f98-9181-e55cff026870: Colleges # Colleges
+    4f19a1cf-7acb-4101-bea3-edea33a0ccf5: Students # Students
+    5dc608b2-0088-4005-b1e1-88ff0ad17f95: 'Meeting Description' # Meeting Description
+    5dee5e0e-253c-4592-aee3-a972def5d20d: 'Course Title' # Course Title
+    7f035222-2a22-4da2-842a-ee4bf1b36bde: 'Rich Text' # Rich Text
+    9e62e962-beab-4351-ac61-c273c0acc9cc: 'Meeting Date' # Meeting Date
+    20f7efab-d3ff-46c8-9b0f-90e4a1fc51f4: Bylaws # Bylaws
+    45a95fab-cc27-4bc1-a3f2-ae8597d743d3: Students # Students
+    51a5e4da-658d-464c-ab64-ef898764aafe: 'Member Status' # Member Status
+    0068a536-dbd3-4e9d-bc90-33650bb713b0: 'Course Hero' # Course Hero
+    99bd89d9-407f-438f-805b-c28668a036b9: 'ASCM Southeastern Pennsylvania' # ASCM Southeastern Pennsylvania
+    114b147f-c6ee-45c3-b1f0-0c93db41ba4d: 'Course Registration Link' # Course Registration Link
+    246ac9e2-0535-4ba5-b543-66b2eb9d969f: 'ASCM Southeastern Pennsylvania' # ASCM Southeastern Pennsylvania
+    339e05fa-565f-4fa4-98ad-05cc58243fb8: Bylaws # Bylaws
+    391a7a4d-10d6-448c-bb50-a2ad7ff21baf: 'About ASCM SEPA' # About ASCM SEPA
+    504d9d35-669b-4aa7-9038-a73a05a1cd91: 'Board Member' # Board Member
+    636bd5bf-6e10-4629-9034-5517fbd47346: 'Meeting Details Link' # Meeting Details Link
+    746a0ab8-83d0-4a8e-a2f6-2d0697922a0d: 'President''s Letter' # President's Letter
+    756ef385-0b26-4d21-829b-1f63926ba2aa: Dummy # Dummy
+    783aa792-81ee-4a22-a731-4ab6edc5cc48: 'CSCP Course' # CSCP Course
+    846c5a6a-33a2-442b-8bc8-2f8b49f47ea0: 'Meeting Registration Link' # Meeting Registration Link
+    953c55cb-288a-4b71-9c39-335102a1ae30: 'President''s Letter' # President's Letter
+    2872d74f-a99b-4b6b-ac63-bf7091d22c7a: Meetings # Meetings
+    46995c3e-2705-448e-9959-bc44abdced57: Headshot # Headshot
+    073642bd-0365-4cc6-b2b9-65d8d7bae7f7: Home # Home
+    0906910f-3fd1-43b1-94a6-38f94a55ce30: 'Course Learn More Link' # Course Learn More Link
+    4502495d-e681-4b63-bff1-ac0ba15eadbc: Education # Education
+    a5cb9abe-21ca-4274-8128-8a1565d7b476: Name # Name
+    a6fda9ad-6baa-4e9a-a498-51e13db75bb4: Courses # Courses
+    ac32b609-961c-4607-9f0a-3a60d6f9fb7a: 'LinkedIn URL' # LinkedIn URL
+    ac9208bf-f7d4-4820-82ec-5ff13af16e86: 'Course Short Description' # Course Short Description
+    b0ebf3f2-7173-4f54-ad23-05e57d9755f2: 'Scholarship Recipient' # Scholarship Recipient
+    b4398781-df44-412a-8ce5-5f97d0be7fcc: 'Course Registration Type' # Course Registration Type
+    bbcdeff7-1fe8-429b-b47c-34a269db0479: 'Board Members' # Board Members
+    bcff2c34-88ca-480f-bf39-57872d4636f1: 'About ASCM SEPA' # About ASCM SEPA
+    bdad7e2f-c8e4-4485-8e83-518e46e80157: New # New
+    bfde1796-ac25-46e6-8fd5-3335ac62014d: College # College
+    c17098eb-0d3a-4365-8942-6910715a084d: 'College Location' # College Location
+    ce6a0c61-fef7-4b8b-b765-d687224a736c: Colleges # Colleges
+    d2cfea47-ae3e-42bb-93f1-78a50b4cb084: Default # Default
+    d3f05c1e-f9b6-4657-9695-4c0ecdf3be48: 'Meeting Feature Image' # Meeting Feature Image
+    d7db7785-4e2d-480a-930a-c63fe7098402: Headshots # Headshots
+    d348dd30-7179-4a4e-b45e-cc72b17f29f7: 'Board Members' # Board Members
+    d295751f-17c5-4b41-9631-47ff6821c636: 'Course Start Date' # Course Start Date
+    e3daa05b-c819-442e-91fe-e39c500166d7: 'Janet Hiller Scholarship' # Janet Hiller Scholarship
+    e38e1844-97d5-4430-9cae-ed1acb665c21: Courses # Courses
+    e610f2dd-2a10-4e51-8b47-31257ee4e64b: Default # Default
+    ebea49c4-f0cb-43c5-9c43-e0a7229319db: Title # Title
+    f08ea618-5fd0-4ae0-9024-e6860c20e34b: Members # Members
+    f4ea77a0-0e5b-4c89-bbce-ab4e1917b0a4: Home # Home
+    f310f2ce-f94d-460d-ae7f-31896a5e53fd: Meeting # Meeting
+plugins:
+  commerce:
+    edition: lite
+    enabled: true
+    licenseKey: ZYEI2I95CHO1A0I5CDRPFC83
+    schemaVersion: 4.2.8
+  commerce-paypal-checkout:
+    edition: standard
+    enabled: true
+    schemaVersion: '1.0'
+  cp-field-inspect:
+    edition: standard
+    enabled: true
+    schemaVersion: 1.0.0
+  field-manager:
+    edition: standard
+    enabled: true
+    schemaVersion: 1.0.0
+  hyper:
+    edition: standard
+    enabled: true
+    licenseKey: 1TG3ETNFW6P4AI5PTH0GNLSK
+    schemaVersion: 1.0.0
+  imager-x:
+    edition: lite
+    enabled: true
+    licenseKey: L28RX1EJGBSXYCU4CRXT1OXA
+    schemaVersion: 4.0.0
+  postmark:
+    edition: standard
+    enabled: true
+    schemaVersion: 2.0.1
+  redactor:
+    edition: standard
+    enabled: true
+    schemaVersion: 2.3.0
+  vite:
+    edition: standard
+    enabled: true
+    schemaVersion: 1.0.0
+system:
+  edition: pro
+  live: true
+  name: 'ASCM Southeastern Pennsylvania'
+  retryDuration: null
+  schemaVersion: 4.5.3.0
+  timeZone: America/New_York

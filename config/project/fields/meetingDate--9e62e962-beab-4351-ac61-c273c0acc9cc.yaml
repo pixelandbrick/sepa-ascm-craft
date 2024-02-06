@@ -1,0 +1,19 @@
+columnSuffix: glfisaby
+contentColumnType:
+  - 'date:datetime'
+  - 'tz:string'
+fieldGroup: 2f5d7ffc-4d16-47d1-a440-318d7f4ea068 # Common
+handle: meetingDate
+instructions: null
+name: 'Meeting Date'
+searchable: false
+settings:
+  max: null
+  min: null
+  minuteIncrement: 30
+  showDate: true
+  showTime: true
+  showTimeZone: true
+translationKeyFormat: null
+translationMethod: none
+type: craft\fields\Date
