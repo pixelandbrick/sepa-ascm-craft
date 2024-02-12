@@ -1,4 +1,39 @@
-dateModified: 1707254544
+dateModified: 1707758777
+elementSources:
+  craft\elements\Entry:
+    -
+      key: '*'
+      type: native
+    -
+      defaultSort:
+        - title
+        - asc
+      disabled: false
+      key: singles
+      tableAttributes:
+        - link
+      type: native
+    -
+      heading: Channels
+      type: heading
+    -
+      defaultSort:
+        - postDate
+        - desc
+      disabled: false
+      key: 'section:2872d74f-a99b-4b6b-ac63-bf7091d22c7a' # Meetings
+      tableAttributes:
+        - postDate
+        - 'field:9e62e962-beab-4351-ac61-c273c0acc9cc' # Meeting Date
+        - link
+        - dateUpdated
+      type: native
+    -
+      heading: Structures
+      type: heading
+    -
+      key: 'section:4502495d-e681-4b63-bff1-ac0ba15eadbc' # Education
+      type: native
 email:
   fromEmail: ryan@pixel-brick.com
   fromName: 'ASCM Southeastern Pennsylvania'

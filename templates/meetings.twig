@@ -11,7 +11,7 @@
 
 <div class="bg-white">
   <div class="max-w-screen-xl min-w-screen-xl mx-auto py-[100px]">
-  {% for entry in craft.entries().section('Meetings') %}
+  {% for entry in craft.entries().section('Meetings').orderBy('meetingDate ASC') %}
     <div class="flex flex-row">
       <div class="bg-[#F2F2F2] w-full pl-[40px] pr-[80px] py-[35px] mb-[30px] rounded border-t-[5px] border-[#EA7600]">
         <p class="mb-[10px] text-[24px] text-[#292929]">{{entry.title}}</p>
