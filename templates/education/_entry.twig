@@ -12,7 +12,7 @@
 {% block header %}{% include '_partials/header.twig' %}{% endblock %}
 <div class="bg-white">
   <div class="max-w-screen-xl min-w-screen-xl mx-auto py-[100px]">
-    <img src="{{entry.courseHero.one().url}}" class="h-[360px] mx-auto" alt="CPIM course" />
+    <img src="{{entry.courseHero.one().url}}" class="h-[360px] mx-auto" alt="{{entry.courseHero.one().alt}}" />
     <div class="mt-[50px] {% if entry.courseCalendar.all() != null %}flex flex-row gap-[58px]{% endif %}">
       <div class="basis-2/3"><!--body-->
         <p class="mb-[10px] text-[38px] text-[#292929]">{{entry.title}}</p>

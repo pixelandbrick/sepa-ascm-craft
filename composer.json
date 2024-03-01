@@ -27,6 +27,7 @@
     "servd/craft-asset-storage": "^3.3",
     "spacecatninja/imager-x": "^4.1",
     "verbb/field-manager": "3.0.8",
+    "verbb/formie": "2.1.5",
     "verbb/hyper": "1.1.20",
     "verbb/knock-knock": "^2.0",
     "vlucas/phpdotenv": "^5.4.0"

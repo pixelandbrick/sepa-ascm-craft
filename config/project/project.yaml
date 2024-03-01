@@ -1,4 +1,4 @@
-dateModified: 1707758777
+dateModified: 1709224801
 elementSources:
   craft\elements\Entry:
     -
@@ -89,12 +89,14 @@ meta:
     4f19a1cf-7acb-4101-bea3-edea33a0ccf5: Students # Students
     5dc608b2-0088-4005-b1e1-88ff0ad17f95: 'Meeting Description' # Meeting Description
     5dee5e0e-253c-4592-aee3-a972def5d20d: 'Course Title' # Course Title
+    6f9063dc-4ac9-4274-b075-2344da29f9ef: New # New
     7f035222-2a22-4da2-842a-ee4bf1b36bde: 'Rich Text' # Rich Text
     9e62e962-beab-4351-ac61-c273c0acc9cc: 'Meeting Date' # Meeting Date
     20f7efab-d3ff-46c8-9b0f-90e4a1fc51f4: Bylaws # Bylaws
     45a95fab-cc27-4bc1-a3f2-ae8597d743d3: Students # Students
     51a5e4da-658d-464c-ab64-ef898764aafe: 'Member Status' # Member Status
     0068a536-dbd3-4e9d-bc90-33650bb713b0: 'Course Hero' # Course Hero
+    73e24c7f-c14e-4960-aff3-ab77becc6777: 'Constant Contact' # Constant Contact
     99bd89d9-407f-438f-805b-c28668a036b9: 'ASCM Southeastern Pennsylvania' # ASCM Southeastern Pennsylvania
     114b147f-c6ee-45c3-b1f0-0c93db41ba4d: 'Course Registration Link' # Course Registration Link
     246ac9e2-0535-4ba5-b543-66b2eb9d969f: 'ASCM Southeastern Pennsylvania' # ASCM Southeastern Pennsylvania
@@ -129,6 +131,7 @@ meta:
     d7db7785-4e2d-480a-930a-c63fe7098402: Headshots # Headshots
     d348dd30-7179-4a4e-b45e-cc72b17f29f7: 'Board Members' # Board Members
     d295751f-17c5-4b41-9631-47ff6821c636: 'Course Start Date' # Course Start Date
+    e04e2989-d605-408e-a827-8386c817f975: 'Contact Form' # Contact Form
     e3daa05b-c819-442e-91fe-e39c500166d7: 'Janet Hiller Scholarship' # Janet Hiller Scholarship
     e38e1844-97d5-4430-9cae-ed1acb665c21: Courses # Courses
     e610f2dd-2a10-4e51-8b47-31257ee4e64b: Default # Default
@@ -154,6 +157,11 @@ plugins:
     edition: standard
     enabled: true
     schemaVersion: 1.0.0
+  formie:
+    edition: standard
+    enabled: true
+    licenseKey: 62F8YRHKLE8DBUBJXI7L185F
+    schemaVersion: 2.0.15
   hyper:
     edition: standard
     enabled: true
