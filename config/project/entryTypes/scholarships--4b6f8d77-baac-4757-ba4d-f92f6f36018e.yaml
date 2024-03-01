@@ -34,10 +34,10 @@ fieldLayouts:
         name: Content
         uid: cf93a59d-3112-46b5-a6cb-28b7de958bab
         userCondition: null
-handle: janetHillerScholarship
+handle: scholarships
 hasTitleField: false
-name: 'Janet Hiller Scholarship'
-section: e3daa05b-c819-442e-91fe-e39c500166d7 # Janet Hiller Scholarship
+name: Scholarships
+section: e3daa05b-c819-442e-91fe-e39c500166d7 # Scholarships
 showStatusField: true
 slugTranslationKeyFormat: null
 slugTranslationMethod: site

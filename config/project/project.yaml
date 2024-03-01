@@ -1,4 +1,4 @@
-dateModified: 1709224801
+dateModified: 1709324188
 elementSources:
   craft\elements\Entry:
     -
@@ -83,7 +83,7 @@ meta:
     3affc63b-0b69-4d19-bcb8-a7f34b74c8b9: 'College Photo' # College Photo
     3d45aa92-c581-48a7-a9da-4d32426798f9: 'Scholarship Recipient' # Scholarship Recipient
     4b0fe898-f760-43f6-8ba4-3712a822a0fd: 'CTSC Course' # CTSC Course
-    4b6f8d77-baac-4757-ba4d-f92f6f36018e: 'Janet Hiller Scholarship' # Janet Hiller Scholarship
+    4b6f8d77-baac-4757-ba4d-f92f6f36018e: Scholarships # Scholarships
     4c820bb6-573a-43e8-81cf-5c164dee9f17: Courses # Courses
     4e37e30d-d1e5-4f98-9181-e55cff026870: Colleges # Colleges
     4f19a1cf-7acb-4101-bea3-edea33a0ccf5: Students # Students
@@ -132,7 +132,7 @@ meta:
     d348dd30-7179-4a4e-b45e-cc72b17f29f7: 'Board Members' # Board Members
     d295751f-17c5-4b41-9631-47ff6821c636: 'Course Start Date' # Course Start Date
     e04e2989-d605-408e-a827-8386c817f975: 'Contact Form' # Contact Form
-    e3daa05b-c819-442e-91fe-e39c500166d7: 'Janet Hiller Scholarship' # Janet Hiller Scholarship
+    e3daa05b-c819-442e-91fe-e39c500166d7: Scholarships # Scholarships
     e38e1844-97d5-4430-9cae-ed1acb665c21: Courses # Courses
     e610f2dd-2a10-4e51-8b47-31257ee4e64b: Default # Default
     ebea49c4-f0cb-43c5-9c43-e0a7229319db: Title # Title
@@ -162,6 +162,236 @@ plugins:
     enabled: true
     licenseKey: 62F8YRHKLE8DBUBJXI7L185F
     schemaVersion: 2.0.15
+    settings:
+      ajaxTimeout: 10
+      alertEmails: null
+      captchas:
+        __assoc__:
+          -
+            - recaptcha
+            -
+              __assoc__:
+                -
+                  - type
+                  - verbb\formie\integrations\captchas\Recaptcha
+                -
+                  - enabled
+                  - '1'
+                -
+                  - saveSpam
+                  - true
+                -
+                  - settings
+                  -
+                    __assoc__:
+                      -
+                        - handle
+                        - recaptcha
+                      -
+                        - secretKey
+                        - 6Lf2o4YpAAAAAMOswFCIljKMEBZ5VJt6apq0Zo2O
+                      -
+                        - siteKey
+                        - 6Lf2o4YpAAAAAKsRFza0BtARAh8lO7UqFBHht7IY
+                      -
+                        - type
+                        - enterprise
+                      -
+                        - size
+                        - normal
+                      -
+                        - theme
+                        - light
+                      -
+                        - badge
+                        - bottomright
+                      -
+                        - language
+                        - auto
+                      -
+                        - minScore
+                        - 0.6
+                      -
+                        - projectId
+                        - 'ASCM SEPA'
+                      -
+                        - scriptLoadingMethod
+                        - asyncDefer
+          -
+            - hcaptcha
+            -
+              __assoc__:
+                -
+                  - type
+                  - verbb\formie\integrations\captchas\Hcaptcha
+                -
+                  - enabled
+                  - '0'
+                -
+                  - saveSpam
+                  - true
+                -
+                  - settings
+                  -
+                    __assoc__:
+                      0:
+                        - handle
+                        - hcaptcha
+                      3:
+                        - size
+                        - normal
+                      4:
+                        - theme
+                        - light
+                      5:
+                        - language
+                        - en
+                      6:
+                        - minScore
+                        - 0.5
+                      7:
+                        - scriptLoadingMethod
+                        - asyncDefer
+          -
+            - friendlyCaptcha
+            -
+              __assoc__:
+                -
+                  - type
+                  - verbb\formie\integrations\captchas\FriendlyCaptcha
+                -
+                  - enabled
+                  - '0'
+                -
+                  - saveSpam
+                  - true
+                -
+                  - settings
+                  -
+                    __assoc__:
+                      0:
+                        - handle
+                        - friendlyCaptcha
+                      3:
+                        - language
+                        - en
+          -
+            - turnstile
+            -
+              __assoc__:
+                -
+                  - type
+                  - verbb\formie\integrations\captchas\Turnstile
+                -
+                  - enabled
+                  - '0'
+                -
+                  - saveSpam
+                  - true
+                -
+                  - settings
+                  -
+                    __assoc__:
+                      0:
+                        - handle
+                        - turnstile
+                      3:
+                        - scriptLoadingMethod
+                        - asyncDefer
+          -
+            - duplicate
+            -
+              __assoc__:
+                -
+                  - type
+                  - verbb\formie\integrations\captchas\Duplicate
+                -
+                  - enabled
+                  - '0'
+                -
+                  - saveSpam
+                  - true
+                -
+                  - settings
+                  -
+                    __assoc__:
+                      -
+                        - handle
+                        - duplicate
+          -
+            - honeypot
+            -
+              __assoc__:
+                -
+                  - type
+                  - verbb\formie\integrations\captchas\Honeypot
+                -
+                  - enabled
+                  - '0'
+                -
+                  - saveSpam
+                  - true
+                -
+                  - settings
+                  -
+                    __assoc__:
+                      -
+                        - handle
+                        - honeypot
+          -
+            - javascript
+            -
+              __assoc__:
+                -
+                  - type
+                  - verbb\formie\integrations\captchas\Javascript
+                -
+                  - enabled
+                  - '0'
+                -
+                  - saveSpam
+                  - true
+                -
+                  - settings
+                  -
+                    __assoc__:
+                      -
+                        - handle
+                        - javascript
+      defaultDateDisplayType: calendar
+      defaultDateTime: null
+      defaultDateValueOption: ''
+      defaultEmailTemplate: ''
+      defaultFileUploadVolume: ''
+      defaultFormTemplate: ''
+      defaultInstructionsPosition: verbb\formie\positions\AboveInput
+      defaultLabelPosition: verbb\formie\positions\AboveInput
+      defaultPage: forms
+      emptyValuePlaceholder: 'No response.'
+      enableBackSubmission: true
+      enableCsrfValidationForGuests: true
+      enableLargeFieldStorage: false
+      enableUnloadWarning: true
+      includeDraftElementUsage: false
+      includeRevisionElementUsage: false
+      maxIncompleteSubmissionAge: 30
+      maxSentNotificationsAge: 30
+      pdfPaperOrientation: portrait
+      pdfPaperSize: letter
+      pluginName: Forms
+      queuePriority: null
+      saveSpam: true
+      sendEmailAlerts: false
+      sentNotifications: true
+      setOnlyCurrentPagePayload: false
+      spamBehaviour: showSuccess
+      spamBehaviourMessage: ''
+      spamEmailNotifications: false
+      spamKeywords: ''
+      spamLimit: 500
+      useQueueForIntegrations: true
+      useQueueForNotifications: true
+      validateCustomTemplates: true
   hyper:
     edition: standard
     enabled: true
