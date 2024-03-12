@@ -1,4 +1,4 @@
-dateModified: 1709324188
+dateModified: 1710249529
 elementSources:
   craft\elements\Entry:
     -
@@ -87,6 +87,8 @@ meta:
     4c820bb6-573a-43e8-81cf-5c164dee9f17: Courses # Courses
     4e37e30d-d1e5-4f98-9181-e55cff026870: Colleges # Colleges
     4f19a1cf-7acb-4101-bea3-edea33a0ccf5: Students # Students
+    5b505a7e-9ec8-4af7-9897-0ab4635994c5: 'York College' # York College
+    5b668172-b5ac-4aa2-be39-6c81b465dbf6: 'York College' # York College
     5dc608b2-0088-4005-b1e1-88ff0ad17f95: 'Meeting Description' # Meeting Description
     5dee5e0e-253c-4592-aee3-a972def5d20d: 'Course Title' # Course Title
     6f9063dc-4ac9-4274-b075-2344da29f9ef: New # New
@@ -97,6 +99,7 @@ meta:
     51a5e4da-658d-464c-ab64-ef898764aafe: 'Member Status' # Member Status
     0068a536-dbd3-4e9d-bc90-33650bb713b0: 'Course Hero' # Course Hero
     73e24c7f-c14e-4960-aff3-ab77becc6777: 'Constant Contact' # Constant Contact
+    95c3e776-d42b-489b-bcc6-f4826209dcd1: 'Temple University' # Temple University
     99bd89d9-407f-438f-805b-c28668a036b9: 'ASCM Southeastern Pennsylvania' # ASCM Southeastern Pennsylvania
     114b147f-c6ee-45c3-b1f0-0c93db41ba4d: 'Course Registration Link' # Course Registration Link
     246ac9e2-0535-4ba5-b543-66b2eb9d969f: 'ASCM Southeastern Pennsylvania' # ASCM Southeastern Pennsylvania
@@ -125,6 +128,7 @@ meta:
     bdad7e2f-c8e4-4485-8e83-518e46e80157: New # New
     bfde1796-ac25-46e6-8fd5-3335ac62014d: College # College
     c17098eb-0d3a-4365-8942-6910715a084d: 'College Location' # College Location
+    cbb35041-e529-42dd-8d49-897068042d05: 'Temple University' # Temple University
     ce6a0c61-fef7-4b8b-b765-d687224a736c: Colleges # Colleges
     d2cfea47-ae3e-42bb-93f1-78a50b4cb084: Default # Default
     d3f05c1e-f9b6-4657-9695-4c0ecdf3be48: 'Meeting Feature Image' # Meeting Feature Image

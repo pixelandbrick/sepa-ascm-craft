@@ -1,0 +1,28 @@
+{% extends "_layouts/default.twig" %}
+
+{% block bodyTag %}
+  {{ parent()|attr({
+    class: 'bg-[#1D1D1D]'
+  }) }}
+{% endblock %}
+
+{% block content %}
+{% block header %}{% include '_partials/header.twig' %}{% endblock %}
+<div class="bg-white">
+  <div class="max-w-screen-xl min-w-screen-xl mx-auto pt-[60px] pb-[100px]">
+  <div class="flex justify-between">
+    <div>
+      <h2 class="-mt-2 text-[40px] font-bold">York College of Pennsylvania</h2>
+      <div class="h-[40px]">&nbsp;</div>
+      <div class="max-w-[582px]"><p class="text-[20px] font-light leading-[38px] text-[#292929]">APICS is an organization at York College of Pennsylvania 
+      that is open to all Business majors. It is geared toward students with a focus in Supply Chain & Operations Management but includes all business majors 
+      from Economics to Marketing! The board organizes plant tours to various companies in the Central PA area. We bring in guest speakers that have traveled 
+      the globe to speak to students about their experiences. We host and attend networking events for both students and practitioners in the area.</p></div>
+      <div class="mx-auto mt-[60px] w-[60px] border-b-[5px] border-[#006B36]">&nbsp;</div><!-- color block -->
+    </div>
+    <div class="w-[616px] h-[466px] bg-cover" style="background-image: url(/dist/colleges/2022-Supply-Chain-Student-Chapter-Photo-scaled.jpg)"></div>
+  </div>
+  {% block ycp_board %}{% include '_partials/ycp_board.twig' %}{% endblock %}
+</div>
+{% block footer %}{% include '_partials/footer.twig' %}{% endblock %}
+{% endblock %}

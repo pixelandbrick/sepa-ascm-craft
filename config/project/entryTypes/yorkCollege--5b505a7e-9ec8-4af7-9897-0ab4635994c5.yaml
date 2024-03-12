@@ -1,0 +1,59 @@
+fieldLayouts:
+  e8ab5f18-f52d-4491-8131-e6d207a36a0a:
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            autocapitalize: true
+            autocomplete: false
+            autocorrect: true
+            class: null
+            disabled: false
+            elementCondition: null
+            id: null
+            inputType: null
+            instructions: null
+            label: null
+            max: null
+            min: null
+            name: null
+            orientation: null
+            placeholder: null
+            readonly: false
+            requirable: false
+            size: null
+            step: null
+            tip: null
+            title: null
+            type: craft\fieldlayoutelements\entries\EntryTitleField
+            uid: 2499d991-b110-4464-b0d9-3a67fffd8b57
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: bbcdeff7-1fe8-429b-b47c-34a269db0479 # Board Members
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: fba61168-8e57-469b-9589-82ad34e99516
+            userCondition: null
+            warning: null
+            width: 100
+        name: Content
+        uid: dbf579d3-2b1d-4354-8dba-6e3766ed502a
+        userCondition: null
+handle: yorkCollege
+hasTitleField: false
+name: 'York College'
+section: 5b668172-b5ac-4aa2-be39-6c81b465dbf6 # York College
+showStatusField: true
+slugTranslationKeyFormat: null
+slugTranslationMethod: site
+sortOrder: 1
+titleFormat: '{section.name|raw}'
+titleTranslationKeyFormat: null
+titleTranslationMethod: site
