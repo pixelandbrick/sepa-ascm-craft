@@ -1,4 +1,4 @@
-dateModified: 1710249529
+dateModified: 1710289763
 elementSources:
   craft\elements\Entry:
     -
@@ -43,30 +43,30 @@ fs:
     hasUrls: true
     name: 'Board Members'
     settings:
-      path: '@root/src/public/headshots'
+      path: '@webroot/dist/headshots'
     type: craft\fs\Local
     url: '@web/dist/headshots'
   colleges:
     hasUrls: true
     name: Colleges
     settings:
-      path: '@root/src/public/colleges'
+      path: '@webroot/dist/colleges'
     type: craft\fs\Local
     url: '@web/dist/colleges'
   courses:
     hasUrls: true
     name: Courses
     settings:
-      path: '@root/src/public/courses'
+      path: '@webroot/dist/courses'
     type: craft\fs\Local
     url: '@web/dist/courses'
   images:
     hasUrls: true
     name: Images
     settings:
-      path: '@root/src/public/uploads'
+      path: '@webroot/dist/img'
     type: craft\fs\Local
-    url: '@web/dist/uploads'
+    url: '@web/dist/img'
 graphql:
   publicToken:
     enabled: false
@@ -75,7 +75,7 @@ meta:
   __names__:
     1bde4bcb-f5ce-4123-99fb-6754cc9b43b1: 'College Name' # College Name
     1bfa717a-239a-4aa9-9b76-00d5936c193a: 'Course Color' # Course Color
-    1d1cac83-523d-465d-95dd-f268196920aa: 'Meeting Images' # Meeting Images
+    1d1cac83-523d-465d-95dd-f268196920aa: Images # Images
     1e07231d-34bb-441b-ba8a-d7a4d389c027: 'Course Calendar' # Course Calendar
     2ddaa113-a114-43df-b425-a821047ed5b9: 'CPIM Course' # CPIM Course
     2f5d7ffc-4d16-47d1-a440-318d7f4ea068: Common # Common
@@ -127,6 +127,7 @@ meta:
     bcff2c34-88ca-480f-bf39-57872d4636f1: 'About ASCM SEPA' # About ASCM SEPA
     bdad7e2f-c8e4-4485-8e83-518e46e80157: New # New
     bfde1796-ac25-46e6-8fd5-3335ac62014d: College # College
+    c6144f22-ffe3-4e48-abcb-38cd098ed16a: 'College Page' # College Page
     c17098eb-0d3a-4365-8942-6910715a084d: 'College Location' # College Location
     cbb35041-e529-42dd-8d49-897068042d05: 'Temple University' # Temple University
     ce6a0c61-fef7-4b8b-b765-d687224a736c: Colleges # Colleges

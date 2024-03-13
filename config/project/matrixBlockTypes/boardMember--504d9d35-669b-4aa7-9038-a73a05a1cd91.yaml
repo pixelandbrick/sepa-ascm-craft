@@ -81,7 +81,7 @@ fields:
       restrictFiles: false
       restrictLocation: false
       restrictedDefaultUploadSubpath: null
-      restrictedLocationSource: 'volume:1d1cac83-523d-465d-95dd-f268196920aa' # Meeting Images
+      restrictedLocationSource: 'volume:1d1cac83-523d-465d-95dd-f268196920aa' # Images
       restrictedLocationSubpath: null
       selectionLabel: null
       showSiteMenu: true

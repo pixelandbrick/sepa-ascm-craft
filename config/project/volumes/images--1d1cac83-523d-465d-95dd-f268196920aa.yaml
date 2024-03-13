@@ -58,8 +58,8 @@ fieldLayouts:
         uid: 09a37a55-4196-4d47-b3c2-093906564953
         userCondition: null
 fs: images
-handle: meetingImages
-name: 'Meeting Images'
+handle: images
+name: Images
 sortOrder: 1
 titleTranslationKeyFormat: null
 titleTranslationMethod: site

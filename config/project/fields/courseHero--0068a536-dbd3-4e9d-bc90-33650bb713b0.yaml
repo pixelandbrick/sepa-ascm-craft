@@ -11,7 +11,7 @@ settings:
   allowUploads: true
   allowedKinds: null
   branchLimit: null
-  defaultUploadLocationSource: 'volume:1d1cac83-523d-465d-95dd-f268196920aa' # Meeting Images
+  defaultUploadLocationSource: 'volume:1d1cac83-523d-465d-95dd-f268196920aa' # Images
   defaultUploadLocationSubpath: null
   localizeRelations: false
   maintainHierarchy: false
