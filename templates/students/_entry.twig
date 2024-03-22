@@ -18,6 +18,7 @@
     </div>
     <div class="w-[616px] h-[466px] bg-cover" style="background-image: url({{entry.collegeFeatureImage.one.getUrl()}})"></div>
   </div>
+  {% if entry.boardMembers %}
   <h2 class="text-[38px] leading-10 mb-[30px]">Student Leadership</h2>
   <div class="grid grid-cols-4 gap-[20px] justify-between">
     {% for member in entry.boardMembers %}
@@ -28,6 +29,7 @@
     </div>
     {% endfor %}
   </div>
+  {% endif %}
   <div class="mx-auto mt-[80px] w-[60px] border-b-[5px] border-[#006B36]">&nbsp;</div>
 </div>
 {% block footer %}{% include '_partials/footer.twig' %}{% endblock %}
