@@ -10,7 +10,7 @@ previewTargets:
         - 'Primary entry page'
       -
         - urlFormat
-        - '{url}'
+        - /students
       -
         - refresh
         - '1'
@@ -19,6 +19,9 @@ siteSettings:
   246ac9e2-0535-4ba5-b543-66b2eb9d969f: # ASCM Southeastern Pennsylvania
     enabledByDefault: true
     hasUrls: true
-    template: students.twig
-    uriFormat: students
-type: single
+    template: students/_entry
+    uriFormat: 'students/{slug}'
+structure:
+  maxLevels: null
+  uid: fa2a46d9-52f7-4e06-9f75-718b0204c329
+type: structure

@@ -1,5 +1,5 @@
 fieldLayouts:
-  619f0ae4-3b46-4434-9184-222aea7d32a5:
+  3412ef88-6c5f-48b9-856d-fc4f8b309dc6:
     tabs:
       -
         elementCondition: null
@@ -27,69 +27,81 @@ fieldLayouts:
             tip: null
             title: null
             type: craft\fieldlayoutelements\entries\EntryTitleField
-            uid: d0eb9baa-eb8a-4ecd-aed6-0720f959615e
+            uid: 0b12a19e-71d6-4728-baf4-35604c089287
             userCondition: null
             warning: null
             width: 100
           -
             elementCondition: null
-            fieldUid: 0068a536-dbd3-4e9d-bc90-33650bb713b0 # Course Hero
+            fieldUid: 17545c21-9a88-4805-a223-c771d695e3b4 # College Location
             instructions: null
             label: null
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
-            uid: db143757-84f7-4259-8b73-59e094adaddb
-            userCondition: null
-            warning: null
-            width: 50
-          -
-            elementCondition: null
-            fieldUid: 1bfa717a-239a-4aa9-9b76-00d5936c193a # Course Color
-            instructions: null
-            label: null
-            required: false
-            tip: null
-            type: craft\fieldlayoutelements\CustomField
-            uid: ecd5b1dc-94b4-48ca-aa25-8b7dda1eeab3
-            userCondition: null
-            warning: null
-            width: 50
-          -
-            elementCondition: null
-            fieldUid: 3a5ae57e-468f-4688-84d4-ea2608a3be1d # Course Description
-            instructions: null
-            label: null
-            required: false
-            tip: null
-            type: craft\fieldlayoutelements\CustomField
-            uid: 45c98b15-e1e7-4693-a0df-fa79b3d9bf15
+            uid: ee1504de-7a1c-4620-91ac-e9f207817058
             userCondition: null
             warning: null
             width: 100
           -
             elementCondition: null
-            fieldUid: 1e07231d-34bb-441b-ba8a-d7a4d389c027 # Course Calendar
+            fieldUid: 4e37e30d-d1e5-4f98-9181-e55cff026870 # College Photo
             instructions: null
             label: null
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
-            uid: 206d53ff-f6fe-4250-b83b-ed6fde316a31
+            uid: d8f2d36e-5a66-4922-a929-9d98ff1c3703
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: af42fc91-6645-4eb5-b738-5798ede1a57e # College Feature Image
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: a6234c48-4047-473b-9c63-85198abd64aa
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: 5d028c1f-dc78-4cc5-bbb7-25a0f47a90ab # College Description
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: c4cdebc5-29e6-4b54-92f2-5ff09502ac81
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: bbcdeff7-1fe8-429b-b47c-34a269db0479 # Board Members
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 743d6875-d106-48ab-b935-181f76f43c74
             userCondition: null
             warning: null
             width: 100
         name: Content
-        uid: cedb1598-c3f8-4611-9c73-f7f81261f414
+        uid: 334c6606-0429-4e59-aa2c-cdd1ba70a28a
         userCondition: null
-handle: default
+handle: college
 hasTitleField: true
-name: Default
-section: 4502495d-e681-4b63-bff1-ac0ba15eadbc # Courses
+name: College
+section: 4f19a1cf-7acb-4101-bea3-edea33a0ccf5 # Students
 showStatusField: true
 slugTranslationKeyFormat: null
 slugTranslationMethod: site
-sortOrder: 1
+sortOrder: 2
 titleFormat: null
 titleTranslationKeyFormat: null
 titleTranslationMethod: site

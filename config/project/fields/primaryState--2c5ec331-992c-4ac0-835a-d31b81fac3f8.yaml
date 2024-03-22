@@ -1,0 +1,19 @@
+columnSuffix: idznxabk
+contentColumnType: text
+fieldGroup: 7bece7ac-8980-4ae8-b101-0cd452924c69 # Users
+handle: primaryState
+instructions: null
+name: 'Primary State'
+searchable: false
+settings:
+  byteLimit: null
+  charLimit: null
+  code: false
+  columnType: null
+  initialRows: 4
+  multiline: false
+  placeholder: null
+  uiMode: normal
+translationKeyFormat: null
+translationMethod: none
+type: craft\fields\PlainText

@@ -1,0 +1,30 @@
+columnSuffix: null
+contentColumnType: string
+fieldGroup: a6fda9ad-6baa-4e9a-a498-51e13db75bb4 # Courses
+handle: courseDates
+instructions: null
+name: 'Course Dates'
+searchable: false
+settings:
+  blockTypeFields: 0
+  changedFieldIndicator: 591096448
+  columns:
+    __assoc__:
+      -
+        - 4cd3e737-8e35-454d-bd2f-dc47d9a9e6c4 # Course Date
+        -
+          __assoc__:
+            -
+              - width
+              - ''
+  contentTable: '{{%stc_coursedates}}'
+  fieldLayout: row
+  maxRows: null
+  minRows: null
+  propagationKeyFormat: null
+  propagationMethod: all
+  selectionLabel: null
+  staticField: null
+translationKeyFormat: null
+translationMethod: none
+type: verbb\supertable\fields\SuperTableField

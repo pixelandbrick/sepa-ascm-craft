@@ -1,7 +1,7 @@
 defaultPlacement: end
 enableVersioning: true
 handle: education
-name: Education
+name: Courses
 previewTargets:
   -
     __assoc__:

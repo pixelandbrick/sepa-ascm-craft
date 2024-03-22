@@ -1,4 +1,4 @@
-field: 4e37e30d-d1e5-4f98-9181-e55cff026870 # Colleges
+field: 4e37e30d-d1e5-4f98-9181-e55cff026870 # College Photo
 fieldLayouts:
   5bde8d1a-a0c8-421e-82f0-a0ec20608951:
     tabs:
@@ -134,7 +134,7 @@ fields:
     columnSuffix: ewqgsgvh
     contentColumnType: text
     fieldGroup: null
-    handle: collegeLocation
+    handle: collegeLocation2
     instructions: null
     name: 'College Location'
     searchable: false

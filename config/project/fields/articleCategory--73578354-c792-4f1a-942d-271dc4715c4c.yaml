@@ -1,0 +1,23 @@
+columnSuffix: null
+contentColumnType: string
+fieldGroup: b578de3c-3abc-4225-b153-29e8e894e362 # Articles
+handle: articleCategory
+instructions: null
+name: 'Article Category'
+searchable: false
+settings:
+  allowSelfRelations: false
+  branchLimit: null
+  localizeRelations: false
+  maintainHierarchy: false
+  maxRelations: 1
+  minRelations: 0
+  selectionLabel: null
+  showSiteMenu: false
+  source: 'group:b06380ae-aba0-4e6c-be4f-7ebda04a3fe5' # Article Types
+  targetSiteId: null
+  validateRelatedElements: false
+  viewMode: null
+translationKeyFormat: null
+translationMethod: site
+type: craft\fields\Categories

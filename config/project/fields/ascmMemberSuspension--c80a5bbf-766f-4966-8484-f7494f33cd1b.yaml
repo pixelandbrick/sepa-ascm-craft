@@ -1,0 +1,14 @@
+columnSuffix: uxljbdxk
+contentColumnType: boolean
+fieldGroup: 7bece7ac-8980-4ae8-b101-0cd452924c69 # Users
+handle: ascmMemberSuspension
+instructions: null
+name: 'ASCM Member Suspension'
+searchable: false
+settings:
+  default: false
+  offLabel: null
+  onLabel: Suspended
+translationKeyFormat: null
+translationMethod: none
+type: craft\fields\Lightswitch

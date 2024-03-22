@@ -1,0 +1,19 @@
+columnSuffix: eplapsbm
+contentColumnType: string(20)
+fieldGroup: 7bece7ac-8980-4ae8-b101-0cd452924c69 # Users
+handle: prefix
+instructions: null
+name: Prefix
+searchable: false
+settings:
+  byteLimit: null
+  charLimit: 5
+  code: false
+  columnType: null
+  initialRows: 4
+  multiline: false
+  placeholder: null
+  uiMode: normal
+translationKeyFormat: null
+translationMethod: none
+type: craft\fields\PlainText

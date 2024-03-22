@@ -1,7 +1,7 @@
 defaultPlacement: end
 enableVersioning: true
 handle: articles
-name: 'President''s Letter'
+name: Articles
 previewTargets:
   -
     __assoc__:
@@ -10,7 +10,7 @@ previewTargets:
         - 'Primary entry page'
       -
         - urlFormat
-        - '{url}'
+        - /articles
       -
         - refresh
         - '1'
@@ -19,6 +19,6 @@ siteSettings:
   246ac9e2-0535-4ba5-b543-66b2eb9d969f: # ASCM Southeastern Pennsylvania
     enabledByDefault: true
     hasUrls: true
-    template: articles.twig
-    uriFormat: articles
-type: single
+    template: articles/_entry.twig
+    uriFormat: 'articles/{slug}'
+type: channel

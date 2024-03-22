@@ -1,0 +1,5 @@
+color: green
+default: false
+handle: accepted
+name: Active
+sortOrder: 9999

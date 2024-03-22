@@ -1,0 +1,34 @@
+{% extends "_layouts/default.twig" %}
+
+{% block bodyTag %}
+  {{ parent()|attr({
+    class: 'bg-[#1D1D1D]'
+  }) }}
+{% endblock %}
+
+{% block content %}
+{% block header %}{% include '_partials/header.twig' %}{% endblock %}
+<div class="bg-white">
+  <div class="max-w-screen-xl min-w-screen-xl mx-auto pt-[60px] pb-[100px]">
+  <div class="flex justify-between">
+    <div>
+      <h2 class="-mt-2 text-[40px] font-bold">{{entry.title}}</h2>
+      <div class="h-[40px]">&nbsp;</div>
+      <div class="max-w-[582px]"><p class="text-[20px] font-light leading-[38px] text-[#292929]">{{entry.collegeDescription}}</p></div>
+    </div>
+    <div class="w-[616px] h-[466px] bg-cover" style="background-image: url({{entry.collegeFeatureImage.one.getUrl()}})"></div>
+  </div>
+  <h2 class="text-[38px] leading-10 mb-[30px]">Student Leadership</h2>
+  <div class="grid grid-cols-4 gap-[20px] justify-between">
+    {% for member in entry.boardMembers %}
+    <div class="mb-[30px]">
+      <div class="mx-[19px] h-[260px] w-[260px] drop-shadow-2xl"{% if member.headshot.one() %} style="background-image: url({{member.headshot.one().getUrl('headshots')}})"{% endif %}></div>
+      <p class="pt-[20px] w-[298px] font-light text-center text-[24px]">{{member.boardMemberName}}</p>
+      <p class="pt-[6px] w-[298px] uppercase font-semibold text-center text-[16px]">{{member.boardMemberTitle}}</p>
+    </div>
+    {% endfor %}
+  </div>
+  <div class="mx-auto mt-[80px] w-[60px] border-b-[5px] border-[#006B36]">&nbsp;</div>
+</div>
+{% block footer %}{% include '_partials/footer.twig' %}{% endblock %}
+{% endblock %}

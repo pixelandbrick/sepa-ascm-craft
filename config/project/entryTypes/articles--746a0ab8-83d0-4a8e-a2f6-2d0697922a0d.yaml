@@ -31,13 +31,61 @@ fieldLayouts:
             userCondition: null
             warning: null
             width: 100
+          -
+            elementCondition: null
+            fieldUid: 73578354-c792-4f1a-942d-271dc4715c4c # Article Category
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: b9094c7a-c2cd-48c0-a41e-4cc8d499c87e
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: 38ab0050-d304-44cd-8737-ab3d7136a645 # Inset Image
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: a7248d9d-7c1c-4e4b-9fe7-18eab6a86be4
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: b81c20ba-ef6a-4af9-a151-76676391b738 # Feature Image
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 9ce0a71a-c6df-4131-8c93-9270d6913f37
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: 4ba6d09f-8d1e-4c65-91f9-35b77e080b4a # Body
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: fef59029-b8a6-4acd-bff9-5f04cc75d506
+            userCondition: null
+            warning: null
+            width: 100
         name: Content
         uid: f3d970a4-9bc6-4132-958d-5f5443024532
         userCondition: null
 handle: articles
-hasTitleField: false
-name: 'President''s Letter'
-section: 953c55cb-288a-4b71-9c39-335102a1ae30 # President's Letter
+hasTitleField: true
+name: Articles
+section: 953c55cb-288a-4b71-9c39-335102a1ae30 # Articles
 showStatusField: true
 slugTranslationKeyFormat: null
 slugTranslationMethod: site

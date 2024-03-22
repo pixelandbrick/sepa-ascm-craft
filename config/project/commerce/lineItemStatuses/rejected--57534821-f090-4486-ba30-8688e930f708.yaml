@@ -1,0 +1,5 @@
+color: red
+default: false
+handle: rejected
+name: Rejected
+sortOrder: 9999

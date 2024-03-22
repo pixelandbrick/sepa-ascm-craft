@@ -1,0 +1,36 @@
+{% extends "_layouts/default.twig" %}
+
+{% block bodyTag %}
+  {{ parent()|attr({
+    class: 'bg-[#1D1D1D]'
+  }) }}
+{% endblock %}
+
+{% block content %}
+{% block header %}{% include '_partials/header.twig' %}{% endblock %}
+<div class="bg-white">
+  <div class="max-w-screen-xl min-w-screen-xl mx-auto pt-[60px] pb-[100px]">
+    <div class="max-w-[828px] min-w-[828px] mx-auto">
+      <div class="flex">
+        <div class="flex flex-col grow">
+          <div class="grow">
+            <div class="pt-[9px] pb-[8px] px-[24px] w-min rounded-full bg-[#E2E5E7] font-extrabold uppercase text-white text-nowrap">{{entry.articleCategory.one}}</div>
+          </div>
+          <div class="">
+            <p class="text-[18px] font-bold text-[#006B36] mb-0">{{entry.postDate|date()}}</p>
+            <h2 class="-mt-1 text-[38px]">{{entry.title}}</h2>
+          </div>
+        </div>
+        <div class="mx-[19px] h-[238px] w-[238px] shrink-0 drop-shadow-2xl" style="background-image: url({{entry.insetImage.one.getUrl('headshots')}})"></div>
+      </div>
+      <div class="h-[35px]">&nbsp;</div>
+      <div><p class="text-[18px] font-light leading-[24px] text-[#292929]">
+      {{ entry.body }}
+      </p></div>
+      <p class="text-[13px] mt-[60px] italic">Posted on {{entry.postDate|date('F j, Y')}} by {{entry.author}}</p>
+      <div class="mx-auto mt-[60px] mb-[80px] w-[60px] border-b-[5px] border-[#006B36]">&nbsp;</div><!-- color block -->
+    </div>
+  </div>
+</div>
+{% block footer %}{% include '_partials/footer.twig' %}{% endblock %}
+{% endblock %}

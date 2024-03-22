@@ -1,0 +1,5 @@
+color: orange
+default: false
+handle: pending
+name: Pending
+sortOrder: 9999
