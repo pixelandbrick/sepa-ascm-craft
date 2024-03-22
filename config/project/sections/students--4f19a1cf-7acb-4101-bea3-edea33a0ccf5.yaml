@@ -1,7 +1,7 @@
 defaultPlacement: end
 enableVersioning: true
 handle: students
-name: Students
+name: Colleges
 previewTargets:
   -
     __assoc__:

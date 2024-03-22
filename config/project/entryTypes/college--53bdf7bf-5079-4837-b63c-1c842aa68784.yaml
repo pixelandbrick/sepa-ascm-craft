@@ -97,7 +97,7 @@ fieldLayouts:
 handle: college
 hasTitleField: true
 name: College
-section: 4f19a1cf-7acb-4101-bea3-edea33a0ccf5 # Students
+section: 4f19a1cf-7acb-4101-bea3-edea33a0ccf5 # Colleges
 showStatusField: true
 slugTranslationKeyFormat: null
 slugTranslationMethod: site

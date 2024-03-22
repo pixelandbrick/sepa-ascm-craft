@@ -1,4 +1,4 @@
-dateModified: 1711072294
+dateModified: 1711102723
 elementSources:
   craft\elements\Entry:
     -
@@ -52,7 +52,7 @@ elementSources:
         - structure
         - asc
       disabled: false
-      key: 'section:4f19a1cf-7acb-4101-bea3-edea33a0ccf5' # Students
+      key: 'section:4f19a1cf-7acb-4101-bea3-edea33a0ccf5' # Colleges
       tableAttributes:
         - postDate
         - expiryDate
@@ -155,7 +155,7 @@ meta:
     4c820bb6-573a-43e8-81cf-5c164dee9f17: Courses # Courses
     4cd3e737-8e35-454d-bd2f-dc47d9a9e6c4: 'Course Date' # Course Date
     4e37e30d-d1e5-4f98-9181-e55cff026870: 'College Photo' # College Photo
-    4f19a1cf-7acb-4101-bea3-edea33a0ccf5: Students # Students
+    4f19a1cf-7acb-4101-bea3-edea33a0ccf5: Colleges # Colleges
     5d028c1f-dc78-4cc5-bbb7-25a0f47a90ab: 'College Description' # College Description
     5dc608b2-0088-4005-b1e1-88ff0ad17f95: 'Meeting Description' # Meeting Description
     5dee5e0e-253c-4592-aee3-a972def5d20d: 'Course Title' # Course Title
