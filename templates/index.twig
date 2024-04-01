@@ -15,7 +15,7 @@
 <div class="bg-white">
   <div class="max-w-screen-xl min-w-screen-xl mx-auto">
   {% if latestMeeting %}
-  <div class="my-[100px] flex gap-0">
+  <div class="mt-[100px] flex gap-0">
     <div class="rounded-l min-w-[360px] min-h-[360px] bg-cover" style="background-image: url(
         {% if latestMeeting.meetingFeatureImage.one() %}{{latestMeeting.meetingFeatureImage.one().url}}
         {% else %}{{"/dist/jpg/test-sq.jpg"}}
@@ -35,7 +35,7 @@
     </div>
   </div>
   {% endif %}
-  <div class="mt-[100px]">
+  <div class="my-[100px]">
     <p class="text-[20px] font-light leading-[38px] text-[#292929]">Welcome to Southeastern 
     Pennsylvania Alliance Chapter (SEPA), we are excited that you decided to join our chapter. In addition to the values 
     and rewards you might receive from ASCM, our members will enjoy the following additional values.</p>
