@@ -1,0 +1,10 @@
+enabled: true
+handle: pixelBrickPaypal
+name: 'Pixel+Brick PayPal'
+settings:
+  clientId: ATeRG4YRjCu1spNWJAqa9uVyYujDFHt6J4kWbV2XX1wKOZEIfPlXUGnBypDrC03NRwMX01BjlaCJCBiN
+  clientSecret: EMMR5thKSdpmQV9MoBWiV15zYVRxHeQ7jNv_N5o8I6TqK1nVpPbk_uxOaLw1KJyVenjqnJEDkmGLfbOs
+  useSandbox: '1'
+sortOrder: 2
+tokenId: null
+type: verbb\formie\integrations\payments\PayPal

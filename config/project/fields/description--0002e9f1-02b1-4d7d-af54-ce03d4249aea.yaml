@@ -1,0 +1,19 @@
+columnSuffix: xfnxrquc
+contentColumnType: text
+fieldGroup: bd4c0abb-c118-494a-bfea-68abdd8272a5 # Opportunities
+handle: description
+instructions: null
+name: Description
+searchable: false
+settings:
+  byteLimit: null
+  charLimit: null
+  code: false
+  columnType: null
+  initialRows: 4
+  multiline: false
+  placeholder: null
+  uiMode: normal
+translationKeyFormat: null
+translationMethod: none
+type: craft\fields\PlainText

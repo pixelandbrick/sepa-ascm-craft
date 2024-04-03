@@ -1,0 +1,14 @@
+columnSuffix: udppbawr
+contentColumnType: string(255)
+fieldGroup: bd4c0abb-c118-494a-bfea-68abdd8272a5 # Opportunities
+handle: submissionLink
+instructions: null
+name: 'Submission Link'
+searchable: false
+settings:
+  maxLength: 255
+  types:
+    - url
+translationKeyFormat: null
+translationMethod: none
+type: craft\fields\Url

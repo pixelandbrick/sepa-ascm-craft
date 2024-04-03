@@ -1,0 +1,31 @@
+{% extends "_layouts/default.twig" %}
+
+{% block bodyTag %}
+  {{ parent()|attr({
+    class: 'bg-[#1D1D1D]'
+  }) }}
+{% endblock %}
+
+{% block content %}
+{% block header %}{% include '_partials/header.twig' %}{% endblock %}
+
+<div class="bg-white">
+  <div class="max-w-screen-xl min-w-screen-xl mx-auto py-[100px]">
+  {% for entry in craft.entries().section('Meetings').orderBy('meetingDate ASC') %}
+  {% if today <= entry.meetingDate %}
+    <div class="flex flex-row">
+      <div class="bg-[#F2F2F2] w-full pl-[40px] pr-[80px] py-[35px] mb-[30px] rounded border-t-[5px] border-[#006B36]">
+        <p class="mb-[10px] text-[24px] text-[#292929]">{{entry.title}}</p>
+        <p class="mb-[10px] font-bold text-[#006B36]">{{entry.meetingDate|date('F j, Y, g:i a T')}}</p>
+        <p class="font-light text-[#292929]">{{entry.meetingDescription|striptags|truncate(255,'...')}}</p>
+        <div class="mt-[35px] flex gap-[25px]">
+        </div>
+      </div>
+    </div>
+  {% endif %}
+  {% endfor %}
+  {{ craft.formie.renderForm('meetingRegistration') }}
+  </div>
+</div>
+{% block footer %}{% include '_partials/footer.twig' %}{% endblock %}
+{% endblock %}
