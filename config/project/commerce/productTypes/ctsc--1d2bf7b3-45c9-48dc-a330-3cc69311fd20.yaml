@@ -6,7 +6,7 @@ hasVariantTitleField: false
 hasVariants: false
 name: 'CTSC Course'
 productFieldLayouts:
-  efa7bd3d-cf0d-4c6e-b64d-10aeeed9d00a:
+  89b3c019-2d14-4ee8-afd4-55076e50ed7d:
     tabs:
       -
         elementCondition: null
@@ -34,7 +34,7 @@ productFieldLayouts:
             tip: null
             title: null
             type: craft\commerce\fieldlayoutelements\ProductTitleField
-            uid: 75040a35-a716-4106-9aff-0b1da1f089f1
+            uid: cb356bff-79ed-486e-a63e-94f28f0688c4
             userCondition: null
             warning: null
             width: 100
@@ -46,7 +46,7 @@ productFieldLayouts:
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
-            uid: 8f355308-c21d-44c1-8bfb-2d1c8e178181
+            uid: 03c9af3c-469c-438c-88e2-76b80a0f17dd
             userCondition: null
             warning: null
             width: 100
@@ -58,7 +58,7 @@ productFieldLayouts:
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
-            uid: 8856443c-42c3-475e-bd09-604a1a8b7ff8
+            uid: deeb5900-e198-4a5a-a4c2-216ae5038a96
             userCondition: null
             warning: null
             width: 100
@@ -69,11 +69,11 @@ productFieldLayouts:
             required: false
             tip: null
             type: craft\commerce\fieldlayoutelements\VariantsField
-            uid: 2eb6e666-07f5-485e-9f61-683ee1a955ec
+            uid: 1cad9c86-0d1a-4f49-bae2-5a738b5c0557
             userCondition: null
             warning: null
         name: Content
-        uid: bdc3cdaa-3c04-4ef7-af4a-58c1bed3e4b0
+        uid: 3520f30d-cd53-4877-8959-b25160c2af91
         userCondition: null
 productTitleFormat: ''
 siteSettings:

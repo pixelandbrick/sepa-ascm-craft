@@ -1,5 +1,5 @@
-handle: dummy2
-isFrontendEnabled: '1'
+handle: dummy
+isFrontendEnabled: '0'
 name: Dummy
 paymentType: purchase
 sortOrder: 99

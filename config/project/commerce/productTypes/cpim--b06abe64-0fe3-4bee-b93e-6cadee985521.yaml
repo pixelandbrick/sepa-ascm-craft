@@ -58,7 +58,7 @@ productFieldLayouts:
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
-            uid: b266662d-03b9-41a6-9cf2-7617491452e7
+            uid: de62c33a-cb0e-4395-b0df-c4323d95a602
             userCondition: null
             warning: null
             width: 100

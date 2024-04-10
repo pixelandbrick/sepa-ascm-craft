@@ -5,11 +5,11 @@ paymentType: purchase
 settings:
   _brandName: ''
   brandName: ''
-  clientId: ATNkAIjTwzmVkqwQmayy98yj0gcZ6ORzGyiMWsleUnqVM-9SWCDWP1bbq7iw40599_XS4viUp1jpBnYF
+  clientId: AcCQjLTvL9sHHWD4ZSq7P49rVe-ZM6uYyhDIJKdaqMz_H-lkqKPil1kG5oQp-FRm479ar4w72Td2cDdq
   landingPage: BILLING
-  secret: EImw5RsOSERiQmvjgX3GUjNgCyvdsfRIb8dMPndWLT4ZYcbD6_RBY-If5SjqKnfz8yYtUO2RppLvV91Y
+  secret: EIOeO1wQP111ajHc6pldvXG46Ax2mZrnjzzwb7B59sJxpeksxAeivLEPqTWQWe36YV-JvqfDOBncnQyY
   sendCartInfo: '1'
   sendShippingInfo: '0'
-  testMode: '1'
+  testMode: '0'
 sortOrder: 99
 type: craft\commerce\paypalcheckout\gateways\Gateway

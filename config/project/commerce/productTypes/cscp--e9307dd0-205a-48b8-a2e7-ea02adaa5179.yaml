@@ -6,7 +6,7 @@ hasVariantTitleField: false
 hasVariants: false
 name: 'CSCP Course'
 productFieldLayouts:
-  813858d7-e6ae-490a-9733-866876c020ab:
+  4ac8a1fa-fe26-48f3-84ec-c6d6691fe136:
     tabs:
       -
         elementCondition: null
@@ -34,7 +34,7 @@ productFieldLayouts:
             tip: null
             title: null
             type: craft\commerce\fieldlayoutelements\ProductTitleField
-            uid: af37fcc2-445c-41d5-b56d-1a0bb1f7bbe7
+            uid: a65c7f4a-2120-43bc-9397-09e74ec916ea
             userCondition: null
             warning: null
             width: 100
@@ -46,7 +46,7 @@ productFieldLayouts:
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
-            uid: a791f45d-c726-4278-a5df-8ee2c6d559b7
+            uid: 87685e0f-a16f-4031-88c8-7ba2f1e70807
             userCondition: null
             warning: null
             width: 100
@@ -58,7 +58,7 @@ productFieldLayouts:
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
-            uid: 50f637fe-d1db-454a-ba13-bde7d9f3dd6d
+            uid: ee173fc0-2150-4cf5-a529-671a9e635b09
             userCondition: null
             warning: null
             width: 100
@@ -69,11 +69,11 @@ productFieldLayouts:
             required: false
             tip: null
             type: craft\commerce\fieldlayoutelements\VariantsField
-            uid: 7cf6abb2-2805-4b49-b87c-d65144a70808
+            uid: 7a332dcd-2618-457f-93d5-6ec9fb8f4e69
             userCondition: null
             warning: null
         name: Content
-        uid: d9cee135-d477-4aa8-9839-ec7d18b6e1b7
+        uid: eccf6927-1c8f-49dc-a27e-8694c06e2ad9
         userCondition: null
 productTitleFormat: ''
 siteSettings:

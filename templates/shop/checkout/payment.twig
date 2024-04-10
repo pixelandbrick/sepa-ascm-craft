@@ -5,7 +5,6 @@
 {% block main %}
 {% set currentUser = craft.users.email(cart.email ?? 'NULL').one() %}
 
-{% if currentUser.ascmMembershipId != NULL %}
   <div class="md:flex md:-mx-8">
     <div class="md:w-2/3 md:px-8">
       {% if craft.commerce.settings.allowCheckoutWithoutPayment %}
@@ -65,7 +64,7 @@
             {{ include('shop/checkout/_includes/partial-payment') }}
 
             {% if cart.gatewayId %}
-              {{ hiddenInput('gatewayId', cart.gatewayId) }}
+              {{ hiddenInput('gatewayId', 2) }}
               {% set params = {} %}
 
               {# Special params for Paypal checkout #}
@@ -149,21 +148,5 @@
     }
   {% endjs %}
 
-{% else %}
-  <h2 class="text-lg font-semibold text-gray-600">
-    {{- 'Your account is not associated with an active membership.'|t -}}
-  </h2>
-  <form method="post" class="w-full inline-flex items-end justify-between">
-    {{ csrfInput() }}
-    {{ actionInput('commerce/cart/update-cart') }}
-    {{ hiddenInput('purchasableId', variant.id) }}
-    {{ redirectInput('shop/cart') }}
-    {{ successMessageInput('Added ' ~ course.title ~ ' to cart.') }}
-    {{ hiddenInput('qty', 1) }}
 
-    <div>
-      <button class="h-max w-max bg-[#82C341] mt-[20px] pt-[9px] pb-[11px] pl-[20px] pr-[20px] text-white text-lg font-semibold">Add Membership to Cart</button>
-    </div>
-  </form>
-{% endif %}
 {% endblock %}
