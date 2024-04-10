@@ -1,0 +1,85 @@
+descriptionFormat: '{product.title} - {title}'
+handle: cscp
+hasDimensions: false
+hasProductTitleField: true
+hasVariantTitleField: false
+hasVariants: false
+name: 'CSCP Course'
+productFieldLayouts:
+  813858d7-e6ae-490a-9733-866876c020ab:
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            autocapitalize: true
+            autocomplete: false
+            autocorrect: true
+            class: null
+            disabled: false
+            elementCondition: null
+            id: null
+            inputType: null
+            instructions: null
+            label: null
+            max: null
+            min: null
+            name: null
+            orientation: null
+            placeholder: null
+            readonly: false
+            requirable: false
+            size: null
+            step: null
+            tip: null
+            title: null
+            type: craft\commerce\fieldlayoutelements\ProductTitleField
+            uid: af37fcc2-445c-41d5-b56d-1a0bb1f7bbe7
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: d580aec8-08d7-421b-9280-b4a7459f684b # Course Dates
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: a791f45d-c726-4278-a5df-8ee2c6d559b7
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: 3a5ae57e-468f-4688-84d4-ea2608a3be1d # Course Description
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 50f637fe-d1db-454a-ba13-bde7d9f3dd6d
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\commerce\fieldlayoutelements\VariantsField
+            uid: 7cf6abb2-2805-4b49-b87c-d65144a70808
+            userCondition: null
+            warning: null
+        name: Content
+        uid: d9cee135-d477-4aa8-9839-ec7d18b6e1b7
+        userCondition: null
+productTitleFormat: ''
+siteSettings:
+  246ac9e2-0535-4ba5-b543-66b2eb9d969f: # ASCM Southeastern Pennsylvania
+    hasUrls: true
+    template: ''
+    uriFormat: 'cscp/{slug}'
+skuFormat: ''
+variantTitleFormat: '{product.title}'

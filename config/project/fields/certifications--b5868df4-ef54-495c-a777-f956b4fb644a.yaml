@@ -1,0 +1,100 @@
+columnSuffix: vursgluh
+contentColumnType: string
+fieldGroup: 7bece7ac-8980-4ae8-b101-0cd452924c69 # Users
+handle: certifications
+instructions: null
+name: Certifications
+searchable: false
+settings:
+  options:
+    -
+      __assoc__:
+        -
+          - label
+          - CPIM
+        -
+          - value
+          - cpim
+        -
+          - default
+          - ''
+    -
+      __assoc__:
+        -
+          - label
+          - CPIM-F
+        -
+          - value
+          - cpimF
+        -
+          - default
+          - ''
+    -
+      __assoc__:
+        -
+          - label
+          - CIRM
+        -
+          - value
+          - cirm
+        -
+          - default
+          - ''
+    -
+      __assoc__:
+        -
+          - label
+          - CSCP
+        -
+          - value
+          - cscp
+        -
+          - default
+          - ''
+    -
+      __assoc__:
+        -
+          - label
+          - CSCP-F
+        -
+          - value
+          - cscpF
+        -
+          - default
+          - ''
+    -
+      __assoc__:
+        -
+          - label
+          - CLTD
+        -
+          - value
+          - cltd
+        -
+          - default
+          - ''
+    -
+      __assoc__:
+        -
+          - label
+          - CLTD-F
+        -
+          - value
+          - cltdF
+        -
+          - default
+          - ''
+    -
+      __assoc__:
+        -
+          - label
+          - SCORP
+        -
+          - value
+          - scorp
+        -
+          - default
+          - ''
+translationKeyFormat: null
+translationMethod: none
+type: craft\fields\Checkboxes

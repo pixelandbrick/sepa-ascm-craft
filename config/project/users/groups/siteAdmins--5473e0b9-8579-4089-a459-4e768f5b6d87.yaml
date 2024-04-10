@@ -1,0 +1,85 @@
+description: ''
+handle: siteAdmins
+name: 'Site Admins'
+permissions:
+  - accesssitewhensystemisoff
+  - administrateusers
+  - 'assignusergroup:3a8d6f14-bb9e-4c92-aad4-1f9206b19448' # Students & Young Professionals
+  - 'assignusergroup:43457d50-918e-4bad-b5a7-939510b4da97' # Non-Members
+  - 'assignusergroup:5473e0b9-8579-4089-a459-4e768f5b6d87' # Site Admins
+  - 'assignusergroup:6570fef7-dfa5-49de-8d15-7dc2f4641611' # Board Members
+  - 'assignusergroup:f08ea618-5fd0-4ae0-9024-e6860c20e34b' # Members
+  - assignuserpermissions
+  - commerce-capturepayment
+  - commerce-creatediscounts
+  - 'commerce-createproducts:b06abe64-0fe3-4bee-b93e-6cadee985521' # CPIM Course
+  - 'commerce-createproducts:f310f2ce-f94d-460d-ae7f-31896a5e53fd' # Meeting
+  - commerce-createsales
+  - commerce-deletediscounts
+  - commerce-deleteorders
+  - 'commerce-deleteproducts:b06abe64-0fe3-4bee-b93e-6cadee985521' # CPIM Course
+  - 'commerce-deleteproducts:f310f2ce-f94d-460d-ae7f-31896a5e53fd' # Meeting
+  - commerce-deletesales
+  - commerce-editdiscounts
+  - commerce-editorders
+  - 'commerce-editproducttype:b06abe64-0fe3-4bee-b93e-6cadee985521' # CPIM Course
+  - 'commerce-editproducttype:f310f2ce-f94d-460d-ae7f-31896a5e53fd' # Meeting
+  - commerce-editsales
+  - commerce-manageorders
+  - commerce-managepromotions
+  - commerce-manageshipping
+  - commerce-managestoresettings
+  - commerce-managesubscriptions
+  - commerce-managetaxes
+  - commerce-refundpayment
+  - 'createentries:10bc5384-4844-49dc-b8f1-948bbb791731' # Opportunities
+  - 'createentries:2872d74f-a99b-4b6b-ac63-bf7091d22c7a' # Meetings
+  - 'createentries:4502495d-e681-4b63-bff1-ac0ba15eadbc' # Courses
+  - 'createentries:4f19a1cf-7acb-4101-bea3-edea33a0ccf5' # Colleges
+  - 'createentries:953c55cb-288a-4b71-9c39-335102a1ae30' # Articles
+  - 'deleteentries:10bc5384-4844-49dc-b8f1-948bbb791731' # Opportunities
+  - 'deleteentries:2872d74f-a99b-4b6b-ac63-bf7091d22c7a' # Meetings
+  - 'deleteentries:4502495d-e681-4b63-bff1-ac0ba15eadbc' # Courses
+  - 'deleteentries:4f19a1cf-7acb-4101-bea3-edea33a0ccf5' # Colleges
+  - 'deleteentries:953c55cb-288a-4b71-9c39-335102a1ae30' # Articles
+  - 'deletepeerentries:953c55cb-288a-4b71-9c39-335102a1ae30' # Articles
+  - deleteusers
+  - editusers
+  - formie-editsubmissions
+  - formie-viewsubmissions
+  - impersonateusers
+  - moderateusers
+  - registerusers
+  - 'saveentries:10bc5384-4844-49dc-b8f1-948bbb791731' # Opportunities
+  - 'saveentries:2872d74f-a99b-4b6b-ac63-bf7091d22c7a' # Meetings
+  - 'saveentries:2d22f61f-0bf0-441c-937a-a738a5214f64' # Registration
+  - 'saveentries:339e05fa-565f-4fa4-98ad-05cc58243fb8' # Bylaws
+  - 'saveentries:4502495d-e681-4b63-bff1-ac0ba15eadbc' # Courses
+  - 'saveentries:4f19a1cf-7acb-4101-bea3-edea33a0ccf5' # Colleges
+  - 'saveentries:953c55cb-288a-4b71-9c39-335102a1ae30' # Articles
+  - 'saveentries:bcff2c34-88ca-480f-bf39-57872d4636f1' # About ASCM SEPA
+  - 'viewassets:1d1cac83-523d-465d-95dd-f268196920aa' # Images
+  - 'viewassets:ce6a0c61-fef7-4b8b-b765-d687224a736c' # Colleges
+  - 'viewassets:d348dd30-7179-4a4e-b45e-cc72b17f29f7' # Board Members
+  - 'viewassets:e38e1844-97d5-4430-9cae-ed1acb665c21' # Courses
+  - 'viewcategories:b06380ae-aba0-4e6c-be4f-7ebda04a3fe5' # Article Types
+  - 'viewentries:073642bd-0365-4cc6-b2b9-65d8d7bae7f7' # Home
+  - 'viewentries:10bc5384-4844-49dc-b8f1-948bbb791731' # Opportunities
+  - 'viewentries:2872d74f-a99b-4b6b-ac63-bf7091d22c7a' # Meetings
+  - 'viewentries:2d22f61f-0bf0-441c-937a-a738a5214f64' # Registration
+  - 'viewentries:339e05fa-565f-4fa4-98ad-05cc58243fb8' # Bylaws
+  - 'viewentries:4502495d-e681-4b63-bff1-ac0ba15eadbc' # Courses
+  - 'viewentries:4f19a1cf-7acb-4101-bea3-edea33a0ccf5' # Colleges
+  - 'viewentries:953c55cb-288a-4b71-9c39-335102a1ae30' # Articles
+  - 'viewentries:bcff2c34-88ca-480f-bf39-57872d4636f1' # About ASCM SEPA
+  - 'viewentries:e3daa05b-c819-442e-91fe-e39c500166d7' # Scholarships
+  - 'viewpeerentries:10bc5384-4844-49dc-b8f1-948bbb791731' # Opportunities
+  - 'viewpeerentries:2872d74f-a99b-4b6b-ac63-bf7091d22c7a' # Meetings
+  - 'viewpeerentries:4502495d-e681-4b63-bff1-ac0ba15eadbc' # Courses
+  - 'viewpeerentries:4f19a1cf-7acb-4101-bea3-edea33a0ccf5' # Colleges
+  - 'viewpeerentries:953c55cb-288a-4b71-9c39-335102a1ae30' # Articles
+  - 'viewpeerentrydrafts:10bc5384-4844-49dc-b8f1-948bbb791731' # Opportunities
+  - 'viewpeerentrydrafts:2872d74f-a99b-4b6b-ac63-bf7091d22c7a' # Meetings
+  - 'viewpeerentrydrafts:339e05fa-565f-4fa4-98ad-05cc58243fb8' # Bylaws
+  - 'viewpeerentrydrafts:4502495d-e681-4b63-bff1-ac0ba15eadbc' # Courses
+  - 'viewpeerentrydrafts:4f19a1cf-7acb-4101-bea3-edea33a0ccf5' # Colleges

@@ -1,0 +1,20 @@
+columnSuffix: njlndljd
+contentColumnType: smallint(3)
+fieldGroup: 7bece7ac-8980-4ae8-b101-0cd452924c69 # Users
+handle: homeAreaCode
+instructions: null
+name: 'Home Area Code'
+searchable: false
+settings:
+  decimals: 0
+  defaultValue: null
+  max: 999
+  min: 100
+  prefix: null
+  previewCurrency: null
+  previewFormat: none
+  size: null
+  suffix: null
+translationKeyFormat: null
+translationMethod: none
+type: craft\fields\Number

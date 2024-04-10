@@ -1,0 +1,46 @@
+columnSuffix: yuhntczg
+contentColumnType: string(8)
+fieldGroup: 7bece7ac-8980-4ae8-b101-0cd452924c69 # Users
+handle: membershipAutoRenew
+instructions: null
+name: 'Membership Auto-Renew'
+searchable: false
+settings:
+  columnType: null
+  options:
+    -
+      __assoc__:
+        -
+          - label
+          - Annually
+        -
+          - value
+          - annually
+        -
+          - default
+          - ''
+    -
+      __assoc__:
+        -
+          - label
+          - Monthly
+        -
+          - value
+          - monthly
+        -
+          - default
+          - ''
+    -
+      __assoc__:
+        -
+          - label
+          - None
+        -
+          - value
+          - none
+        -
+          - default
+          - '1'
+translationKeyFormat: null
+translationMethod: none
+type: craft\fields\Dropdown

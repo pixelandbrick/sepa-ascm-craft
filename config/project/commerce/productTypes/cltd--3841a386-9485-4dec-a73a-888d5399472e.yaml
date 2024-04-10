@@ -1,0 +1,85 @@
+descriptionFormat: '{product.title} - {title}'
+handle: cltd
+hasDimensions: false
+hasProductTitleField: true
+hasVariantTitleField: false
+hasVariants: false
+name: 'CLTD Course'
+productFieldLayouts:
+  846ecae9-2b9d-4239-b701-eabf4fa0f1c6:
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            autocapitalize: true
+            autocomplete: false
+            autocorrect: true
+            class: null
+            disabled: false
+            elementCondition: null
+            id: null
+            inputType: null
+            instructions: null
+            label: null
+            max: null
+            min: null
+            name: null
+            orientation: null
+            placeholder: null
+            readonly: false
+            requirable: false
+            size: null
+            step: null
+            tip: null
+            title: null
+            type: craft\commerce\fieldlayoutelements\ProductTitleField
+            uid: e975473d-ec1f-42d3-9392-c1ae1d98928f
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: 3a5ae57e-468f-4688-84d4-ea2608a3be1d # Course Description
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 4b2412cf-c2ed-472b-af23-420ef57fce68
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: d580aec8-08d7-421b-9280-b4a7459f684b # Course Dates
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: added069-3ec2-4c72-9bed-4548699c12c4
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\commerce\fieldlayoutelements\VariantsField
+            uid: 178da1de-36b7-49da-9356-f92563209968
+            userCondition: null
+            warning: null
+        name: Content
+        uid: 30959956-fc06-4fd8-ae08-7bd8c039e8ae
+        userCondition: null
+productTitleFormat: ''
+siteSettings:
+  246ac9e2-0535-4ba5-b543-66b2eb9d969f: # ASCM Southeastern Pennsylvania
+    hasUrls: true
+    template: ''
+    uriFormat: 'cltd/{slug}'
+skuFormat: ''
+variantTitleFormat: '{product.title}'

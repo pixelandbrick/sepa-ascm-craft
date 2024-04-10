@@ -1,15 +1,52 @@
-<div class="border-t-[10px] border-t-[#006B36] border-b border-b-[#E2E5E7] bg-white"> <!--full width container-->
+{% set currentPath = craft.app.request.pathInfo %}
+{% if cart is not defined %}
+  {% set cart = craft.commerce.carts.cart %}
+{% endif %}
+{% set activeClasses = 'bg-white' %}
+{# Show the nav if we are not in a checkout page #}
+
+
+<div class="border-t-[10px] border-[#006B36] border-b border-b-[#E2E5E7] bg-white"> <!--full width container-->
   <div class="max-w-screen-xl min-w-screen-xl mx-auto pt-[20px] pb-[38px]"> <!--inner container-->
     <div class="flex mb-[20px]"> <!--logo & buttons container-->
       <div class="w-full"> <!--logo container left align-->
         <a href="/"><img src="/dist/jpg/ASCM_LOGOS_CHAPTERS_COLOR_HZ_SPA_wgs.jpeg" class="max-h-[90px] -ml-4" alt="ASCM Southeastern Pennsylvania Alliance" /></a>
         <h1 class="hidden">ASCM Southeastern Pennsylvania Alliance</h1>
       </div>
-      <div class="inline-flex gap-[25px]"><!--calendar/etc buttons right align -->
         <!--<div>Calendar&nbsp;</div>-->
-        <a href="https://ascm.org" target="_blank" class="place-self-center h-max w-max rounded-full bg-[#E2E5E7] pt-[7px] pb-[6px] px-[22px] text-[14px] font-semibold text-[#292929]">ASCM.org&nbsp;&nbsp;&nbsp;&nbsp;<i class="text-[#727272] fa-solid fa-arrow-up-right-from-square"></i></a>
-        <a href="/education" class="place-self-center h-max w-max rounded-full bg-[#007BFF] pt-[7px] pb-[6px] px-[22px] text-[14px] font-bold text-white">Get&nbsp;Certified</a>
+      {% if 'checkout' not in currentPath %}
+      <div class="inline-flex gap-[25px] w-full place-content-end items-center container max-w-screen-xl mx-auto relative">
+        <nav class="py-2 text-right"
+            role="navigation"
+            aria-label="Main">
+          <div class="flex gap-4">
+            {% if currentUser %}
+              <a href="{{ url('shop/customer') }}"
+                class="pt-[7px] pb-[6px] relative text-[#292929] text-[14px] font-semibold cursor-pointer inline-block hover:shadow">
+                  👤&nbsp;My Account
+              </a>
+            {% else %}
+              <a href="{{ url('shop/customer/sign-in') }}"
+                class="pt-[7px] pb-[6px] relative text-[#292929] text-[14px] font-semibold cursor-pointer inline-block hover:shadow">
+                {{- 'Sign In'|t -}}
+              </a>
+            {% endif %}
+            <a href="{{ url('shop/cart') }}"
+              class="pt-[7px] pb-[6px] relative text-[#292929] text-[14px] font-semibold cursor-pointer inline-block hover:shadow">
+                {% if cart.totalQty %}
+                <span class="absolute -mr-3 -mt-3 right-0 top-0 py-1 px-2 rounded-full text-white text-xs bg-[#006B36]">  
+                    {{- cart.totalQty -}}
+                </span>
+                {% endif %}
+
+              <span aria-label="{{ 'View Cart'|t }}">🛒 Cart</span>
+            </a>
+            <a href="https://ascm.org" target="_blank" class="rounded-full bg-[#E2E5E7] ml-2 pt-[7px] pb-[6px] px-[22px] text-[14px] font-semibold text-[#292929]">ASCM.org&nbsp;&nbsp;&nbsp;&nbsp;<i class="text-[#727272] fa-solid fa-arrow-up-right-from-square"></i></a>
+            <a href="/education" class="rounded-full bg-[#007BFF] pt-[7px] pb-[6px] px-[22px] text-[14px] font-bold text-white">Get&nbsp;Certified</a>
+          </div>
+        </nav>
       </div>
+      {% endif %}
     </div>
     <ul class="list-none indent-0 mb-0 font-semibold text-[#006B36] text-xl flex flex-row justify-between"><!--main nav-->
       <li><a href="/education">Education</a></li>

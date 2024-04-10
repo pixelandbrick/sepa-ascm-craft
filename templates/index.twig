@@ -7,30 +7,42 @@
 {% endblock %}
 
 {% set start = now|atom %}
-{% set latestMeeting = craft.entries().section('Meetings').meetingDate(">= today").one() %}
+{% set latestMeeting = craft.products.type('meeting').one() %}
 
 {% block content %}
 {% block header %}{% include '_partials/header.twig' %}{% endblock %}
 {% block hero %}{% include '_partials/hero.twig' %}{% endblock %}
 <div class="bg-white">
   <div class="max-w-screen-xl min-w-screen-xl mx-auto">
+  
   {% if latestMeeting %}
   <div class="mt-[100px] flex gap-0">
     <div class="rounded-l min-w-[360px] min-h-[360px] bg-cover" style="background-image: url(
-        {% if latestMeeting.meetingFeatureImage.one() %}{{latestMeeting.meetingFeatureImage.one().url}}
+        {% if latestMeeting.meetingFeatureImage %}{{latestMeeting.meetingFeatureImage.one().url}}
         {% else %}{{"/dist/jpg/test-sq.jpg"}}
         {% endif %}
       )"></div>
     <div class="bg-[#F2F2F2] w-full pl-[40px] rounded-r border-t-[5px] border-[#006B36]">
-      <div class="w-full flex justify-end"><div class="mr-[35px] mt-[30px] pt-[9px] pb-[8px] px-[24px] w-min rounded-full bg-white font-extrabold uppercase text-[#E2E5E7]">Mega&nbsp;Meeting</div></div>
+      <div class="w-full flex justify-end"><div class="mr-[35px] mt-[30px] pt-[9px] pb-[8px] px-[24px] w-min rounded-full bg-white font-extrabold uppercase text-[#E2E5E7]">Plant&nbsp;Tour</div></div>
       <div><!-- text -->
         <div><p class="text-lg font-bold text-[#006B36]">{{latestMeeting.meetingDate|date('F j, Y')}}</p></div>
         <div><p class="text-[38px] text-[#292929]">{{latestMeeting.title}}</p></div>
         <div class="max-w-[747px]"><p class="text-lg font-light text-[#292929]">{{latestMeeting.meetingDescription|striptags|truncate(255,'...')}}</p></div>
       </div>
-      <div class="mt-[35px] mb-[52px] flex gap-[25px]">
-        <a href="{{latestMeeting.getUrl()}}" class="h-max w-max bg-[#82C341] pt-[9px] pb-[11px] pl-[20px] pr-[20px] text-white text-lg font-semibold">Register</a>
-      </div>
+
+      {% set variant = latestMeeting.defaultVariant %}
+      <form method="post" class="w-full inline-flex items-end justify-between">
+        {{ csrfInput() }}
+        {{ actionInput('commerce/cart/update-cart') }}
+        {{ hiddenInput('purchasableId', variant.id) }}
+        {{ redirectInput('shop/cart') }}
+        {{ successMessageInput('Added ' ~ latestMeeting.title ~ ' to cart.') }}
+        {{ hiddenInput('qty', 1) }}
+
+        <div>
+          <button class="h-max w-max bg-[#82C341] mb-[52px] pt-[9px] pb-[11px] pl-[20px] pr-[20px] text-white text-lg font-semibold">Register</button>
+        </div>
+      </form>
     </div>
   </div>
   {% endif %}

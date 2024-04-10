@@ -1,0 +1,85 @@
+descriptionFormat: '{product.title} - {title}'
+handle: ctsc
+hasDimensions: false
+hasProductTitleField: true
+hasVariantTitleField: false
+hasVariants: false
+name: 'CTSC Course'
+productFieldLayouts:
+  efa7bd3d-cf0d-4c6e-b64d-10aeeed9d00a:
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            autocapitalize: true
+            autocomplete: false
+            autocorrect: true
+            class: null
+            disabled: false
+            elementCondition: null
+            id: null
+            inputType: null
+            instructions: null
+            label: null
+            max: null
+            min: null
+            name: null
+            orientation: null
+            placeholder: null
+            readonly: false
+            requirable: false
+            size: null
+            step: null
+            tip: null
+            title: null
+            type: craft\commerce\fieldlayoutelements\ProductTitleField
+            uid: 75040a35-a716-4106-9aff-0b1da1f089f1
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: d580aec8-08d7-421b-9280-b4a7459f684b # Course Dates
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 8f355308-c21d-44c1-8bfb-2d1c8e178181
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: 3a5ae57e-468f-4688-84d4-ea2608a3be1d # Course Description
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 8856443c-42c3-475e-bd09-604a1a8b7ff8
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\commerce\fieldlayoutelements\VariantsField
+            uid: 2eb6e666-07f5-485e-9f61-683ee1a955ec
+            userCondition: null
+            warning: null
+        name: Content
+        uid: bdc3cdaa-3c04-4ef7-af4a-58c1bed3e4b0
+        userCondition: null
+productTitleFormat: ''
+siteSettings:
+  246ac9e2-0535-4ba5-b543-66b2eb9d969f: # ASCM Southeastern Pennsylvania
+    hasUrls: true
+    template: ''
+    uriFormat: 'ctsc/{slug}'
+skuFormat: ''
+variantTitleFormat: '{product.title}'

@@ -1,9 +1,9 @@
-columnSuffix: xfadcpdb
+columnSuffix: null
 contentColumnType: text
 fieldGroup: 7bece7ac-8980-4ae8-b101-0cd452924c69 # Users
-handle: secondaryPhone
+handle: mobilePhone
 instructions: null
-name: 'Secondary Phone'
+name: 'Mobile Phone'
 searchable: false
 settings:
   byteLimit: null

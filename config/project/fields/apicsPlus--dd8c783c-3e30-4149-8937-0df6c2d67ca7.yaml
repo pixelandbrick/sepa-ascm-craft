@@ -1,0 +1,14 @@
+columnSuffix: null
+contentColumnType: boolean
+fieldGroup: 7bece7ac-8980-4ae8-b101-0cd452924c69 # Users
+handle: apicsPlus
+instructions: null
+name: APICS+
+searchable: false
+settings:
+  default: false
+  offLabel: 'No'
+  onLabel: 'Yes'
+translationKeyFormat: null
+translationMethod: none
+type: craft\fields\Lightswitch

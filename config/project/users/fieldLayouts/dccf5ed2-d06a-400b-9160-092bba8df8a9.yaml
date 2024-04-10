@@ -76,7 +76,7 @@ tabs:
         width: 50
       -
         elementCondition: null
-        fieldUid: dca6f984-c80e-47b1-9494-9ee9ce74264e # Primary Phone
+        fieldUid: dca6f984-c80e-47b1-9494-9ee9ce74264e # Home Phone
         instructions: null
         label: null
         required: false
@@ -86,6 +86,18 @@ tabs:
         userCondition: null
         warning: null
         width: 50
+      -
+        elementCondition: null
+        fieldUid: b5868df4-ef54-495c-a777-f956b4fb644a # Certifications
+        instructions: null
+        label: null
+        required: false
+        tip: null
+        type: craft\fieldlayoutelements\CustomField
+        uid: deb2e7bd-03f0-4674-8ff5-b63d374e08a5
+        userCondition: null
+        warning: null
+        width: 100
       -
         elementCondition: null
         type: craft\fieldlayoutelements\HorizontalRule
@@ -273,7 +285,7 @@ tabs:
         width: 50
       -
         elementCondition: null
-        fieldUid: 2853b148-19f8-4d32-9e6f-0c41ece101e7 # Secondary Phone
+        fieldUid: 2853b148-19f8-4d32-9e6f-0c41ece101e7 # Mobile Phone
         instructions: null
         label: null
         required: false
@@ -339,9 +351,33 @@ tabs:
         width: 50
       -
         elementCondition: null
+        fieldUid: f66ed56b-f093-4932-943d-71702043840e # ASCM Member Original Join
+        instructions: null
+        label: null
+        required: false
+        tip: null
+        type: craft\fieldlayoutelements\CustomField
+        uid: 28e8d502-01d0-4ec5-9e4a-9410b9c760d4
+        userCondition: null
+        warning: null
+        width: 100
+      -
+        elementCondition: null
         type: craft\fieldlayoutelements\HorizontalRule
         uid: c97b2728-6f57-4c98-935b-df5f624385a5
         userCondition: null
+      -
+        elementCondition: null
+        fieldUid: b8292e48-6168-4301-90f7-e301cdfecac8 # Membership Auto-Renew
+        instructions: null
+        label: null
+        required: false
+        tip: null
+        type: craft\fieldlayoutelements\CustomField
+        uid: 4bc0465e-5fd9-4607-9611-7d80db8c0b68
+        userCondition: null
+        warning: null
+        width: 100
       -
         elementCondition: null
         fieldUid: c80a5bbf-766f-4966-8484-f7494f33cd1b # ASCM Member Suspension
@@ -395,6 +431,18 @@ tabs:
         userCondition: null
         warning: null
         width: 50
+      -
+        elementCondition: null
+        fieldUid: dd8c783c-3e30-4149-8937-0df6c2d67ca7 # APICS+
+        instructions: null
+        label: null
+        required: false
+        tip: null
+        type: craft\fieldlayoutelements\CustomField
+        uid: 45b6ed89-bf7f-4a86-b58f-c2bcc178f931
+        userCondition: null
+        warning: null
+        width: 100
     name: 'ASCM Member Info'
     uid: 335bc4fe-6436-4c5f-99d2-db635047171a
     userCondition: null

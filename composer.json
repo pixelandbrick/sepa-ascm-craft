@@ -20,6 +20,7 @@
     "craftcms/cms": "4.8.4",
     "craftcms/commerce": "4.5.2",
     "craftcms/commerce-paypal-checkout": "2.1.2",
+    "craftcms/feed-me": "5.4.0",
     "craftcms/postmark": "3.1.0",
     "craftcms/redactor": "^3.0",
     "mmikkel/cp-field-inspect": "^1.4",
@@ -28,10 +29,12 @@
     "nystudio107/craft-vite": "4.0.9",
     "servd/craft-asset-storage": "^3.3",
     "spacecatninja/imager-x": "4.3.1",
+    "venveo/craft-bulkedit": "4.0.1",
     "verbb/field-manager": "3.0.8",
     "verbb/formie": "2.1.7",
     "verbb/hyper": "1.1.22",
     "verbb/knock-knock": "^2.0",
+    "verbb/super-table": "3.0.12",
     "vlucas/phpdotenv": "^5.4.0"
   },
   "require-dev": {

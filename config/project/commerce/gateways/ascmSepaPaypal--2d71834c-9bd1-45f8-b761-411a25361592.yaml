@@ -1,0 +1,15 @@
+handle: ascmSepaPaypal
+isFrontendEnabled: '1'
+name: 'ASCM SEPA PayPal'
+paymentType: purchase
+settings:
+  _brandName: ''
+  brandName: ''
+  clientId: ATNkAIjTwzmVkqwQmayy98yj0gcZ6ORzGyiMWsleUnqVM-9SWCDWP1bbq7iw40599_XS4viUp1jpBnYF
+  landingPage: BILLING
+  secret: EImw5RsOSERiQmvjgX3GUjNgCyvdsfRIb8dMPndWLT4ZYcbD6_RBY-If5SjqKnfz8yYtUO2RppLvV91Y
+  sendCartInfo: '1'
+  sendShippingInfo: '0'
+  testMode: '1'
+sortOrder: 99
+type: craft\commerce\paypalcheckout\gateways\Gateway
