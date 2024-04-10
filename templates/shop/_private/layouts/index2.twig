@@ -1,0 +1,157 @@
+{% extends "_layouts/default.twig" %}
+{#
+Common, top-level layout template.
+
+@var cart        \craft\commerce\elements\Cart
+@var extraHead   string
+@var flashNotice string
+@var flashError  string
+#}
+
+{% block content %}
+{% block header %}{% include '_partials/header.twig' %}{% endblock %}
+<div id="body" class="bg-white">
+  <div class="max-w-screen-xl min-w-screen-xl mx-auto">
+{% if cart is not defined %}
+  {% set cart = craft.commerce.carts.cart %}
+{% endif %}
+
+{% set flashNotice = craft.app.session.getFlash('notice') %}
+{% set flashError = craft.app.session.getFlash('error') %}
+
+{% macro docs(text, link) %}
+    <small class="">
+        {{ tag('a', {
+            text: 'ℹ︎ ' ~ text,
+            href: link,
+            class: 'text-gray-400 hover:text-gray-600 hover:underline',
+            target: '_blank',
+        }) }}
+    </small>
+{% endmacro %}
+
+<header>
+  {{ include('shop/_private/layouts/includes/header') }}
+  {{ include('shop/_private/layouts/includes/nav-main') }}
+  {{ include('shop/_private/layouts/includes/nav-checkout') }}
+  {{ include('shop/_private/layouts/includes/nav-customer') }}
+</header>
+
+<div id="main">
+  {% if flashNotice %}
+    <div class="bg-blue-500 text-white">
+      <div class="container mx-auto px-6 py-4">
+        {{ flashNotice ?? 'Test flash notice' }}
+      </div>
+    </div>
+  {% endif %}
+
+  {% if flashError %}
+    <div class="bg-red-500 text-white">
+      <div class="container mx-auto px-6 py-4">
+        {{ flashError ?? 'Test flash error' }}
+      </div>
+    </div>
+  {% endif %}
+
+  {% if cart and cart.hasNotices() %}
+    <div class="bg-blue-400 text-white">
+      <div class="container mx-auto px-6 py-4 relative">
+        <span>{{ 'Cart Notices'|t }}</span>
+        {% set entriesByType = cart.getNotices()|group('type') %}
+        {% for type, notices in entriesByType %}
+          {% for notice in notices %}
+            <li class="list-disc"
+                data-type="{{ notice.type }}"
+                data-attribute="{{ notice.attribute }}"
+                data-message="{{ notice.message }}"
+            >
+              {{- notice -}}
+            </li>
+          {% endfor %}
+        {% endfor %}
+        <form method="post">
+          {{ actionInput('commerce/cart/update-cart') }}
+          {{ successMessageInput('Notices dismissed') }}
+          {{ hiddenInput('clearNotices') }}
+          {{ csrfInput() }}
+          {{ tag('button', {
+            type: 'submit',
+            class: ['absolute', 'mt-4', 'mr-4', 'top-0', 'right-0', 'cursor-pointer rounded px-2 py-1 text-sm inline-block', '[[classes.btn.blue]]'],
+            text: 'Dismiss'|t
+          }) }}
+        </form>
+      </div>
+    </div>
+  {% endif %}
+
+  {% if cart and cart.errors|length %}
+    <div class="bg-red-500 text-white">
+      <div class="container mx-auto px-6 py-4">
+        {% for attribute, errors in cart.errors %}
+          {% if loop.first %}<ul>{% endif %}
+          {% for key, error in errors %}
+            <li>{{ attribute }}: {{ error }}</li>
+          {% endfor %}
+          {% if loop.last %}</ul>{% endif %}
+        {% endfor %}
+      </div>
+    </div>
+  {% endif %}
+
+  {% block body %}
+    <div class="container mx-auto p-6 flex-grow">
+      {% block main %}{% endblock %}
+    </div>
+  {% endblock %}
+</div>
+</div>
+</div>
+{% js at head %}
+let states = {{ craft.commerce.store.getStore().getAdministrativeAreasListByCountryCode()|json_encode|raw }};
+{% set usedFields = {} %}
+{% for countryCode in craft.app.addresses.getCountryRepository().getAll()|keys %}
+	{% set usedFields = usedFields|merge({ (countryCode): craft.app.addresses.getUsedFields(countryCode)|merge([
+      'fullName',
+      'latLong',
+      'organizationTaxId',
+      'organization',
+      'countryCode',
+    ]) }) %}
+{% endfor %}
+let usedAddressFieldsByCountryCode = {{ usedFields|json_encode|raw }};
+function hideAddressFields(selectorTemplate) {
+  const fields = document.querySelectorAll('.' + selectorTemplate.replace('placeHolder', 'js-address-field'));
+  if (!fields.length) {
+    return;
+  }
+
+  for (let i = 0; i < fields.length; i++) {
+    fields[i].classList.add('hidden');
+  }
+}
+
+function showAddressField(fieldName, selectorTemplate) {
+  const closestSelector = selectorTemplate;
+  const field = document.querySelector('#' + selectorTemplate.replace('placeHolder', fieldName));
+  if (!field) {
+    return;
+  }
+
+  const fieldWrapper = field.closest('.' + closestSelector.replace('placeHolder', 'js-address-field'));
+  if (!fieldWrapper) {
+    return;
+  }
+
+  fieldWrapper.classList.remove('hidden');
+}
+{% endjs %}
+
+{% js at endBody %}
+let $siteSelector = document.querySelector('#js-site-selector');
+if ($siteSelector) {
+  $siteSelector.addEventListener('change', (ev) => window.location = ev.target.value);
+}
+{% endjs %}
+{% block footer %}{% include '_partials/footer.twig' %}{% endblock %}
+{% endblock %}
