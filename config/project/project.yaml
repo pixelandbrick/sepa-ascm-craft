@@ -1,4 +1,4 @@
-dateModified: 1712856629
+dateModified: 1712858947
 elementSources:
   craft\elements\Entry:
     -
@@ -518,12 +518,12 @@ plugins:
       validateCustomTemplates: true
   hyper:
     edition: standard
-    enabled: true
+    enabled: false
     licenseKey: 1TG3ETNFW6P4AI5PTH0GNLSK
     schemaVersion: 1.0.0
   imager-x:
     edition: lite
-    enabled: true
+    enabled: false
     licenseKey: L28RX1EJGBSXYCU4CRXT1OXA
     schemaVersion: 4.0.0
   internal-assets:
