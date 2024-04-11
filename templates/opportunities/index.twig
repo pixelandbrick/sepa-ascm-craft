@@ -15,10 +15,10 @@
     <div class="flex flex-row">
       <div class="bg-[#F2F2F2] w-full pl-[40px] pr-[80px] py-[35px] mb-[30px] rounded border-t-[5px] border-[#006B36]">
         <p class="mb-[10px] text-[24px] text-[#292929]">{{entry.title}}</p>
-        <p class="mb-[10px] font-bold text-[#006B36]">{{entry.oppType}}</p>
-        <p class="font-light text-[#292929]">{{entry.description|striptags|truncate(255,'...')}}</p>
+        <p class="mb-[10px] font-bold text-[#006B36]">{{entry.company}}</p>
+        <p class="font-light text-[#292929]">{{entry.description}}</p>
         <div class="mt-[35px] flex gap-[25px]">
-          <a href="{{entry.submissionLink}}" class="h-max w-max bg-[#82C341] pt-[9px] pb-[11px] pl-[20px] pr-[20px] text-white text-lg font-semibold">Apply</a>
+          <a href="{{entry.submissionLink}}" class="h-max w-max bg-[#82C341] pt-[9px] pb-[11px] pl-[20px] pr-[20px] text-white text-lg font-semibold" target="_blank">Apply</a>
         </div>
       </div>
     </div>
