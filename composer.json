@@ -27,6 +27,7 @@
     "nystudio107/craft-retour": "4.1.15",
     "nystudio107/craft-seomatic": "^4.0",
     "nystudio107/craft-vite": "4.0.9",
+    "putyourlightson/craft-sendgrid": "2.0.1",
     "servd/craft-asset-storage": "^3.3",
     "spacecatninja/imager-x": "4.3.1",
     "venveo/craft-bulkedit": "4.0.1",

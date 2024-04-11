@@ -1,4 +1,4 @@
-dateModified: 1712761386
+dateModified: 1712856227
 elementSources:
   craft\elements\Entry:
     -
@@ -536,7 +536,7 @@ plugins:
     schemaVersion: 1.0.0
   imager-x:
     edition: lite
-    enabled: true
+    enabled: false
     licenseKey: L28RX1EJGBSXYCU4CRXT1OXA
     schemaVersion: 4.0.0
   internal-assets:
@@ -574,6 +574,10 @@ plugins:
       statsStoredLimit: 1000
       stripQueryStringFromStats: true
       uriChangeRedirectSrcMatch: pathonly
+  sendgrid:
+    edition: standard
+    enabled: true
+    schemaVersion: 1.0.0
   seomatic:
     edition: standard
     enabled: true
