@@ -1,10 +1,10 @@
 <div class="py-[100px] bg-[#1D1D1D] text-white"> <!--full width container-->
-    <div class="max-w-screen-xl min-w-screen-xl mx-auto grid grid-cols-2"> <!--inner width container-->
+    <div class="max-w-screen-xl min-w-screen-xl mx-auto px-6 md:px-0 md:grid md:grid-cols-2"> <!--inner width container-->
       <div> <!--column 1 container-->
         <img src="/dist/svg/ascm-logo-white.svg" alt="ASCM logo" />
         <div class="max-w-[495px] pt-[32px] pb-[78px]">ASCM is an unbiased partner, connecting companies around the world with industry experts, frameworks and global standards to transform supply chains.</div>
         <div class="font-semibold text-[18px]"><!--email list -->
-          Connect with ASCM SEPA and stay up to speed.
+          <p class="mb-6">Connect with ASCM SEPA and stay up to speed.</p>
           {{ craft.formie.renderForm('subscribe') }}
           <!--<div class="inline-flex mt-[18px]">
             <input type="text" class="w-[323px] h-[45px]" alt="Email Address" />
@@ -23,7 +23,7 @@
             <li class="pt-[10px]"><a href="https://drive.google.com/drive/folders/1-vWZ1yOyg53m1KFuWq9xMjSRmybUWpVu?usp=sharing" target="_blank">Board Member Login</a></li>
           </ul>
         </div>
-        <div><!--resources column-->
+        <div class="ml-2 md:ml-0"><!--resources column-->
           <h5 class="font-bold">Helpful Resources</h5>
           <ul class="list-none indent-0 mb-0">
             <li class="pt-[10px]"><a href="https://www.ascm.org/membership-community/" taget="_blank">Become a Member</a></li>

@@ -10,18 +10,18 @@
 {% block header %}{% include '_partials/header.twig' %}{% endblock %}
 {% block breadcrumbs %}{% include '_partials/breadcrumbs.twig' %}{% endblock %}
 <div class="bg-white">
-  <div class="max-w-screen-xl min-w-screen-xl mx-auto pt-[60px] pb-[100px]">
-  <div class="flex justify-between">
+  <div class="max-w-screen-xl min-w-screen-xl mx-auto pt-[60px] pb-[100px] px-6">
+  <div class="grid md:flex mb-12 md:mb-0 justify-between">
     <div>
-      <h2 class="-mt-2 text-[40px] font-bold">{{entry.title}}</h2>
+      <h2 class="-mt-2 text-[30px] md:text-[40px] font-bold">{{entry.title}}</h2>
       <div class="h-[40px]">&nbsp;</div>
       <div class="max-w-[582px]"><p class="text-[20px] font-light leading-[38px] text-[#292929]">{{entry.collegeDescription}}</p></div>
     </div>
-    <div class="w-[616px] h-[466px] bg-cover" style="background-image: url({{entry.collegeFeatureImage.one.getUrl()}})"></div>
+    <div class="order-first md:order-none w-full h-[360px] md:w-[616px] md:h-[466px] bg-cover mb-12 md:mb-0" style="background-image: url({{entry.collegeFeatureImage.one.getUrl()}})"></div>
   </div>
   {% if entry.boardMembers %}
   <h2 class="text-[38px] leading-10 mb-[30px]">Student Leadership</h2>
-  <div class="grid grid-cols-4 gap-[20px] justify-between">
+  <div class="grid grid-cols-1 md:grid-cols-4 gap-[20px] justify-between place-items-center">
     {% for member in entry.boardMembers %}
     <div class="mb-[30px]">
       <div class="mx-[19px] h-[260px] w-[260px] drop-shadow-2xl"{% if member.headshot.one() %} style="background-image: url({{member.headshot.one().getUrl('headshots')}})"{% endif %}></div>
