@@ -8,7 +8,6 @@
 
 {% block content %}
 {% block header %}{% include '_partials/header.twig' %}{% endblock %}
-{% block breadcrumbs %}{% include '_partials/breadcrumbs.twig' %}{% endblock %}
 <div class="bg-white">
   <div class="max-w-screen-xl min-w-screen-xl mx-auto pt-[60px] pb-[100px] px-6">
   <div class="grid md:flex mb-12 md:mb-0 justify-between">
@@ -21,7 +20,7 @@
   </div>
   {% if entry.boardMembers %}
   <h2 class="text-[38px] leading-10 mb-[30px]">Student Leadership</h2>
-  <div class="grid grid-cols-1 md:grid-cols-4 gap-[20px] justify-between place-items-center">
+  <div class="grid grid-cols-1 md:grid-cols-4 gap-[20px] justify-between place-items-center md:place-items-start">
     {% for member in entry.boardMembers %}
     <div class="mb-[30px]">
       <div class="mx-[19px] h-[260px] w-[260px] drop-shadow-2xl"{% if member.headshot.one() %} style="background-image: url({{member.headshot.one().getUrl('headshots')}})"{% endif %}></div>

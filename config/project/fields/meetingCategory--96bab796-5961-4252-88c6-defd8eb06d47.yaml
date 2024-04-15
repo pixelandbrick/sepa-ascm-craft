@@ -1,9 +1,9 @@
 columnSuffix: null
 contentColumnType: string
-fieldGroup: b578de3c-3abc-4225-b153-29e8e894e362 # Articles
-handle: articleCategory
+fieldGroup: 2f5d7ffc-4d16-47d1-a440-318d7f4ea068 # Common
+handle: meetingCategory
 instructions: null
-name: 'Article Category'
+name: 'Meeting Category'
 searchable: false
 settings:
   allowSelfRelations: false
@@ -13,8 +13,8 @@ settings:
   maxRelations: 1
   minRelations: 0
   selectionLabel: null
-  showSiteMenu: true
-  source: 'group:b06380ae-aba0-4e6c-be4f-7ebda04a3fe5' # Article Types
+  showSiteMenu: false
+  source: 'group:2647ba3f-f5c8-49b8-8fc6-5c9453acdd04' # Meeting Types
   targetSiteId: null
   validateRelatedElements: false
   viewMode: null

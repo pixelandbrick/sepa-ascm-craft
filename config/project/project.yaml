@@ -1,4 +1,4 @@
-dateModified: 1712858947
+dateModified: 1713200507
 elementSources:
   craft\elements\Entry:
     -
@@ -183,6 +183,7 @@ meta:
     70b04f6d-65a9-4b13-982d-b1e4a54b5ebc: 'Secondary State' # Secondary State
     73e24c7f-c14e-4960-aff3-ab77becc6777: 'Constant Contact' # Constant Contact
     84e26cf3-9744-4ba1-abc7-802cca000ddb: Country # Country
+    96bab796-5961-4252-88c6-defd8eb06d47: 'Meeting Category' # Meeting Category
     99bd89d9-407f-438f-805b-c28668a036b9: 'ASCM Southeastern Pennsylvania' # ASCM Southeastern Pennsylvania
     114b147f-c6ee-45c3-b1f0-0c93db41ba4d: 'Course Registration Link' # Course Registration Link
     246ac9e2-0535-4ba5-b543-66b2eb9d969f: 'ASCM Southeastern Pennsylvania' # ASCM Southeastern Pennsylvania
@@ -191,6 +192,7 @@ meta:
     416e052a-ff8b-49b7-a84b-fc71a488e4ec: Company # Company
     420cc52f-a056-4c9d-8c2e-6cb98c17fc65: 'Job Title' # Job Title
     455b165d-4c95-4d41-9594-3b4b4861f3b1: 'ASCM Member Pending' # ASCM Member Pending
+    0480b338-4d9d-4d95-abf3-0d2a039bc255: Students # Students
     504d9d35-669b-4aa7-9038-a73a05a1cd91: 'Board Member' # Board Member
     549efa07-4daf-4a9c-afa8-f88c6354057f: Pending # Pending
     636bd5bf-6e10-4629-9034-5517fbd47346: 'Meeting Details Link' # Meeting Details Link
@@ -199,7 +201,9 @@ meta:
     746a0ab8-83d0-4a8e-a2f6-2d0697922a0d: Articles # Articles
     756ef385-0b26-4d21-829b-1f63926ba2aa: Dummy # Dummy
     846c5a6a-33a2-442b-8bc8-2f8b49f47ea0: 'Meeting Registration Link' # Meeting Registration Link
+    938c6ae9-cb71-41b6-a029-2160e4e345a0: 'About ASCM SEPA' # About ASCM SEPA
     953c55cb-288a-4b71-9c39-335102a1ae30: Articles # Articles
+    2647ba3f-f5c8-49b8-8fc6-5c9453acdd04: 'Meeting Types' # Meeting Types
     2853b148-19f8-4d32-9e6f-0c41ece101e7: 'Secondary Phone' # Secondary Phone
     2872d74f-a99b-4b6b-ac63-bf7091d22c7a: Meetings # Meetings
     6122ffed-ea86-411a-9ecc-a72d02707312: Registration # Registration
@@ -266,7 +270,7 @@ meta:
 plugins:
   commerce:
     edition: lite
-    enabled: true
+    enabled: false
     licenseKey: ZYEI2I95CHO1A0I5CDRPFC83
     schemaVersion: 4.5.1
   commerce-paypal-checkout:
@@ -518,7 +522,7 @@ plugins:
       validateCustomTemplates: true
   hyper:
     edition: standard
-    enabled: false
+    enabled: true
     licenseKey: 1TG3ETNFW6P4AI5PTH0GNLSK
     schemaVersion: 1.0.0
   imager-x:
