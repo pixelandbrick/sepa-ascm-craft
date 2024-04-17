@@ -17,11 +17,11 @@
         {% for entry in entries %}
         <a href="{{entry.url}}" class="mb-[30px]">
           <div class="mx-[19px] h-[260px] w-[260px] drop-shadow-2xl" style="background-image: url({{entry.insetImage.one.getUrl('headshots')}})"></div>
-          <p class="pt-[20px] w-[298px] font-light text-center text-[24px]">{{entry.title}}</p>
+          <p class="pt-[20px] w-[298px] font-light text-center text-[24px] hover:no-underline text-wolf">{{entry.title}}</p>
         </a>
         {% endfor %}
       </div>
-      <div class="mx-auto mt-[80px] w-[60px] border-b-[5px] border-[#006B36]">&nbsp;</div><!-- color block -->
+      <div class="mx-auto mt-[80px] w-[60px] border-b-[5px] border-ficus">&nbsp;</div><!-- color block -->
     </div>
   </div>
 </div>

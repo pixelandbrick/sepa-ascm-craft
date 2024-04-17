@@ -24,7 +24,7 @@
         {% if course.courseStartDate > now|date() %}
           <div class="bg-[#F2F2F2] md:w-[404px] pl-[40px] pr-[20px] py-[35px] mb-[30px] rounded border-t-[5px] border-[{{course_color}}]">
             <div><!-- text -->
-              <p class="mb-[10px] text-[24px] text-[#292929]">{{course.title}}</p>
+              <p class="mb-[10px] text-[24px] text-[#292929]">{{course.courseTitle}}</p>
               <p class="mb-[10px] font-bold text-[#006B36]">{{course.courseStartDate}}</p>
               <p class="font-light text-[#292929]">{{course.courseShortDesc}}</p>
             </div>

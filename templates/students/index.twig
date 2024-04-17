@@ -14,7 +14,7 @@
       <div class="">
         <h2 class="-mt-2 text-[40px] font-bold">ASCM Students</h2>
         <div class="h-[40px]">&nbsp;</div>
-        <div class="max-w-[582px]"><p class="text-[20px] font-light leading-[38px] text-[#292929]">{{craft.app.globals().getSetByHandle('students').description|striptags}}</p></div>
+        <div class="max-w-[582px]"><p class="text-[20px] font-light leading-[38px] text-wolf">{{craft.app.globals().getSetByHandle('students').description|striptags}}</p></div>
         <div class="mx-auto mt-[60px] w-[60px] border-b-[5px] border-[#006B36]">&nbsp;</div><!-- color block -->
       </div>
       <div class="order-first md:order-none w-full h-[360px] md:w-[616px] md:h-[466px] bg-cover mb-6 md:mb-0" style="background-image: url({{craft.app.globals().getSetByHandle('students').featureImage.one().url}})"></div>
@@ -24,7 +24,7 @@
       <div class="grid grid-cols-1 md:grid-cols-4 gap-[20px] justify-between place-items-center md:place-items-start">
         {% set entries = craft.entries.section('students').all() %}
         {% for entry in entries %}
-        <a href="students/{{entry.slug}}" class="mb-[30px]">
+        <a href="students/{{entry.slug}}" class="mb-[30px] hover:no-underline text-wolf">
           <div class="mx-[19px] h-[260px] w-[260px] drop-shadow-2xl" style="background-image: url({{entry.collegePhoto.one().getUrl('headshots')}})"></div>
           <div class="pt-[20px] w-[298px] font-light text-center text-[24px]">{{entry.title}}</div>
           <div class="pt-[6px] w-[298px] uppercase font-semibold text-center text-[16px]">{{entry.collegeLocation}}</div>
