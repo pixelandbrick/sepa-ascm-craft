@@ -1,11 +1,24 @@
-<div class="py-[100px] bg-[#1D1D1D] text-white"> <!--full width container-->
+<div class="py-[100px] bg-umbra text-white"> <!--full width container-->
     <div class="max-w-screen-xl min-w-screen-xl mx-auto px-6 md:px-0 md:grid md:grid-cols-2"> <!--inner width container-->
       <div> <!--column 1 container-->
         <img src="/dist/svg/ascm-logo-white.svg" alt="ASCM logo" />
         <div class="max-w-[495px] pt-[32px] pb-[78px]">ASCM is an unbiased partner, connecting companies around the world with industry experts, frameworks and global standards to transform supply chains.</div>
         <div class="font-semibold text-[18px]"><!--email list -->
           <p class="mb-6">Connect with ASCM SEPA and stay up to speed.</p>
-          {{ craft.formie.renderForm('subscribe') }}
+          {{ craft.formie.renderForm('subscribe', {
+            themeConfig: {
+              fieldInput: {
+                attributes: {
+                  class: 'h-max w-full max-w-[420px] bg-errigal pt-[11px] pb-[11px] pl-[20px] border-none rounded-none text-md'
+                }
+              },
+              submitButton: {
+                attributes: {
+                  class: 'h-max w-max bg-none hover:bg-wolf hover:border-white pt-[9px] pb-[11px] pl-[20px] pr-[18px] border border-white rounded-none text-lg font-semibold'
+                }
+              },
+            }
+          }) }}
           <!--<div class="inline-flex mt-[18px]">
             <input type="text" class="w-[323px] h-[45px]" alt="Email Address" />
             <div class="h-max w-max ml-[40px] pt-[9px] pb-[11px] pl-[20px] pr-[16px] border border-white text-lg font-semibold">Subscribe</div>
@@ -16,26 +29,26 @@
         <div><!--about column-->
           <h5 class="font-bold">About ASCM SEPA</h5>
           <ul class="list-none indent-0 mb-0">
-            <li class="pt-[10px]"><a href="/board">Chapter Leadership</a></li>
-            <li class="pt-[10px]"><a href="/bylaws">Bylaws</a></li>
-            <li class="pt-[10px]"><a href="/newsletter">Newsletter</a></li>
-            <li class="pt-[10px]"><a href="/articles/presidents-letter-2024">President's Message</a></li>
+            <li class="pt-[10px]"><a href="/board" class="text-white">Chapter Leadership</a></li>
+            <li class="pt-[10px]"><a href="/bylaws" class="text-white">Bylaws</a></li>
+            <li class="pt-[10px]"><a href="/newsletter" class="text-white">Newsletter</a></li>
+            <li class="pt-[10px]"><a href="/articles/presidents-letter-q2-2024" class="text-white">President's Message</a></li>
           </ul>
         </div>
         <div class="ml-2 md:ml-0"><!--resources column-->
           <h5 class="font-bold">Helpful Resources</h5>
           <ul class="list-none indent-0 mb-0">
-            <li class="pt-[10px]"><a href="https://www.ascm.org/membership-community/" taget="_blank">Become a Member</a></li>
-            <li class="pt-[10px]"><a href="https://www.ascm.org/ascm-insights/" target="_blank">ASCM Blog</a></li>
-            <li class="pt-[10px]"><a href="https://www.ascm.org/about-ascm/newsroom/" target="_blank">ASCM Newsroom</a></li>
-            <li class="pt-[10px]"><a href="https://www.ascm.org/about-ascm/faqs/" target="_blank">FAQ</a></li>
+            <li class="pt-[10px]"><a href="https://www.ascm.org/membership-community/" class="text-white" taget="_blank">Become a Member</a></li>
+            <li class="pt-[10px]"><a href="https://www.ascm.org/ascm-insights/" class="text-white" target="_blank">ASCM Blog</a></li>
+            <li class="pt-[10px]"><a href="https://www.ascm.org/about-ascm/newsroom/" class="text-white" target="_blank">ASCM Newsroom</a></li>
+            <li class="pt-[10px]"><a href="https://www.ascm.org/about-ascm/faqs/" class="text-white" target="_blank">FAQ</a></li>
           </ul>
         </div>
       </div>
       <hr class="mt-[100px] mb-[60px] border-t border-white w-screen-xl col-span-2" />
       <div class="flex justify-items-stretch w-screen-xl col-span-2">
         <div class="text-white text-3xl flex gap-4"><a class="fa-brands fa-linkedin" href="https://www.linkedin.com/company/ascm-sepa"></a></div>
-        <div class="text-xs text-right w-full">© 2024 ASCM Southeastern Pennsylvania Alliance Chapter. All rights reserved. View the <a href="/privacy">privacy policy</a> and <a href="/terms">terms of use</a>. Site designed by <a href="https://pixel-brick.com">Pixel+Brick</a>.</div>
+        <div class="text-xs text-right w-full">© 2024 ASCM Southeastern Pennsylvania Alliance Chapter. All rights reserved. View the <a href="/privacy" class="text-white">privacy policy</a> and <a href="/terms" class="text-white">terms of use</a>. Site designed by <a href="https://pixel-brick.com" class="text-white">Pixel+Brick</a>.</div>
       </div>
     </div>
 </div>

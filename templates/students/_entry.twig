@@ -18,8 +18,8 @@
     </div>
     <div class="order-first md:order-none w-full h-[360px] md:w-[616px] md:h-[466px] bg-cover mb-12 md:mb-0" style="background-image: url({{entry.collegeFeatureImage.one.getUrl()}})"></div>
   </div>
-  {% if entry.boardMembers %}
-  <h2 class="text-[38px] leading-10 mb-[30px]">Student Leadership</h2>
+  {% if entry.boardMembers.one() %}
+  <h2 class="text-[38px] leading-10 mt-[60px] mb-[30px]">Student Leadership</h2>
   <div class="grid grid-cols-1 md:grid-cols-4 gap-[20px] justify-between place-items-center md:place-items-start">
     {% for member in entry.boardMembers %}
     <div class="mb-[30px]">
