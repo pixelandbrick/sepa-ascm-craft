@@ -19,7 +19,7 @@
         <p class="mb-[10px] font-bold text-[#006B36]">{{entry.meetingDate|date('F j, Y, g:i a T')}}</p>
         <p class="font-light text-[#292929]">{{entry.meetingDescription|striptags|truncate(255,'...')}}</p>
         <div class="mt-[35px] flex gap-[25px]">
-          {% if entry.meetingRegLink %}<a href="{{entry.meetingRegLink}}" class="h-max w-max bg-[#82C341] pt-[9px] pb-[11px] pl-[20px] pr-[20px] text-white text-lg font-semibold">Register</a>{% endif %}
+          {% if entry.meetingRegLink %}<a href="{{entry.meetingRegLink}}" class="custom-button h-max w-max bg-[#82C341] pt-[9px] pb-[11px] pl-[20px] pr-[20px] text-white text-lg font-semibold">Register</a>{% endif %}
         </div>
       </div>
     </div>
