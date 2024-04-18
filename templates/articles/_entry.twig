@@ -14,17 +14,17 @@
       <div class="grid grid-cols-1 md:flex">
         <div class="md:flex md:flex-col grow">
           <div class="grow">
-            <div class="pt-[9px] pb-[8px] px-[24px] w-min rounded-full bg-[#E2E5E7] font-extrabold uppercase text-white text-nowrap mb-6 md:mb-0">{{entry.articleCategory.one}}</div>
+            <div class="pt-[9px] pb-[8px] px-[24px] w-min bg-shaving font-extrabold uppercase text-white text-nowrap mb-6 md:mb-0">{{entry.articleCategory.one}}</div>
           </div>
-          <div class="">
-            <p class="text-[18px] font-bold text-[#006B36] mb-4 md:mb-0">{{entry.postDate|date()}}</p>
-            <h2 class="-mt-1 text-[28px] md:text-[28px] md:text-[38px]">{{entry.title}}</h2>
+          <div class="place-items-end">
+            <p class="h3 -mb-2 font-bold text-ficus">{{entry.postDate|date()}}</p>
+            <h2 class="-mb-2">{{entry.title}}</h2>
           </div>
         </div>
         <div class="order-first -z-0 md:order-none md:mx-[19px] h-[238px] w-full md:w-[238px] shrink-0 drop-shadow-2xl bg-no-repeat mb-6 md:mb-0" style="background-image: url({{entry.insetImage.one.getUrl('headshots')}})"></div>
       </div>
       <div class="h-[35px]">&nbsp;</div>
-      <div><p class="text-[18px] font-light leading-[24px] text-[#292929]">
+      <div><p class="text-lg">
       {{ entry.body }}
       </p></div>
       <div class="mx-auto mt-[60px] mb-[80px] w-[60px] border-b-[5px] border-[#006B36]">&nbsp;</div><!-- color block -->

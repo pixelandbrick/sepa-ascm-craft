@@ -7,59 +7,36 @@
 {% endblock %}
 
 {% set start = now|atom %}
-{% set latestMeeting = craft.entries().section('Meetings').meetingDate(">= today").one() %}
+{% set meetings = craft.entries().section('Meetings').meetingDate(">= today").limit(3) %}
 
 {% block content %}
 {% block header %}{% include '_partials/header.twig' %}{% endblock %}
 {% block hero %}{% include '_partials/hero.twig' %}{% endblock %}
 <div class="bg-white">
   <div class="max-w-screen-xl min-w-screen-xl mx-auto px-6 md:px-0">
-  {% if latestMeeting %}
-  <div class="mt-[100px] flex gap-0">
-    <div class="rounded-t md:rounded-none md:!rounded-l max-w-screen-sm min-w-screen-sm md:min-w-[360px] min-h-[280px] md:min-h-[360px] bg-cover" style="background-image: url(
-        {% if latestMeeting.meetingFeatureImage.one() %}{{latestMeeting.meetingFeatureImage.one().url}}
-        {% else %}{{"/dist/jpg/test-sq.jpg"}}
+  <div class="mt-[100px] grid grid-cols-3 gap-8">
+  {% for meeting in meetings %}
+    <div class="flex flex-col">
+      <div class="w-full h-[280px] bg-cover" style="background-image: url(
+        {% if meeting.meetingFeatureImage.one() %}{{meeting.meetingFeatureImage.one().url}}
+        {% else %}{{"/volumes/jpg/test-sq.jpg"}}
         {% endif %}
       )"></div>
-    <div class="bg-errigal w-full pl-[40px] rounded-b md:rounded-r border-t-[5px] border-ficus">
-      <div class="w-full flex mb-6 md:mb-0 md:justify-end"><div class="mr-[35px] mt-[30px] pt-[9px] pb-[8px] px-[24px] w-min rounded-full bg-white font-extrabold uppercase text-shaving text-nowrap">{{latestMeeting.meetingCategory.one}}</div></div>
-      <div><!-- text -->
-        <div><p class="text-lg font-bold text-[#006B36]">{{latestMeeting.meetingDate|date('F j, Y')}}</p></div>
-        <div><p class="text-[30px] md:text-[38px] text-[#292929]">{{latestMeeting.title}}</p></div>
-        <div class="max-w-[747px] pr-4"><p class="text-lg font-light text-[#292929]">{{latestMeeting.meetingDescription|striptags|truncate(255,'...')}}</p></div>
+      <div class="mt-[10px] w-11/12 grow">
+        <h2>{{meeting.title}}</h2>
+        <h3 class="text-ficus">{{meeting.meetingDate|date('F j, Y – g:i a T')}}</h3>
+        <br />
+        <p class="text-lg">{{meeting.meetingDescription|striptags|truncate(255,'...')}}</p>
       </div>
-      <div class="mt-[35px] mb-[52px] flex gap-[25px]">
-        <a href="{{latestMeeting.getUrl()}}" class="custom-button h-max w-max bg-[#82C341] pt-[9px] pb-[11px] pl-[20px] pr-[20px] text-white text-lg font-semibold">Register</a>
-      </div>
+      <div class="mt-[30px]"><a href="{{meeting.getUrl()}}" class="primaryButton">Register</a></div>
     </div>
+  {% endfor %}
   </div>
-  {% endif %}
-  {% set extraMeeting = craft.entries().section('Meetings').id('2574').one() %}
-  {% if today < date('April 26, 2024') %}
-  <div class="mt-[100px] flex gap-0">
-    <div class="rounded-t md:rounded-none md:!rounded-l max-w-screen-sm min-w-screen-sm md:min-w-[360px] min-h-[280px] md:min-h-[360px] bg-cover" style="background-image: url(
-        {% if extraMeeting.meetingFeatureImage.one() %}{{extraMeeting.meetingFeatureImage.one().url}}
-        {% else %}{{"/dist/jpg/test-sq.jpg"}}
-        {% endif %}
-      )"></div>
-    <div class="bg-errigal w-full pl-[40px] rounded-b md:rounded-r border-t-[5px] border-ficus">
-      <div class="w-full flex mb-6 md:mb-0 md:justify-end"><div class="mr-[35px] mt-[30px] pt-[9px] pb-[8px] px-[24px] w-min rounded-full bg-white font-extrabold uppercase text-shaving text-nowrap">{{latestMeeting.meetingCategory.one}}</div></div>
-      <div><!-- text -->
-        <div><p class="text-lg font-bold text-[#006B36]">{{extraMeeting.meetingDate|date('F j, Y')}}</p></div>
-        <div><p class="text-[30px] md:text-[38px] text-[#292929]">{{extraMeeting.title}}</p></div>
-        <div class="max-w-[747px] pr-4"><p class="text-lg font-light text-[#292929]">{{extraMeeting.meetingDescription|striptags|truncate(255,'...')}}</p></div>
-      </div>
-      <div class="mt-[35px] mb-[52px] flex gap-[25px]">
-        <a href="{{extraMeeting.getUrl()}}" class="custom-button h-max w-max bg-money pt-[9px] pb-[11px] pl-[20px] pr-[20px] text-white text-lg font-semibold">Register</a>
-      </div>
-    </div>
-  </div>
-  {% endif %}
   <div class="my-[100px]">
-    <p class="text-[16px] font-light leading-[24px] text-wolf">Welcome to Southeastern 
+    <h4 class="text-lg leading-[38px]">Welcome to Southeastern 
     Pennsylvania Alliance Chapter (SEPA), we are excited that you decided to join our chapter. In addition to the values 
-    and rewards you might receive from ASCM, our members will enjoy the following additional values.</p>
-    <ul class="text-[16px] font-light leading-[24px] text-wolf">
+    and rewards you might receive from ASCM, our members will enjoy the following additional values.</h4>
+    <ul class="text-lg leading-[38px]">
       <li>Attendance to our annual Top Management Night, with the event offering appetizers, door prizes with a cash bar. 
       Don’t miss out on a great networking opportunity!</li>
       <li>Attendance to our monthly PDM meetings for members of SEPA, will receive a discounted price registration.</li>
@@ -70,8 +47,7 @@
       <li>York College Students in the Operations & Supply Chain curriculum are eligible to apply for the annual endowment the college presents to attend either a CPIM or CSCP class including an exam voucher.</p>
     </ul>
   </div>
-  <div class="font-light mt-[80px]">
-  </div>
+  <div class="mx-auto mb-[80px] w-[60px] border-b-[5px] border-ficus">&nbsp;</div><!-- color block -->
 </div>
 {% block apics_cta %}{% include '_partials/apics_cta.twig' %}{% endblock %}
 {% block footer %}{% include '_partials/footer.twig' %}{% endblock %}

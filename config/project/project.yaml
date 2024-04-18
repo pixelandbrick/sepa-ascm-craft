@@ -1,4 +1,4 @@
-dateModified: 1713234371
+dateModified: 1713414920
 elementSources:
   craft\elements\Entry:
     -
@@ -110,30 +110,30 @@ fs:
     hasUrls: true
     name: 'Board Members'
     settings:
-      path: '@webroot/dist/headshots'
+      path: '@webroot/volumes/headshots'
     type: craft\fs\Local
-    url: '@web/dist/headshots'
+    url: '@web/volumes/headshots'
   colleges:
     hasUrls: true
     name: Colleges
     settings:
-      path: '@webroot/dist/colleges'
+      path: '@webroot/volumes/colleges'
     type: craft\fs\Local
-    url: '@web/dist/colleges'
+    url: '@web/volumes/colleges'
   courses:
     hasUrls: true
     name: Courses
     settings:
-      path: '@webroot/dist/courses'
+      path: '@webroot/volumes/courses'
     type: craft\fs\Local
-    url: '@web/dist/courses'
+    url: '@web/volumes/courses'
   images:
     hasUrls: true
     name: Images
     settings:
-      path: '@webroot/dist/img'
+      path: '@webroot/volumes/img'
     type: craft\fs\Local
-    url: '@web/dist/img'
+    url: '@web/volumes/img'
 graphql:
   publicToken:
     enabled: false
@@ -226,6 +226,7 @@ meta:
     a5cb9abe-21ca-4274-8128-8a1565d7b476: Name # Name
     a6fda9ad-6baa-4e9a-a498-51e13db75bb4: Courses # Courses
     a67f388d-31d0-4a56-adbc-945b91ab2d27: 'Secondary Email' # Secondary Email
+    a89c4748-13d5-41ba-b2b9-46e4feba446e: Summary # Summary
     ac32b609-961c-4607-9f0a-3a60d6f9fb7a: 'LinkedIn URL' # LinkedIn URL
     ac9208bf-f7d4-4820-82ec-5ff13af16e86: 'Course Short Description' # Course Short Description
     af42fc91-6645-4eb5-b738-5798ede1a57e: 'College Feature Image' # College Feature Image
@@ -268,6 +269,10 @@ meta:
     f310f2ce-f94d-460d-ae7f-31896a5e53fd: Meeting # Meeting
     fae24e8a-6aa9-455e-88f0-64d79cdc5f80: 'Meeting Gallery' # Meeting Gallery
 plugins:
+  breadcrumb:
+    edition: standard
+    enabled: true
+    schemaVersion: 1.1.1
   commerce:
     edition: lite
     enabled: false

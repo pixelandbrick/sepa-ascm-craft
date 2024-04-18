@@ -3,11 +3,83 @@
 @import 'utilities/index.pcss';
 
 @layer base {
+    html, .root {
+        font-size: 16px;
+        line-height: 21px;
+        @apply text-balance !text-pretty
+    }
+    body, .article {
+        font-size: 1rem;
+        line-height: 1.3125rem;
+    }
+    h1, .h1 {
+        font-size: 2.375rem;
+        line-height: 2.625rem;
+        margin-top: 1.3125rem;
+        margin-bottom: 2.625rem;
+    }
+    h2, .h2 {
+        @apply font-light;
+        font-size: 1.75rem;
+        line-height: 2.625rem;
+        margin-top: 1.3125rem;
+        margin-bottom: 1.3125rem;
+    }
+    h3, .h3 {
+        font-size: 1.3125rem;
+        line-height: 1.3125rem;
+        margin-top: 1.3125rem;
+        margin-bottom: 0rem;
+    }
+    h4, .h4 {
+        font-size: 1rem;
+        line-height: 1.3125rem;
+        margin-top: 1.3125rem;
+        margin-bottom: 0rem;
+    }
+    h5, .h5 {
+        font-size: 1rem;
+        line-height: 1.3125rem;
+        margin-top: 1.3125rem;
+        margin-bottom: 0rem;
+    }
+    p, ul, ol, pre, table, blockquote {
+        margin-top: 0rem;
+        margin-bottom: 1.3125rem;
+        @apply font-light
+    }
+    ul ul, ol ol, ul ol, ol ul {
+        margin-top: 0rem;
+        margin-bottom: 0rem;
+    }
+
+    /* Let's make sure all's aligned */
+    hr, .hr {
+        border: 1px solid;
+        margin: -1px 0;
+    }
+    a, b, i, strong, em, small, code {
+        line-height: 0;
+    }
+    sub, sup {
+        line-height: 0;
+        position: relative;
+        vertical-align: baseline;
+    }
+    sup {
+        top: -0.5em;
+    }
+    sub {
+        bottom: -0.25em;
+    }
     ul {
-        @apply list-disc list-inside indent-2.5 mb-4;
+        @apply list-disc list-inside mb-4
     }
     ol {
-        @apply list-decimal list-inside indent-2.5 mb-4;
+        @apply list-decimal list-inside mb-4;
+    }
+    li {
+        text-align: match-parent;
     }
     p {
         @apply mb-4
@@ -16,12 +88,18 @@
         @apply text-ficus
     }
     a:hover {
-        @apply underline
+        @apply underline decoration-from-font underline-offset-4
     }
     .main-nav:hover {
         @apply no-underline text-storm
     }
     .custom-button:hover {
         @apply no-underline
+    }
+    .primaryButton {
+        @apply custom-button h-max w-max bg-money pt-[9px] pb-[11px] pl-[20px] pr-[20px] text-white text-lg font-semibold
+    }
+    .secondaryButton {
+        @apply custom-button h-max w-max bg-white text-wolf mt-[30px] pt-[9px] pb-[11px] pl-[20px] pr-[16px] border border-black text-lg font-semibold
     }
 }

@@ -32,7 +32,8 @@
     "verbb/formie": "2.1.7",
     "verbb/hyper": "1.1.22",
     "verbb/knock-knock": "^2.0",
-    "vlucas/phpdotenv": "^5.4.0"
+    "vlucas/phpdotenv": "^5.4.0",
+    "youandmedigital/breadcrumb": "2.0.0"
   },
   "require-dev": {
     "nystudio107/craft-autocomplete": "^1.10.0",

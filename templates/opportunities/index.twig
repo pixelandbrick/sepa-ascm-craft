@@ -13,12 +13,12 @@
   <div class="max-w-screen-xl min-w-screen-xl mx-auto py-[100px] px-6 md:px-0">
   {% for entry in craft.entries().section('Opportunities') %}
     <div class="flex flex-row">
-      <div class="bg-[#F2F2F2] w-full pl-[40px] pr-[30px] py-[35px] mb-[30px] rounded border-t-[5px] border-[#006B36]">
-        <p class="mb-[10px] text-[20px] md:text-[24px] text-[#292929]">{{entry.title}}</p>
-        <p class="mb-[10px] font-bold text-[#006B36]">{{entry.company}}</p>
-        <p class="font-light text-[#292929]">{{entry.description}}</p>
+      <div class="bg-[#F2F2F2] w-full pl-[40px] pr-[30px] pt-4 pb-[35px] mb-[30px] border-t-[5px] border-[#006B36]">
+        <h2>{{entry.title}}</h2>
+        <p class="mb-[10px] font-bold text-ficus">{{entry.company}}</p>
+        <p class="font-light text-wolf">{{entry.description}}</p>
         <div class="mt-[35px] flex gap-[25px]">
-          <a href="{{entry.submissionLink}}" class="custom-button h-max w-max bg-[#82C341] pt-[9px] pb-[11px] pl-[20px] pr-[20px] text-white text-lg font-semibold" target="_blank">Apply</a>
+          <a href="{{entry.submissionLink}}" class="primaryButton" target="_blank">Apply</a>
         </div>
       </div>
     </div>

@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "3940c5c0d499b21ec053bfeb45eb03d3",
+    "content-hash": "175e247ea9a49a2ce0ffcccfaa5d4fec",
     "packages": [
         {
             "name": "aws/aws-crt-php",
@@ -3623,11 +3623,11 @@
         },
         {
             "name": "monolog/monolog",
-            "version": "2.9.2",
+            "version": "2.9.3",
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Seldaek/monolog/zipball/437cb3628f4cf6042cc10ae97fc2b8472e48ca1f",
-                "reference": "437cb3628f4cf6042cc10ae97fc2b8472e48ca1f",
+                "url": "https://api.github.com/repos/Seldaek/monolog/zipball/a30bfe2e142720dfa990d0a7e573997f5d884215",
+                "reference": "a30bfe2e142720dfa990d0a7e573997f5d884215",
                 "shasum": ""
             },
             "require": {
@@ -3681,7 +3681,7 @@
                 "logging",
                 "psr-3"
             ],
-            "time": "2023-10-27T15:25:26+00:00"
+            "time": "2024-04-12T20:52:51+00:00"
         },
         {
             "name": "mtdowling/jmespath.php",
@@ -4278,11 +4278,6 @@
         {
             "name": "phpdocumentor/reflection-docblock",
             "version": "5.4.0",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/phpDocumentor/ReflectionDocBlock.git",
-                "reference": "298d2febfe79d03fe714eb871d5538da55205b1a"
-            },
             "dist": {
                 "type": "zip",
                 "url": "https://api.github.com/repos/phpDocumentor/ReflectionDocBlock/zipball/298d2febfe79d03fe714eb871d5538da55205b1a",
@@ -4298,15 +4293,6 @@
                 "phpstan/phpdoc-parser": "^1.7",
                 "webmozart/assert": "^1.9.1"
             },
-            "require-dev": {
-                "mockery/mockery": "~1.3.5",
-                "phpstan/extension-installer": "^1.1",
-                "phpstan/phpstan": "^1.8",
-                "phpstan/phpstan-mockery": "^1.1",
-                "phpstan/phpstan-webmozart-assert": "^1.2",
-                "phpunit/phpunit": "^9.5",
-                "vimeo/psalm": "^5.13"
-            },
             "type": "library",
             "extra": {
                 "branch-alias": {
@@ -4318,7 +4304,6 @@
                     "phpDocumentor\\Reflection\\": "src"
                 }
             },
-            "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "MIT"
             ],
@@ -4333,10 +4318,6 @@
                 }
             ],
             "description": "With this component, a library can provide support for annotations via DocBlocks or otherwise retrieve information that is embedded in a DocBlock.",
-            "support": {
-                "issues": "https://github.com/phpDocumentor/ReflectionDocBlock/issues",
-                "source": "https://github.com/phpDocumentor/ReflectionDocBlock/tree/5.4.0"
-            },
             "time": "2024-04-09T21:13:58+00:00"
         },
         {
@@ -8553,6 +8534,65 @@
                 "yii2"
             ],
             "time": "2022-09-04T10:48:21+00:00"
+        },
+        {
+            "name": "youandmedigital/breadcrumb",
+            "version": "2.0.0",
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/youandmedigital/craft-breadcrumb/zipball/f37656eda3c514ec3c37864ed448a9a4274ce590",
+                "reference": "f37656eda3c514ec3c37864ed448a9a4274ce590",
+                "shasum": ""
+            },
+            "require": {
+                "craftcms/cms": "^4.0.0",
+                "php": "^8.0.2"
+            },
+            "type": "craft-plugin",
+            "extra": {
+                "name": "Breadcrumb",
+                "handle": "breadcrumb",
+                "hasCpSettings": false,
+                "hasCpSection": false,
+                "changelogUrl": "https://raw.githubusercontent.com/youandmedigital/craft-breadcrumb/craft-4/CHANGELOG.md",
+                "documentationUrl": "https://github.com/youandmedigital/craft-breadcrumb/blob/craft-4/README.md",
+                "components": {
+                    "breadcrumbService": "youandmedigital\\breadcrumb\\services\\BreadcrumbService"
+                },
+                "class": "youandmedigital\\breadcrumb\\Breadcrumb"
+            },
+            "autoload": {
+                "psr-4": {
+                    "youandmedigital\\breadcrumb\\": "src/"
+                }
+            },
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "You & Me Digital",
+                    "homepage": "https://youandme.digital"
+                }
+            ],
+            "description": "Generate a simple breadcrumb",
+            "keywords": [
+                "breadcrumb",
+                "cms",
+                "craft",
+                "craft-plugin",
+                "craftcms",
+                "development",
+                "navigation",
+                "templating",
+                "utilities"
+            ],
+            "support": {
+                "docs": "https://github.com/youandmedigital/craft-breadcrumb",
+                "issues": "https://github.com/youandmedigital/craft-breadcrumb/issues",
+                "source": "https://github.com/youandmedigital/craft-breadcrumb"
+            },
+            "time": "2022-10-03T20:31:57+00:00"
         }
     ],
     "packages-dev": [
@@ -8786,5 +8826,5 @@
     "platform-overrides": {
         "php": "8.1"
     },
-    "plugin-api-version": "2.2.0"
+    "plugin-api-version": "2.6.0"
 }
