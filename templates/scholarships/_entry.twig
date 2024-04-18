@@ -10,7 +10,7 @@
 {% block header %}{% include '_partials/header.twig' %}{% endblock %}
 <div class="bg-white">
   <div class="max-w-screen-sm min-w-screen-sm md:max-w-[828px] md:min-w-[828px] mx-auto pt-[60px] pb-[100px] px-6">
-  <div class="border-b-[5px] border-ficus"><div class="opacity-40 w-full h-[360px] bg-cover grayscale" style="background-image: linear-gradient(to bottom right, rgba(255,255,255,0.8), rgba(255,255,255,0.3)), url({{entry.featureImage.one().url}})"></div></div>
+  <div class="border-b-[5px] border-ficus"><div class="opacity-40 w-full h-[360px] bg-cover bg-center grayscale" style="background-image: linear-gradient(to bottom right, rgba(255,255,255,0.8), rgba(255,255,255,0.3)), url({{entry.featureImage.one().url}})"></div></div>
     <h2 class="text-[24px] md:text-[38px] leading-10 mt-[50px] mb-[30px]">{{entry.title}}</h2>
     <p>{{entry.description}}</p>
     <div class="mx-auto my-[80px] w-[60px] border-b-[5px] border-ficus">&nbsp;</div><!-- color block -->

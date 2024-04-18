@@ -19,7 +19,7 @@
   </div>
   {% if entry.boardMembers.one() %}
   <h2 class="h1 leading-10 mt-[60px] mb-[30px]">Student Leadership</h2>
-  <div class="grid grid-cols-1 md:grid-cols-4 gap-[100px] justify-between place-items-center md:place-items-start">
+  <div class="grid grid-cols-1 md:grid-cols-4 gap-[20px] md:gap-[100px] justify-between place-items-center md:place-items-start">
     {% for member in entry.boardMembers %}
     <div class="mb-[30px] w-[298px] text-center">
       <div class="h-[260px] w-full drop-shadow-xl bg-cover bg-center"{% if member.headshot.one() %} style="background-image: url({{member.headshot.one().getUrl()}})"{% endif %}></div>

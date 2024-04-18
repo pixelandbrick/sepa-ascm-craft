@@ -25,10 +25,10 @@
       </div>
     </div>
     {% set scholarships = craft.entries().section('scholarships').limit(2) %}
-    <div class="mt-[100px] grid grid-cols-2 gap-8">
+    <div class="mt-[100px] grid grid-cols-1 md:grid-cols-2 gap-8">
     {% for scholarship in scholarships %}
-      <div class="flex flex-col">
-        <div class="w-full h-[280px] bg-cover" style="background-image: url(
+      <div class="flex flex-col mb-12">
+        <div class="w-full h-[280px] bg-cover bg-center" style="background-image: url(
           {% if scholarship.featureImage.one() %}{{scholarship.featureImage.one().url}}
           {% else %}{{"/volumes/jpg/test-sq.jpg"}}
           {% endif %}

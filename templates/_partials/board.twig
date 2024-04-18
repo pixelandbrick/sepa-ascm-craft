@@ -1,6 +1,6 @@
 <div class="mt-[50px]">
   <h2 class="text-[38px] leading-10 mb-[30px]">Chapter Leadership</h2>
-  <div class="grid grid-cols-1 md:grid-cols-4 gap-[100px] justify-between place-items-center md:place-items-start">
+  <div class="grid grid-cols-1 md:grid-cols-4 gap-[20px] md:gap-[100px] justify-between place-items-center md:place-items-start">
     {% set entries = craft.entries.section('aboutAscmSepa').all() %}
     {% for entry in entries %}
     {% for member in entry.boardMembers %}
