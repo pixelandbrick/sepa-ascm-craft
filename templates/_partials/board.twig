@@ -5,7 +5,7 @@
     {% for entry in entries %}
     {% for member in entry.boardMembers %}
     <div class="w-[298px] mb-[30px] text-center">
-      <div class="h-[260px] w-full drop-shadow-xl bg-top bg-cover"{% if member.headshot.one() %} style="background-image: url({{member.headshot.one().getUrl()}})"{% endif %}></div>
+      <div class="h-[260px] w-full drop-shadow-xl bg-center bg-cover"{% if member.headshot.one() %} style="background-image: url({{member.headshot.one().getUrl()}})"{% endif %}></div>
       <p class="pt-[20px] text-2xl">{{member.boardMemberName}}</p>
       <p class="uppercase font-semibold">{{member.boardMemberTitle}}</p>
     </div>
