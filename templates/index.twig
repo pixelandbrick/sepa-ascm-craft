@@ -7,7 +7,7 @@
 {% endblock %}
 
 {% set start = now|atom %}
-{% set meetings = craft.entries().section('Meetings').meetingDate(">= today").limit(3) %}
+{% set meetings = craft.entries().section('Meetings').meetingDate(">= today").orderby("meetingDate ASC").limit(3) %}
 
 {% block content %}
 {% block header %}{% include '_partials/header.twig' %}{% endblock %}
