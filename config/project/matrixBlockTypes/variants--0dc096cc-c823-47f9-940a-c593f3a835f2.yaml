@@ -1,0 +1,137 @@
+field: b630f137-f375-4cb0-9eee-57d7e41a184b
+fieldLayouts:
+  77624f53-a429-4bfc-8fd3-0739d1c8f63b:
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            elementCondition: null
+            fieldUid: 4ee81c07-52ac-4bd7-b99a-43b49357cb96 # Name
+            instructions: null
+            label: null
+            required: true
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 73192af8-3ec4-4a3c-b37a-1a1f251963d9
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: 0b26c57e-e6ce-4293-b140-339be061a458 # Options
+            instructions: null
+            label: null
+            required: true
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 671e51c7-1136-4500-8818-4ec32b571a50
+            userCondition: null
+            warning: null
+            width: 100
+        name: Content
+        uid: d41d9f70-ccaa-4b42-8dc7-88827fe93f62
+        userCondition: null
+fields:
+  0b26c57e-e6ce-4293-b140-339be061a458: # Options
+    columnSuffix: lbzdgqjf
+    contentColumnType: text
+    fieldGroup: null
+    handle: options
+    instructions: 'If Name is Size you can fill this table with: Small          small           10'
+    name: Options
+    searchable: true
+    settings:
+      addRowLabel: 'Add new option'
+      columnType: text
+      columns:
+        __assoc__:
+          -
+            - col1
+            -
+              __assoc__:
+                -
+                  - heading
+                  - 'Option Label'
+                -
+                  - handle
+                  - optionLabel
+                -
+                  - width
+                  - 40%
+                -
+                  - type
+                  - singleline
+          -
+            - col2
+            -
+              __assoc__:
+                -
+                  - heading
+                  - 'Handle (Unique)'
+                -
+                  - handle
+                  - handle
+                -
+                  - width
+                  - 40%
+                -
+                  - type
+                  - singleline
+          -
+            - col3
+            -
+              __assoc__:
+                -
+                  - heading
+                  - Price
+                -
+                  - handle
+                  - price
+                -
+                  - width
+                  - 20%
+                -
+                  - type
+                  - number
+      defaults:
+        -
+          __assoc__:
+            -
+              - col1
+              - ''
+            -
+              - col2
+              - ''
+            -
+              - col3
+              - ''
+      maxRows: 10
+      minRows: 1
+      staticRows: false
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\Table
+  4ee81c07-52ac-4bd7-b99a-43b49357cb96: # Name
+    columnSuffix: estgpnvo
+    contentColumnType: text
+    fieldGroup: null
+    handle: variantName
+    instructions: null
+    name: Name
+    searchable: true
+    settings:
+      byteLimit: null
+      charLimit: null
+      code: false
+      columnType: text
+      initialRows: 4
+      multiline: false
+      placeholder: 'Size, Color, Version, etc..'
+      uiMode: normal
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\PlainText
+handle: variants
+name: 'Priced Variants'
+sortOrder: 1

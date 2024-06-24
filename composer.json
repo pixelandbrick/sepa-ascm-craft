@@ -22,6 +22,8 @@
     "craftcms/commerce-paypal-checkout": "2.1.2",
     "craftcms/postmark": "3.1.0",
     "craftcms/redactor": "^3.0",
+    "enupal/paypal": "2.0.1",
+    "enupal/stripe": "5.5.2",
     "mmikkel/cp-field-inspect": "^1.4",
     "nystudio107/craft-retour": "4.1.15",
     "nystudio107/craft-seomatic": "^4.0",

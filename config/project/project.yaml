@@ -1,4 +1,4 @@
-dateModified: 1713414920
+dateModified: 1719244248
 elementSources:
   craft\elements\Entry:
     -
@@ -27,7 +27,16 @@ elementSources:
       heading: Channels
       type: heading
     -
+      defaultSort:
+        - postDate
+        - desc
+      disabled: false
       key: 'section:953c55cb-288a-4b71-9c39-335102a1ae30' # Articles
+      tableAttributes:
+        - postDate
+        - expiryDate
+        - author
+        - link
       type: native
     -
       defaultSort:
@@ -42,7 +51,7 @@ elementSources:
         - dateUpdated
       type: native
     -
-      key: 'section:eb979c33-be81-459c-be64-7f6c894de0d3'
+      key: 'section:10bc5384-4844-49dc-b8f1-948bbb791731' # Opportunities
       type: native
     -
       heading: Structures
@@ -61,6 +70,9 @@ elementSources:
         - expiryDate
         - author
         - link
+      type: native
+    -
+      key: 'section:e3daa05b-c819-442e-91fe-e39c500166d7' # Scholarships
       type: native
   craft\elements\User:
     -
@@ -140,52 +152,77 @@ graphql:
     expiryDate: null
 meta:
   __names__:
+    0b26c57e-e6ce-4293-b140-339be061a458: Options # Options
+    0cab4b19-208b-4ef5-8639-399ccb9a1c52: 'Hidden Value' # Hidden Value
     0d75198f-7347-4438-9de1-7883c8f606fe: 'ASCM Member Join' # ASCM Member Join
+    0dc096cc-c823-47f9-940a-c593f3a835f2: 'Priced Variants' # Priced Variants
+    0f1190d5-adbc-46ec-a584-16f77014c721: Required # Required
     1bde4bcb-f5ce-4123-99fb-6754cc9b43b1: 'College Name' # College Name
     1bfa717a-239a-4aa9-9b76-00d5936c193a: 'Course Color' # Course Color
     1d1cac83-523d-465d-95dd-f268196920aa: Images # Images
     1d13027e-37b7-40af-8369-2d3f7b624c10: 'Primary ZIP Code' # Primary ZIP Code
     1e07231d-34bb-441b-ba8a-d7a4d389c027: 'Course Calendar' # Course Calendar
+    1e464d3f-95fc-43bb-8928-c6aea9182bf3: Label # Label
     2b22202f-f018-4723-92d2-b6f342c83110: 'ASCM Member Photo' # ASCM Member Photo
     2c5ec331-992c-4ac0-835a-d31b81fac3f8: 'Primary State' # Primary State
     2d22f61f-0bf0-441c-937a-a738a5214f64: Registration # Registration
     0002e9f1-02b1-4d7d-af54-ce03d4249aea: Description # Description
     2f5d7ffc-4d16-47d1-a440-318d7f4ea068: Common # Common
+    2f8ffbdc-e2ad-4654-8610-e0da54ece6e9: Required # Required
     3a5ae57e-468f-4688-84d4-ea2608a3be1d: 'Course Description' # Course Description
     3a8d6f14-bb9e-4c92-aad4-1f9206b19448: 'Students & Young Professionals' # Students & Young Professionals
     3affc63b-0b69-4d19-bcb8-a7f34b74c8b9: 'College Photo' # College Photo
+    3bae566b-3f12-44f8-8159-cf8441346dbc: Name # Name
     3c145ccf-5ec5-4812-9e32-325c40157a82: Courses # Courses
+    3d62bbe5-007a-4423-bde4-d3e0e97f5ad0: 'Select Plan' # Select Plan
     4b6f8d77-baac-4757-ba4d-f92f6f36018e: Scholarships # Scholarships
     4ba6d09f-8d1e-4c65-91f9-35b77e080b4a: Body # Body
     4c820bb6-573a-43e8-81cf-5c164dee9f17: Courses # Courses
     4cd3e737-8e35-454d-bd2f-dc47d9a9e6c4: 'Course Date' # Course Date
+    4e3db193-91c6-4b22-88b9-1b6af80c542b: Handle # Handle
     4e37e30d-d1e5-4f98-9181-e55cff026870: 'College Photo' # College Photo
+    4ee81c07-52ac-4bd7-b99a-43b49357cb96: Name # Name
     4f19a1cf-7acb-4101-bea3-edea33a0ccf5: Colleges # Colleges
     5d028c1f-dc78-4cc5-bbb7-25a0f47a90ab: 'College Description' # College Description
     5dc608b2-0088-4005-b1e1-88ff0ad17f95: 'Meeting Description' # Meeting Description
     5dee5e0e-253c-4592-aee3-a972def5d20d: 'Course Title' # Course Title
     6a0974f0-8fab-48a9-91d1-2a2fbecd0fdb: 'Primary Address Line 1' # Primary Address Line 1
     6f16a147-30bc-44cf-8467-a0eee2bb7cdb: 'Last Name' # Last Name
+    6f5353b9-17c2-4aea-98cb-00396a0cde55: Placeholder # Placeholder
     6f9063dc-4ac9-4274-b075-2344da29f9ef: New # New
     7ab520da-9a2c-4dea-8176-b40f65e79334: 'ASCM Member ID' # ASCM Member ID
     7b6443a5-03e0-4bfa-b087-c90474eba44f: 'Primary Address Line 2' # Primary Address Line 2
     7bece7ac-8980-4ae8-b101-0cd452924c69: Users # Users
     7bf3f660-5313-4487-a1e3-16248d4bce0b: Prefix # Prefix
+    7c223ad2-f270-439d-8229-a63634b5f3f2: Number # Number
     7c8745c7-b128-4813-8b9e-19a93f83984d: 'Opportunity Type' # Opportunity Type
     7f035222-2a22-4da2-842a-ee4bf1b36bde: 'Rich Text' # Rich Text
+    8c936e0c-0f9e-47e9-bef5-f7d58f5daa0e: Hidden # Hidden
+    8eb189ca-1f2e-4eaf-a1f6-4621d5b4d927: 'Basic Variants' # Basic Variants
+    8f5ed2aa-c7fe-4060-a0af-b8458aabba35: Required # Required
+    8f8fe5fd-2f3a-4b87-a1c8-19dd74f97fd6: 'Radio Buttons' # Radio Buttons
     9e62e962-beab-4351-ac61-c273c0acc9cc: 'Meeting Date' # Meeting Date
     10bc5384-4844-49dc-b8f1-948bbb791731: Opportunities # Opportunities
+    16a2366c-f4ac-4bb2-b3ae-41f892c2604f: Handle # Handle
+    019c9c67-ec74-4f61-9edf-6806fdd89dab: Handle # Handle
     20f7efab-d3ff-46c8-9b0f-90e4a1fc51f4: Bylaws # Bylaws
+    22da0d09-946b-40e6-98d3-e916a61eb1bc: 'Basic Form Fields' # Basic Form Fields
+    22ed18a2-ba57-4e70-92f4-c2c68efa9e50: Label # Label
     23bc5904-1ba2-4e6d-8897-d1364066e349: 'Middle Name' # Middle Name
+    32b47a00-928b-4ba0-980e-da86839cc3b7: Handle # Handle
     38ab0050-d304-44cd-8737-ab3d7136a645: 'Inset Image' # Inset Image
     53bdf7bf-5079-4837-b63c-1c842aa68784: College # College
     0068a536-dbd3-4e9d-bc90-33650bb713b0: 'Course Hero' # Course Hero
     70b04f6d-65a9-4b13-982d-b1e4a54b5ebc: 'Secondary State' # Secondary State
+    72aad414-9b6c-49d8-8ff9-1f6015a92270: Options # Options
     73e24c7f-c14e-4960-aff3-ab77becc6777: 'Constant Contact' # Constant Contact
+    079e421f-cd2d-4c9f-a959-f393f3557008: 'Single Line' # Single Line
     84e26cf3-9744-4ba1-abc7-802cca000ddb: Country # Country
     96bab796-5961-4252-88c6-defd8eb06d47: 'Meeting Category' # Meeting Category
+    97de5551-859b-4e9b-85d5-6f6b35d66f25: Handle # Handle
     99bd89d9-407f-438f-805b-c28668a036b9: 'ASCM Southeastern Pennsylvania' # ASCM Southeastern Pennsylvania
     114b147f-c6ee-45c3-b1f0-0c93db41ba4d: 'Course Registration Link' # Course Registration Link
+    179b6899-8e48-4cfc-af11-f067e37c05e1: 'Min Value' # Min Value
     246ac9e2-0535-4ba5-b543-66b2eb9d969f: 'ASCM Southeastern Pennsylvania' # ASCM Southeastern Pennsylvania
     339e05fa-565f-4fa4-98ad-05cc58243fb8: Bylaws # Bylaws
     391a7a4d-10d6-448c-bb50-a2ad7ff21baf: 'About ASCM SEPA' # About ASCM SEPA
@@ -195,17 +232,20 @@ meta:
     0480b338-4d9d-4d95-abf3-0d2a039bc255: Students # Students
     504d9d35-669b-4aa7-9038-a73a05a1cd91: 'Board Member' # Board Member
     549efa07-4daf-4a9c-afa8-f88c6354057f: Pending # Pending
+    578c31ba-d443-4d10-8c1a-c543aa9ded43: Required # Required
     636bd5bf-6e10-4629-9034-5517fbd47346: 'Meeting Details Link' # Meeting Details Link
     654b94d6-da06-434e-a77b-710078d84437: 'ASCM Member Notes' # ASCM Member Notes
     661cb456-1ecc-4d4c-9f2f-c77d6643a200: 'ASCM Member Expiration' # ASCM Member Expiration
     746a0ab8-83d0-4a8e-a2f6-2d0697922a0d: Articles # Articles
     756ef385-0b26-4d21-829b-1f63926ba2aa: Dummy # Dummy
     846c5a6a-33a2-442b-8bc8-2f8b49f47ea0: 'Meeting Registration Link' # Meeting Registration Link
+    915d841e-2d00-469f-a94d-a95a5e92d201: Dropdown # Dropdown
     938c6ae9-cb71-41b6-a029-2160e4e345a0: 'About ASCM SEPA' # About ASCM SEPA
     953c55cb-288a-4b71-9c39-335102a1ae30: Articles # Articles
     2647ba3f-f5c8-49b8-8fc6-5c9453acdd04: 'Meeting Types' # Meeting Types
     2853b148-19f8-4d32-9e6f-0c41ece101e7: 'Secondary Phone' # Secondary Phone
     2872d74f-a99b-4b6b-ac63-bf7091d22c7a: Meetings # Meetings
+    5926ddee-0554-44d0-b20f-c08935836767: Handle # Handle
     6122ffed-ea86-411a-9ecc-a72d02707312: Registration # Registration
     6570fef7-dfa5-49de-8d15-7dc2f4641611: 'Board Members' # Board Members
     07755b8d-0f60-4669-b2d0-71f94d14bef8: Active # Active
@@ -220,6 +260,8 @@ meta:
     0906910f-3fd1-43b1-94a6-38f94a55ce30: 'Course Learn More Link' # Course Learn More Link
     4007408a-3829-47b4-a656-7714b8577322: 'Secondary City' # Secondary City
     4502495d-e681-4b63-bff1-ac0ba15eadbc: Courses # Courses
+    9626620a-b07a-4d66-88bf-15cf1ada1f6c: 'Initial Rows' # Initial Rows
+    51456749-2b0c-4632-aef9-2fa9ec2acb05: 'Setup Fee' # Setup Fee
     57534821-f090-4486-ba30-8688e930f708: Rejected # Rejected
     73578354-c792-4f1a-942d-271dc4715c4c: 'Article Category' # Article Category
     77174520-99b3-46fa-a19a-157ce298f60e: 'Submission Link' # Submission Link
@@ -227,12 +269,16 @@ meta:
     a6fda9ad-6baa-4e9a-a498-51e13db75bb4: Courses # Courses
     a67f388d-31d0-4a56-adbc-945b91ab2d27: 'Secondary Email' # Secondary Email
     a89c4748-13d5-41ba-b2b9-46e4feba446e: Summary # Summary
+    abf743ea-1f0d-4562-8beb-77884699bb94: CheckBoxes # CheckBoxes
     ac32b609-961c-4607-9f0a-3a60d6f9fb7a: 'LinkedIn URL' # LinkedIn URL
     ac9208bf-f7d4-4820-82ec-5ff13af16e86: 'Course Short Description' # Course Short Description
+    ae5c7c6d-0501-49c9-bbb5-f9116db408b0: Options # Options
     af42fc91-6645-4eb5-b738-5798ede1a57e: 'College Feature Image' # College Feature Image
     b06abe64-0fe3-4bee-b93e-6cadee985521: Course # Course
     b06380ae-aba0-4e6c-be4f-7ebda04a3fe5: 'Article Types' # Article Types
     b1af9faf-1b8b-4b11-9ad8-0c34976e4d1c: 'ASCM Member Bio' # ASCM Member Bio
+    b2a045fe-9f92-4df6-a3b7-12524c851292: Paragraph # Paragraph
+    b2b26d63-6ed5-4b5b-bf85-fd1078ef4742: Options # Options
     b81c20ba-ef6a-4af9-a151-76676391b738: 'Feature Image' # Feature Image
     b578de3c-3abc-4225-b153-29e8e894e362: Articles # Articles
     b4398781-df44-412a-8ce5-5f97d0be7fcc: 'Course Registration Type' # Course Registration Type
@@ -241,6 +287,7 @@ meta:
     bd4c0abb-c118-494a-bfea-68abdd8272a5: Opportunities # Opportunities
     bdad7e2f-c8e4-4485-8e83-518e46e80157: New # New
     bfde1796-ac25-46e6-8fd5-3335ac62014d: College # College
+    c9bc5389-1f49-4f7a-b48a-0a3a05266994: Label # Label
     c80a5bbf-766f-4966-8484-f7494f33cd1b: 'ASCM Member Suspension' # ASCM Member Suspension
     c6144f22-ffe3-4e48-abcb-38cd098ed16a: 'College Page' # College Page
     c17098eb-0d3a-4365-8942-6910715a084d: 'College Location' # College Location
@@ -251,19 +298,32 @@ meta:
     d7db7785-4e2d-480a-930a-c63fe7098402: Headshots # Headshots
     d348dd30-7179-4a4e-b45e-cc72b17f29f7: 'Board Members' # Board Members
     d580aec8-08d7-421b-9280-b4a7459f684b: 'Course Dates' # Course Dates
+    d802d0ac-8a9e-44e6-aa83-81058b4fec17: Label # Label
     d4007a70-d156-41b9-8a51-76583fc3de34: 'Primary City' # Primary City
     d295751f-17c5-4b41-9631-47ff6821c636: 'Course Start Date' # Course Start Date
+    da3f1f08-83a3-447d-8f6d-019322810442: Required # Required
+    daa7a77a-16ff-437e-a72b-b64279d9f19f: 'Custom Label' # Custom Label
     dca6f984-c80e-47b1-9494-9ee9ce74264e: 'Primary Phone' # Primary Phone
+    dd30d861-0062-4e1f-aa8a-fbf266cb7670: Required # Required
     e0d90c2e-fe1d-4254-8618-9d531c1a140c: Instructor # Instructor
     e04e2989-d605-408e-a827-8386c817f975: 'Contact Form' # Contact Form
     e3daa05b-c819-442e-91fe-e39c500166d7: Scholarships # Scholarships
+    e36dfe75-cadf-4006-b786-c50ea2cd5004: 'Subscription Plan' # Subscription Plan
     e38e1844-97d5-4430-9cae-ed1acb665c21: Courses # Courses
+    e46e90b7-5ca7-4ed0-87d9-5ccf7b33efcf: Handle # Handle
     e610f2dd-2a10-4e51-8b47-31257ee4e64b: Default # Default
+    e5013b61-5507-4358-9aa0-c1e82a55bcef: 'Max Value' # Max Value
+    e5370fc2-a8f0-4def-a99c-349d8ab6d8bf: Placeholder # Placeholder
     eb94b4b8-b05b-46ae-91cf-56b3063070ef: 'Pixel+Brick PayPal' # Pixel+Brick PayPal
+    ebda2f62-de66-45ea-b15c-419ee1b47c12: Label # Label
     ebea49c4-f0cb-43c5-9c43-e0a7229319db: Title # Title
     f0acae6f-0b11-459c-9973-63beb360dc50: 'Secondary Address Line 2' # Secondary Address Line 2
     f0f41ce0-d3e1-4633-b3ca-f13bb04fdf93: Suffix # Suffix
+    f0344042-acf5-4dff-8157-19000db65a42: Label # Label
     f08ea618-5fd0-4ae0-9024-e6860c20e34b: Members # Members
+    f1b0803c-fddc-416d-a44c-c78de2183bab: Options # Options
+    f1ea8773-f164-4115-8efa-77a76d7396d1: Default # Default
+    f4c73025-98bb-4443-a0a0-26825873890b: 'Add Plan' # Add Plan
     f4ea77a0-0e5b-4c89-bbce-ab4e1917b0a4: Home # Home
     f16d6a02-5b8f-462e-814d-8fdfab7aca4e: 'First Name' # First Name
     f310f2ce-f94d-460d-ae7f-31896a5e53fd: Meeting # Meeting
@@ -275,7 +335,7 @@ plugins:
     schemaVersion: 1.1.1
   commerce:
     edition: lite
-    enabled: false
+    enabled: true
     licenseKey: ZYEI2I95CHO1A0I5CDRPFC83
     schemaVersion: 4.5.1
   commerce-paypal-checkout:
@@ -286,6 +346,40 @@ plugins:
     edition: standard
     enabled: true
     schemaVersion: 1.0.0
+  enupal-paypal:
+    edition: standard
+    enabled: true
+    licenseKey: W7K304D3F5OHDOBWH416Y557
+    schemaVersion: 1.5.0
+    settings:
+      adminNotificationRecipients: 'ascmsepa@gmail.com, ryan@pixel-brick.com'
+      adminNotificationReplyToEmail: ''
+      adminNotificationSenderEmail: ''
+      adminNotificationSenderName: 'ASCM SEPA Web Order'
+      adminNotificationSubject: ''
+      adminNotificationTemplate: null
+      cancelUrl: null
+      customerNotificationReplyToEmail: null
+      customerNotificationSenderEmail: null
+      customerNotificationSenderName: null
+      customerNotificationSubject: null
+      customerNotificationTemplate: null
+      defaultCurrency: USD
+      enableAdminNotification: '1'
+      enableCustomerNotification: null
+      liveAccount: ascm_sepa_finance@gmail.com
+      returnToMerchantText: null
+      returnUrl: null
+      sandboxAccount: sb-lipo230325801@business.example.com
+      tax: null
+      taxType: 0
+      testMode: '1'
+      weightUnit: g
+  enupal-stripe:
+    edition: pro
+    enabled: true
+    licenseKey: 8RX3R5778P6BWWWZQ265RS50
+    schemaVersion: 5.5.0
   field-manager:
     edition: standard
     enabled: true

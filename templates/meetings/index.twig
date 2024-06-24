@@ -21,6 +21,8 @@
         <p class="text-lg">{{entry.meetingDescription|striptags|truncate(255,'...')}}</p>
         <div class="mt-[35px] flex gap-[25px]">
           {% if entry.meetingRegLink %}<a href="{{entry.meetingRegLink}}" class="primaryButton">Register</a>{% endif %}
+          {{ craft.paypalButton.getButton() }} 
+          {{ craft.enupalstripe.paymentForm('translate') }}
         </div>
       </div>
     </div>

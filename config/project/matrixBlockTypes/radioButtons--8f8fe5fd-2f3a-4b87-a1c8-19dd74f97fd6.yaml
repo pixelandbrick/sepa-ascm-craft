@@ -1,0 +1,177 @@
+field: 22da0d09-946b-40e6-98d3-e916a61eb1bc # Basic Form Fields
+fieldLayouts:
+  3c0a6dd5-fa87-4892-b299-9741c4a56544:
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            elementCondition: null
+            fieldUid: c9bc5389-1f49-4f7a-b48a-0a3a05266994 # Label
+            instructions: null
+            label: null
+            required: true
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 80d1ffdd-44de-408e-934a-09451979b3b9
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: 4e3db193-91c6-4b22-88b9-1b6af80c542b # Handle
+            instructions: null
+            label: null
+            required: true
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 9092e6b5-c3af-42c1-bbb4-43dce6fdf48d
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: f1b0803c-fddc-416d-a44c-c78de2183bab # Options
+            instructions: null
+            label: null
+            required: true
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: d9e2ad73-3be6-4bc8-8707-dcd242814800
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: 578c31ba-d443-4d10-8c1a-c543aa9ded43 # Required
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 06034cfe-cda2-4e88-8fc9-bcf2060f6583
+            userCondition: null
+            warning: null
+            width: 100
+        name: Content
+        uid: 7f11add9-a7a5-4284-bdad-2a86224aeb6b
+        userCondition: null
+fields:
+  4e3db193-91c6-4b22-88b9-1b6af80c542b: # Handle
+    columnSuffix: bpvignex
+    contentColumnType: text
+    fieldGroup: null
+    handle: fieldHandle
+    instructions: null
+    name: Handle
+    searchable: true
+    settings:
+      byteLimit: null
+      charLimit: null
+      code: false
+      columnType: text
+      initialRows: 4
+      multiline: false
+      placeholder: null
+      uiMode: normal
+    translationKeyFormat: null
+    translationMethod: site
+    type: craft\fields\PlainText
+  578c31ba-d443-4d10-8c1a-c543aa9ded43: # Required
+    columnSuffix: dyqnaxer
+    contentColumnType: boolean
+    fieldGroup: null
+    handle: required
+    instructions: 'This field is required?'
+    name: Required
+    searchable: true
+    settings:
+      default: false
+      offLabel: null
+      onLabel: null
+    translationKeyFormat: null
+    translationMethod: site
+    type: craft\fields\Lightswitch
+  c9bc5389-1f49-4f7a-b48a-0a3a05266994: # Label
+    columnSuffix: lecdztfj
+    contentColumnType: text
+    fieldGroup: null
+    handle: label
+    instructions: null
+    name: Label
+    searchable: true
+    settings:
+      byteLimit: null
+      charLimit: null
+      code: false
+      columnType: text
+      initialRows: 4
+      multiline: false
+      placeholder: null
+      uiMode: normal
+    translationKeyFormat: null
+    translationMethod: site
+    type: craft\fields\PlainText
+  f1b0803c-fddc-416d-a44c-c78de2183bab: # Options
+    columnSuffix: rhwmbtlk
+    contentColumnType: text
+    fieldGroup: null
+    handle: options
+    instructions: null
+    name: Options
+    searchable: true
+    settings:
+      addRowLabel: 'Add an option'
+      columnType: text
+      columns:
+        __assoc__:
+          -
+            - col1
+            -
+              __assoc__:
+                -
+                  - heading
+                  - 'Option Label'
+                -
+                  - handle
+                  - optionLabel
+                -
+                  - width
+                  - ''
+                -
+                  - type
+                  - singleline
+          -
+            - col2
+            -
+              __assoc__:
+                -
+                  - heading
+                  - Value
+                -
+                  - handle
+                  - value
+                -
+                  - width
+                  - ''
+                -
+                  - type
+                  - singleline
+      defaults:
+        -
+          __assoc__:
+            -
+              - col1
+              - ''
+            -
+              - col2
+              - ''
+      maxRows: null
+      minRows: 1
+      staticRows: false
+    translationKeyFormat: null
+    translationMethod: site
+    type: craft\fields\Table
+handle: radioButtons
+name: 'Radio Buttons'
+sortOrder: 4
