@@ -1,4 +1,4 @@
-dateModified: 1719339535
+dateModified: 1719348526
 elementSources:
   craft\elements\Entry:
     -
@@ -116,7 +116,12 @@ elementSources:
 email:
   fromEmail: ryan@pixel-brick.com
   fromName: 'ASCM Southeastern Pennsylvania'
-  transportType: craft\mail\transportadapters\Sendmail
+  replyToEmail: null
+  template: ''
+  transportSettings:
+    apiKey: YumO-KJ5RhieIQykmkuWFg
+    categories: ''
+  transportType: putyourlightson\sendgrid\mail\SendgridAdapter
 fs:
   boardMembers:
     hasUrls: true
@@ -670,6 +675,10 @@ plugins:
       statsStoredLimit: 1000
       stripQueryStringFromStats: true
       uriChangeRedirectSrcMatch: pathonly
+  sendgrid:
+    edition: standard
+    enabled: true
+    schemaVersion: 1.0.0
   seomatic:
     edition: standard
     enabled: true

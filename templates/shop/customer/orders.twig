@@ -30,7 +30,7 @@
     <div class="my-6 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 xl:grid-cols-4 gap-4">
       {% for order in orders %}
         {% set totalLineItems = order.lineItems|length %}
-        <a href="{{ url('/shop/customer/order', { number: order.number }) }}" class="block border border-gray-200 bg-white rounded-lg shadow-sm hover:shadow-md p-4 w-full">
+        <a href="{{ url('/shop/customer/order', { number: order.number }) }}" class="block border border-gray-200 bg-white rounded-lg shadow-sm hover:shadow-md p-4 w-ful leading-normal hover:no-underline">
           <div class="flex items-center justify-between">
             <div>
               <h2 class="text-lg font-semibold">
@@ -45,7 +45,7 @@
             </div>
           </div>
           <div class="border-t border-gray-200 mt-3 pt-3">
-          <span class="block text-xs uppercase text-gray-600">
+          <span class="block text-xs uppercase text-gray-600 mb-2">
             {{ '{x} {items}'|t({
               x: order.totalQty,
               items: order.totalQty == 1 ? 'item' : 'items'
