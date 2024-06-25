@@ -40,6 +40,42 @@ productFieldLayouts:
             width: 100
           -
             elementCondition: null
+            fieldUid: 9e62e962-beab-4351-ac61-c273c0acc9cc # Meeting Date
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: fd36291f-1b17-403f-ba81-4c80d8960b6d
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: d3f05c1e-f9b6-4657-9695-4c0ecdf3be48 # Meeting Feature Image
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 00deea0a-30e4-4aa3-b240-dceb87bbbb49
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: 5dc608b2-0088-4005-b1e1-88ff0ad17f95 # Meeting Description
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 89abd5e0-4ad6-4eae-9009-552d638df6c8
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
             instructions: null
             label: null
             required: false

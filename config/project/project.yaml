@@ -1,4 +1,4 @@
-dateModified: 1719244248
+dateModified: 1719339535
 elementSources:
   craft\elements\Entry:
     -
@@ -166,6 +166,7 @@ meta:
     2b22202f-f018-4723-92d2-b6f342c83110: 'ASCM Member Photo' # ASCM Member Photo
     2c5ec331-992c-4ac0-835a-d31b81fac3f8: 'Primary State' # Primary State
     2d22f61f-0bf0-441c-937a-a738a5214f64: Registration # Registration
+    2d71834c-9bd1-45f8-b761-411a25361592: 'ASCM SEPA PayPal' # ASCM SEPA PayPal
     0002e9f1-02b1-4d7d-af54-ce03d4249aea: Description # Description
     2f5d7ffc-4d16-47d1-a440-318d7f4ea068: Common # Common
     2f8ffbdc-e2ad-4654-8610-e0da54ece6e9: Required # Required
@@ -305,6 +306,7 @@ meta:
     daa7a77a-16ff-437e-a72b-b64279d9f19f: 'Custom Label' # Custom Label
     dca6f984-c80e-47b1-9494-9ee9ce74264e: 'Primary Phone' # Primary Phone
     dd30d861-0062-4e1f-aa8a-fbf266cb7670: Required # Required
+    e0b41abb-d6ed-4b75-8db5-fdb3ed44e1cb: Stripe # Stripe
     e0d90c2e-fe1d-4254-8618-9d531c1a140c: Instructor # Instructor
     e04e2989-d605-408e-a827-8386c817f975: 'Contact Form' # Contact Form
     e3daa05b-c819-442e-91fe-e39c500166d7: Scholarships # Scholarships
@@ -342,6 +344,10 @@ plugins:
     edition: standard
     enabled: true
     schemaVersion: '1.0'
+  commerce-stripe:
+    edition: standard
+    enabled: true
+    schemaVersion: 3.0.0
   cp-field-inspect:
     edition: standard
     enabled: true

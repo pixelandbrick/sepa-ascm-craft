@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "b42a91043c615cf40db875c91d9a543a",
+    "content-hash": "8443d0306acc4b28c25496f4b4357088",
     "packages": [
         {
             "name": "aws/aws-crt-php",
@@ -828,6 +828,57 @@
             "time": "2023-03-03T08:49:12+00:00"
         },
         {
+            "name": "craftcms/commerce-stripe",
+            "version": "4.1.2.3",
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/craftcms/commerce-stripe/zipball/8bbed42eae21a9252f7e3061f0e7efcd1c5bca52",
+                "reference": "8bbed42eae21a9252f7e3061f0e7efcd1c5bca52",
+                "shasum": ""
+            },
+            "require": {
+                "craftcms/cms": "^4.0.0",
+                "craftcms/commerce": "^4.3.3",
+                "php": "^8.0.2",
+                "stripe/stripe-php": "^10.0"
+            },
+            "type": "craft-plugin",
+            "extra": {
+                "name": "Stripe for Craft Commerce",
+                "handle": "commerce-stripe",
+                "documentationUrl": "https://github.com/craftcms/commerce-stripe/blob/master/README.md"
+            },
+            "autoload": {
+                "psr-4": {
+                    "craft\\commerce\\stripe\\": "src/"
+                }
+            },
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Pixel & Tonic",
+                    "homepage": "https://pixelandtonic.com/"
+                }
+            ],
+            "description": "Stripe integration for Craft Commerce 4.0+",
+            "keywords": [
+                "commerce",
+                "craftcms",
+                "stripe",
+                "yii2"
+            ],
+            "support": {
+                "email": "support@craftcms.com",
+                "issues": "https://github.com/craftcms/commerce-stripe/issues?state=open",
+                "source": "https://github.com/craftcms/commerce-stripe",
+                "docs": "https://github.com/craftcms/commerce-stripe/blob/master/README.md",
+                "rss": "https://github.com/craftcms/commerce-stripe/commits/master.atom"
+            },
+            "time": "2024-06-18T11:54:05+00:00"
+        },
+        {
             "name": "craftcms/flysystem",
             "version": "1.0.2",
             "dist": {
@@ -1334,11 +1385,11 @@
         },
         {
             "name": "dompdf/dompdf",
-            "version": "v2.0.4",
+            "version": "v2.0.8",
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/dompdf/dompdf/zipball/093f2d9739cec57428e39ddadedfd4f3ae862c0f",
-                "reference": "093f2d9739cec57428e39ddadedfd4f3ae862c0f",
+                "url": "https://api.github.com/repos/dompdf/dompdf/zipball/c20247574601700e1f7c8dab39310fca1964dc52",
+                "reference": "c20247574601700e1f7c8dab39310fca1964dc52",
                 "shasum": ""
             },
             "require": {
@@ -1346,7 +1397,7 @@
                 "ext-mbstring": "*",
                 "masterminds/html5": "^2.0",
                 "phenx/php-font-lib": ">=0.5.4 <1.0.0",
-                "phenx/php-svg-lib": ">=0.3.3 <1.0.0",
+                "phenx/php-svg-lib": ">=0.5.2 <1.0.0",
                 "php": "^7.1 || ^8.0"
             },
             "suggest": {
@@ -1375,7 +1426,7 @@
             ],
             "description": "DOMPDF is a CSS 2.1 compliant HTML to PDF converter",
             "homepage": "https://github.com/dompdf/dompdf",
-            "time": "2023-12-12T20:19:39+00:00"
+            "time": "2024-04-29T13:06:17+00:00"
         },
         {
             "name": "egulias/email-validator",
@@ -2568,11 +2619,11 @@
         },
         {
             "name": "ibericode/vat",
-            "version": "1.2.1",
+            "version": "1.2.2",
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/ibericode/vat/zipball/1d24382454481384bbc987dcbc959cfef17d6baa",
-                "reference": "1d24382454481384bbc987dcbc959cfef17d6baa",
+                "url": "https://api.github.com/repos/ibericode/vat/zipball/7109966f6497cadd4e0ba08cff6cb044ec6c7638",
+                "reference": "7109966f6497cadd4e0ba08cff6cb044ec6c7638",
                 "shasum": ""
             },
             "require": {
@@ -2602,7 +2653,7 @@
             "keywords": [
                 "vat"
             ],
-            "time": "2019-01-08T09:21:39+00:00"
+            "time": "2024-05-29T07:39:36+00:00"
         },
         {
             "name": "iio/libmergepdf",
@@ -4402,11 +4453,11 @@
         },
         {
             "name": "phenx/php-svg-lib",
-            "version": "0.5.3",
+            "version": "0.5.4",
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/dompdf/php-svg-lib/zipball/0e46722c154726a5f9ac218197ccc28adba16fcf",
-                "reference": "0e46722c154726a5f9ac218197ccc28adba16fcf",
+                "url": "https://api.github.com/repos/dompdf/php-svg-lib/zipball/46b25da81613a9cf43c83b2a8c2c1bdab27df691",
+                "reference": "46b25da81613a9cf43c83b2a8c2c1bdab27df691",
                 "shasum": ""
             },
             "require": {
@@ -4431,7 +4482,7 @@
             ],
             "description": "A library to read, parse and export to PDF SVG files.",
             "homepage": "https://github.com/PhenX/php-svg-lib",
-            "time": "2024-02-23T20:39:24+00:00"
+            "time": "2024-04-08T12:52:34+00:00"
         },
         {
             "name": "php-science/textrank",
@@ -7485,11 +7536,11 @@
         },
         {
             "name": "tecnickcom/tcpdf",
-            "version": "6.7.4",
+            "version": "6.7.5",
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/tecnickcom/TCPDF/zipball/d4adef47ca21c90e6483d59dcb9e5b1023696937",
-                "reference": "d4adef47ca21c90e6483d59dcb9e5b1023696937",
+                "url": "https://api.github.com/repos/tecnickcom/TCPDF/zipball/951eabf0338ec2522bd0d5d9c79b08a3a3d36b36",
+                "reference": "951eabf0338ec2522bd0d5d9c79b08a3a3d36b36",
                 "shasum": ""
             },
             "require": {
@@ -7537,7 +7588,7 @@
                 "pdf417",
                 "qrcode"
             ],
-            "time": "2024-03-25T23:56:24+00:00"
+            "time": "2024-04-20T17:25:10+00:00"
         },
         {
             "name": "theiconic/name-parser",
@@ -7715,11 +7766,11 @@
         },
         {
             "name": "verbb/base",
-            "version": "2.0.5",
+            "version": "2.0.8",
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/verbb/verbb-base/zipball/d8bf72792c826fe4f3785c0942f7f74adb5c2670",
-                "reference": "d8bf72792c826fe4f3785c0942f7f74adb5c2670",
+                "url": "https://api.github.com/repos/verbb/verbb-base/zipball/1445a89d7a360d3ba8bba97c47a10c6f1aa27307",
+                "reference": "1445a89d7a360d3ba8bba97c47a10c6f1aa27307",
                 "shasum": ""
             },
             "require": {
@@ -7742,7 +7793,7 @@
                 }
             ],
             "description": "Common utilities and building-blocks for Verbb plugins for Craft CMS.",
-            "time": "2024-03-13T23:35:14+00:00"
+            "time": "2024-06-10T09:00:32+00:00"
         },
         {
             "name": "verbb/field-manager",
@@ -7970,6 +8021,60 @@
                 "rss": "https://github.com/verbb/knock-knock/commits/v2.atom"
             },
             "time": "2023-11-09T04:51:59+00:00"
+        },
+        {
+            "name": "verbb/super-table",
+            "version": "3.0.14",
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/verbb/super-table/zipball/31e8ef50bc0dc0e8e08761a02c78928c672ab5ce",
+                "reference": "31e8ef50bc0dc0e8e08761a02c78928c672ab5ce",
+                "shasum": ""
+            },
+            "require": {
+                "craftcms/cms": "^4.0.0",
+                "php": "^8.0.2",
+                "verbb/base": "^2.0.0"
+            },
+            "type": "craft-plugin",
+            "extra": {
+                "name": "Super Table",
+                "handle": "super-table",
+                "description": "Super-charge your Craft workflow with Super Table. Use it to group fields together or build complex Matrix-in-Matrix solutions.",
+                "documentationUrl": "https://github.com/verbb/super-table",
+                "changelogUrl": "https://raw.githubusercontent.com/verbb/super-table/craft-4/CHANGELOG.md",
+                "class": "verbb\\supertable\\SuperTable"
+            },
+            "autoload": {
+                "psr-4": {
+                    "verbb\\supertable\\": "src/"
+                }
+            },
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Verbb",
+                    "homepage": "https://verbb.io"
+                }
+            ],
+            "description": "Super-charge your content builders and create nested Matrix fields.",
+            "keywords": [
+                "cms",
+                "craft",
+                "craft-plugin",
+                "craftcms",
+                "super table"
+            ],
+            "support": {
+                "email": "support@verbb.io",
+                "issues": "https://github.com/verbb/super-table/issues?state=open",
+                "source": "https://github.com/verbb/super-table",
+                "docs": "https://github.com/verbb/super-table",
+                "rss": "https://github.com/verbb/super-table/commits/v2.atom"
+            },
+            "time": "2024-04-29T01:19:08+00:00"
         },
         {
             "name": "vlucas/phpdotenv",

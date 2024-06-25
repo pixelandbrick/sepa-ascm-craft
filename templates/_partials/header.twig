@@ -1,3 +1,10 @@
+{% set currentPath = craft.app.request.pathInfo %}
+{% if cart is not defined %}
+  {% set cart = craft.commerce.carts.cart %}
+{% endif %}
+{% set activeClasses = 'bg-white' %}
+{# Show the nav if we are not in a checkout page #}
+
 <div class="border-t-[10px] border-t-[#006B36] border-b border-b-shaving bg-white"> <!--full width container-->
   <div class="max-w-screen-xl min-w-screen-xl mx-auto pt-[20px] md:pb-[38px] px-6 md:px-0" 
             x-data="{open:false}"
@@ -8,11 +15,40 @@
         <a href="/"><img src="/volumes/jpg/ASCM_LOGOS_CHAPTERS_COLOR_HZ_SPA_wgs.jpeg" class="max-h-[60px] md:max-h-[90px] -ml-4" alt="ASCM Southeastern Pennsylvania Alliance" /></a>
         <h1 class="hidden">ASCM Southeastern Pennsylvania Alliance</h1>
       </div>
-      <div class="inline-flex gap-[25px]"><!--calendar/etc buttons right align -->
         <!--<div>Calendar&nbsp;</div>-->
-        <a href="https://ascm.org" target="_blank" class="hover:no-underline hidden md:block place-self-center h-max w-max rounded-full bg-shaving pt-[9px] pb-[8px] px-[22px] text-[14px] font-semibold text-wolf">ASCM.org&nbsp;&nbsp;&nbsp;&nbsp;<i class="text-[#727272] fa-solid fa-arrow-up-right-from-square"></i></a>
-        <a href="/education" class="hover:no-underline hidden md:block place-self-center h-max w-max rounded-full bg-azure pt-[16px] pb-[16px] px-[22px] text-[14px] font-bold text-white">Get&nbsp;Certified</a>
+      {% if 'checkout' not in currentPath %}
+      <div class="inline-flex gap-[25px] w-full place-content-end items-center container max-w-screen-xl mx-auto relative">
+        <nav class="py-2 text-right"
+            role="navigation"
+            aria-label="Main">
+          <div class="flex gap-4">
+            {% if currentUser %}
+              <a href="{{ url('shop/customer') }}"
+                class="pt-[17px] pb-[6px] relative text-[#292929] text-[14px] font-semibold cursor-pointer inline-block">
+                  👤&nbsp;My Account
+              </a>
+            {% else %}
+              <a href="{{ url('shop/customer/sign-in') }}"
+                class="pt-[17px] pb-[6px] relative text-[#292929] text-[14px] font-semibold cursor-pointer inline-block">
+                {{- 'Sign In'|t -}}
+              </a>
+            {% endif %}
+            <a href="{{ url('shop/cart') }}"
+              class="pt-[17px] pb-[6px] relative text-[#292929] text-[14px] font-semibold cursor-pointer inline-block">
+                {% if cart.totalQty %}
+                <span class="absolute -mr-3 -mt-3 right-0 top-0 pe-1 px-2 rounded-full text-white text-xs bg-[#006B36]">  
+                    {{- cart.totalQty -}}
+                </span>
+                {% endif %}
+
+              <span aria-label="{{ 'View Cart'|t }}">🛒 Cart</span>
+            </a>
+            <a href="https://ascm.org" target="_blank" class="hover:no-underline hidden md:block place-self-center h-max w-max rounded-full bg-shaving pt-[9px] pb-[8px] px-[22px] text-[14px] font-semibold text-wolf">ASCM.org&nbsp;&nbsp;&nbsp;&nbsp;<i class="text-[#727272] fa-solid fa-arrow-up-right-from-square"></i></a>
+            <a href="/education" class="hover:no-underline hidden md:block place-self-center h-max w-max rounded-full bg-azure pt-[16px] pb-[16px] px-[22px] text-[14px] font-bold text-white">Get&nbsp;Certified</a>
+          </div>
+        </nav>
       </div>
+      {% endif %}
       <div name="hamburger" class="self-center md:hidden" @click="open = !open">
           <div name="menu w-24" class="duration-500" :class="open ? 'translate-y-1' : ''">
               <div class="bar bg-[#292929] w-5 h-[2px] duration-500 rounded" :class="open ? 'rotate-45' : ''"></div>
