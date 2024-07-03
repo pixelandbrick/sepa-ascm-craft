@@ -13,7 +13,7 @@
 
   <div class="field mt-3">
     <label for="fullName">
-      {{- 'Full Name'|t -}}
+      {{- 'Full Name *'|t -}}
     </label>
     <div class="mt-1">
       {{ input('text', 'fullName', user.fullName ?? null, {
@@ -31,12 +31,42 @@
       {{- 'ASCM Member ID'|t -}}
     </label>
     <div class="mt-1">
-      {{ input('text', 'user.ascmMembershipId', user.ascmMembershipId ?? null, {
+      {{ input('text', 'fields[ascmMembershipId]', null, {
         id: 'ascmMembershipId',
         class: 'border border-gray-300 hover:border-gray-500 px-4 py-2 leading-tight rounded w-full'
       }) }}
       {% if user is defined %}
-        {{ errorList(user.getErrors('ascmMembershipId')) }}
+        {{ errorList(user.getErrors('fields[ascmMembershipId]')) }}
+      {% endif %}
+    </div>
+  </div>
+
+  <div class="field mt-3">
+    <label for="company">
+      {{- 'Company / Organization'|t -}}
+    </label>
+    <div class="mt-1">
+      {{ input('text', 'fields[company]', null, {
+        id: 'company',
+        class: 'border border-gray-300 hover:border-gray-500 px-4 py-2 leading-tight rounded w-full'
+      }) }}
+      {% if user is defined %}
+        {{ errorList(user.getErrors('fields[company]')) }}
+      {% endif %}
+    </div>
+  </div>
+
+  <div class="field mt-3">
+    <label for="jobTitle">
+      {{- 'Job Title / Role'|t -}}
+    </label>
+    <div class="mt-1">
+      {{ input('text', 'fields[jobTitle]', null, {
+        id: 'jobTitle',
+        class: 'border border-gray-300 hover:border-gray-500 px-4 py-2 leading-tight rounded w-full'
+      }) }}
+      {% if user is defined %}
+        {{ errorList(user.getErrors('fields[jobTitle]')) }}
       {% endif %}
     </div>
   </div>

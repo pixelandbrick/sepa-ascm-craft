@@ -1,0 +1,8 @@
+handle: noPayCheckout
+isFrontendEnabled: false
+name: 'No Pay Checkout'
+paymentType: authorize
+settings:
+  onlyAllowForZeroPriceOrders: '1'
+sortOrder: 99
+type: craft\commerce\gateways\Manual

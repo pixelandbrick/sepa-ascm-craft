@@ -1,0 +1,48 @@
+descriptionFormat: '{product.title} - {title}'
+handle: ctsc
+hasDimensions: false
+hasProductTitleField: true
+hasVariantTitleField: false
+hasVariants: false
+name: 'CTSC Course'
+productFieldLayouts:
+  ab6ce148-4da6-4566-ac12-15fe5dfe00c6:
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            elementCondition: null
+            fieldUid: 0002e9f1-02b1-4d7d-af54-ce03d4249aea # Description
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 030f290b-e36a-4d3e-b130-e4476a92f7cd
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: b81c20ba-ef6a-4af9-a151-76676391b738 # Feature Image
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 89309943-faf6-4379-bd01-bd44e478e1d4
+            userCondition: null
+            warning: null
+            width: 100
+        name: Master
+        uid: ca860273-b16f-4f77-9111-8b697906d950
+        userCondition: null
+productTitleFormat: ''
+siteSettings:
+  246ac9e2-0535-4ba5-b543-66b2eb9d969f: # ASCM Southeastern Pennsylvania
+    hasUrls: true
+    template: ''
+    uriFormat: 'ctsc/{slug}'
+skuFormat: ''
+variantTitleFormat: '{product.title}'

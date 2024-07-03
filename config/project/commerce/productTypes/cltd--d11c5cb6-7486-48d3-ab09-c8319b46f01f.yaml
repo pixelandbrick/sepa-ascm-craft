@@ -1,0 +1,15 @@
+descriptionFormat: '{product.title} - {title}'
+handle: cltd
+hasDimensions: false
+hasProductTitleField: true
+hasVariantTitleField: false
+hasVariants: false
+name: 'CLTD Course'
+productTitleFormat: ''
+siteSettings:
+  246ac9e2-0535-4ba5-b543-66b2eb9d969f: # ASCM Southeastern Pennsylvania
+    hasUrls: true
+    template: ''
+    uriFormat: 'cltd/{slug}'
+skuFormat: ''
+variantTitleFormat: '{product.title}'

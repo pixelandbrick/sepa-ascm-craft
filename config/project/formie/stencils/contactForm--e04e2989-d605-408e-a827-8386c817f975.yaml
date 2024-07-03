@@ -1,6 +1,6 @@
 data:
   dataRetention: forever
-  dataRetentionValue: ''
+  dataRetentionValue: null
   fileUploadsAction: retain
   notifications:
     -

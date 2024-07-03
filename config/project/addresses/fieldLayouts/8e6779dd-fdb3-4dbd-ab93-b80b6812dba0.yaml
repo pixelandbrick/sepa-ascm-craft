@@ -1,0 +1,80 @@
+tabs:
+  -
+    elementCondition: null
+    elements:
+      -
+        autocapitalize: true
+        autocomplete: false
+        autocorrect: true
+        class: null
+        disabled: false
+        elementCondition: null
+        id: null
+        inputType: null
+        instructions: null
+        label: null
+        max: null
+        min: null
+        name: null
+        orientation: null
+        placeholder: null
+        readonly: false
+        requirable: false
+        size: null
+        step: null
+        tip: null
+        title: null
+        type: craft\fieldlayoutelements\addresses\LabelField
+        uid: dc7aa85f-ab2a-4fd5-99bf-29b50a75bfe7
+        userCondition: null
+        warning: null
+        width: 100
+      -
+        attribute: countryCode
+        elementCondition: null
+        id: null
+        instructions: null
+        label: null
+        orientation: null
+        requirable: false
+        tip: null
+        type: craft\fieldlayoutelements\addresses\CountryCodeField
+        uid: 425bd47b-2fdd-4677-b824-a2bba6ddbe24
+        userCondition: null
+        warning: null
+        width: 100
+      -
+        elementCondition: null
+        instructions: null
+        label: null
+        required: false
+        tip: null
+        type: craft\fieldlayoutelements\addresses\AddressField
+        uid: fca5af0f-0e88-463d-a294-c6429270eb25
+        userCondition: null
+        warning: null
+      -
+        elementCondition: null
+        fieldUid: 7ab520da-9a2c-4dea-8176-b40f65e79334 # ASCM Member ID
+        instructions: null
+        label: null
+        required: false
+        tip: null
+        type: craft\fieldlayoutelements\CustomField
+        uid: 69ee35fa-0f9d-4244-bfe4-5ca21a3b153c
+        userCondition: null
+        warning: null
+        width: 100
+      -
+        elementCondition: null
+        instructions: null
+        label: null
+        required: false
+        tip: null
+        type: craft\commerce\fieldlayoutelements\UserAddressSettings
+        uid: cf3c5f01-d58e-4916-a3c9-80ec1742ecb4
+        userCondition: null
+        warning: null
+    name: Content
+    uid: eaee1899-41e3-4c9f-b5aa-5752e6758f79
+    userCondition: null

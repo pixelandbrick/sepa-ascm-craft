@@ -1,6 +1,8 @@
 color: green
 default: true
-description: null
+description: ''
+emails:
+  7d6d1b97-9aa8-4e47-b971-364fb3e55c19: 7d6d1b97-9aa8-4e47-b971-364fb3e55c19 # Customer Confirmation
 handle: new
 name: New
 sortOrder: 99

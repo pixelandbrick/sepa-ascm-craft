@@ -1,10 +1,10 @@
 descriptionFormat: '{product.title} - {title}'
-handle: course
+handle: cpim
 hasDimensions: false
 hasProductTitleField: true
-hasVariantTitleField: true
-hasVariants: true
-name: Course
+hasVariantTitleField: false
+hasVariants: false
+name: 'CPIM Course'
 productFieldLayouts:
   077e10b1-afd4-4149-a04f-9c8b5f7c4706:
     tabs:
@@ -68,42 +68,6 @@ siteSettings:
   246ac9e2-0535-4ba5-b543-66b2eb9d969f: # ASCM Southeastern Pennsylvania
     hasUrls: true
     template: ''
-    uriFormat: 'course/{slug}'
+    uriFormat: 'cpim/{slug}'
 skuFormat: ''
-variantFieldLayouts:
-  084de9bc-4a65-4c7f-bde5-5f785983f8f0:
-    tabs:
-      -
-        elementCondition: null
-        elements:
-          -
-            autocapitalize: true
-            autocomplete: false
-            autocorrect: true
-            class: null
-            disabled: false
-            elementCondition: null
-            id: null
-            inputType: null
-            instructions: null
-            label: null
-            max: null
-            min: null
-            name: null
-            orientation: null
-            placeholder: null
-            readonly: false
-            requirable: false
-            size: null
-            step: null
-            tip: null
-            title: null
-            type: craft\commerce\fieldlayoutelements\VariantTitleField
-            uid: 4ca4b9cf-b3e4-416f-859c-73251a8b9dc6
-            userCondition: null
-            warning: null
-            width: 100
-        name: Content
-        uid: 85a68e0a-73d9-4c27-b53a-d5e78099df7e
-        userCondition: null
 variantTitleFormat: '{product.title}'

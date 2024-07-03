@@ -1,6 +1,6 @@
 color: orange
 default: false
-description: ''
+description: null
 handle: processing
 name: Processing
 sortOrder: 99

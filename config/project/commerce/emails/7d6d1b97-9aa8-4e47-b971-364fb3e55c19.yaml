@@ -1,0 +1,12 @@
+bcc: null
+cc: null
+enabled: true
+language: orderLanguage
+name: 'Customer Confirmation'
+pdf: 9bfcfcb1-0e43-4dd6-9e18-f6b87d55250c # Order from ASCM Southeastern Pennsylvania
+plainTextTemplatePath: null
+recipientType: customer
+replyTo: null
+subject: 'ASCM SEPA: Thanks for your order.'
+templatePath: shop/customer/order.twig
+to: null
