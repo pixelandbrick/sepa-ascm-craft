@@ -146,32 +146,6 @@ Outputs address form fields for editing an address.
     </div>
   </div>
 
-  <div class="my-2 {{ 'js-address-field'|namespaceInputId(addressName) }}">
-    <label for="organization">
-      {{- 'Organization'|t -}}
-    </label>
-    {{ input('text', 'organization', address ? address.organization : '', {
-      id: 'organization',
-      class: ['w-full', 'border border-gray-300 hover:border-gray-500 px-4 py-2 leading-tight rounded']
-    }) }}
-    {{ _self.displayErrors(address, 'organization') }}
-  </div>
-
-  <div class="{{ 'js-address-field'|namespaceInputId(addressName) }}">
-    <div class="md:flex md:-mx-4">
-      <div class="md:w-1/2 md:mx-4 my-2">
-        <label for="organizationTaxId">
-          {{- 'Organization Tax ID'|t -}}
-        </label>
-        {{ input('text', 'organizationTaxId', address ? address.organizationTaxId : '', {
-          id: 'organizationTaxId',
-          class: ['w-full', 'border border-gray-300 hover:border-gray-500 px-4 py-2 leading-tight rounded']
-        }) }}
-        {{ _self.displayErrors(address, 'organizationTaxId') }}
-      </div>
-    </div>
-  </div>
-
   {% if addressCustomFields|length %}
     <hr class="my-2">
     <div class="{{ 'js-address-custom-fields'|namespaceInputId(addressName) }} {{ 'js-address-field'|namespaceInputId(addressName) }}">

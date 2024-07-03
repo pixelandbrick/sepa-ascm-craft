@@ -12,16 +12,31 @@
   {% from _self import errorList %}
 
   <div class="field mt-3">
-    <label for="username">
-      {{- 'Username'|t -}}
+    <label for="fullName">
+      {{- 'Full Name'|t -}}
     </label>
     <div class="mt-1">
-      {{ input('text', 'username', user is defined ? user.username : '', {
-        id: 'username',
+      {{ input('text', 'fullName', user.fullName ?? null, {
+        id: 'fullName',
         class: 'border border-gray-300 hover:border-gray-500 px-4 py-2 leading-tight rounded w-full'
       }) }}
       {% if user is defined %}
-        {{ errorList(user.getErrors('username')) }}
+        {{ errorList(user.getErrors('fullName')) }}
+      {% endif %}
+    </div>
+  </div>
+
+  <div class="field mt-3">
+    <label for="ascmMembershipId">
+      {{- 'ASCM Member ID'|t -}}
+    </label>
+    <div class="mt-1">
+      {{ input('text', 'user.ascmMembershipId', user.ascmMembershipId ?? null, {
+        id: 'ascmMembershipId',
+        class: 'border border-gray-300 hover:border-gray-500 px-4 py-2 leading-tight rounded w-full'
+      }) }}
+      {% if user is defined %}
+        {{ errorList(user.getErrors('ascmMembershipId')) }}
       {% endif %}
     </div>
   </div>
