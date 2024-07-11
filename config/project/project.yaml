@@ -119,7 +119,7 @@ email:
   replyToEmail: null
   template: ''
   transportSettings:
-    apiKey: YumO-KJ5RhieIQykmkuWFg
+    apiKey: ''
     categories: ''
   transportType: putyourlightson\sendgrid\mail\SendgridAdapter
 fs:
