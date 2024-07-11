@@ -1,5 +1,5 @@
 descriptionFormat: '{product.title} - {title}'
-handle: meeting
+handle: meetings
 hasDimensions: false
 hasProductTitleField: true
 hasVariantTitleField: true

@@ -1,0 +1,27 @@
+<div class="w-full bg-center bg-cover" style="background-image: linear-gradient(to right, rgba(255,255,255,0.95), rgba(255,255,255,0.3)), url(/volumes/jpg/ship-containers-cta.jpg);">
+  <div class="px-6 md:px-0 max-w-screen-xl min-w-screen-xl mx-auto py-[100px]">
+    <h2 class="text-[38px] leading-10 mb-[10px]">ASCM Member Benefits</h2>
+    <ul class="w-screen-sm md:w-[800px] mb-[20px] px-4 list-outside">
+      <li class="text-4xl list-image-[url(/dist/svg/check-solid.svg)]"><span class="text-[18px] md:text-[24px]">Discounts on APICS certifications</span><br class="" /><span class="text-[14px] md:text-[16px] ml-2">Research demonstrates APICS certification-holders realizing 25% to 41% salary increases</span></li>
+      <li class="text-4xl list-image-[url(/dist/svg/check-solid.svg)]"><span class="text-[18px] md:text-[24px]">Sustained professional development</span></li>
+      <li class="text-4xl list-image-[url(/dist/svg/check-solid.svg)]"><span class="text-[18px] md:text-[24px]">Network of 45,000+ supply chain professionals</span></li>
+      <li class="text-4xl list-image-[url(/dist/svg/check-solid.svg)]"><span class="text-[18px] md:text-[24px]">1,000+ educational resources to continue growth</span></li>
+      <li class="text-4xl list-image-[url(/dist/svg/check-solid.svg)]"><span class="text-[18px] md:text-[24px]">Savings for local in-person chapter events</span></li>
+    </ul>
+    {% set membershipProduct = craft.products.type('membership').one() %}
+    <form method="post" class="mt-6">
+      {{ csrfInput() }}
+      {{ actionInput('commerce/cart/update-cart') }}
+      {{ redirectInput('shop/cart') }}
+      {{ hiddenInput('purchasableId', membershipProduct.defaultVariant) }}
+      {{ successMessageInput('{product} added to cart.'|t({
+        membershipProduct: membershipProduct.title
+      })) }}
+      {{ tag('button', {
+        type: 'submit',
+        class: ['custom-button','h-max','w-max','bg-white','text-wolf','pt-[9px]','pb-[11px]','pl-[20px]','pr-[16px]','border','border-umbra','text-lg','font-semibold'],
+        text: 'Join Now »'|t
+      }) }}
+    </form>
+  </div>
+</div>

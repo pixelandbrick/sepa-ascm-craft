@@ -1,4 +1,4 @@
-dateModified: 1720655751
+dateModified: 1720700749
 elementSources:
   craft\elements\Entry:
     -
@@ -158,6 +158,7 @@ graphql:
 meta:
   __names__:
     0b26c57e-e6ce-4293-b140-339be061a458: Options # Options
+    0beac817-3542-4192-820b-a18528b2c112: Instructor # Instructor
     0cab4b19-208b-4ef5-8639-399ccb9a1c52: 'Hidden Value' # Hidden Value
     0d75198f-7347-4438-9de1-7883c8f606fe: 'ASCM Member Join' # ASCM Member Join
     0dc096cc-c823-47f9-940a-c593f3a835f2: 'Priced Variants' # Priced Variants
@@ -169,10 +170,12 @@ meta:
     1d13027e-37b7-40af-8369-2d3f7b624c10: 'Primary ZIP Code' # Primary ZIP Code
     1e07231d-34bb-441b-ba8a-d7a4d389c027: 'Course Calendar' # Course Calendar
     1e464d3f-95fc-43bb-8928-c6aea9182bf3: Label # Label
+    01f5d4f0-dd7e-4305-b8fd-d74ae4540e8d: Calendar # Calendar
     2b22202f-f018-4723-92d2-b6f342c83110: 'ASCM Member Photo' # ASCM Member Photo
     2c5ec331-992c-4ac0-835a-d31b81fac3f8: 'Primary State' # Primary State
     2d22f61f-0bf0-441c-937a-a738a5214f64: Registration # Registration
     2d71834c-9bd1-45f8-b761-411a25361592: 'ASCM SEPA PayPal' # ASCM SEPA PayPal
+    2da6c2a5-4de0-401f-bc54-ce4297dde71c: 'Event Date' # Event Date
     0002e9f1-02b1-4d7d-af54-ce03d4249aea: Description # Description
     2f5d7ffc-4d16-47d1-a440-318d7f4ea068: Common # Common
     2f8ffbdc-e2ad-4654-8610-e0da54ece6e9: Required # Required
@@ -234,6 +237,7 @@ meta:
     246ac9e2-0535-4ba5-b543-66b2eb9d969f: 'ASCM Southeastern Pennsylvania' # ASCM Southeastern Pennsylvania
     339e05fa-565f-4fa4-98ad-05cc58243fb8: Bylaws # Bylaws
     391a7a4d-10d6-448c-bb50-a2ad7ff21baf: 'About ASCM SEPA' # About ASCM SEPA
+    395c15b8-d0b9-4206-aa8f-71458954a24b: Calendar # Calendar
     416e052a-ff8b-49b7-a84b-fc71a488e4ec: Company # Company
     420cc52f-a056-4c9d-8c2e-6cb98c17fc65: 'Job Title' # Job Title
     455b165d-4c95-4d41-9594-3b4b4861f3b1: 'ASCM Member Pending' # ASCM Member Pending
@@ -277,6 +281,7 @@ meta:
     a6fda9ad-6baa-4e9a-a498-51e13db75bb4: Courses # Courses
     a67f388d-31d0-4a56-adbc-945b91ab2d27: 'Secondary Email' # Secondary Email
     a89c4748-13d5-41ba-b2b9-46e4feba446e: Summary # Summary
+    aacbb6c8-3f3b-4441-9505-3ad15f285f59: Date # Date
     abf743ea-1f0d-4562-8beb-77884699bb94: CheckBoxes # CheckBoxes
     ac32b609-961c-4607-9f0a-3a60d6f9fb7a: 'LinkedIn URL' # LinkedIn URL
     ac9208bf-f7d4-4820-82ec-5ff13af16e86: 'Course Short Description' # Course Short Description
@@ -638,13 +643,18 @@ plugins:
     schemaVersion: 1.0.0
   imager-x:
     edition: lite
-    enabled: false
+    enabled: true
     licenseKey: L28RX1EJGBSXYCU4CRXT1OXA
     schemaVersion: 4.0.0
   internal-assets:
     edition: standard
     enabled: true
     schemaVersion: 1.0.0
+  minical:
+    edition: standard
+    enabled: true
+    licenseKey: E2RXAPJPEQ87L1O51RU5QKGY
+    schemaVersion: 1.0.1
   postmark:
     edition: standard
     enabled: true

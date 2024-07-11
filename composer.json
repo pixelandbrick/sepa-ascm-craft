@@ -24,6 +24,7 @@
     "craftcms/postmark": "3.1.0",
     "craftcms/redactor": "3.1.0",
     "craftcms/webhooks": "3.1.0",
+    "dispositiontools/craft-minical": "4.0.0",
     "enupal/paypal": "2.0.1",
     "enupal/stripe": "5.5.2",
     "mmikkel/cp-field-inspect": "^1.4",
@@ -74,4 +75,4 @@
       "canonical": false
     }
   ]
-}e2
+}
