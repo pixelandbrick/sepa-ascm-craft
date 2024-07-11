@@ -1,4 +1,4 @@
-dateModified: 1720042329
+dateModified: 1720655751
 elementSources:
   craft\elements\Entry:
     -
@@ -184,7 +184,7 @@ meta:
     4b6f8d77-baac-4757-ba4d-f92f6f36018e: Scholarships # Scholarships
     4ba6d09f-8d1e-4c65-91f9-35b77e080b4a: Body # Body
     4c820bb6-573a-43e8-81cf-5c164dee9f17: Courses # Courses
-    4cd3e737-8e35-454d-bd2f-dc47d9a9e6c4: 'Course Date' # Course Date
+    4cd3e737-8e35-454d-bd2f-dc47d9a9e6c4: 'Event Date' # Event Date
     4e3db193-91c6-4b22-88b9-1b6af80c542b: Handle # Handle
     4e37e30d-d1e5-4f98-9181-e55cff026870: 'College Photo' # College Photo
     4ee81c07-52ac-4bd7-b99a-43b49357cb96: Name # Name
@@ -303,7 +303,7 @@ meta:
     d7db7785-4e2d-480a-930a-c63fe7098402: Headshots # Headshots
     d11c5cb6-7486-48d3-ab09-c8319b46f01f: 'CLTD Course' # CLTD Course
     d348dd30-7179-4a4e-b45e-cc72b17f29f7: 'Board Members' # Board Members
-    d580aec8-08d7-421b-9280-b4a7459f684b: 'Course Dates' # Course Dates
+    d580aec8-08d7-421b-9280-b4a7459f684b: 'Event Dates' # Event Dates
     d802d0ac-8a9e-44e6-aa83-81058b4fec17: Label # Label
     d4007a70-d156-41b9-8a51-76583fc3de34: 'Primary City' # Primary City
     d295751f-17c5-4b41-9631-47ff6821c636: 'Course Start Date' # Course Start Date

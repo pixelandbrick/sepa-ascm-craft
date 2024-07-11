@@ -1,5 +1,5 @@
-changedFieldIndicator: null
-field: d580aec8-08d7-421b-9280-b4a7459f684b # Course Dates
+changedFieldIndicator: 781947427
+field: d580aec8-08d7-421b-9280-b4a7459f684b # Event Dates
 fieldLayouts:
   2b78eb9e-99dd-4309-9355-bf020cc6cfde:
     tabs:
@@ -8,7 +8,7 @@ fieldLayouts:
         elements:
           -
             elementCondition: null
-            fieldUid: 4cd3e737-8e35-454d-bd2f-dc47d9a9e6c4 # Course Date
+            fieldUid: 4cd3e737-8e35-454d-bd2f-dc47d9a9e6c4 # Event Date
             instructions: null
             label: null
             required: true
@@ -34,15 +34,15 @@ fieldLayouts:
         uid: cad46a0c-2bcd-4b7e-9a3c-5e34ed2c6eff
         userCondition: null
 fields:
-  4cd3e737-8e35-454d-bd2f-dc47d9a9e6c4: # Course Date
+  4cd3e737-8e35-454d-bd2f-dc47d9a9e6c4: # Event Date
     columnSuffix: jxjikeeq
     contentColumnType:
       - 'date:datetime'
       - 'tz:string'
     fieldGroup: null
-    handle: courseDate
+    handle: eventDate
     instructions: null
-    name: 'Course Date'
+    name: 'Event Date'
     searchable: false
     settings:
       max: null

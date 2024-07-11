@@ -20,8 +20,8 @@
       </div>
       {% if entry.courseCalendar.all() != null %}
       <div class="md:basis-1/3"><!--right sidebar-->
-      {% for course in craft.products.type(entry.slug).all() %}
-          <div class="bg-errigal md:w-[404px] pl-[40px] pr-[20px] py-[35px] mb-[30px] border-t-[5px]
+        {% for product in craft.products.type(entry.slug).all() %}
+          <div class="bg-errigal md:w-[404px] pl-[40px] pr-[20px] pt-[10px] pb-[35px] mb-[30px] border-t-[5px]
             {% switch entry.slug %}
               {% case 'cpim' %}
                 {{'border-[#EA7600]'}}
@@ -34,23 +34,33 @@
               {% default %}
                 {{'border-[#006B36]'}}
               {% endswitch %}">
-            <div><!-- text -->
-              <p class="mb-[10px] text-[24px] text-[#292929]">{{course.title}}</p>
-              <p class="mb-[10px] font-bold text-[#006B36]">Starts {{course.courseDates.courseDate|date('F j')}}</p>
-              <p class="font-light text-[#292929]">{{course.courseDescription}}</p>
-            </div>
-            <div class="mt-[10px] gap-[25px]">
-              {% set variant = course.defaultVariant %}
-              <form method="post" class="w-full inline-flex items-end justify-between">
+            <h2>{{ product.title|title }}</h2>
+            <p class="-mt-2 mb-[10px] font-bold text-[#006B36]">Starts {{product.eventDates.eventDates|date('F j')}}</p>
+            <h3 class="border-t border-shaving pt-4 font-bold text-wolf">{{product.defaultVariant.salePrice|currency('USD')}}</h3>
+            <div class="mt-2 flex gap-[25px]">
+              <form method="post" class="mt-6">
                 {{ csrfInput() }}
                 {{ actionInput('commerce/cart/update-cart') }}
-                {{ hiddenInput('purchasableId', variant.id) }}
+                {{ hiddenInput('purchasableId', product.defaultVariant.id) }}
                 {{ redirectInput('shop/cart') }}
-                {{ successMessageInput('Added ' ~ course.title ~ ' to cart.') }}
-                {{ hiddenInput('qty', 1) }}
-
-                <div>
-                  <button class="h-max w-max bg-[#82C341] mt-[20px] pt-[9px] pb-[11px] pl-[20px] pr-[20px] text-white text-lg font-semibold">Register</button>
+                {{ successMessageInput('{product} added to cart.'|t({
+                  product: product.title
+                })) }}
+                {# {{ hiddenInput('clearNotices', true) }} #}
+                <div class="mt-1 grid grid-cols-1">
+                  {% if product.availableForPurchase %}
+                    {{ tag('button', {
+                      type: 'submit',
+                      class: ['h-max','w-max','bg-[#82C341]','pt-[9px]','pb-[11px]','pl-[20px]','pr-[20px]','text-white','text-lg','font-semibold'],
+                      text: 'Register'|t
+                    }) }}
+                  {% else %}
+                    {{ tag('button', {
+                      type: 'submit',
+                      class: ['h-max','w-max','bg-mercury','pt-[9px]','pb-[11px]','pl-[20px]','pr-[20px]','text-white','text-lg','font-semibold'],
+                      text: 'Unavailable'|t
+                    }) }}
+                  {% endif %}
                 </div>
               </form>
             </div>

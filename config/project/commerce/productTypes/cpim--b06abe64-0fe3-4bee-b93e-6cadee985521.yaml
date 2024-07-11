@@ -1,4 +1,4 @@
-descriptionFormat: '{product.title} - {title}'
+descriptionFormat: '{product.type.name} - {title}'
 handle: cpim
 hasDimensions: false
 hasProductTitleField: true
@@ -40,7 +40,7 @@ productFieldLayouts:
             width: 100
           -
             elementCondition: null
-            fieldUid: d580aec8-08d7-421b-9280-b4a7459f684b # Course Dates
+            fieldUid: d580aec8-08d7-421b-9280-b4a7459f684b # Event Dates
             instructions: null
             label: null
             required: false

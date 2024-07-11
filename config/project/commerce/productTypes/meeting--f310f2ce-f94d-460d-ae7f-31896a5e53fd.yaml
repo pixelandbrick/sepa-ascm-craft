@@ -40,37 +40,37 @@ productFieldLayouts:
             width: 100
           -
             elementCondition: null
-            fieldUid: 9e62e962-beab-4351-ac61-c273c0acc9cc # Meeting Date
+            fieldUid: d580aec8-08d7-421b-9280-b4a7459f684b # Event Dates
             instructions: null
             label: null
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
-            uid: fd36291f-1b17-403f-ba81-4c80d8960b6d
+            uid: 8c95b827-2482-43c5-be1e-2af7d1d4a019
             userCondition: null
             warning: null
             width: 100
           -
             elementCondition: null
-            fieldUid: d3f05c1e-f9b6-4657-9695-4c0ecdf3be48 # Meeting Feature Image
+            fieldUid: b81c20ba-ef6a-4af9-a151-76676391b738 # Feature Image
             instructions: null
             label: null
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
-            uid: 00deea0a-30e4-4aa3-b240-dceb87bbbb49
+            uid: 577f91e3-2dde-4b82-8d6f-c8cd89237f03
             userCondition: null
             warning: null
             width: 100
           -
             elementCondition: null
-            fieldUid: 5dc608b2-0088-4005-b1e1-88ff0ad17f95 # Meeting Description
+            fieldUid: 0002e9f1-02b1-4d7d-af54-ce03d4249aea # Description
             instructions: null
             label: null
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
-            uid: 89abd5e0-4ad6-4eae-9009-552d638df6c8
+            uid: 983c95f8-bafc-4872-8e3a-4da48c387de1
             userCondition: null
             warning: null
             width: 100

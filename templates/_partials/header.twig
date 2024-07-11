@@ -24,26 +24,26 @@
           <div class="flex gap-4">
             {% if currentUser %}
               <a href="{{ url('shop/customer') }}"
-                class="pt-[17px] pb-[6px] relative text-[#292929] text-[14px] font-semibold cursor-pointer inline-block">
-                  👤&nbsp;My Account
+                class="pt-[11px] pb-[6px] relative text-wolf text-[14px] font-semibold cursor-pointer inline-block hover:no-underline">
+                  <i class="fa-solid fa-user text-vault"></i>&ensp;My Account
               </a>
             {% else %}
               <a href="{{ url('shop/customer/sign-in') }}"
-                class="pt-[17px] pb-[6px] relative text-[#292929] text-[14px] font-semibold cursor-pointer inline-block">
+                class="pt-[18px] pb-[6px] relative text-wolf text-[14px] font-semibold cursor-pointer inline-block hover:no-underline">
                 {{- 'Sign In'|t -}}
               </a>
             {% endif %}
             <a href="{{ url('shop/cart') }}"
-              class="pt-[17px] pb-[6px] relative text-[#292929] text-[14px] font-semibold cursor-pointer inline-block">
+              class="pt-[11px] pb-[6px] relative text-wolf text-[14px] font-semibold cursor-pointer inline-block hover:no-underline">
                 {% if cart.totalQty %}
-                <span class="absolute -mr-3 -mt-3 right-0 top-0 px-2 rounded-full text-white text-xs bg-[#006B36]">  
+                <span class="absolute -mr-3 -mt-1 right-0 top-0 px-2 rounded-full text-white text-xs bg-[#006B36]">  
                     {{- cart.totalQty -}}
                 </span>
                 {% endif %}
 
-              <span aria-label="{{ 'View Cart'|t }}">🛒 Cart</span>
+              <span aria-label="{{ 'View Cart'|t }}"><i class="fa-solid fa-cart-shopping text-vault"></i>&ensp;Cart</span>
             </a>
-            <a href="https://ascm.org" target="_blank" class="hover:no-underline hidden md:block place-self-center h-max w-max rounded-full bg-shaving pt-[9px] pb-[8px] px-[22px] text-[14px] font-semibold text-wolf">ASCM.org&nbsp;&nbsp;&nbsp;&nbsp;<i class="text-[#727272] fa-solid fa-arrow-up-right-from-square"></i></a>
+            <a href="https://ascm.org" target="_blank" class="hover:no-underline hidden md:block place-self-center h-max w-max rounded-full bg-shaving pt-[9px] pb-[8px] px-[22px] text-[14px] font-semibold text-wolf">ASCM.org&nbsp;&nbsp;&nbsp;&nbsp;<i class="text-vault fa-solid fa-arrow-up-right-from-square"></i></a>
             <a href="/education" class="hover:no-underline hidden md:block place-self-center h-max w-max rounded-full bg-azure pt-[16px] pb-[16px] px-[22px] text-[14px] font-bold text-white">Get&nbsp;Certified</a>
           </div>
         </nav>
