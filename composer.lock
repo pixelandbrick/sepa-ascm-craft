@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "7e0e5b98c008c7d88347a61e5f59f256",
+    "content-hash": "0830780879a7ee54f4c60f34285b8fb8",
     "packages": [
         {
             "name": "aws/aws-crt-php",
@@ -526,11 +526,11 @@
         },
         {
             "name": "composer/semver",
-            "version": "3.4.0",
+            "version": "3.4.2",
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/composer/semver/zipball/35e8d0af4486141bc745f23a29cc2091eb624a32",
-                "reference": "35e8d0af4486141bc745f23a29cc2091eb624a32",
+                "url": "https://api.github.com/repos/composer/semver/zipball/c51258e759afdb17f1fd1fe83bc12baaef6309d6",
+                "reference": "c51258e759afdb17f1fd1fe83bc12baaef6309d6",
                 "shasum": ""
             },
             "require": {
@@ -574,7 +574,7 @@
                 "validation",
                 "versioning"
             ],
-            "time": "2023-08-31T09:50:34+00:00"
+            "time": "2024-07-12T11:35:52+00:00"
         },
         {
             "name": "composer/spdx-licenses",
@@ -664,12 +664,64 @@
             "time": "2024-05-06T16:37:16+00:00"
         },
         {
-            "name": "craftcms/cms",
-            "version": "4.10.3",
+            "name": "craftcms/ckeditor",
+            "version": "3.8.3",
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/craftcms/cms/zipball/4ec90049e7f10076b7ef86e4de41f06e0e529595",
-                "reference": "4ec90049e7f10076b7ef86e4de41f06e0e529595",
+                "url": "https://api.github.com/repos/craftcms/ckeditor/zipball/2dada986452c8a403c3ca652e87fe3a440fe9bf5",
+                "reference": "2dada986452c8a403c3ca652e87fe3a440fe9bf5",
+                "shasum": ""
+            },
+            "require": {
+                "craftcms/cms": "^4.5.0-beta.2",
+                "craftcms/html-field": "^2.0.0-alpha.2",
+                "nystudio107/craft-code-editor": ">=1.0.8 <=1.0.13 || ^1.0.16",
+                "php": "^8.0.2"
+            },
+            "type": "craft-plugin",
+            "extra": {
+                "name": "CKEditor",
+                "handle": "ckeditor",
+                "documentationUrl": "https://github.com/craftcms/ckeditor/blob/master/README.md"
+            },
+            "autoload": {
+                "psr-4": {
+                    "craft\\ckeditor\\": "src/"
+                }
+            },
+            "license": [
+                "GPL-3.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "Pixel & Tonic",
+                    "homepage": "https://pixelandtonic.com/"
+                }
+            ],
+            "description": "Edit rich text content in Craft CMS using CKEditor.",
+            "keywords": [
+                "ckeditor",
+                "cms",
+                "craftcms",
+                "html",
+                "yii2"
+            ],
+            "support": {
+                "email": "support@craftcms.com",
+                "issues": "https://github.com/craftcms/ckeditor/issues?state=open",
+                "source": "https://github.com/craftcms/ckeditor",
+                "docs": "https://github.com/craftcms/ckeditor/blob/master/README.md",
+                "rss": "https://github.com/craftcms/ckeditor/commits/master.atom"
+            },
+            "time": "2024-03-28T19:52:16+00:00"
+        },
+        {
+            "name": "craftcms/cms",
+            "version": "4.10.6",
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/craftcms/cms/zipball/95eb435befbdc8f2e785a27574c3ef76a4e5fdd0",
+                "reference": "95eb435befbdc8f2e785a27574c3ef76a4e5fdd0",
                 "shasum": ""
             },
             "require": {
@@ -757,21 +809,21 @@
                 "docs": "https://craftcms.com/docs/4.x/",
                 "rss": "https://github.com/craftcms/cms/releases.atom"
             },
-            "time": "2024-06-27T22:54:12+00:00"
+            "time": "2024-07-16T23:21:49+00:00"
         },
         {
             "name": "craftcms/commerce",
-            "version": "4.5.4",
+            "version": "4.6.5",
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/craftcms/commerce/zipball/16552406c9e46609472c3cbc1d57f6ca9baf970b",
-                "reference": "16552406c9e46609472c3cbc1d57f6ca9baf970b",
+                "url": "https://api.github.com/repos/craftcms/commerce/zipball/ff1d138958057d917ecb3c239e1d501a4b48cd23",
+                "reference": "ff1d138958057d917ecb3c239e1d501a4b48cd23",
                 "shasum": ""
             },
             "require": {
-                "craftcms/cms": "^4.6.0",
+                "craftcms/cms": "^4.9.4",
                 "dompdf/dompdf": "^2.0.2",
-                "ibericode/vat": "^1.1.2",
+                "ibericode/vat": "^1.2.2",
                 "iio/libmergepdf": "^4.0",
                 "php": "^8.0.2"
             },
@@ -808,7 +860,7 @@
                 "docs": "https://craftcms.com/docs/commerce/4.x/",
                 "rss": "https://github.com/craftcms/commerce/releases.atom"
             },
-            "time": "2024-04-24T16:02:42+00:00"
+            "time": "2024-07-18T05:31:57+00:00"
         },
         {
             "name": "craftcms/commerce-paypal-checkout",
@@ -864,16 +916,16 @@
         },
         {
             "name": "craftcms/commerce-stripe",
-            "version": "4.1.2.3",
+            "version": "4.1.4",
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/craftcms/commerce-stripe/zipball/8bbed42eae21a9252f7e3061f0e7efcd1c5bca52",
-                "reference": "8bbed42eae21a9252f7e3061f0e7efcd1c5bca52",
+                "url": "https://api.github.com/repos/craftcms/commerce-stripe/zipball/a06aae6bb34b268bd53b4bde8d34a4b2ebb941e4",
+                "reference": "a06aae6bb34b268bd53b4bde8d34a4b2ebb941e4",
                 "shasum": ""
             },
             "require": {
                 "craftcms/cms": "^4.0.0",
-                "craftcms/commerce": "^4.3.3",
+                "craftcms/commerce": "^4.6.4",
                 "php": "^8.0.2",
                 "stripe/stripe-php": "^10.0"
             },
@@ -911,7 +963,7 @@
                 "docs": "https://github.com/craftcms/commerce-stripe/blob/master/README.md",
                 "rss": "https://github.com/craftcms/commerce-stripe/commits/master.atom"
             },
-            "time": "2024-06-18T11:54:05+00:00"
+            "time": "2024-07-18T05:55:50+00:00"
         },
         {
             "name": "craftcms/flysystem",
@@ -2472,17 +2524,17 @@
         },
         {
             "name": "guzzlehttp/guzzle",
-            "version": "7.8.1",
+            "version": "7.9.1",
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/guzzle/guzzle/zipball/41042bc7ab002487b876a0683fc8dce04ddce104",
-                "reference": "41042bc7ab002487b876a0683fc8dce04ddce104",
+                "url": "https://api.github.com/repos/guzzle/guzzle/zipball/a629e5b69db96eb4939c1b34114130077dd4c6fc",
+                "reference": "a629e5b69db96eb4939c1b34114130077dd4c6fc",
                 "shasum": ""
             },
             "require": {
                 "ext-json": "*",
-                "guzzlehttp/promises": "^1.5.3 || ^2.0.1",
-                "guzzlehttp/psr7": "^1.9.1 || ^2.5.1",
+                "guzzlehttp/promises": "^1.5.3 || ^2.0.3",
+                "guzzlehttp/psr7": "^2.7.0",
                 "php": "^7.2.5 || ^8.0",
                 "psr/http-client": "^1.0",
                 "symfony/deprecation-contracts": "^2.2 || ^3.0"
@@ -2562,7 +2614,7 @@
                 "rest",
                 "web service"
             ],
-            "time": "2023-12-03T20:35:24+00:00"
+            "time": "2024-07-19T16:19:57+00:00"
         },
         {
             "name": "guzzlehttp/oauth-subscriber",
@@ -2612,11 +2664,11 @@
         },
         {
             "name": "guzzlehttp/promises",
-            "version": "2.0.2",
+            "version": "2.0.3",
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/guzzle/promises/zipball/bbff78d96034045e58e13dedd6ad91b5d1253223",
-                "reference": "bbff78d96034045e58e13dedd6ad91b5d1253223",
+                "url": "https://api.github.com/repos/guzzle/promises/zipball/6ea8dd08867a2a42619d65c3deb2c0fcbf81c8f8",
+                "reference": "6ea8dd08867a2a42619d65c3deb2c0fcbf81c8f8",
                 "shasum": ""
             },
             "require": {
@@ -2663,15 +2715,15 @@
             "keywords": [
                 "promise"
             ],
-            "time": "2023-12-03T20:19:20+00:00"
+            "time": "2024-07-18T10:29:17+00:00"
         },
         {
             "name": "guzzlehttp/psr7",
-            "version": "2.6.2",
+            "version": "2.7.0",
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/guzzle/psr7/zipball/45b30f99ac27b5ca93cb4831afe16285f57b8221",
-                "reference": "45b30f99ac27b5ca93cb4831afe16285f57b8221",
+                "url": "https://api.github.com/repos/guzzle/psr7/zipball/a70f5c95fb43bc83f07c9c948baa0dc1829bf201",
+                "reference": "a70f5c95fb43bc83f07c9c948baa0dc1829bf201",
                 "shasum": ""
             },
             "require": {
@@ -2750,7 +2802,7 @@
                 "uri",
                 "url"
             ],
-            "time": "2023-12-03T20:05:35+00:00"
+            "time": "2024-07-18T11:15:46+00:00"
         },
         {
             "name": "html2text/html2text",
@@ -4329,11 +4381,11 @@
         },
         {
             "name": "nystudio107/craft-seomatic",
-            "version": "4.0.50",
+            "version": "4.1.1",
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/nystudio107/craft-seomatic/zipball/ecf8fb421ae1915f85e93132942d09dd80e31b2c",
-                "reference": "ecf8fb421ae1915f85e93132942d09dd80e31b2c",
+                "url": "https://api.github.com/repos/nystudio107/craft-seomatic/zipball/b00655745cab483f078d88dc0508e1d3a7705baf",
+                "reference": "b00655745cab483f078d88dc0508e1d3a7705baf",
                 "shasum": ""
             },
             "require": {
@@ -4385,7 +4437,7 @@
                 "issues": "https://nystudio107.com/plugins/seomatic/support",
                 "source": "https://github.com/nystudio107/craft-seomatic"
             },
-            "time": "2024-06-13T22:57:25+00:00"
+            "time": "2024-07-19T09:19:34+00:00"
         },
         {
             "name": "nystudio107/craft-vite",
@@ -5756,11 +5808,11 @@
         },
         {
             "name": "seld/jsonlint",
-            "version": "1.10.2",
+            "version": "1.11.0",
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Seldaek/jsonlint/zipball/9bb7db07b5d66d90f6ebf542f09fc67d800e5259",
-                "reference": "9bb7db07b5d66d90f6ebf542f09fc67d800e5259",
+                "url": "https://api.github.com/repos/Seldaek/jsonlint/zipball/1748aaf847fc731cfad7725aec413ee46f0cc3a2",
+                "reference": "1748aaf847fc731cfad7725aec413ee46f0cc3a2",
                 "shasum": ""
             },
             "require": {
@@ -5792,7 +5844,7 @@
                 "parser",
                 "validator"
             ],
-            "time": "2024-02-07T12:57:50+00:00"
+            "time": "2024-07-11T14:55:45+00:00"
         },
         {
             "name": "seld/phar-utils",
@@ -8041,11 +8093,11 @@
         },
         {
             "name": "verbb/field-manager",
-            "version": "3.0.8",
+            "version": "3.0.9",
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/verbb/field-manager/zipball/54b798b52cf0b0d0a877e5d111364e21e7df817e",
-                "reference": "54b798b52cf0b0d0a877e5d111364e21e7df817e",
+                "url": "https://api.github.com/repos/verbb/field-manager/zipball/ea9f6d505a695cb2544a8a202c08a2e2c21a58c4",
+                "reference": "ea9f6d505a695cb2544a8a202c08a2e2c21a58c4",
                 "shasum": ""
             },
             "require": {
@@ -8089,15 +8141,15 @@
                 "docs": "https://github.com/verbb/field-manager",
                 "rss": "https://github.com/verbb/field-manager/commits/v2.atom"
             },
-            "time": "2023-10-25T00:31:21+00:00"
+            "time": "2024-07-21T11:32:49+00:00"
         },
         {
             "name": "verbb/formie",
-            "version": "2.1.20",
+            "version": "2.1.22",
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/verbb/formie/zipball/33d1b2884a20e85d89367e95eebbb174b5f2aeaf",
-                "reference": "33d1b2884a20e85d89367e95eebbb174b5f2aeaf",
+                "url": "https://api.github.com/repos/verbb/formie/zipball/8ca2eef92548e1754534e8f3f939d9ecb98ea573",
+                "reference": "8ca2eef92548e1754534e8f3f939d9ecb98ea573",
                 "shasum": ""
             },
             "require": {
@@ -8158,15 +8210,15 @@
                 "docs": "https://github.com/verbb/formie",
                 "rss": "https://github.com/verbb/formie/commits/v2.atom"
             },
-            "time": "2024-06-27T04:47:52+00:00"
+            "time": "2024-07-21T10:31:21+00:00"
         },
         {
             "name": "verbb/hyper",
-            "version": "1.1.32",
+            "version": "1.2.0",
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/verbb/hyper/zipball/bf90236521cdc41e3b271c06afc2998327b0ba1a",
-                "reference": "bf90236521cdc41e3b271c06afc2998327b0ba1a",
+                "url": "https://api.github.com/repos/verbb/hyper/zipball/d399930a765ac411e693a79a623eb2ec97e4d78b",
+                "reference": "d399930a765ac411e693a79a623eb2ec97e4d78b",
                 "shasum": ""
             },
             "require": {
@@ -8212,7 +8264,7 @@
                 "docs": "https://github.com/verbb/hyper",
                 "rss": "https://github.com/verbb/hyper/commits/v2.atom"
             },
-            "time": "2024-06-15T04:52:50+00:00"
+            "time": "2024-07-21T05:28:07+00:00"
         },
         {
             "name": "verbb/knock-knock",
@@ -8852,11 +8904,11 @@
         },
         {
             "name": "yiisoft/yii2",
-            "version": "2.0.50",
+            "version": "2.0.51",
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/yiisoft/yii2-framework/zipball/a90b6638cce84e78ed8f681a5cad4a14c76464b4",
-                "reference": "a90b6638cce84e78ed8f681a5cad4a14c76464b4",
+                "url": "https://api.github.com/repos/yiisoft/yii2-framework/zipball/ea1f112f4dc9a9824e77b788019e2d53325d823c",
+                "reference": "ea1f112f4dc9a9824e77b788019e2d53325d823c",
                 "shasum": ""
             },
             "require": {
@@ -8943,7 +8995,7 @@
                 "framework",
                 "yii2"
             ],
-            "time": "2024-05-30T17:23:31+00:00"
+            "time": "2024-07-18T19:50:00+00:00"
         },
         {
             "name": "yiisoft/yii2-composer",
@@ -9510,5 +9562,5 @@
     "platform-overrides": {
         "php": "8.2"
     },
-    "plugin-api-version": "2.3.0"
+    "plugin-api-version": "2.6.0"
 }

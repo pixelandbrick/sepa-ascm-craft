@@ -1,5 +1,5 @@
 fieldLayouts:
-  808f388c-f3ab-49e1-8930-3addf3157404:
+  271c26f3-789a-4c90-bf3c-8d05f704ec90:
     tabs:
       -
         elementCondition: null
@@ -12,7 +12,7 @@ fieldLayouts:
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
-            uid: 376a58b1-c5bf-44fc-a7ef-663fc2ad705e
+            uid: 9654630f-b4b6-4191-931e-746eaf928272
             userCondition: null
             warning: null
             width: 100
@@ -24,13 +24,13 @@ fieldLayouts:
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
-            uid: c1132e14-6df6-4949-8023-751347cdc3c8
+            uid: ee3eaedf-9b76-49c7-a530-8ec0aa107a4e
             userCondition: null
             warning: null
             width: 100
-        name: Master
-        uid: 0596ac21-70b0-4327-a96f-7de5c69f489e
+        name: Main
+        uid: 9b3d3ae6-42f0-4a92-bee4-87b45459b22c
         userCondition: null
-handle: aboutAscmSepa
-name: 'About ASCM SEPA'
-sortOrder: 2
+handle: students
+name: Students
+sortOrder: 5

@@ -1,12 +1,12 @@
-descriptionFormat: '{product.title} - {title}'
-handle: cscp
+descriptionFormat: '{product.type.name} - {title}'
+handle: ctsc
 hasDimensions: false
 hasProductTitleField: true
 hasVariantTitleField: false
 hasVariants: false
-name: 'CSCP Course'
+name: 'CTSC Course'
 productFieldLayouts:
-  808f388c-f3ab-49e1-8930-3addf3157404:
+  a6a130c7-6bda-4264-8b03-5c0546cd6248:
     tabs:
       -
         elementCondition: null
@@ -34,7 +34,7 @@ productFieldLayouts:
             tip: null
             title: null
             type: craft\commerce\fieldlayoutelements\ProductTitleField
-            uid: 56210fba-976f-48d5-886d-76a9bd3b667e
+            uid: 369f4de3-3629-4f72-ba8f-3011cd331bc5
             userCondition: null
             warning: null
             width: 100
@@ -46,7 +46,7 @@ productFieldLayouts:
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
-            uid: 63a7846b-1b4a-449a-a0cd-aba77b5ac12e
+            uid: a98f0e71-62a8-41d2-a574-1704c92f7b4f
             userCondition: null
             warning: null
             width: 100
@@ -57,17 +57,17 @@ productFieldLayouts:
             required: false
             tip: null
             type: craft\commerce\fieldlayoutelements\VariantsField
-            uid: 751d0663-97ef-43c7-8f32-abdc5203d4ae
+            uid: ce7d25d4-b0c9-44ba-91a1-fba5e319b474
             userCondition: null
             warning: null
-        name: Master
-        uid: 0596ac21-70b0-4327-a96f-7de5c69f489e
+        name: Content
+        uid: e06e6adb-5469-4022-b2a7-095acd05bbd8
         userCondition: null
 productTitleFormat: ''
 siteSettings:
   246ac9e2-0535-4ba5-b543-66b2eb9d969f: # ASCM Southeastern Pennsylvania
     hasUrls: true
     template: ''
-    uriFormat: 'cscp/{slug}'
+    uriFormat: 'ctsc/{slug}'
 skuFormat: ''
 variantTitleFormat: '{product.title}'

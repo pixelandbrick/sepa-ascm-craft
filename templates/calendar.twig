@@ -28,7 +28,7 @@
             calendar: null,
             events: [
                 {% set evId = 0 %}
-                {% for product in craft.products.all() %}
+                {% for product in craft.products.orderBy('expiryDate DESC') %}
                 {% if product.eventDates != null %}
                     {% for evDate in product.eventDates %}
                       {{ '{ id: ' ~ evId ~ ',
