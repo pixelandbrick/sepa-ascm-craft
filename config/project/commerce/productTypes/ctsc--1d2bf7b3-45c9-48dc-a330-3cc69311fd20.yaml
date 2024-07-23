@@ -12,29 +12,54 @@ productFieldLayouts:
         elementCondition: null
         elements:
           -
+            autocapitalize: true
+            autocomplete: false
+            autocorrect: true
+            class: null
+            disabled: false
             elementCondition: null
-            fieldUid: 0002e9f1-02b1-4d7d-af54-ce03d4249aea # Description
+            id: null
+            inputType: null
             instructions: null
             label: null
-            required: false
+            max: null
+            min: null
+            name: null
+            orientation: null
+            placeholder: null
+            readonly: false
+            requirable: false
+            size: null
+            step: null
             tip: null
-            type: craft\fieldlayoutelements\CustomField
-            uid: 030f290b-e36a-4d3e-b130-e4476a92f7cd
+            title: null
+            type: craft\commerce\fieldlayoutelements\ProductTitleField
+            uid: ec370592-5d8e-424e-8f5c-90723f0e2d7a
             userCondition: null
             warning: null
             width: 100
           -
             elementCondition: null
-            fieldUid: b81c20ba-ef6a-4af9-a151-76676391b738 # Feature Image
+            fieldUid: d580aec8-08d7-421b-9280-b4a7459f684b # Event Dates
             instructions: null
             label: null
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
-            uid: 89309943-faf6-4379-bd01-bd44e478e1d4
+            uid: 8f688d7f-0844-47cb-aeb8-0881f003441c
             userCondition: null
             warning: null
             width: 100
+          -
+            elementCondition: null
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\commerce\fieldlayoutelements\VariantsField
+            uid: 68b79b6a-bd16-447b-96ad-1ea94b9c6c44
+            userCondition: null
+            warning: null
         name: Master
         uid: ca860273-b16f-4f77-9111-8b697906d950
         userCondition: null

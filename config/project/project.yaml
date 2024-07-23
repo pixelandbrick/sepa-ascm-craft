@@ -1,4 +1,4 @@
-dateModified: 1720700749
+dateModified: 1721749547
 elementSources:
   craft\elements\Entry:
     -
@@ -119,7 +119,7 @@ email:
   replyToEmail: null
   template: ''
   transportSettings:
-    apiKey: ''
+    apiKey: $SENDGRID_KEY
     categories: ''
   transportType: putyourlightson\sendgrid\mail\SendgridAdapter
 fs:
@@ -223,6 +223,7 @@ meta:
     32b47a00-928b-4ba0-980e-da86839cc3b7: Handle # Handle
     38ab0050-d304-44cd-8737-ab3d7136a645: 'Inset Image' # Inset Image
     53bdf7bf-5079-4837-b63c-1c842aa68784: College # College
+    59a7384d-5137-4ce6-a734-fbb0016cd5d7: 'Internal Order Confirmation' # Internal Order Confirmation
     0068a536-dbd3-4e9d-bc90-33650bb713b0: 'Course Hero' # Course Hero
     70b04f6d-65a9-4b13-982d-b1e4a54b5ebc: 'Secondary State' # Secondary State
     72aad414-9b6c-49d8-8ff9-1f6015a92270: Options # Options
@@ -365,7 +366,7 @@ plugins:
     schemaVersion: 1.0.0
   enupal-paypal:
     edition: standard
-    enabled: true
+    enabled: false
     licenseKey: W7K304D3F5OHDOBWH416Y557
     schemaVersion: 1.5.0
     settings:

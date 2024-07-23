@@ -40,6 +40,18 @@ productFieldLayouts:
             width: 100
           -
             elementCondition: null
+            fieldUid: 96bab796-5961-4252-88c6-defd8eb06d47 # Meeting Category
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: dbe3e8ba-7274-42ce-9808-28afeca8a291
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
             fieldUid: d580aec8-08d7-421b-9280-b4a7459f684b # Event Dates
             instructions: null
             label: null

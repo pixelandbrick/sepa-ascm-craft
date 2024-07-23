@@ -12,29 +12,54 @@ productFieldLayouts:
         elementCondition: null
         elements:
           -
+            autocapitalize: true
+            autocomplete: false
+            autocorrect: true
+            class: null
+            disabled: false
             elementCondition: null
-            fieldUid: 0002e9f1-02b1-4d7d-af54-ce03d4249aea # Description
+            id: null
+            inputType: null
             instructions: null
             label: null
-            required: false
+            max: null
+            min: null
+            name: null
+            orientation: null
+            placeholder: null
+            readonly: false
+            requirable: false
+            size: null
+            step: null
             tip: null
-            type: craft\fieldlayoutelements\CustomField
-            uid: 376a58b1-c5bf-44fc-a7ef-663fc2ad705e
+            title: null
+            type: craft\commerce\fieldlayoutelements\ProductTitleField
+            uid: 56210fba-976f-48d5-886d-76a9bd3b667e
             userCondition: null
             warning: null
             width: 100
           -
             elementCondition: null
-            fieldUid: b81c20ba-ef6a-4af9-a151-76676391b738 # Feature Image
+            fieldUid: d580aec8-08d7-421b-9280-b4a7459f684b # Event Dates
             instructions: null
             label: null
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
-            uid: c1132e14-6df6-4949-8023-751347cdc3c8
+            uid: 63a7846b-1b4a-449a-a0cd-aba77b5ac12e
             userCondition: null
             warning: null
             width: 100
+          -
+            elementCondition: null
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\commerce\fieldlayoutelements\VariantsField
+            uid: 751d0663-97ef-43c7-8f32-abdc5203d4ae
+            userCondition: null
+            warning: null
         name: Master
         uid: 0596ac21-70b0-4327-a96f-7de5c69f489e
         userCondition: null
