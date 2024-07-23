@@ -6,74 +6,90 @@
 {# Show the nav if we are not in a checkout page #}
 
 <div class="border-t-[10px] border-t-[#006B36] border-b border-b-shaving bg-white"> <!--full width container-->
-  <div class="max-w-screen-xl min-w-screen-xl mx-auto pt-[20px] md:pb-[38px] px-6 md:px-0" 
+  <div class="max-w-screen-xl min-w-screen-xl mx-auto pt-[20px] md:pb-[38px] px-6 md:px-0"
             x-data="{open:false}"
             x-effect="open ? document.body.classList.add('overflow-hidden') : document.body.classList.remove('overflow-hidden')"
         > <!--inner container-->
     <div class="flex mb-[20px]"> <!--logo & buttons container-->
-      <div class="w-full shrink-0"> <!--logo container left align-->
-        <a href="/"><img src="/volumes/jpg/ASCM_LOGOS_CHAPTERS_COLOR_HZ_SPA_wgs.jpeg" class="max-h-[68px] md:max-h-[90px] -ml-4" alt="ASCM Southeastern Pennsylvania Alliance" /></a>
+      <div class="w-full"> <!--logo container left align-->
+        <a href="/"><img src="/volumes/jpg/ASCM_LOGOS_CHAPTERS_COLOR_HZ_SPA_wgs.jpeg" class="max-h-[60px] md:max-h-[90px] -ml-4" alt="ASCM Southeastern Pennsylvania Alliance" /></a>
         <h1 class="hidden">ASCM Southeastern Pennsylvania Alliance</h1>
       </div>
-      <div name="hamburger" class="self-center md:hidden -ml-8" @click="open = !open">
+      <div class="hidden md:inline-flex shrink-0 gap-[25px] place-items-center"><!--calendar/etc buttons right align -->
+        <!--<div>Calendar&nbsp;</div>-->
+        {% if currentUser %}
+          <a href="{{ url('shop/customer') }}"
+            class="pt-[11px] pb-[6px] relative text-wolf text-[14px] font-semibold cursor-pointer inline-block hover:no-underline -mt-[6px] mr-1">
+              <i class="fa-solid fa-user text-vault text-lg"></i>&ensp;My Account
+          </a>
+        {% else %}
+          <a href="{{ url('shop/customer/sign-in') }}"
+            class="pt-[18px] pb-[6px] relative text-wolf text-[14px] font-semibold cursor-pointer inline-block hover:no-underline -mt-[6px] mr-1">
+            {{- 'Sign In'|t -}}
+          </a>
+        {% endif %}
+        <a href="{{ url('shop/cart') }}"
+          class="pt-[11px] pb-[6px] relative text-wolf text-[14px] font-semibold cursor-pointer inline-block hover:no-underline -mt-[6px] mr-1">
+            {% if cart.totalQty %}
+            <span class="absolute -mr-3 mt-1 right-0 top-0 px-2 rounded-full text-white text-xs bg-[#006B36]">  
+                {{- cart.totalQty -}}
+            </span>
+            {% endif %}
+
+          <span aria-label="{{ 'View Cart'|t }}"><i class="fa-solid fa-cart-shopping text-vault text-lg"></i>&ensp;Cart</span>
+        </a>
+        <a href="/calendar" class="hover:no-underline h-max w-max rounded-full bg-shaving py-[3px] px-[22px] text-[14px] font-semibold text-wolf -mt-[2px]"><i class="text-vault fa-solid fa-calendar text-lg leading-0"></i>&nbsp;&nbsp;&nbsp;&nbsp;Calendar</a>
+              <a href="/education" class="hover:no-underline h-max w-max rounded-full bg-azure -mt-1 pt-[12px] pb-[9px] px-[22px] text-[14px] font-bold text-white">Get&nbsp;Certified</a>
+      </div>
+      <div name="hamburger" class="self-center md:hidden" @click="open = !open">
           <div name="menu w-24" class="duration-500" :class="open ? 'translate-y-1' : ''">
               <div class="bar bg-[#292929] w-5 h-[2px] duration-500 rounded" :class="open ? 'rotate-45' : ''"></div>
               <div class="bar bg-[#292929] w-5 h-[2px] duration-500 rounded" :class="open ? 'hidden' : 'mt-1.5'"></div>
               <div class="bar bg-[#292929] w-5 h-[2px] duration-500 rounded" :class="open ? '-translate-y-[2px] -rotate-45' : 'mt-1.5'"></div>
           </div>
       </div>
-      <!--<ul class="list-none indent-0 mb-0 font-semibold text-[#006B36] text-xl flex flex-row justify-between">main nav-->
-        <!--<div>Calendar&nbsp;</div>-->
-      
-      <ul class="nav-menu list-none grid gap-x-12 duration-500 md:static md:bg-none md:h-fit transition-opacity
-              md:flex md:flex-row md:justify-between z-20 font-semibold text-ficus text-xl
-              grid-cols-1 gap-y-8 absolute md:relative bg-white bg-opacity-[95%] text-center w-full left-0 md:max-w-screen-xl h-screen md:h-auto content-start mt-24 md:mt-0 -px-6 md:px-0"
-          :class="open ? 'inline-flex opacity-100' : 'md:opacity-100 opacity-0 hidden'"
-          x-transition
-      >
-        <li>{% if 'checkout' not in currentPath %}
-      <div class="inline-flex gap-[25px] w-full place-content-center md:place-content-end items-center container max-w-screen-xl mx-auto relative ml-2 md:ml-0 mt-8 md:mt-0">
-        <nav class="py-2 text-right"
-            role="navigation"
-            aria-label="Main">
-          <div class="flex gap-4 mr-4 md:mr-0">
-            {% if currentUser %}
-              <a href="{{ url('shop/customer') }}"
-                class="pt-[11px] pb-[6px] relative text-wolf text-[14px] font-semibold cursor-pointer inline-block hover:no-underline -mt-[6px] mr-1">
-                  <i class="fa-solid fa-user text-vault text-lg"></i>&ensp;My Account
-              </a>
-            {% else %}
-              <a href="{{ url('shop/customer/sign-in') }}"
-                class="pt-[18px] pb-[6px] relative text-wolf text-[14px] font-semibold cursor-pointer inline-block hover:no-underline -mt-[6px] mr-1">
-                {{- 'Sign In'|t -}}
-              </a>
-            {% endif %}
-            <a href="{{ url('shop/cart') }}"
-              class="pt-[11px] pb-[6px] relative text-wolf text-[14px] font-semibold cursor-pointer inline-block hover:no-underline -mt-[6px] mr-1">
-                {% if cart.totalQty %}
-                <span class="absolute -mr-3 mt-1 right-0 top-0 px-2 rounded-full text-white text-xs bg-[#006B36]">  
-                    {{- cart.totalQty -}}
-                </span>
-                {% endif %}
-
-              <span aria-label="{{ 'View Cart'|t }}"><i class="fa-solid fa-cart-shopping text-vault text-lg"></i>&ensp;Cart</span>
-            </a>
-            <div class="hidden md:block">
-              <a href="/calendar" class="hover:no-underline place-self-center h-max w-max rounded-full bg-shaving py-[3px] px-[22px] text-[14px] font-semibold text-wolf -mt-[2px]"><i class="text-vault fa-solid fa-calendar text-lg leading-0"></i>&nbsp;&nbsp;&nbsp;&nbsp;Calendar</a>
-              <a href="/education" class="hover:no-underline place-self-center h-max w-max rounded-full bg-azure -mt-1 py-[9px] px-[22px] text-[14px] font-bold text-white">Get&nbsp;Certified</a>
-            </div>
-          </div>
-        </nav>
-      </div>
-      {% endif %}</li>
-        <li><a href="/education" class="main-nav">Education</a></li>
-        <li><a href="/meetings" class="main-nav">Meetings</a></li>
-        <li><a href="/opportunities" class="main-nav">Careers&nbsp;&&nbsp;Internships</a></li>
-        <li><a href="/students" class="main-nav">Students</a></li>
-        <li><a href="/scholarships" class="main-nav">Scholarships</a></li>
-        <li><a href="/about" class="main-nav">About&nbsp;the&nbsp;Chapter</a></li>
-        <li><a href="/articles" class="main-nav">Articles</a></li>
-      </ul>
     </div>
+    <!--<ul class="list-none indent-0 mb-0 font-semibold text-[#006B36] text-xl flex flex-row justify-between">main nav-->
+    <ul class="nav-menu list-none grid gap-x-12 duration-500 md:static md:bg-none md:h-fit transition-opacity
+            md:flex md:flex-row md:justify-between z-20 font-semibold text-ficus text-xl
+            grid-cols-1 gap-y-8 absolute md:relative bg-white bg-opacity-[95%] text-center w-full left-0 md:max-w-screen-xl h-screen md:h-auto content-start mt-12 md:mt-0 -px-6 md:px-0"
+        :class="open ? 'inline-flex opacity-100' : 'md:opacity-100 opacity-0 hidden'"
+        x-transition
+    >
+      {% if 'checkout' not in currentPath %}
+      <li class="ml-2 md:hidden">{% if currentUser %}
+        <a href="{{ url('shop/customer') }}"
+          class="pt-[11px] pb-[6px] relative text-wolf text-[14px] font-semibold cursor-pointer inline-block hover:no-underline -mt-[6px] mr-1">
+            <i class="fa-solid fa-user text-vault text-lg"></i>&ensp;My Account
+        </a>
+      {% else %}
+        <a href="{{ url('shop/customer/sign-in') }}"
+          class="pt-[18px] pb-[6px] relative text-wolf text-[14px] font-semibold cursor-pointer inline-block hover:no-underline -mt-[6px] mr-1">
+          {{- 'Sign In'|t -}}
+        </a>
+      {% endif %}
+        <a href="{{ url('shop/cart') }}"
+          class="ml-2 pt-[11px] pb-[6px] relative text-wolf text-[14px] font-semibold cursor-pointer inline-block hover:no-underline -mt-[6px] mr-1">
+            {% if cart.totalQty %}
+            <span class="absolute -mr-3 mt-1 right-0 top-0 px-2 rounded-full text-white text-xs bg-[#006B36]">  
+                {{- cart.totalQty -}}
+            </span>
+            {% endif %}
+          <span aria-label="{{ 'View Cart'|t }}"><i class="fa-solid fa-cart-shopping text-vault text-lg"></i>&ensp;Cart</span>
+        </a>
+      </li>
+      {% endif %}
+      <li><a href="/education" class="main-nav">Education</a></li>
+      <li><a href="/meetings" class="main-nav">Meetings</a></li>
+      <li><a href="/opportunities" class="main-nav">Careers&nbsp;&&nbsp;Internships</a></li>
+      <li><a href="/students" class="main-nav">Students</a></li>
+      <li><a href="/scholarships" class="main-nav">Scholarships</a></li>
+      <li><a href="/about" class="main-nav">About&nbsp;the&nbsp;Chapter</a></li>
+      <li><a href="/articles" class="main-nav">Articles</a></li>
+      <li class="md:hidden">
+        <a href="/calendar" class="hover:no-underline place-self-center h-max w-max rounded-full bg-shaving py-[10px] px-[22px] text-[14px] font-semibold text-wolf -mt-[2px]"><i class="text-vault fa-solid fa-calendar text-lg leading-0"></i>&nbsp;&nbsp;&nbsp;&nbsp;Calendar</a>
+        <a href="/education" class="ml-2 hover:no-underline place-self-center h-max w-max rounded-full bg-azure -mt-1 py-[9px] px-[22px] text-[14px] font-bold text-white">Get&nbsp;Certified</a>
+      </li>
+    </ul>
   </div>
 </div>
