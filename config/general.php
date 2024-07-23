@@ -38,6 +38,7 @@ return [
     'preserveImageColorProfiles' => true,
     'preventUserEnumeration' => true,
     'previewTokenDuration' => 'P1W',
+    'runQueueAutomatically' => true,
     'testToEmailAddress' => App::env('TEST_TO_EMAIL_ADDRESS') ?: null,
     'transformGifs' => false,
     'useEmailAsUsername' => true,
