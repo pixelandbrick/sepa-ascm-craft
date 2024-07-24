@@ -1,4 +1,4 @@
-dateModified: 1721762735
+dateModified: 1721840177
 elementSources:
   craft\elements\Entry:
     -
@@ -194,6 +194,7 @@ meta:
     5d028c1f-dc78-4cc5-bbb7-25a0f47a90ab: 'College Description' # College Description
     5dc608b2-0088-4005-b1e1-88ff0ad17f95: 'Meeting Description' # Meeting Description
     5dee5e0e-253c-4592-aee3-a972def5d20d: 'Course Title' # Course Title
+    5eff1da7-2e9a-4045-8747-de3b34bd9574: HTML # HTML
     6a0974f0-8fab-48a9-91d1-2a2fbecd0fdb: 'Primary Address Line 1' # Primary Address Line 1
     6f16a147-30bc-44cf-8467-a0eee2bb7cdb: 'Last Name' # Last Name
     6f5353b9-17c2-4aea-98cb-00396a0cde55: Placeholder # Placeholder
@@ -302,6 +303,7 @@ meta:
     bd4b0b65-e414-479e-8360-de7c61a86bc6: 'About ASCM SEPA' # About ASCM SEPA
     bd4c0abb-c118-494a-bfea-68abdd8272a5: Opportunities # Opportunities
     bdad7e2f-c8e4-4485-8e83-518e46e80157: New # New
+    becf3caa-637d-4fd3-af77-4d193a2c7a0c: Micro-certifications # Micro-certifications
     c9bc5389-1f49-4f7a-b48a-0a3a05266994: Label # Label
     c80a5bbf-766f-4966-8484-f7494f33cd1b: 'ASCM Member Suspension' # ASCM Member Suspension
     cad9b5b7-7d7c-4497-b2c6-7d009fe495ba: 'Primary Email' # Primary Email

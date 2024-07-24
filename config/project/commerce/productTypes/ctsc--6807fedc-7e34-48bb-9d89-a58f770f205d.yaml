@@ -2,8 +2,8 @@ descriptionFormat: '{product.type.name} - {title}'
 handle: ctsc
 hasDimensions: false
 hasProductTitleField: true
-hasVariantTitleField: false
-hasVariants: false
+hasVariantTitleField: true
+hasVariants: true
 name: 'CTSC Course'
 productFieldLayouts:
   a6a130c7-6bda-4264-8b03-5c0546cd6248:
@@ -70,4 +70,40 @@ siteSettings:
     template: ''
     uriFormat: 'ctsc/{slug}'
 skuFormat: ''
+variantFieldLayouts:
+  b9c6c487-d5b1-4669-8917-8393c629bf59:
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            autocapitalize: true
+            autocomplete: false
+            autocorrect: true
+            class: null
+            disabled: false
+            elementCondition: null
+            id: null
+            inputType: null
+            instructions: null
+            label: null
+            max: null
+            min: null
+            name: null
+            orientation: null
+            placeholder: null
+            readonly: false
+            requirable: false
+            size: null
+            step: null
+            tip: null
+            title: null
+            type: craft\commerce\fieldlayoutelements\VariantTitleField
+            uid: 91ab95bd-0344-4819-8487-e851cc2d0b8c
+            userCondition: null
+            warning: null
+            width: 100
+        name: Content
+        uid: ace5ea7b-a74b-496d-8dbd-e467d4fa9f4b
+        userCondition: null
 variantTitleFormat: '{product.title}'

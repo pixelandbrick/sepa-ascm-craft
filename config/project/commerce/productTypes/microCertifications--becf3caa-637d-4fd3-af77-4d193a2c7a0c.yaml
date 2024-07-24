@@ -1,12 +1,12 @@
-descriptionFormat: '{product.type.name} - {title}'
-handle: cpim
+descriptionFormat: '{product.title} - {title}'
+handle: microCertifications
 hasDimensions: false
 hasProductTitleField: true
 hasVariantTitleField: true
 hasVariants: true
-name: 'CPIM Course'
+name: Micro-certifications
 productFieldLayouts:
-  077e10b1-afd4-4149-a04f-9c8b5f7c4706:
+  e1ea0ca4-fea1-4b84-aad2-e8380262a40f:
     tabs:
       -
         elementCondition: null
@@ -34,7 +34,7 @@ productFieldLayouts:
             tip: null
             title: null
             type: craft\commerce\fieldlayoutelements\ProductTitleField
-            uid: a037bd3f-6d74-4d9b-9cde-913d2eceecba
+            uid: f606a9ab-53d8-45dd-ace5-05716e58a69e
             userCondition: null
             warning: null
             width: 100
@@ -46,7 +46,7 @@ productFieldLayouts:
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
-            uid: 24cb9b0f-28c6-49f4-b40f-6fe0b3b65378
+            uid: 40887522-f291-4574-a00f-30d4a2aa4b00
             userCondition: null
             warning: null
             width: 100
@@ -57,21 +57,21 @@ productFieldLayouts:
             required: false
             tip: null
             type: craft\commerce\fieldlayoutelements\VariantsField
-            uid: a992e963-e250-42c6-ae2f-1932bfa29f3a
+            uid: be2b33fa-cbe0-48d6-9925-17b5d75807d3
             userCondition: null
             warning: null
         name: Content
-        uid: b27580b7-d7d4-4a7e-b5ce-13156fea7027
+        uid: 77f00a42-0f44-410d-b3f3-d0b0d0eaaaab
         userCondition: null
 productTitleFormat: ''
 siteSettings:
   246ac9e2-0535-4ba5-b543-66b2eb9d969f: # ASCM Southeastern Pennsylvania
     hasUrls: true
     template: ''
-    uriFormat: 'cpim/{slug}'
+    uriFormat: 'micro-certifications/{slug}'
 skuFormat: ''
 variantFieldLayouts:
-  7c48e38e-6173-4674-ac26-ad6136e26448:
+  4c888fbf-421c-46ae-b708-09a10b7ece18:
     tabs:
       -
         elementCondition: null
@@ -99,11 +99,11 @@ variantFieldLayouts:
             tip: null
             title: null
             type: craft\commerce\fieldlayoutelements\VariantTitleField
-            uid: cf7edbf8-f304-4717-aee3-7507b87ea79a
+            uid: b804813a-cf3d-4990-b1cc-d6bab73bbed5
             userCondition: null
             warning: null
             width: 100
         name: Content
-        uid: 12d0a7a7-65c8-48c9-b3db-fa9e4c143af0
+        uid: ebe1547e-943b-4ef0-80b9-8b938790e285
         userCondition: null
 variantTitleFormat: '{product.title}'
