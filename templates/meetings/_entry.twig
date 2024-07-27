@@ -91,7 +91,7 @@
           <!-- Bullets -->
           <div class="glide__bullets flex w-full items-center justify-center gap-1" data-glide-el="controls[nav]">
             {% for image in entry.gallery %}
-              <button class="glide__bullet h-3 w-3 rounded-full bg-gray-300 transition-colors" data-glide-dir="={{loop.index}}"></button>
+              <button class="glide__bullet h-3 w-3 rounded-full bg-gray-300 transition-colors" data-glide-dir="={{loop.index - 1}}"></button>
             {% endfor %}
           </div>
       </div>
