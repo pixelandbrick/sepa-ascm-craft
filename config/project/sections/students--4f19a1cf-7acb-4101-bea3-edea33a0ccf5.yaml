@@ -1,5 +1,7 @@
 defaultPlacement: end
 enableVersioning: true
+entryTypes:
+  - 53bdf7bf-5079-4837-b63c-1c842aa68784 # College
 handle: students
 name: Colleges
 previewTargets:

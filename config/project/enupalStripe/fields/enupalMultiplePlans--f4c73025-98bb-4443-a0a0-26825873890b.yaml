@@ -6,11 +6,13 @@ instructions: 'Customize the plans that the customer should select'
 name: 'Add Plan'
 searchable: false
 settings:
-  contentTable: '{{%matrixcontent_enupalmultipleplans}}'
-  maxBlocks: null
-  minBlocks: null
+  entryTypes:
+    - e36dfe75-cadf-4006-b786-c50ea2cd5004
+  maxEntries: null
+  minEntries: null
   propagationKeyFormat: null
   propagationMethod: all
+  viewMode: blocks
 translationKeyFormat: null
 translationMethod: site
 type: craft\fields\Matrix

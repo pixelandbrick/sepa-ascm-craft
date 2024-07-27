@@ -1,16 +1,17 @@
 columnSuffix: null
 contentColumnType: string
-fieldGroup: a6fda9ad-6baa-4e9a-a498-51e13db75bb4 # Courses
 handle: courseCalendar
 instructions: null
 name: 'Course Calendar'
 searchable: false
 settings:
-  contentTable: '{{%matrixcontent_coursecalendar}}'
-  maxBlocks: null
-  minBlocks: null
+  entryTypes:
+    - 4c820bb6-573a-43e8-81cf-5c164dee9f17
+  maxEntries: null
+  minEntries: null
   propagationKeyFormat: null
   propagationMethod: all
+  viewMode: blocks
 translationKeyFormat: null
 translationMethod: site
 type: craft\fields\Matrix

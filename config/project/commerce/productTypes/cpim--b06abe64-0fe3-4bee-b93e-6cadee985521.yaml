@@ -1,9 +1,10 @@
 descriptionFormat: '{product.type.name} - {title}'
+enableVersioning: false
 handle: cpim
 hasDimensions: false
 hasProductTitleField: true
 hasVariantTitleField: true
-hasVariants: true
+maxVariants: null
 name: 'CPIM Course'
 productFieldLayouts:
   077e10b1-afd4-4149-a04f-9c8b5f7c4706:
@@ -19,6 +20,7 @@ productFieldLayouts:
             disabled: false
             elementCondition: null
             id: null
+            includeInCards: false
             inputType: null
             instructions: null
             label: null
@@ -27,6 +29,7 @@ productFieldLayouts:
             name: null
             orientation: null
             placeholder: null
+            providesThumbs: false
             readonly: false
             requirable: false
             size: null
@@ -41,8 +44,11 @@ productFieldLayouts:
           -
             elementCondition: null
             fieldUid: d580aec8-08d7-421b-9280-b4a7459f684b # Event Dates
+            handle: null
+            includeInCards: false
             instructions: null
             label: null
+            providesThumbs: false
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
@@ -52,10 +58,33 @@ productFieldLayouts:
             width: 100
           -
             elementCondition: null
+            fieldUid: 06d278ea-2e66-437e-965e-6e65c06b87bc
+            handle: null
+            includeInCards: false
             instructions: null
             label: null
+            providesThumbs: false
             required: false
             tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 37978187-ac2e-4f53-bb2b-06edc108f31b
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            attribute: variants
+            elementCondition: null
+            id: null
+            includeInCards: false
+            instructions: null
+            label: null
+            mandatory: true
+            orientation: null
+            providesThumbs: false
+            requirable: false
+            required: false
+            tip: null
+            translatable: false
             type: craft\commerce\fieldlayoutelements\VariantsField
             uid: a992e963-e250-42c6-ae2f-1932bfa29f3a
             userCondition: null
@@ -77,6 +106,177 @@ variantFieldLayouts:
         elementCondition: null
         elements:
           -
+            attribute: sku
+            elementCondition: null
+            id: null
+            includeInCards: false
+            instructions: null
+            label: SKU
+            mandatory: true
+            orientation: null
+            providesThumbs: false
+            requirable: false
+            required: true
+            tip: null
+            translatable: false
+            type: craft\commerce\fieldlayoutelements\PurchasableSkuField
+            uid: 6f2093c6-2a5d-4e6b-8041-b8092bef0c3a
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            attribute: price
+            elementCondition: null
+            id: null
+            includeInCards: false
+            instructions: null
+            label: __blank__
+            mandatory: true
+            orientation: null
+            providesThumbs: false
+            requirable: false
+            required: true
+            tip: null
+            translatable: false
+            type: craft\commerce\fieldlayoutelements\PurchasablePriceField
+            uid: 34eff0cf-84aa-4a44-88bc-0bc355094e9c
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            attribute: stock
+            elementCondition: null
+            id: null
+            includeInCards: false
+            instructions: null
+            label: Inventory
+            mandatory: true
+            orientation: null
+            providesThumbs: false
+            requirable: false
+            required: true
+            tip: null
+            translatable: false
+            type: craft\commerce\fieldlayoutelements\PurchasableStockField
+            uid: 420e6ad6-051f-4b9c-9b81-51fb7724d596
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            attribute: availableForPurchase
+            elementCondition: null
+            id: null
+            includeInCards: false
+            instructions: null
+            label: 'Available for purchase'
+            mandatory: true
+            orientation: null
+            providesThumbs: false
+            requirable: false
+            required: true
+            tip: null
+            translatable: false
+            type: craft\commerce\fieldlayoutelements\PurchasableAvailableForPurchaseField
+            uid: 6bae729c-f95d-479d-a060-27fdc6b28457
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            attribute: allowedQty
+            elementCondition: null
+            id: null
+            includeInCards: false
+            instructions: null
+            label: 'Allowed Qty'
+            mandatory: true
+            orientation: null
+            providesThumbs: false
+            requirable: false
+            required: false
+            tip: null
+            translatable: false
+            type: craft\commerce\fieldlayoutelements\PurchasableAllowedQtyField
+            uid: 1b981c2f-ed9d-4a7e-b11b-8615b6fed56d
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            attribute: freeShipping
+            elementCondition: null
+            id: null
+            includeInCards: false
+            instructions: null
+            label: 'Free Shipping'
+            mandatory: true
+            orientation: null
+            providesThumbs: false
+            requirable: false
+            required: true
+            tip: null
+            translatable: false
+            type: craft\commerce\fieldlayoutelements\PurchasableFreeShippingField
+            uid: e477542e-0ff0-4fb1-8856-da73fd773671
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            attribute: promotable
+            elementCondition: null
+            id: null
+            includeInCards: false
+            instructions: null
+            label: Promotable
+            mandatory: true
+            orientation: null
+            providesThumbs: false
+            requirable: false
+            required: true
+            tip: null
+            translatable: false
+            type: craft\commerce\fieldlayoutelements\PurchasablePromotableField
+            uid: 335c37e2-1238-498f-97d1-45d79c125bb8
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            attribute: dimensions
+            elementCondition: null
+            id: null
+            includeInCards: false
+            instructions: null
+            label: Dimensions
+            mandatory: true
+            orientation: null
+            providesThumbs: false
+            requirable: false
+            required: false
+            tip: null
+            translatable: false
+            type: craft\commerce\fieldlayoutelements\PurchasableDimensionsField
+            uid: 878e4792-1776-4a99-b3e1-1791fd9bcf4e
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            attribute: weight
+            elementCondition: null
+            id: null
+            includeInCards: false
+            instructions: null
+            label: Weight
+            mandatory: true
+            orientation: null
+            providesThumbs: false
+            requirable: false
+            required: false
+            tip: null
+            translatable: false
+            type: craft\commerce\fieldlayoutelements\PurchasableWeightField
+            uid: 96af4690-1309-4b98-bdcf-ca75f142ef25
+            userCondition: null
+            warning: null
+            width: 100
+          -
             autocapitalize: true
             autocomplete: false
             autocorrect: true
@@ -84,6 +284,7 @@ variantFieldLayouts:
             disabled: false
             elementCondition: null
             id: null
+            includeInCards: false
             inputType: null
             instructions: null
             label: null
@@ -92,6 +293,7 @@ variantFieldLayouts:
             name: null
             orientation: null
             placeholder: null
+            providesThumbs: false
             readonly: false
             requirable: false
             size: null

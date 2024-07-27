@@ -1,5 +1,7 @@
 defaultPlacement: end
 enableVersioning: true
+entryTypes:
+  - 6122ffed-ea86-411a-9ecc-a72d02707312 # Registration
 handle: registration
 name: Registration
 previewTargets:

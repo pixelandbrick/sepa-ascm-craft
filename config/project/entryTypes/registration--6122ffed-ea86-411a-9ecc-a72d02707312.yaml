@@ -37,7 +37,6 @@ fieldLayouts:
 handle: registration
 hasTitleField: false
 name: Registration
-section: 2d22f61f-0bf0-441c-937a-a738a5214f64 # Registration
 showStatusField: true
 slugTranslationKeyFormat: null
 slugTranslationMethod: site

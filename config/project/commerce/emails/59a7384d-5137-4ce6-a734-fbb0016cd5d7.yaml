@@ -3,9 +3,13 @@ cc: null
 enabled: true
 language: orderLanguage
 name: 'Internal Order Confirmation'
+pdf: null
 plainTextTemplatePath: ''
 recipientType: custom
 replyTo: null
-subject: 'New ASCM web order'
+senderAddress: null
+senderName: null
+store: 860f9494-ac4c-4585-a706-7d792745a4f9 # Primary Store
+subject: 'New registration: {% for lineItem in order.lineItems %}{{ lineItem.description }}{% if loop.index < order.lineItems|length %}, {% endif %}{% endfor %}'
 templatePath: shop/_private/receipt/index.twig
 to: hello@pixel-brick.com

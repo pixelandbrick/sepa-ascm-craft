@@ -1,6 +1,5 @@
 columnSuffix: null
 contentColumnType: string(14)
-fieldGroup: bd4c0abb-c118-494a-bfea-68abdd8272a5 # Opportunities
 handle: oppType
 instructions: null
 name: 'Opportunity Type'

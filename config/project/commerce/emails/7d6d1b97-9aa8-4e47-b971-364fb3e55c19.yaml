@@ -3,9 +3,10 @@ cc: null
 enabled: true
 language: orderLanguage
 name: 'Customer Confirmation'
-plainTextTemplatePath: ''
+plainTextTemplatePath: null
 recipientType: customer
 replyTo: null
+store: 860f9494-ac4c-4585-a706-7d792745a4f9 # Primary Store
 subject: 'ASCM SEPA: Thanks for your order.'
 templatePath: shop/_private/receipt/index.twig
 to: null

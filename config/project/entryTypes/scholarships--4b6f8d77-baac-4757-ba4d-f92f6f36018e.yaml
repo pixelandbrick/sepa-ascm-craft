@@ -73,7 +73,6 @@ fieldLayouts:
 handle: scholarships
 hasTitleField: true
 name: Scholarships
-section: e3daa05b-c819-442e-91fe-e39c500166d7 # Scholarships
 showStatusField: true
 slugTranslationKeyFormat: null
 slugTranslationMethod: site

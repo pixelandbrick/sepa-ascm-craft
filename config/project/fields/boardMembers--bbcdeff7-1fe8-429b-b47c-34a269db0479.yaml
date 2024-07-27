@@ -1,16 +1,17 @@
 columnSuffix: null
 contentColumnType: string
-fieldGroup: 2f5d7ffc-4d16-47d1-a440-318d7f4ea068 # Common
 handle: boardMembers
 instructions: null
 name: 'Board Members'
 searchable: false
 settings:
-  contentTable: '{{%matrixcontent_boardmembers}}'
-  maxBlocks: null
-  minBlocks: null
+  entryTypes:
+    - 504d9d35-669b-4aa7-9038-a73a05a1cd91
+  maxEntries: null
+  minEntries: null
   propagationKeyFormat: null
   propagationMethod: all
+  viewMode: blocks
 translationKeyFormat: null
 translationMethod: site
 type: craft\fields\Matrix

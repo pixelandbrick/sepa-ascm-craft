@@ -111,11 +111,11 @@
             <td class="py-3 text-gray-500 {{ not loop.first ? 'border-t border-gray-300 border-dashed' : '' }} text-right">
               <div class="flex items-center w-full justify-end" title="{{ item.price }}">
                 <div class="text-xs pr-2">{{ 'Price'|t }}:</div>
-                <div class="text-sm tabular-nums">{% if item.onSale %}
-                  <del>{% endif %}{{ item.priceAsCurrency }}{% if item.onSale %}</del>{% endif %}
+                <div class="text-sm tabular-nums">{% if item.onPromotion %}
+                  <del>{% endif %}{{ item.priceAsCurrency }}{% if item.onPromotion %}</del>{% endif %}
                 </div>
               </div>
-              {% if item.onSale %}
+              {% if item.onPromotion %}
                 <div class="flex items-center w-full justify-end" title="{{ item.salePrice }}">
                   <div class="text-xs pr-2">{{ 'Member Price'|t }}:</div>
                   <div class="text-sm tabular-nums">{{ item.salePriceAsCurrency }}</div>
@@ -199,19 +199,6 @@
           <td class="text-right align-text-top border-t-2 border-gray-300 pt-3">
             <div class="mt-3">
               <strong class="text-sm text-gray-600">{{ 'Adjustment Totals'|t }}</strong>
-            </div>
-
-            <div class="flex items-center w-full justify-end" title="{{ order.totalShippingCost }}">
-              <div class="text-xs text-gray-500 pr-2">{{ 'Total Shipping'|t }}:</div>
-              <div class="text-sm text-gray-500 tabular-nums">{{ order.totalShippingCostAsCurrency }}</div>
-            </div>
-            <div class="flex items-center w-full justify-end" title="{{ order.totalTax }}">
-              <div class="text-xs text-gray-500 pr-2">{{ 'Total Tax'|t }}:</div>
-              <div class="text-sm text-gray-500 tabular-nums">{{ order.totalTaxAsCurrency }}</div>
-            </div>
-            <div class="flex items-center w-full justify-end" title="{{ order.totalTaxIncluded }}">
-              <div class="text-xs text-gray-500 pr-2">{{ 'Total Tax (inc)'|t }}:</div>
-              <div class="text-sm text-gray-500 tabular-nums">{{ order.totalTaxIncludedAsCurrency }}</div>
             </div>
             {% if order.totalDiscount %}
               <div class="flex items-center w-full justify-end" title="{{ order.totalDiscount }}">

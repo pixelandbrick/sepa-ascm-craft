@@ -1,5 +1,7 @@
 defaultPlacement: end
 enableVersioning: true
+entryTypes:
+  - 746a0ab8-83d0-4a8e-a2f6-2d0697922a0d # Articles
 handle: articles
 name: Articles
 previewTargets:

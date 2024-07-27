@@ -3,7 +3,7 @@ handle: cltd
 hasDimensions: false
 hasProductTitleField: true
 hasVariantTitleField: true
-hasVariants: true
+maxVariants: null
 name: 'CLTD Course'
 productFieldLayouts:
   126526fc-e721-480c-8884-089dc5cb105a:

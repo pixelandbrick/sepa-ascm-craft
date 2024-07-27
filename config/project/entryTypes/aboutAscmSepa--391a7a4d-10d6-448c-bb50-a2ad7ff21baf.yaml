@@ -61,7 +61,6 @@ fieldLayouts:
 handle: aboutAscmSepa
 hasTitleField: false
 name: 'About ASCM SEPA'
-section: bcff2c34-88ca-480f-bf39-57872d4636f1 # About ASCM SEPA
 showStatusField: true
 slugTranslationKeyFormat: null
 slugTranslationMethod: site

@@ -1,0 +1,56 @@
+columnSuffix: rhwmbtlk
+handle: options
+instructions: null
+name: 'Basic Form Fields - Radio Buttons - Options'
+searchable: true
+settings:
+  addRowLabel: 'Add an option'
+  columns:
+    __assoc__:
+      -
+        - col1
+        -
+          __assoc__:
+            -
+              - heading
+              - 'Option Label'
+            -
+              - handle
+              - optionLabel
+            -
+              - width
+              - ''
+            -
+              - type
+              - singleline
+      -
+        - col2
+        -
+          __assoc__:
+            -
+              - heading
+              - Value
+            -
+              - handle
+              - value
+            -
+              - width
+              - ''
+            -
+              - type
+              - singleline
+  defaults:
+    -
+      __assoc__:
+        -
+          - col1
+          - ''
+        -
+          - col2
+          - ''
+  maxRows: null
+  minRows: 1
+  staticRows: false
+translationKeyFormat: null
+translationMethod: site
+type: craft\fields\Table

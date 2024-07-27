@@ -7,7 +7,7 @@
 
   <div class="md:flex md:-mx-8">
     <div class="md:w-2/3 md:px-8">
-      {% if craft.commerce.settings.allowCheckoutWithoutPayment %}
+      {% if cart.store.allowCheckoutWithoutPayment %}
         <div class="border-b border-gray-300 pb-10 mb-10">
           <h1 class="font-bold text-xl">
             {{- 'Pay Later'|t -}}
@@ -120,6 +120,7 @@
                 }) }}
               </div>
             {% endif %}
+              <img src="/dist/assets/stripe-badge.svg" class="mb-4 h-[30px]" height="30px" width="auto" />
           </form>
         </div>
       {% endif %}

@@ -1,0 +1,112 @@
+eventFieldLayouts:
+  f2f0976d-3540-420b-8bb7-b2c86ceea11a:
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            autocapitalize: true
+            autocomplete: false
+            autocorrect: true
+            class: null
+            disabled: false
+            elementCondition: null
+            id: null
+            includeInCards: false
+            inputType: null
+            instructions: null
+            label: null
+            max: null
+            min: null
+            name: null
+            orientation: null
+            placeholder: null
+            providesThumbs: false
+            readonly: false
+            requirable: false
+            size: null
+            step: null
+            tip: null
+            title: null
+            type: verbb\events\fieldlayoutelements\EventTitleField
+            uid: a3ae982b-7b9a-4cbe-b81f-b147d0eadd3f
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: 96bab796-5961-4252-88c6-defd8eb06d47 # Meeting Category
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: null
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 60f59698-3eec-4026-91f0-fbe57abcbc36
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: d580aec8-08d7-421b-9280-b4a7459f684b # Event Dates
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: null
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 084c5bd4-45c4-4eac-b095-47361803cc3e
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: b81c20ba-ef6a-4af9-a151-76676391b738 # Feature Image
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: null
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 04b829b9-d826-4ac7-8124-9c36eae5c77e
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: 0002e9f1-02b1-4d7d-af54-ce03d4249aea # Description
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: null
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 7e3d2d14-cae2-4198-a775-e4aaa541c554
+            userCondition: null
+            warning: null
+            width: 100
+        name: Content
+        uid: 727f8308-8038-4ab7-8a8b-82453b089fee
+        userCondition: null
+handle: meetings
+hasTickets: true
+hasTitleField: true
+icsDescriptionFieldHandle: ''
+icsLocationFieldHandle: ''
+icsTimezone: ''
+name: Meeting
+siteSettings:
+  246ac9e2-0535-4ba5-b543-66b2eb9d969f: # ASCM Southeastern Pennsylvania
+    hasUrls: true
+    template: meetings/_event
+    uriFormat: 'meetings/{slug}'
+titleFormat: null
+titleLabel: Title

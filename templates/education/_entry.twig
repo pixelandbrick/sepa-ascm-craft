@@ -20,7 +20,7 @@
       </div>
       {% if entry.courseCalendar.all() != null %}
       <div class="md:basis-1/3"><!--right sidebar-->
-        {% for product in craft.products.type(entry.slug).orderBy('expiryDate ASC').all() %}
+        {% for product in craft.events.events({type: entry.slug}).all() %}
           <div class="bg-errigal md:w-[404px] pl-[40px] pr-[20px] pt-[10px] pb-[35px] mb-[30px] border-t-[5px]
             {% switch entry.slug %}
               {% case 'cpim' %}
@@ -34,14 +34,13 @@
               {% default %}
                 {{'border-[#006B36]'}}
               {% endswitch %}">
-            <h2>{{ product.title|title }}</h2>
+            <h2>{{ product.title }}</h2>
             <p class="-mt-2 mb-[10px] font-bold text-[#006B36]">Starts {{product.eventDates.one().theEventDate|date('F j')}}</p>
-            <h3 class="border-t border-shaving pt-4 font-bold text-wolf">{{product.defaultVariant.salePrice|currency('USD')}}</h3>
             <div class="mt-2 flex gap-[25px]">
               <form method="post" class="mt-6">
                 {{ csrfInput() }}
                 {{ actionInput('commerce/cart/update-cart') }}
-                {{ hiddenInput('purchasableId', product.defaultVariant.id) }}
+                {{ hiddenInput('purchasableId', product.id) }}
                 {{ redirectInput('shop/cart') }}
                 {{ successMessageInput('{product} added to cart.'|t({
                   product: product.title
@@ -67,7 +66,7 @@
                       'focus:ring'
                     ]
                   } %}
-                    {% for variant in product.getVariants() %}
+                    {% for variant in product.tickets() %}
                       {# @var variant \craft\commerce\elements\Variant #}
                       {{ tag('option', {
                         value: variant.id,
@@ -82,7 +81,7 @@
                   </div>
                 </div>
                 <div class="mt-1 grid grid-cols-1">
-                  {% if product.availableForPurchase %}
+                  {% if product.status('live') %}
                     {{ tag('button', {
                       type: 'submit',
                       class: ['h-max','w-max','bg-[#82C341]','pt-[9px]','pb-[11px]','pl-[20px]','pr-[20px]','text-white','text-lg','font-semibold'],
@@ -104,7 +103,7 @@
       {% endif %}
     </div>
   </div>
+ 
 </div>
-{% block apics_cta %}{% include '_partials/apics_cta.twig' %}{% endblock %}
 {% block footer %}{% include '_partials/footer.twig' %}{% endblock %}
 {% endblock %}

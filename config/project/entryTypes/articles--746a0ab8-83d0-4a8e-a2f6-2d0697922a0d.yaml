@@ -85,7 +85,6 @@ fieldLayouts:
 handle: articles
 hasTitleField: true
 name: Articles
-section: 953c55cb-288a-4b71-9c39-335102a1ae30 # Articles
 showStatusField: true
 slugTranslationKeyFormat: null
 slugTranslationMethod: site

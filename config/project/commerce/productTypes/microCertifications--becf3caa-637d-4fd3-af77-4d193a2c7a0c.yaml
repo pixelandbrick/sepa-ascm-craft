@@ -3,7 +3,7 @@ handle: microCertifications
 hasDimensions: false
 hasProductTitleField: true
 hasVariantTitleField: true
-hasVariants: true
+maxVariants: null
 name: Micro-certifications
 productFieldLayouts:
   e1ea0ca4-fea1-4b84-aad2-e8380262a40f:

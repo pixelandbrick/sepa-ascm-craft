@@ -1,6 +1,5 @@
 columnSuffix: evtssfif
 contentColumnType: char(7)
-fieldGroup: a6fda9ad-6baa-4e9a-a498-51e13db75bb4 # Courses
 handle: courseColor
 instructions: null
 name: 'Course Color'

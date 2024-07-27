@@ -1,5 +1,7 @@
 defaultPlacement: end
 enableVersioning: true
+entryTypes:
+  - 4b6f8d77-baac-4757-ba4d-f92f6f36018e # Scholarships
 handle: scholarships
 name: Scholarships
 propagationMethod: all

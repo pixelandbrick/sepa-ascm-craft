@@ -1,0 +1,12 @@
+columnSuffix: iczadcje
+handle: courseLearnMoreLink
+instructions: null
+name: 'Course Calendar - Courses - Course Learn More Link'
+searchable: false
+settings:
+  maxLength: 255
+  types:
+    - url
+translationKeyFormat: null
+translationMethod: none
+type: craft\fields\Url

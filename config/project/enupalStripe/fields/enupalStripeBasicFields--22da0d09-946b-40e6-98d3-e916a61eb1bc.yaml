@@ -6,11 +6,19 @@ instructions: 'All data saved are stored as “metadata” with each Stripe paym
 name: 'Basic Form Fields'
 searchable: false
 settings:
-  contentTable: '{{%matrixcontent_enupalstripebasicfields}}'
-  maxBlocks: null
-  minBlocks: null
+  entryTypes:
+    - 7c223ad2-f270-439d-8229-a63634b5f3f2
+    - 8c936e0c-0f9e-47e9-bef5-f7d58f5daa0e
+    - 8f8fe5fd-2f3a-4b87-a1c8-19dd74f97fd6
+    - 079e421f-cd2d-4c9f-a959-f393f3557008
+    - 915d841e-2d00-469f-a94d-a95a5e92d201
+    - abf743ea-1f0d-4562-8beb-77884699bb94
+    - b2a045fe-9f92-4df6-a3b7-12524c851292
+  maxEntries: null
+  minEntries: null
   propagationKeyFormat: null
   propagationMethod: all
+  viewMode: blocks
 translationKeyFormat: null
 translationMethod: site
 type: craft\fields\Matrix

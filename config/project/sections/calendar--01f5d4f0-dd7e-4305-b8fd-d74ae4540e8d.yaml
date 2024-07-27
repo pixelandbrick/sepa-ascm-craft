@@ -1,5 +1,7 @@
 defaultPlacement: end
 enableVersioning: true
+entryTypes:
+  - 395c15b8-d0b9-4206-aa8f-71458954a24b # Calendar
 handle: calendar
 name: Calendar
 previewTargets:

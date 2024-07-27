@@ -75,7 +75,7 @@
                 min: 1,
                 placeholder: 'Quantity'|t
               }) }}
-              {% if product.availableForPurchase %}
+              {% if product.status('live') %}
                 {{ tag('button', {
                   type: 'submit',
                   class: ['m-0', 'text-center', 'cursor-pointer rounded px-4 py-2 inline-block bg-blue-500 hover:bg-blue-600 text-white hover:text-white'],

@@ -1,5 +1,7 @@
 defaultPlacement: end
 enableVersioning: true
+entryTypes:
+  - e610f2dd-2a10-4e51-8b47-31257ee4e64b # Courses - Default
 handle: education
 name: Courses
 previewTargets:

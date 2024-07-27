@@ -1,0 +1,96 @@
+color: null
+fieldLayouts:
+  8710a672-7bd1-4262-a4eb-4d38c334d874:
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            elementCondition: null
+            fieldUid: 5dee5e0e-253c-4592-aee3-a972def5d20d
+            handle: null
+            includeInCards: true
+            instructions: null
+            label: 'Course Title'
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 28505b1e-bddd-40ff-9526-9fbf9f9ec04c
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: d295751f-17c5-4b41-9631-47ff6821c636
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: 'Course Start Date'
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 3a5bfcaa-6ca9-440f-9426-38ef7d9d1032
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: ac9208bf-f7d4-4820-82ec-5ff13af16e86
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: 'Course Short Description'
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 00054e01-4f6d-4fa1-9e41-207c5cfa3f10
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: 114b147f-c6ee-45c3-b1f0-0c93db41ba4d
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: 'Course Registration Link'
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 84669eba-c92d-4164-9fe6-f75eba3819f4
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: 0906910f-3fd1-43b1-94a6-38f94a55ce30
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: 'Course Learn More Link'
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: c567a3d2-1fa5-428b-aaa8-6b6f592512b1
+            userCondition: null
+            warning: null
+            width: 100
+        name: Content
+        uid: 554af1e4-1c1e-4fad-bafc-4affd66a4416
+        userCondition: null
+handle: courses
+hasTitleField: false
+icon: null
+name: Courses
+showSlugField: true
+showStatusField: true
+slugTranslationKeyFormat: null
+slugTranslationMethod: site
+titleFormat: null
+titleTranslationKeyFormat: null
+titleTranslationMethod: site

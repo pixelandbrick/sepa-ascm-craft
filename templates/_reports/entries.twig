@@ -1,0 +1,30 @@
+{#
+Report Title : Books Entries Export
+Report Description : A very basic export of all the Books entries.
+Report Template : _reports/booksBasic
+#}
+
+{# Initialize the rows array by placing an array of column headers/labels in it. #}
+{% set rows = [[
+	'Event',
+	'Customer Name',
+	'Email',
+	'Purchase Date',
+]] %}
+
+{# Construct a query and execute it with .all(). #}
+{% set tickets = craft.events.purchasedTickets() %}
+
+{# Loop through the entries and add them to the report rows array. #}
+{% for ticket in tickets %}
+	if
+	{% set rows = rows|merge([[
+		ticket.event,
+		ticket.order.customer.fullName,
+		ticket.order.customer.email,
+		ticket.order.datePaid|date(),
+	]]) %}
+{% endfor %}
+
+{# Tell Lab Reports to construct the CSV File and save a new Report element. #}
+{% do report.build(rows) %}

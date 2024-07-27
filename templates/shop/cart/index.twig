@@ -119,12 +119,12 @@ Outputs cart.
                     <div class="flex items-center w-full justify-end" title="{{ item.price }}">
                       <div class="text-xs pr-2">{{ 'Price'|t }}:</div>
                       <div class="text-sm tabular-nums">
-                        {%- if item.onSale %}<del>{% endif %}
+                        {%- if item.onPromotion %}<del>{% endif %}
                         {{- item.priceAsCurrency -}}
-                        {% if item.onSale %}</del>{% endif -%}
+                        {% if item.onPromotion %}</del>{% endif -%}
                       </div>
                     </div>
-                    {% if item.onSale %}
+                    {% if item.onPromotion %}
                       <div class="flex items-center w-full justify-end" title="{{ item.salePrice }}">
                         <div class="text-xs pr-2">{{ 'Member Price'|t }}:</div>
                         <div class="text-sm tabular-nums">{{ item.salePriceAsCurrency }}</div>

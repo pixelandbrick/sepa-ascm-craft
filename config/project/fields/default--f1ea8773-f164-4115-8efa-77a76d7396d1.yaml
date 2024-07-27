@@ -1,0 +1,12 @@
+columnSuffix: atbjcurb
+handle: default
+instructions: 'Please make sure that just one default is enabled'
+name: 'Add Plan - Subscription Plan - Default'
+searchable: true
+settings:
+  default: false
+  offLabel: null
+  onLabel: null
+translationKeyFormat: null
+translationMethod: site
+type: craft\fields\Lightswitch

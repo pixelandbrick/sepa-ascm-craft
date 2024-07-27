@@ -80,30 +80,6 @@
 
   {# Cost breakdown #}
   <div class="mt-3 pt-3 border-t border-gray-300">
-    <div class="flex w-full justify-end items-center text-xs text-gray-500">
-      <div class="pr-2">
-        {{ 'Shipping'|t }}:
-      </div>
-      <div>
-        {{ cart.totalShippingCostAsCurrency }}
-      </div>
-    </div>
-    <div class="flex w-full justify-end items-center text-xs text-gray-500">
-      <div class="pr-2">
-        {{ 'Tax'|t }}:
-      </div>
-      <div>
-        {{ cart.totalTaxAsCurrency }}
-      </div>
-    </div>
-    <div class="flex w-full justify-end items-center text-xs text-gray-500">
-      <div class="pr-2">
-        {{ 'Tax (inc)'|t }}:
-      </div>
-      <div>
-        {{ cart.totalTaxIncluded|commerceCurrency(cart.currency) }}
-      </div>
-    </div>
     {% if cart.totalDiscount %}
       <div class="flex w-full justify-end items-center text-xs text-gray-500">
         <div class="pr-2">

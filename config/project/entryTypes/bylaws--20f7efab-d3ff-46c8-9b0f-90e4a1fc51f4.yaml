@@ -49,7 +49,6 @@ fieldLayouts:
 handle: bylaws
 hasTitleField: false
 name: Bylaws
-section: 339e05fa-565f-4fa4-98ad-05cc58243fb8 # Bylaws
 showStatusField: true
 slugTranslationKeyFormat: null
 slugTranslationMethod: site

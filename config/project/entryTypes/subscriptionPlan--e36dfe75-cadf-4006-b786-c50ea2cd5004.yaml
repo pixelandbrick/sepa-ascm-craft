@@ -1,0 +1,81 @@
+color: null
+fieldLayouts:
+  c1454fa4-9af5-49e7-9bf9-113aecde9429:
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            elementCondition: null
+            fieldUid: 3d62bbe5-007a-4423-bde4-d3e0e97f5ad0
+            handle: null
+            includeInCards: true
+            instructions: null
+            label: 'Select Plan'
+            providesThumbs: false
+            required: true
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: e5e25688-f5a6-4b72-a8f0-344ddc145f17
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: daa7a77a-16ff-437e-a72b-b64279d9f19f
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: 'Custom Label'
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 7bf27c06-e9dc-4b00-bb08-2e521ede8182
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: 51456749-2b0c-4632-aef9-2fa9ec2acb05
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: 'Setup Fee'
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 3e409b58-ca77-4dbc-ad90-bafdd02eee23
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: f1ea8773-f164-4115-8efa-77a76d7396d1
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: Default
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: b7d1200b-6a55-4eb3-866c-412dedde26de
+            userCondition: null
+            warning: null
+            width: 100
+        name: Content
+        uid: b7475705-3687-461c-a46f-7e48781e4195
+        userCondition: null
+handle: subscriptionPlan
+hasTitleField: false
+icon: null
+name: 'Subscription Plan'
+showSlugField: true
+showStatusField: true
+slugTranslationKeyFormat: null
+slugTranslationMethod: site
+titleFormat: null
+titleTranslationKeyFormat: null
+titleTranslationMethod: site

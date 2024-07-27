@@ -37,7 +37,6 @@ fieldLayouts:
 handle: calendar
 hasTitleField: true
 name: Calendar
-section: 01f5d4f0-dd7e-4305-b8fd-d74ae4540e8d # Calendar
 showStatusField: true
 slugTranslationKeyFormat: null
 slugTranslationMethod: site

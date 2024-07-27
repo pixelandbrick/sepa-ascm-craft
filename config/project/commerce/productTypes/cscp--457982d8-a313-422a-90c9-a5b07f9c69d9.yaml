@@ -3,7 +3,7 @@ handle: cscp
 hasDimensions: false
 hasProductTitleField: true
 hasVariantTitleField: true
-hasVariants: true
+maxVariants: null
 name: 'CSCP Course'
 productFieldLayouts:
   fcc707c5-786c-4209-88d4-1053c74ac6d8:

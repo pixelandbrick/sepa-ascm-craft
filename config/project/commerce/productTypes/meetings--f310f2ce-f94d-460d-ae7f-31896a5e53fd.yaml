@@ -3,7 +3,7 @@ handle: meetings
 hasDimensions: false
 hasProductTitleField: true
 hasVariantTitleField: true
-hasVariants: true
+maxVariants: null
 name: Meeting
 productFieldLayouts:
   43b1065e-bcdb-42b7-8048-463c9affedf3:

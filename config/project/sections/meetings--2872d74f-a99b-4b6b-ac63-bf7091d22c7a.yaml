@@ -1,5 +1,7 @@
 defaultPlacement: end
 enableVersioning: true
+entryTypes:
+  - d2cfea47-ae3e-42bb-93f1-78a50b4cb084 # Meetings - Default
 handle: meetings
 name: Meetings
 previewTargets:

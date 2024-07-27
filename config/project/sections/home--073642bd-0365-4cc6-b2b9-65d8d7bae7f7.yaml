@@ -1,5 +1,7 @@
 defaultPlacement: end
 enableVersioning: true
+entryTypes:
+  - f4ea77a0-0e5b-4c89-bbce-ab4e1917b0a4 # Home
 handle: home
 name: Home
 propagationMethod: all

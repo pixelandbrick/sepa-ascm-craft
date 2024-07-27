@@ -85,7 +85,6 @@ fieldLayouts:
 handle: default
 hasTitleField: true
 name: Default
-section: 10bc5384-4844-49dc-b8f1-948bbb791731 # Opportunities
 showStatusField: true
 slugTranslationKeyFormat: null
 slugTranslationMethod: site

@@ -1,5 +1,7 @@
 defaultPlacement: end
 enableVersioning: true
+entryTypes:
+  - 391a7a4d-10d6-448c-bb50-a2ad7ff21baf # About ASCM SEPA
 handle: aboutAscmSepa
 name: 'About ASCM SEPA'
 previewTargets:

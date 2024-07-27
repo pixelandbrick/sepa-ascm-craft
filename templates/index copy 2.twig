@@ -1,0 +1,73 @@
+{% extends "_layouts/default.twig" %}
+
+{% block bodyTag %}
+  {{ parent()|attr({
+    class: 'bg-[#1D1D1D]'
+  }) }}
+{% endblock %}
+
+{% set start = now|atom %}
+
+{% block content %}
+{% block header %}{% include '_partials/header.twig' %}{% endblock %}
+{% block hero %}{% include '_partials/hero.twig' %}{% endblock %}
+<div class="bg-white">
+  <div class="max-w-screen-xl min-w-screen-xl mx-auto px-6 md:px-0">
+  <div class="mt-[100px] grid grid-cols-1 md:grid-cols-3 gap-8">
+
+  {% for product in homepageFeatureItems.featuredProducts.limit(3) %}
+    <div class="flex flex-col mb-12 md:mb-0">
+        {% if product.type.name != 'Membership' %}
+          {% set theProduct = craft.entries().slug(product.type.handle).one() %}
+          {% if product.type.name != 'Meeting' and theProduct.courseHero %}
+          <div class="w-full h-[280px] bg-contain bg-no-repeat bg-center" style="background-image: url({{theProduct.courseHero.one().url}})">
+          {% elseif product.featureImage.one() %}
+          <div class="w-full h-[280px] bg-cover" style="background-image: url({{product.featureImage.one().url}})">
+          {% else %}
+          <div class="w-full h-[280px] bg-cover" style="background-image: url({{"/volumes/jpg/test-sq.jpg"}})">
+          {% endif %}
+          </div>
+          <div class="mt-[10px] w-11/12 grow">
+            <h2>
+              {% if product.type.name != 'Meeting' %}
+                {{product.type.name ~ ' – '}}
+              {% endif %}
+              {{product.title}}
+            </h2>
+            <h3 class="text-ficus">
+              {% if product.type.name != 'Meeting' %}{{"Starts " ~ product.eventDates.one().theEventDate|date('F j')}}
+              {% else %}{{product.eventDates.one().theEventDate|date('F j, Y – g:i a T')}}
+              {% endif %}
+            </h3>
+            <br />
+            <p class="text-lg">{{product.description|striptags|truncate(255,'...')}}</p>
+          </div>
+          <div class="mt-[30px]"><a href=
+            {% if product.type.name != 'Meeting' and product.type.name != 'Membership' %}{{"/education/" ~ product.type.handle }}
+            {% else %}{{"/meetings" }}
+            {% endif %}
+          class="primaryButton">Learn More</a></div>
+      {% endif %}
+    </div>
+  {% endfor %}
+  </div>
+  <div class="my-[100px]">
+    <h4 class="text-lg leading-[38px]">Welcome to Southeastern 
+    Pennsylvania Alliance Chapter (SEPA), we are excited that you decided to join our chapter. In addition to the values 
+    and rewards you might receive from ASCM, our members will enjoy the following additional values.</h4>
+    <ul class="text-lg leading-[38px]">
+      <li>Attendance to our annual Top Management Night, with the event offering appetizers, door prizes with a cash bar. 
+      Don’t miss out on a great networking opportunity!</li>
+      <li>Attendance to our monthly PDM meetings for members of SEPA, will receive a discounted price registration.</li>
+      <li>Job posting listed on our website as well as blast E-Mail communication.</li>
+      <li>Cost savings for members of SEPA, when registering for any educational classes the chapter is offering.</li>
+      <li>Expanded number and frequency of educational classes and Supply Chain professional certificates.</li>
+      <li>Opportunity to participate in the annual Janet Hillier Education Scholarship. Applicable to undergraduate students only.</li>
+      <li>York College Students in the Operations & Supply Chain curriculum are eligible to apply for the annual endowment the college presents to attend either a CPIM or CSCP class including an exam voucher.</p>
+    </ul>
+  </div>
+  <div class="mx-auto mb-[80px] w-[60px] border-b-[5px] border-ficus">&nbsp;</div><!-- color block -->
+</div>
+{% block apics_cta %}{% include '_partials/apics_cta.twig' %}{% endblock %}
+{% block footer %}{% include '_partials/footer.twig' %}{% endblock %}
+{% endblock %}

@@ -3,89 +3,79 @@ tabs:
     elementCondition: null
     elements:
       -
+        attribute: fullName
+        autocapitalize: true
+        autocomplete: false
+        autocorrect: true
+        class: null
+        disabled: false
         elementCondition: null
-        fieldUid: 7bf3f660-5313-4487-a1e3-16248d4bce0b # Prefix
+        id: null
+        includeInCards: false
+        inputType: null
         instructions: null
         label: null
+        max: null
+        min: null
+        name: null
+        orientation: null
+        placeholder: null
+        providesThumbs: false
+        readonly: false
+        requirable: true
         required: false
+        size: null
+        step: null
         tip: null
-        type: craft\fieldlayoutelements\CustomField
-        uid: 4b703603-b718-4e43-ac3a-e5eefc705909
+        title: null
+        type: craft\fieldlayoutelements\users\FullNameField
+        uid: 1ac3fce4-9137-439d-9973-667cf0ef2892
         userCondition: null
         warning: null
-        width: 50
+        width: 100
       -
         elementCondition: null
-        fieldUid: f16d6a02-5b8f-462e-814d-8fdfab7aca4e # First Name
+        id: null
+        includeInCards: false
         instructions: null
-        label: null
-        required: false
+        label: __blank__
+        orientation: null
+        providesThumbs: false
+        requirable: false
         tip: null
-        type: craft\fieldlayoutelements\CustomField
-        uid: 1b990a00-c74f-4121-b416-e4159d7fd02b
+        type: craft\fieldlayoutelements\users\PhotoField
+        uid: ebd8e1cd-bf0c-4f24-ab70-3c155e426454
         userCondition: null
         warning: null
-        width: 50
+        width: 100
       -
+        autocapitalize: true
+        autocomplete: false
+        autocorrect: true
+        class: null
+        disabled: false
         elementCondition: null
-        fieldUid: 23bc5904-1ba2-4e6d-8897-d1364066e349 # Middle Name
+        id: null
+        includeInCards: false
+        inputType: null
         instructions: null
         label: null
-        required: false
+        max: null
+        min: null
+        name: null
+        orientation: null
+        placeholder: null
+        providesThumbs: false
+        readonly: false
+        requirable: false
+        size: null
+        step: null
         tip: null
-        type: craft\fieldlayoutelements\CustomField
-        uid: d039374b-4f16-4b14-ae0a-52563da042d0
+        title: null
+        type: craft\fieldlayoutelements\users\EmailField
+        uid: a442fec6-9689-413d-a5ed-310aec304b80
         userCondition: null
-        warning: null
-        width: 50
-      -
-        elementCondition: null
-        fieldUid: 6f16a147-30bc-44cf-8467-a0eee2bb7cdb # Last Name
-        instructions: null
-        label: null
-        required: false
-        tip: null
-        type: craft\fieldlayoutelements\CustomField
-        uid: b288bfb0-e341-4cb1-94b6-6fd0420c874d
-        userCondition: null
-        warning: null
-        width: 50
-      -
-        elementCondition: null
-        fieldUid: f0f41ce0-d3e1-4633-b3ca-f13bb04fdf93 # Suffix
-        instructions: null
-        label: null
-        required: false
-        tip: null
-        type: craft\fieldlayoutelements\CustomField
-        uid: d9a2db23-18df-4ea1-b99f-0be65a31dd92
-        userCondition: null
-        warning: null
-        width: 50
-      -
-        elementCondition: null
-        fieldUid: cad9b5b7-7d7c-4497-b2c6-7d009fe495ba # Primary Email
-        instructions: null
-        label: null
-        required: false
-        tip: null
-        type: craft\fieldlayoutelements\CustomField
-        uid: e9b845f2-942a-4a75-ba9d-f1108bd648c9
-        userCondition: null
-        warning: null
-        width: 50
-      -
-        elementCondition: null
-        fieldUid: dca6f984-c80e-47b1-9494-9ee9ce74264e # Primary Phone
-        instructions: null
-        label: null
-        required: false
-        tip: null
-        type: craft\fieldlayoutelements\CustomField
-        uid: 89c938e0-a8c9-4db1-b934-29d6b71f279e
-        userCondition: null
-        warning: null
-        width: 50
+        width: 100
       -
         elementCondition: null
         type: craft\fieldlayoutelements\HorizontalRule
@@ -93,93 +83,12 @@ tabs:
         userCondition: null
       -
         elementCondition: null
-        heading: Address
-        type: craft\fieldlayoutelements\Heading
-        uid: 1d4469b6-840a-4a3a-80d7-a54038661b8a
-        userCondition: null
-      -
-        elementCondition: null
-        fieldUid: 6a0974f0-8fab-48a9-91d1-2a2fbecd0fdb # Primary Address Line 1
-        instructions: null
-        label: null
-        required: false
-        tip: null
-        type: craft\fieldlayoutelements\CustomField
-        uid: 929b62d6-65d5-4469-9f0c-0f6cf20adc96
-        userCondition: null
-        warning: null
-        width: 100
-      -
-        elementCondition: null
-        fieldUid: 7b6443a5-03e0-4bfa-b087-c90474eba44f # Primary Address Line 2
-        instructions: null
-        label: null
-        required: false
-        tip: null
-        type: craft\fieldlayoutelements\CustomField
-        uid: 20bb1356-fefb-4bee-9d13-7f0adcd100d6
-        userCondition: null
-        warning: null
-        width: 100
-      -
-        elementCondition: null
-        fieldUid: d4007a70-d156-41b9-8a51-76583fc3de34 # Primary City
-        instructions: null
-        label: null
-        required: false
-        tip: null
-        type: craft\fieldlayoutelements\CustomField
-        uid: c8579b49-506a-4672-af6e-f0b0d245c00e
-        userCondition: null
-        warning: null
-        width: 50
-      -
-        elementCondition: null
-        fieldUid: 2c5ec331-992c-4ac0-835a-d31b81fac3f8 # Primary State
-        instructions: null
-        label: null
-        required: false
-        tip: null
-        type: craft\fieldlayoutelements\CustomField
-        uid: a10bf1fa-89e1-481e-9fad-33e5c43e9263
-        userCondition: null
-        warning: null
-        width: 50
-      -
-        elementCondition: null
-        fieldUid: 1d13027e-37b7-40af-8369-2d3f7b624c10 # Primary ZIP Code
-        instructions: null
-        label: null
-        required: false
-        tip: null
-        type: craft\fieldlayoutelements\CustomField
-        uid: 1c8eaef7-558d-4838-a2bc-1e9adc164a9a
-        userCondition: null
-        warning: null
-        width: 50
-      -
-        elementCondition: null
-        fieldUid: 84e26cf3-9744-4ba1-abc7-802cca000ddb # Country
-        instructions: null
-        label: null
-        required: false
-        tip: null
-        type: craft\fieldlayoutelements\CustomField
-        uid: e37d9b10-80d7-4e94-a3fd-59d727465841
-        userCondition: null
-        warning: null
-        width: 50
-    name: 'Name & Contact Info'
-    uid: 6d7bcc45-f46b-45a3-8703-5c7e129e0e65
-    userCondition: null
-  -
-    elementCondition: null
-    elements:
-      -
-        elementCondition: null
         fieldUid: 416e052a-ff8b-49b7-a84b-fc71a488e4ec # Company
+        handle: null
+        includeInCards: false
         instructions: null
         label: null
+        providesThumbs: false
         required: false
         tip: null
         type: craft\fieldlayoutelements\CustomField
@@ -190,8 +99,11 @@ tabs:
       -
         elementCondition: null
         fieldUid: 420cc52f-a056-4c9d-8c2e-6cb98c17fc65 # Job Title
+        handle: null
+        includeInCards: false
         instructions: null
         label: null
+        providesThumbs: false
         required: false
         tip: null
         type: craft\fieldlayoutelements\CustomField
@@ -201,193 +113,17 @@ tabs:
         width: 100
       -
         elementCondition: null
-        fieldUid: 0652156b-8c55-44ad-b7f3-f6ad52da82d4 # Secondary Address Line 1
-        instructions: null
-        label: null
-        required: false
-        tip: null
-        type: craft\fieldlayoutelements\CustomField
-        uid: 8a09b8fe-779f-4b0e-bb2a-205ec0cd6abc
-        userCondition: null
-        warning: null
-        width: 100
-      -
-        elementCondition: null
-        fieldUid: f0acae6f-0b11-459c-9973-63beb360dc50 # Secondary Address Line 2
-        instructions: null
-        label: null
-        required: false
-        tip: null
-        type: craft\fieldlayoutelements\CustomField
-        uid: 25e53890-25ff-49c7-b75a-bb9b87f30588
-        userCondition: null
-        warning: null
-        width: 100
-      -
-        elementCondition: null
-        fieldUid: 4007408a-3829-47b4-a656-7714b8577322 # Secondary City
-        instructions: null
-        label: null
-        required: false
-        tip: null
-        type: craft\fieldlayoutelements\CustomField
-        uid: ebfccd9e-a8f1-4ee1-a515-c89c58c1f051
-        userCondition: null
-        warning: null
-        width: 50
-      -
-        elementCondition: null
-        fieldUid: 70b04f6d-65a9-4b13-982d-b1e4a54b5ebc # Secondary State
-        instructions: null
-        label: null
-        required: false
-        tip: null
-        type: craft\fieldlayoutelements\CustomField
-        uid: acc6e73a-6ac7-4ec1-bf62-df778d33bab3
-        userCondition: null
-        warning: null
-        width: 50
-      -
-        elementCondition: null
-        fieldUid: 269305ec-6e91-4086-b457-fda2b804348f # Secondary ZIP Code
-        instructions: null
-        label: null
-        required: false
-        tip: null
-        type: craft\fieldlayoutelements\CustomField
-        uid: 75176daf-4457-49b7-992a-cb097873dae2
-        userCondition: null
-        warning: null
-        width: 50
-      -
-        elementCondition: null
-        fieldUid: a67f388d-31d0-4a56-adbc-945b91ab2d27 # Secondary Email
-        instructions: null
-        label: null
-        required: false
-        tip: null
-        type: craft\fieldlayoutelements\CustomField
-        uid: 82fd10da-6446-4c05-92f9-799ba742a2b1
-        userCondition: null
-        warning: null
-        width: 50
-      -
-        elementCondition: null
-        fieldUid: 2853b148-19f8-4d32-9e6f-0c41ece101e7 # Secondary Phone
-        instructions: null
-        label: null
-        required: false
-        tip: null
-        type: craft\fieldlayoutelements\CustomField
-        uid: e4be6bb3-a6a9-472a-a30e-fe7d8e245a59
-        userCondition: null
-        warning: null
-        width: 50
-    name: 'Professional Information'
-    uid: 28d959f1-6b33-49bd-a7bf-6dee1f94fa8c
-    userCondition: null
-  -
-    elementCondition: null
-    elements:
-      -
-        elementCondition: null
-        fieldUid: 2b22202f-f018-4723-92d2-b6f342c83110 # ASCM Member Photo
-        instructions: null
-        label: null
-        required: false
-        tip: null
-        type: craft\fieldlayoutelements\CustomField
-        uid: 3ef4f2d0-34d1-4e36-981e-b1fc56ec3994
-        userCondition: null
-        warning: null
-        width: 50
-      -
-        elementCondition: null
-        fieldUid: b1af9faf-1b8b-4b11-9ad8-0c34976e4d1c # ASCM Member Bio
-        instructions: null
-        label: null
-        required: false
-        tip: null
-        type: craft\fieldlayoutelements\CustomField
-        uid: 21b23d6e-9929-45fe-a79d-39fb1fb8602d
-        userCondition: null
-        warning: null
-        width: 100
-      -
-        elementCondition: null
-        fieldUid: 661cb456-1ecc-4d4c-9f2f-c77d6643a200 # ASCM Member Expiration
-        instructions: null
-        label: null
-        required: false
-        tip: null
-        type: craft\fieldlayoutelements\CustomField
-        uid: 0efb4d00-1633-4dbb-b5bb-f4f2a4223cf2
-        userCondition: null
-        warning: null
-        width: 50
-      -
-        elementCondition: null
-        fieldUid: 0d75198f-7347-4438-9de1-7883c8f606fe # ASCM Member Join
-        instructions: null
-        label: null
-        required: false
-        tip: null
-        type: craft\fieldlayoutelements\CustomField
-        uid: 893db0f7-9ff9-42e1-b05b-a2c717597b95
-        userCondition: null
-        warning: null
-        width: 50
-      -
-        elementCondition: null
         type: craft\fieldlayoutelements\HorizontalRule
-        uid: c97b2728-6f57-4c98-935b-df5f624385a5
-        userCondition: null
-      -
-        elementCondition: null
-        fieldUid: c80a5bbf-766f-4966-8484-f7494f33cd1b # ASCM Member Suspension
-        instructions: null
-        label: null
-        required: false
-        tip: null
-        type: craft\fieldlayoutelements\CustomField
-        uid: a5390a37-1d6f-4cf9-afe7-d9e2f50fb1b7
-        userCondition: null
-        warning: null
-        width: 25
-      -
-        elementCondition: null
-        fieldUid: 455b165d-4c95-4d41-9594-3b4b4861f3b1 # ASCM Member Pending
-        instructions: null
-        label: null
-        required: false
-        tip: null
-        type: craft\fieldlayoutelements\CustomField
-        uid: 43b0f2a1-85e3-41f6-8ae6-6d5e720b65c9
-        userCondition: null
-        warning: null
-        width: 25
-      -
-        elementCondition: null
-        fieldUid: 654b94d6-da06-434e-a77b-710078d84437 # ASCM Member Notes
-        instructions: null
-        label: null
-        required: false
-        tip: null
-        type: craft\fieldlayoutelements\CustomField
-        uid: c29bf081-8306-4ff4-9797-8f63de63b755
-        userCondition: null
-        warning: null
-        width: 100
-      -
-        elementCondition: null
-        type: craft\fieldlayoutelements\LineBreak
-        uid: 9858b894-7089-4cb0-8a22-0757d00802d0
+        uid: 8e80ec81-0e9e-4ff3-8d02-4c809e1a461a
         userCondition: null
       -
         elementCondition: null
         fieldUid: 7ab520da-9a2c-4dea-8176-b40f65e79334 # ASCM Member ID
+        handle: null
+        includeInCards: false
         instructions: null
         label: null
+        providesThumbs: false
         required: false
         tip: null
         type: craft\fieldlayoutelements\CustomField
@@ -395,6 +131,6 @@ tabs:
         userCondition: null
         warning: null
         width: 50
-    name: 'ASCM Member Info'
-    uid: 335bc4fe-6436-4c5f-99d2-db635047171a
+    name: 'Primary Info'
+    uid: 6d7bcc45-f46b-45a3-8703-5c7e129e0e65
     userCondition: null

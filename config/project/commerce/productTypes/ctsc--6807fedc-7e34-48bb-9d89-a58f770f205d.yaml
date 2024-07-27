@@ -3,7 +3,7 @@ handle: ctsc
 hasDimensions: false
 hasProductTitleField: true
 hasVariantTitleField: true
-hasVariants: true
+maxVariants: null
 name: 'CTSC Course'
 productFieldLayouts:
   a6a130c7-6bda-4264-8b03-5c0546cd6248:
