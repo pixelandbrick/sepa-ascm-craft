@@ -38,7 +38,7 @@
         x-data="{
             events: [
                 {% for ev in craft.events.events() %}
-                    {% if ev.eventDates != null %}
+                    {% if ev.eventDates|length >= 1 %}
                         {% for evDate in ev.eventDates %}
                           {{ '{ id: ' ~ ev.id ~ ',
                                 title:\'' ~ ev.title ~ '\',
@@ -46,6 +46,12 @@
                                 url: \'' ~ ev.type.handle ~ '\','
                               ~ '},'}}
                         {% endfor %}
+                    {% elseif ev.startDate != null %}
+                        {{ '{ id: ' ~ ev.id ~ ',
+                              title:\'' ~ ev.title ~ '\',
+                              start: \'' ~ ev.startDate|date('Y-m-d') ~ '\',
+                              url: \'' ~ ev.type.handle ~ '\','
+                            ~ '},'}}
                     {% endif %}
                 {% endfor %}
             ],

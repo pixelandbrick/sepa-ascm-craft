@@ -8,6 +8,30 @@
       <li class="text-4xl list-image-[url(/dist/svg/check-solid.svg)]"><span class="text-[18px] md:text-[24px]">1,000+ educational resources to continue growth</span></li>
       <li class="text-4xl list-image-[url(/dist/svg/check-solid.svg)]"><span class="text-[18px] md:text-[24px]">Savings for local in-person chapter events</span></li>
     </ul>
-    <a href="/education" class="custom-button h-max w-max bg-white text-wolf pt-[9px] pb-[11px] pl-[20px] pr-[16px] border border-umbra text-lg font-semibold">Get Certified »</a>
+    {% set membershipProduct = craft.products().type('membership').one() %}
+    <form method="post" class="mt-6">
+      {{ csrfInput() }}
+      {{ actionInput('commerce/cart/update-cart') }}
+      {{ hiddenInput('purchasableId', membershipProduct.defaultVariant.id) }}
+      {{ redirectInput('shop/cart') }}
+      {{ successMessageInput('{membershipProduct} added to cart.'|t({
+        membershipProduct: membershipProduct.title
+      })) }}
+      <div class="mt-1 grid grid-cols-1">
+        {% if membershipProduct.status('live') %}
+          {{ tag('button', {
+            type: 'submit',
+            class: ['custom-button','h-max','w-max','bg-white','text-wolf','pt-[9px]','pb-[11px]','pl-[20px]','pr-[16px]','border','border-umbra','text-lg','font-semibold'],
+            text: 'Purchase a Membership »'|t
+          }) }}
+        {% else %}
+          {{ tag('button', {
+            type: 'submit',
+            class: ['custom-button','h-max','w-max','bg-mercury','text-white','pt-[9px]','pb-[11px]','pl-[20px]','pr-[16px]','text-lg','font-semibold'],
+            text: 'Unavailable'|t
+          }) }}
+        {% endif %}
+      </div>
+    </form>
   </div>
 </div>

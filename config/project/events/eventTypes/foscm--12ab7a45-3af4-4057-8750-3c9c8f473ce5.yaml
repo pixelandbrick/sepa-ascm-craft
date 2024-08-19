@@ -1,0 +1,53 @@
+eventFieldLayouts:
+  c4a70874-b57d-471c-9105-c5608fdaf516:
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            autocapitalize: true
+            autocomplete: false
+            autocorrect: true
+            class: null
+            dateAdded: '2024-08-19T22:04:05+00:00'
+            disabled: false
+            elementCondition: null
+            id: null
+            includeInCards: false
+            inputType: null
+            instructions: null
+            label: null
+            max: null
+            min: null
+            name: null
+            orientation: null
+            placeholder: null
+            providesThumbs: false
+            readonly: false
+            requirable: false
+            size: null
+            step: null
+            tip: null
+            title: null
+            type: verbb\events\fieldlayoutelements\EventTitleField
+            uid: e3a8b08f-d2c8-4c1f-9170-6cfb2f6f1014
+            userCondition: null
+            warning: null
+            width: 100
+        name: Content
+        uid: 9b24ef53-28e8-4919-8e5d-78e012a409ea
+        userCondition: null
+handle: foscm
+hasTickets: false
+hasTitleField: true
+icsDescriptionFieldHandle: ''
+icsLocationFieldHandle: ''
+icsTimezone: ''
+name: FOSCM
+siteSettings:
+  246ac9e2-0535-4ba5-b543-66b2eb9d969f: # ASCM Southeastern Pennsylvania
+    hasUrls: true
+    template: foscm/_event
+    uriFormat: 'foscm/{slug}'
+titleFormat: null
+titleLabel: Title

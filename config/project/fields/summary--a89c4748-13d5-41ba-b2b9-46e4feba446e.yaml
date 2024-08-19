@@ -1,14 +1,12 @@
 columnSuffix: null
-contentColumnType: text
 handle: summary
 instructions: null
 name: Summary
 searchable: false
 settings:
   byteLimit: null
-  charLimit: null
+  charLimit: 255
   code: false
-  columnType: null
   initialRows: 4
   multiline: false
   placeholder: null

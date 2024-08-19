@@ -17,17 +17,6 @@
       </div>
       <div class="hidden md:inline-flex shrink-0 gap-[25px] place-items-center"><!--calendar/etc buttons right align -->
         <!--<div>Calendar&nbsp;</div>-->
-        {% if currentUser %}
-          <a href="{{ url('shop/customer') }}"
-            class="pt-[11px] pb-[6px] relative text-wolf text-[14px] font-semibold cursor-pointer inline-block hover:no-underline -mt-[6px] mr-1">
-              <i class="fa-solid fa-user text-vault text-lg"></i>&ensp;My Account
-          </a>
-        {% else %}
-          <a href="{{ url('shop/customer/sign-in') }}"
-            class="pt-[18px] pb-[6px] relative text-wolf text-[14px] font-semibold cursor-pointer inline-block hover:no-underline -mt-[6px] mr-1">
-            {{- 'Sign In'|t -}}
-          </a>
-        {% endif %}
         <a href="{{ url('shop/cart') }}"
           class="pt-[11px] pb-[6px] relative text-wolf text-[14px] font-semibold cursor-pointer inline-block hover:no-underline -mt-[6px] mr-1">
             {% if cart.totalQty %}
@@ -57,17 +46,7 @@
         x-transition
     >
       {% if 'checkout' not in currentPath %}
-      <li class="ml-2 md:hidden">{% if currentUser %}
-        <a href="{{ url('shop/customer') }}"
-          class="pt-[11px] pb-[6px] relative text-wolf text-[14px] font-semibold cursor-pointer inline-block hover:no-underline mr-1">
-            <i class="fa-solid fa-user text-vault text-lg"></i>&ensp;My Account
-        </a>
-      {% else %}
-        <a href="{{ url('shop/customer/sign-in') }}"
-          class="pt-[18px] pb-[6px] relative text-wolf text-[14px] font-semibold cursor-pointer inline-block hover:no-underline mr-1">
-          {{- 'Sign In'|t -}}
-        </a>
-      {% endif %}
+      <li class="ml-2 md:hidden">
         <a href="{{ url('shop/cart') }}"
           class="ml-2 pt-[11px] pb-[6px] relative text-wolf text-[14px] font-semibold cursor-pointer inline-block hover:no-underline mr-1">
             {% if cart.totalQty %}

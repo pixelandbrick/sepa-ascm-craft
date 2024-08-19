@@ -22,20 +22,25 @@
           {% if product.type.name != 'Meeting' and theProduct.courseHero %}
           <div class="w-full h-[280px] bg-contain bg-no-repeat bg-center" style="background-image: url({{theProduct.courseHero.one().url}})">
           {% elseif product.featureImage.one() %}
-          <div class="w-full h-[280px] bg-cover" style="background-image: url({{product.featureImage.one().url}})">
+          <div class="w-full h-[280px] bg-contain bg-no-repeat bg-center" style="background-image: url({{product.featureImage.one().url}})">
           {% else %}
-          <div class="w-full h-[280px] bg-cover" style="background-image: url({{"/volumes/jpg/test-sq.jpg"}})">
+          <div class="w-full h-[280px] bg-contain bg-no-repeat bg-center" style="background-image: url({{"/volumes/jpg/test-sq.jpg"}})">
           {% endif %}
           </div>
           <div class="mt-[10px] w-11/12 grow">
             <h2>{{product.title}}</h2>
             <h3 class="text-ficus">
               {% if product.type.name != 'Meeting' %}{{"Starts " ~ product.eventDates.one().theEventDate|date('F j')}}
-              {% else %}{{product.eventDates.one().theEventDate|date('F j, Y – g:i a T')}}
+              {% else %}{{product.startDate|date('F j, Y – g:i a T')}}
               {% endif %}
             </h3>
             <br />
-            <p class="text-lg">{{product.description|striptags|truncate(255,'...')}}</p>
+            <p class="text-lg">
+              {% if product.summary %}
+                {{product.summary}}</p>
+              {% else %}
+                {{product.description|striptags|truncate(255,'...')}}</p>
+              {% endif %}
           </div>
           <div class="mt-[30px]"><a href=
             {% if product.type.name != 'Meeting' and product.type.name != 'Membership' %}{{"/education/" ~ product.type.handle }}

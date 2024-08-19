@@ -1,4 +1,4 @@
-dateModified: 1722090964
+dateModified: 1724105114
 elementSources:
   craft\commerce\elements\Order:
     -
@@ -235,6 +235,7 @@ meta:
     9e62e962-beab-4351-ac61-c273c0acc9cc: 'Meeting Date' # Meeting Date
     9ecdd147-df6b-4e6e-a623-dd430cd0ce83: 'Homepage Feature Items' # Homepage Feature Items
     10bc5384-4844-49dc-b8f1-948bbb791731: Opportunities # Opportunities
+    12ab7a45-3af4-4057-8750-3c9c8f473ce5: FOSCM # FOSCM
     20f7efab-d3ff-46c8-9b0f-90e4a1fc51f4: Bylaws # Bylaws
     22da0d09-946b-40e6-98d3-e916a61eb1bc: 'Basic Form Fields' # Basic Form Fields
     23bc5904-1ba2-4e6d-8897-d1364066e349: 'Middle Name' # Middle Name
@@ -255,6 +256,7 @@ meta:
     416e052a-ff8b-49b7-a84b-fc71a488e4ec: Company # Company
     420cc52f-a056-4c9d-8c2e-6cb98c17fc65: 'Job Title' # Job Title
     455b165d-4c95-4d41-9594-3b4b4861f3b1: 'ASCM Member Pending' # ASCM Member Pending
+    516a0b54-2d26-4290-85da-a4659660cceb: Microcertifications # Microcertifications
     549efa07-4daf-4a9c-afa8-f88c6354057f: Pending # Pending
     636bd5bf-6e10-4629-9034-5517fbd47346: 'Meeting Details Link' # Meeting Details Link
     654b94d6-da06-434e-a77b-710078d84437: 'ASCM Member Notes' # ASCM Member Notes
@@ -292,6 +294,7 @@ meta:
     b1af9faf-1b8b-4b11-9ad8-0c34976e4d1c: 'ASCM Member Bio' # ASCM Member Bio
     b81c20ba-ef6a-4af9-a151-76676391b738: 'Feature Image' # Feature Image
     b4398781-df44-412a-8ce5-5f97d0be7fcc: 'Course Registration Type' # Course Registration Type
+    bafeb962-43fa-4ee4-829d-04accdd17112: Membership # Membership
     bbcdeff7-1fe8-429b-b47c-34a269db0479: 'Board Members' # Board Members
     bcff2c34-88ca-480f-bf39-57872d4636f1: 'About ASCM SEPA' # About ASCM SEPA
     bd4b0b65-e414-479e-8360-de7c61a86bc6: 'About ASCM SEPA' # About ASCM SEPA
@@ -339,7 +342,7 @@ plugins:
     edition: lite
     enabled: true
     licenseKey: ZYEI2I95CHO1A0I5CDRPFC83
-    schemaVersion: 5.0.79
+    schemaVersion: 5.0.82
   commerce-paypal-checkout:
     edition: standard
     enabled: true
@@ -730,5 +733,5 @@ system:
   live: true
   name: 'ASCM Southeastern Pennsylvania'
   retryDuration: null
-  schemaVersion: 5.0.0.21
+  schemaVersion: 5.3.0.2
   timeZone: America/New_York
