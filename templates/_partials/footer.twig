@@ -7,12 +7,23 @@
           <p class="mb-6">Connect with ASCM SEPA and stay up to speed.</p>
           {{ craft.formie.renderForm('subscribe', {
             themeConfig: {
+              formWrapper: {
+                resetClass: true,
+              },
               fieldInput: {
+                resetClass: true,
                 attributes: {
                   class: 'h-max w-full max-w-[420px] bg-errigal pt-[11px] pb-[11px] pl-[20px] border-none rounded-none text-md'
                 }
               },
+              buttonWrapper: {
+                resetClass: true,
+                attributes: {
+                  class: 'mt-4 inline-block',
+                },
+              },
               submitButton: {
+                resetClass: true,
                 attributes: {
                   class: 'h-max w-max bg-none hover:bg-wolf hover:border-white pt-[9px] pb-[11px] pl-[20px] pr-[18px] border border-white rounded-none text-lg font-semibold'
                 }

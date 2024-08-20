@@ -108,15 +108,16 @@
           {% endif %}
         {% endfor %}
         {% if entry.slug == 'foscm' %}
-        <div class="bg-errigal md:w-[404px] pl-[40px] pr-[20px] pt-[10px] pb-[35px] mb-[30px] border-t-[5px] border-[#006B36]">
+        <div class="bg-errigal md:w-[404px] pl-[40px] pr-[20px] pt-[10px] pb-[35px] mb-[30px] border-t-[5px] border-ficus">
         {% set membershipProduct = craft.products().type('membership').one() %}
           <h2>Course Registration</h2>
           <p>
-            To register for a particular FOSCM module, please contact the VP of education.
+            Registration for FOSCM is handled individually. Get the process started below and our VP of Education will get in touch with you.
+            {{ craft.formie.renderForm('contact') }}
           </p>
         </div>
         {% endif %}
-        <div class="bg-errigal md:w-[404px] pl-[40px] pr-[20px] pt-[10px] pb-[35px] mb-[30px] border-t-[5px] border-[#006B36]">
+        <div class="bg-errigal md:w-[404px] pl-[40px] pr-[20px] pt-[10px] pb-[35px] mb-[30px] border-t-[5px] border-ficus">
         {% set membershipProduct = craft.products().type('membership').one() %}
           <h2>Not a member?</h2>
           <p>
