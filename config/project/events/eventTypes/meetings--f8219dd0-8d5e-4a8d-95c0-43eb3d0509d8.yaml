@@ -121,6 +121,22 @@ eventFieldLayouts:
         elementCondition: null
         elements:
           -
+            dateAdded: '2024-08-21T02:53:44+00:00'
+            elementCondition: null
+            fieldUid: 0002e9f1-02b1-4d7d-af54-ce03d4249aea # Description
+            handle: recap
+            includeInCards: false
+            instructions: null
+            label: Recap
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: bc914665-6a82-42f5-9949-bcf20db59b3c
+            userCondition: null
+            warning: null
+            width: 100
+          -
             dateAdded: '2024-08-20T19:55:26+00:00'
             elementCondition: null
             fieldUid: fae24e8a-6aa9-455e-88f0-64d79cdc5f80 # Gallery
