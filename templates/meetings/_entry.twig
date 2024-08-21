@@ -56,6 +56,7 @@
   <script type="text/javascript">
     $(document).ready(function(){
     $('.slick-fade').slick({
+      adaptiveHeight: true,
       arrows: true,
       infinite: true,
       autoplay: true,
@@ -63,8 +64,8 @@
       speed: 500,
       fade: true,
       cssEase: 'linear',
-      prevArrow: '<a href="" class="mr-6 pb-12 block"><img src="/dist/svg/left-arrow.svg" class="w-12" /></a>',
-      nextArrow: '<a href="" class="ml-6 pb-12 block"><img src="/dist/svg/right-arrow.svg" class="w-12" /></a>',
+      prevArrow: '<a href="" class="mr-6 pb-12 block shrink-0"><img src="/dist/svg/left-arrow.svg" class="w-6" /></a>',
+      nextArrow: '<a href="" class="ml-6 pb-12 block shrink-0"><img src="/dist/svg/right-arrow.svg" class="w-6" /></a>',
       });
     });
   </script>
