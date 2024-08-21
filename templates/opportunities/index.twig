@@ -11,6 +11,9 @@
 
 <div class="bg-white">
   <div class="max-w-screen-xl min-w-screen-xl mx-auto py-[100px] px-6 md:px-0">
+  {% if craft.entries().section('Opportunities')|length < 1 %}
+    <h2 class="text-xl leading-10 -my-[40px]">Check back in the future for professional opportunities for ASCM SEPA members and affiliates.</h2>
+  {% endif %}
   {% for entry in craft.entries().section('Opportunities') %}
     <div class="flex flex-row">
       <div class="bg-[#F2F2F2] w-full pl-[40px] pr-[30px] pt-4 pb-[35px] mb-[30px] border-t-[5px] border-[#006B36]">
