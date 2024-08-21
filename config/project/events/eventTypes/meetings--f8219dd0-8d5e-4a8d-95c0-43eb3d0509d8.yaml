@@ -117,6 +117,28 @@ eventFieldLayouts:
         name: Content
         uid: 727f8308-8038-4ab7-8a8b-82453b089fee
         userCondition: null
+      -
+        elementCondition: null
+        elements:
+          -
+            dateAdded: '2024-08-20T19:55:26+00:00'
+            elementCondition: null
+            fieldUid: fae24e8a-6aa9-455e-88f0-64d79cdc5f80 # Gallery
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: null
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: a08a8d88-1d07-4223-8420-11a5a5d93d36
+            userCondition: null
+            warning: null
+            width: 100
+        name: Recap
+        uid: a8508800-56fc-4506-a307-b597dfd9136b
+        userCondition: null
 handle: meetings
 hasTickets: true
 hasTitleField: true
@@ -127,7 +149,7 @@ name: Meeting
 siteSettings:
   246ac9e2-0535-4ba5-b543-66b2eb9d969f: # ASCM Southeastern Pennsylvania
     hasUrls: true
-    template: meetings/_event
+    template: meetings/_entry.twig
     uriFormat: 'meetings/{slug}'
 titleFormat: null
 titleLabel: Title

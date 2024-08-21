@@ -14,7 +14,7 @@ settings:
   selectionLabel: null
   showSiteMenu: false
   sources:
-    - 'productType:b06abe64-0fe3-4bee-b93e-6cadee985521' # CPIM Course
+    - 'productType:b06abe64-0fe3-4bee-b93e-6cadee985521'
   targetSiteId: null
   validateRelatedElements: false
   viewMode: null

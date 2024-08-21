@@ -86,13 +86,13 @@
   <div class="mt-[80px]">
     <h2 class="text-[38px] leading-10 mb-[30px]">Recent Meetings</h2>
     <div class="grid grid-cols-1 md:grid-cols-4 gap-[40px] md:gap-[100px] justify-between place-items-center md:place-items-start">
-      {% set entries = craft.entries.section('meetings').all() %}
+      {% set entries = craft.events.events({ endDate: null }).type('meetings').before(today).all() %}
       {% for entry in entries %}
       {% if entry.gallery.one() %}
       <a href="meetings/{{entry.slug}}" class="mb-[30px] w-[298px] hover:no-underline text-center text-wolf">
         <div class="h-[260px] w-full drop-shadow-xl bg-cover bg-center" style="background-image: url({{entry.gallery.one().getUrl()}})"></div>
         <div class="pt-[20px] h2">{{entry.title}}</div>
-        <p class="uppercase font-semibold text-center">{{entry.meetingDate|date('F j, Y')}}</p>
+        <p class="uppercase font-semibold text-center">{{entry.startDate|date('F j, Y')}}</p>
       </a>
       {% endif %}
       {% endfor %}
