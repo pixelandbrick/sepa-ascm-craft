@@ -84,7 +84,7 @@
                   </div>
                 </div>
                 {% else %}
-                <p class="font-bold text-3xl">${{ product.tickets()[0].price }}</p>
+                <p class="font-bold text-3xl">${{ product.tickets()[0].price }}*</p>
                 <input type="hidden" value="{{product.tickets()[0].id}}" name="purchasableId" />
                 {% endif %}
                 <div class="mt-1 grid grid-cols-1">
@@ -101,6 +101,7 @@
                       text: 'Unavailable'|t
                     }) }}
                   {% endif %}
+                  <p class="text-sm mt-4">* Membership required, see below to join ASCM.</p>
                 </div>
               </form>
             </div>

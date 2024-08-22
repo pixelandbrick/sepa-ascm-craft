@@ -1,4 +1,4 @@
-dateModified: 1724208824
+dateModified: 1724304874
 elementSources:
   craft\commerce\elements\Order:
     -
@@ -696,6 +696,10 @@ plugins:
     edition: standard
     enabled: true
     schemaVersion: 1.0.0
+  webhooks:
+    edition: standard
+    enabled: true
+    schemaVersion: 2.4.0
 sprout:
   sprout-module-core:
     modules:
