@@ -10,8 +10,9 @@
 {% block header %}{% include '_partials/header.twig' %}{% endblock %}
 
 <div class="bg-white">
-  <div class="max-w-screen-xl min-w-screen-xl mx-auto py-[100px] px-6 md:px-0">
+  <div class="max-w-screen-xl min-w-screen-xl mx-auto py-[100px] px-6">
   {% for product in craft.events.events({type: 'meetings'}) %}
+    {% set defaultTicket = craft.events.tickets().event(product).one() %}
     {% if today <= product.startDate %}
     <div class="flex flex-row">
       <div class="bg-errigal w-full pl-[40px] pr-[80px] py-[35px] mb-[30px] rounded-t border-t-[5px] border-ficus">
@@ -23,6 +24,7 @@
           <form method="post" class="mt-6">
             {{ csrfInput() }}
             {{ actionInput('commerce/cart/update-cart') }}
+            {{ hiddenInput('purchasableId', product.id) }}
             {{ redirectInput('shop/cart') }}
             {{ successMessageInput('{product} added to cart.'|t({
               product: product.title
@@ -48,11 +50,12 @@
                   'focus:ring'
                 ]
               } %}
-                {% for variant in product.tickets() %}
+                
+                {% for ticket in craft.events.tickets().event(product) %}
                   {# @var variant \craft\commerce\elements\Variant #}
                   {{ tag('option', {
-                    value: variant.id,
-                    text: variant.title ~ ' - ' ~ variant.salePrice|currency('USD')
+                    value: ticket.purchasableId,
+                    text: ticket.title ~ ' - ' ~ ticket.salePrice|currency('USD')
                   }) }}
                 {% endfor %}
               {% endtag %}
