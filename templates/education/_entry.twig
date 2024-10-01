@@ -108,9 +108,9 @@
           </div>
           {% endif %}
         {% endfor %}
+        {% set membershipProduct = craft.products().type('membership').one() %}
         {% if entry.slug == 'foscm' %}
         <div class="bg-errigal md:w-[404px] pl-[40px] pr-[20px] pt-[10px] pb-[35px] mb-[30px] border-t-[5px] border-ficus">
-        {% set membershipProduct = craft.products().type('membership').one() %}
           <h2>Course Registration</h2>
           <p>
             Registration for FOSCM is handled individually. Get the process started below and our VP of Education will get in touch with you.
@@ -119,7 +119,6 @@
         </div>
         {% endif %}
         <div class="bg-errigal md:w-[404px] pl-[40px] pr-[20px] pt-[10px] pb-[35px] mb-[30px] border-t-[5px] border-ficus">
-        {% set membershipProduct = craft.products().type('membership').one() %}
           <h2>Not a member?</h2>
           <p>
             Courses are an exclusive benefit to ASCM members. Join today to experience:
@@ -140,7 +139,7 @@
                 membershipProduct: membershipProduct.title
               })) }}
               {# {{ hiddenInput('clearNotices', true) }} #}
-              {% if membershipProduct.variants().all()|length > 1 %}
+              {% if membershipProduct.variants().all()|length > 1 and entry.slug == 'microcertifications' %}
               <div class="inline-block relative w-full">
                 {% tag 'select' with {
                   name: 'purchasableId',
