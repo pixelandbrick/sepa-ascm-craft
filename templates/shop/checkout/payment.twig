@@ -111,11 +111,11 @@
               {{ cart.gateway.getPaymentConfirmationFormHtml({})|raw }}
             {% endif %}
 
-            {% if cart.paymentSourceId or cart.gateway.showPaymentFormSubmitButton() %}
+            {% if cart.paymentSourceId or cart.gateway.showPaymentFormSubmitButton() or cart.totalPrice|commerceCurrency(cart.currency) == 0 %}
               <div class="mt-3 text-right">
                 {{ tag('button', {
                   type: 'submit',
-                  class: 'cursor-pointer rounded px-4 py-2 inline-block bg-[#006B36] hover:bg-[#006B36] text-white hover:text-white',
+                  class: 'cursor-pointer rounded px-4 py-2 mt-8 mb-12 inline-block bg-ficus hover:bg-dk-ficus text-white hover:text-white',
                   text: 'Finish'|t
                 }) }}
               </div>
