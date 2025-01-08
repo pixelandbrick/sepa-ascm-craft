@@ -73,7 +73,7 @@
 
   <div class="field mt-3">
     <label for="email">
-      {{- 'Email'|t -}}
+      {{- 'Email *'|t -}}
     </label>
     <div class="mt-1">
       {{ input('email', 'email', user.email ?? cart.email ?? null, {
@@ -89,7 +89,7 @@
 
   <div class="field mt-3">
     <label for="phone">
-      {{- 'Phone Number'|t -}}
+      {{- 'Phone Number *'|t -}}
     </label>
     <div class="mt-1">
       {{ input('phone', 'fields[phone]', null, {
