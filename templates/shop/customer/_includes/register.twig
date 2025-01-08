@@ -92,7 +92,7 @@
       {{- 'Phone Number'|t -}}
     </label>
     <div class="mt-1">
-      {{ input('phone', 'phone', user.phone ?? cart.phone ?? null, {
+      {{ input('phone', 'fields[phone]', null, {
         id: 'phone',
         class: 'border border-gray-300 hover:border-gray-500 px-4 py-2 leading-tight rounded w-full',
         required: true
