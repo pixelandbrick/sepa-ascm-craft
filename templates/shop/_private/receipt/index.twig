@@ -37,6 +37,7 @@
         {% if order.shippingAddress %}
           {{ craft.app.addresses.formatAddress(order.shippingAddress)|raw }}
         {% endif %}
+        {% if order.phone %}{{ order.phone }}{% endif %}
       </td>
     </tr>
   </table>

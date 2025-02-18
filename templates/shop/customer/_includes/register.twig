@@ -73,15 +73,32 @@
 
   <div class="field mt-3">
     <label for="email">
-      {{- 'Email'|t -}}
+      {{- 'Email *'|t -}}
     </label>
     <div class="mt-1">
       {{ input('email', 'email', user.email ?? cart.email ?? null, {
         id: 'email',
-        class: 'border border-gray-300 hover:border-gray-500 px-4 py-2 leading-tight rounded w-full'
+        class: 'border border-gray-300 hover:border-gray-500 px-4 py-2 leading-tight rounded w-full',
+        required: true
       }) }}
       {% if user is defined %}
         {{ errorList(user.getErrors('email')) }}
+      {% endif %}
+    </div>
+  </div>
+
+  <div class="field mt-3">
+    <label for="phone">
+      {{- 'Phone Number *'|t -}}
+    </label>
+    <div class="mt-1">
+      {{ input('phone', 'fields[phone]', null, {
+        id: 'phone',
+        class: 'border border-gray-300 hover:border-gray-500 px-4 py-2 leading-tight rounded w-full',
+        required: true
+      }) }}
+      {% if user is defined %}
+        {{ errorList(user.getErrors('phone')) }}
       {% endif %}
     </div>
   </div>
