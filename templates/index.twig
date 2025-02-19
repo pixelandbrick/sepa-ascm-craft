@@ -23,7 +23,7 @@
           <div class="max-w-[800px] pr-4"><p>{{mainFeature.description|striptags|truncate(255,'...')}}</p></div>
         </div>
         <div class="flex gap-[25px]">
-          <a href="/meetings" class="h-max w-max bg-money pt-[9px] pb-[11px] pl-[20px] pr-[20px] text-white text-lg font-semibold hover:no-underline">Learn&nbsp;More</a>
+          <a href={{"/meetings/" ~ mainFeature.slug}} class="h-max w-max bg-money pt-[9px] pb-[11px] pl-[20px] pr-[20px] text-white text-lg font-semibold hover:no-underline">Learn&nbsp;More</a>
         </div>
       </div>
     </div>
@@ -58,7 +58,7 @@
           </div>
           <div class="mt-[30px]"><a href=
             {% if product.type.name != 'Meeting' and product.type.name != 'Membership' %}{{"/education/" ~ product.type.handle }}
-            {% else %}{{"/meetings" }}
+            {% else %}{{"/meetings/" ~ product.slug}}
             {% endif %}
           class="primaryButton">Learn More</a></div>
       {% endif %}
