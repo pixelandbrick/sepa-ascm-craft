@@ -16,7 +16,7 @@
     {% if today <= product.startDate %}
     <div class="flex flex-row">
       <div class="bg-errigal w-full pl-[40px] pr-[80px] py-[35px] mb-[30px] rounded-t border-t-[5px] border-ficus">
-        <h2>{{ product.title|title }}</h2>
+        <h2>{{ product.title }}</h2>
         <h3 class="font-bold text-ficus">{{product.startDate|date('F j, Y – g:i a T')}}</h3>
         <br />
         <p class="text-lg">{{product.description}}</p>
@@ -66,7 +66,7 @@
               </div>
             </div>
             <div class="mt-1 grid grid-cols-1">
-              {% if product.status('live') %}
+              {% if product.status('live') && product. %}
                 {{ tag('button', {
                   type: 'submit',
                   class: ['h-max','w-max','bg-[#82C341]','pt-[9px]','pb-[11px]','pl-[20px]','pr-[20px]','text-white','text-lg','font-semibold'],

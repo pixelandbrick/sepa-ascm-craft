@@ -26,7 +26,7 @@
     {% set defaultTicket = craft.events.tickets().event(thisEntry).one() %}
     <div class="flex flex-row">
       <div class="bg-errigal w-full pl-[40px] pr-[80px] py-[35px] mb-[30px] rounded-t border-t-[5px] border-ficus">
-        <h2>{{ thisEntry.title|title }}</h2>
+        <h2>{{ thisEntry.title }}</h2>
         <h3 class="font-bold text-ficus">{{thisEntry.startDate|date('F j, Y – g:i a T')}}</h3>
         <br />
         <p class="text-lg">{{thisEntry.description}}</p>

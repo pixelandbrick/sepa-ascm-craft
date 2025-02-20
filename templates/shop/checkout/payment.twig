@@ -110,8 +110,8 @@
               <img src="/dist/assets/stripe-badge.svg" class="mb-4 h-[30px]" height="30px" width="auto" />
             {% else %}
               {{ cart.gateway.getPaymentConfirmationFormHtml({})|raw }}
+              <img src="/dist/assets/stripe-badge.svg" class="mb-4 h-[30px]" height="30px" width="auto" />
             {% endif %}
-            <img src="/dist/assets/stripe-badge.svg" class="mb-4 h-[30px]" height="30px" width="auto" />
 
             {% if cart.paymentSourceId or cart.gateway.showPaymentFormSubmitButton() or cart.totalPrice == 0 %}
               <div class="mt-3 text-right">
