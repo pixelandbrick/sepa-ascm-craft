@@ -5,6 +5,8 @@
 {% extends 'shop/_private/layouts' %}
 
 {% block main %}
+{% if cart.totalPrice == 0 %}
+
   <!-- Template: {{ _self }}.twig -->
   <h1 class="text-xl font-bold">
     {{- 'Enter your email to get started'|t -}}
@@ -36,4 +38,7 @@
       </form>
     </div>
   </div>
+
+{% endif %}
+
 {% endblock %}

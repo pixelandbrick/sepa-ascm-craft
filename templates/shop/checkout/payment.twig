@@ -34,10 +34,15 @@
           </div>
         </div>
       {% endif %}
-
-      <h1 class="font-bold text-xl">
-        {{- 'Payment'|t -}}
-      </h1>
+      {% if cart.totalPrice != 0 %}
+        <h1 class="font-bold text-xl">
+          {{- 'Payment'|t -}}
+        </h1>
+      {% else %}
+        <h1 class="font-bold text-xl">
+          {{- 'Transaction Complete'|t -}}
+        </h1>
+      {% endif %}
 
       {% if cart.gatewayId or cart.paymentSourceId %}
         {% if paymentForm is defined %}
@@ -107,19 +112,16 @@
                     {{ cart.gateway.getPaymentFormHtml(params)|raw }}
                 {% endnamespace %}
               </div>
-              <img src="/dist/assets/stripe-badge.svg" class="mb-4 h-[30px]" height="30px" width="auto" />
+              {% if cart.totalPrice != 0 %}
+                <img src="/dist/assets/stripe-badge.svg" class="mb-4 h-[30px]" height="30px" width="auto" />
+              {% endif %}
             {% else %}
               {{ cart.gateway.getPaymentConfirmationFormHtml({})|raw }}
-              <img src="/dist/assets/stripe-badge.svg" class="mb-4 h-[30px]" height="30px" width="auto" />
             {% endif %}
 
             {% if cart.paymentSourceId or cart.gateway.showPaymentFormSubmitButton() or cart.totalPrice == 0 %}
-              <div class="mt-3 text-right">
-                {{ tag('button', {
-                  type: 'submit',
-                  class: 'cursor-pointer rounded px-4 py-2 mt-8 mb-12 inline-block bg-ficus hover:bg-dk-ficus text-white hover:text-white',
-                  text: 'Finish'|t
-                }) }}
+              <div class="mt-3 text-left">
+                You're all set! Check out our upcoming <a href="/meetings">meetings</a> and <a href="/education">courses</a>.
               </div>
             {% endif %}
           </form>
