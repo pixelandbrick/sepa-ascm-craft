@@ -38,19 +38,24 @@
         x-data="{
             events: [
                 {% for ev in craft.events.events() %}
+                    {% if ev.type.handle != "meetings" %}
+                      {% set thisEvUrl = "/education/" ~ ev.type.handle %}
+                    {% else %}
+                      {% set thisEvUrl = "/meetings/" ~ ev.slug %}
+                    {% endif %}
                     {% if ev.eventDates|length >= 1 %}
                         {% for evDate in ev.eventDates %}
                           {{ '{ id: ' ~ ev.id ~ ',
                                 title:\'' ~ ev.title ~ '\',
                                 start: \'' ~ evDate.theEventDate|date('Y-m-d') ~ '\',
-                                url: \'' ~ ev.type.handle ~ '\','
+                                url: \'' ~ thisEvUrl ~ '\','
                               ~ '},'}}
                         {% endfor %}
                     {% elseif ev.startDate != null %}
                         {{ '{ id: ' ~ ev.id ~ ',
                               title:\'' ~ ev.title ~ '\',
                               start: \'' ~ ev.startDate|date('Y-m-d') ~ '\',
-                              url: \'' ~ ev.type.handle ~ '\','
+                              url: \'' ~ thisEvUrl ~ '\','
                             ~ '},'}}
                     {% endif %}
                 {% endfor %}
@@ -79,12 +84,10 @@
         {% for event in craft.events.events() %}
           {% if event.type.handle != 'membership' %}
           <li><a href=
-            {% if event.type.handle == "microcertifications" %}
-              {{ "/education/microcertifications" }}
-            {% elseif event.type.handle == "meetings" %}
-              {{ "/meetings/" ~ event.slug }}
+            {% if event.type.handle != "meetings" %}
+              {{ "/education/" ~ event.type.handle }}
             {% else %}
-              {{ "/" ~ event.type.handle }}
+              {{ "/meetings/" ~ event.slug }}
             {% endif %}
           >{{ event.type.name }} – {{ event.title }}</a></li>
           {% endif %}
