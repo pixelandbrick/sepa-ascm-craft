@@ -78,7 +78,7 @@
         <ul class="mt-1 list-inside list-disc text-sm text-gray-500">
         {% for event in craft.events.events() %}
           {% if event.type.handle != 'membership' %}
-          <li><a href="
+          <li><a href=
             {% if event.type.handle = "microcertifications" %}
               {{ "/education/microcertifications" }}
             {% else if event.type.handle = "meetings" %}
@@ -86,7 +86,7 @@
             {% else %}
               {{ "/" ~ event.type.handle }}
             {% endif %}
-          ">{{ event.type.name }} – {{ event.title }}</a></li>
+          >{{ event.type.name }} – {{ event.title }}</a></li>
           {% endif %}
         {% endfor %}
         </ul>
