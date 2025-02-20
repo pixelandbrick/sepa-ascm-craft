@@ -79,9 +79,9 @@
         {% for event in craft.events.events() %}
           {% if event.type.handle != 'membership' %}
           <li><a href=
-            {% if event.type.handle = "microcertifications" %}
+            {% if event.type.handle == "microcertifications" %}
               {{ "/education/microcertifications" }}
-            {% else if event.type.handle = "meetings" %}
+            {% elseif event.type.handle == "meetings" %}
               {{ "/meetings/" ~ event.slug }}
             {% else %}
               {{ "/" ~ event.type.handle }}
