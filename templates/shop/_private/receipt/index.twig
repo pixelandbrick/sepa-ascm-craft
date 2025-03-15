@@ -86,10 +86,10 @@
       <tr>
         <th scope="row">{{ loop.index }}</th>
         <td>{{ lineItem.description }}
-        {% if craft.events.events().id(lineItem.id).one().receiptOnlyText != NULL %}
+        {% if craft.events.events().id(lineItem.product.id).one().receiptOnlyText != NULL %}
           <br />
           <br />
-          {{ craft.events.events().id(lineItem.id).one().receiptOnlyText }}
+          {{ craft.events.events().id(lineItem.product.id).one().receiptOnlyText }}
         {% endif %}
         </td>
         <td align="right">{{ lineItem.qty }}</td>
