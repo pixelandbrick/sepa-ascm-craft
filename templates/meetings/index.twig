@@ -24,7 +24,7 @@
           <form method="post" class="mt-6">
             {{ csrfInput() }}
             {{ actionInput('commerce/cart/update-cart') }}
-            {{ hiddenInput('purchasable.id', thisEntry.id) }}
+            {{ hiddenInput('purchasableId', product.id) }}
             {{ redirectInput('shop/cart') }}
             {{ successMessageInput('{product} added to cart.'|t({
               product: product.title
