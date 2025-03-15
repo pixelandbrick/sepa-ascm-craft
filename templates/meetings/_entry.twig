@@ -34,8 +34,7 @@
           <form method="post" class="mt-6">
             {{ csrfInput() }}
             {{ actionInput('commerce/cart/update-cart') }}
-            {{ hiddenInput('purchasables[{{ purchasable.id }}][id]', thisEntry.id) }}
-            {{ hiddenInput('purchasables[{{ purchasable.id }}][note]', thisEntry.receiptOnlyText) }}
+            {{ hiddenInput('purchasable.id', thisEntry.id) }}
             {{ redirectInput('shop/cart') }}
             {{ successMessageInput('{product} added to cart.'|t({
               product: thisEntry.title

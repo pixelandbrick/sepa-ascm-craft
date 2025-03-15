@@ -85,9 +85,14 @@
     {% for lineItem in order.lineItems %}
       <tr>
         <th scope="row">{{ loop.index }}</th>
-        <td>{{ lineItem.description }}<br />
-        <br />
-        {{ lineItem.note }}</td>
+        <td>{{ lineItem.description }}
+        {% set itemNote = craft.events.events().id(lineItem.purchasableId).one().receiptOnlyText %}
+          {% if itemNote %}
+          <br />
+          <br />
+          {{ itemNote }}
+        {% endif %}
+        </td>
         <td align="right">{{ lineItem.qty }}</td>
         <td align="right">{{ lineItem.salePriceAsCurrency }}</td>
         <td align="right">{{ lineItem.subtotalAsCurrency }}</td>
