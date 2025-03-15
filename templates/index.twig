@@ -14,6 +14,7 @@
 {% set mainFeature = craft.events.events().slug('mini-mega-meeting-2025').one() %}
 <div class="bg-white">
   <div class="max-w-screen-xl min-w-screen-xl mx-auto px-6 md:px-4">
+    {% if mainFeature %}
     <div class="grid grid-cols-1 md:flex gap-0 mt-[60px]">
       <div class="rounded-l min-w-[280px] h-[200px] md:h-auto bg-cover bg-bottom" style="background-image: url({{mainFeature.featureImage.one().url}})"></div>
       <div class="bg-errigal w-full pl-[40px] pb-[40px] rounded-b md:rounded-r">
@@ -27,6 +28,7 @@
         </div>
       </div>
     </div>
+    {% endif %}
   <div class="mt-[100px] grid grid-cols-1 md:grid-cols-3 gap-8">
 
   {% for product in craft.events.events().limit(3) %}
@@ -81,6 +83,7 @@
     </ul>
   </div>
   <div class="mx-auto mb-[80px] w-[60px] border-b-[5px] border-ficus">&nbsp;</div><!-- color block -->
+</div>
 </div>
 {% block apics_cta %}{% include '_partials/apics_cta.twig' %}{% endblock %}
 {% block footer %}{% include '_partials/footer.twig' %}{% endblock %}
