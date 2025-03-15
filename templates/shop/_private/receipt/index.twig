@@ -86,11 +86,10 @@
       <tr>
         <th scope="row">{{ loop.index }}</th>
         <td>{{ lineItem.description }}
-        {% set itemNote = craft.events.events().id(lineItem.purchasableId).one().receiptOnlyText %}
-          {% if itemNote %}
+        {% if craft.events.events().id(lineItem.id).one().receiptOnlyText %}
           <br />
           <br />
-          {{ itemNote }}
+          {{ craft.events.events().id(lineItem.id).one().receiptOnlyText }}
         {% endif %}
         </td>
         <td align="right">{{ lineItem.qty }}</td>
