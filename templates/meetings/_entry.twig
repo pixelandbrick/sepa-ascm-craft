@@ -30,6 +30,7 @@
         <h3 class="font-bold text-ficus">{{thisEntry.startDate|date('F j, Y – g:i a T')}}</h3>
         <br />
         <p class="text-lg">{{thisEntry.description}}</p>
+        {% if defaultTicket != NULL %}
         <div class="mt-2 flex gap-[25px]">
           <form method="post" class="mt-6">
             {{ csrfInput() }}
@@ -92,6 +93,7 @@
             </div>
           </form>
         </div>
+        {% endif %}
       </div>
     </div>
   {% else %}

@@ -16,9 +16,11 @@
         <h2>{{entry.title}}</h2>
         <p class="mb-[10px] font-bold text-[#006B36]">{{entry.company}}</p>
         <p class="font-light text-[#292929]">{{entry.description}}</p>
+        {% if entry.oppType != "Special Event" %}
         <div class="mt-[35px] flex gap-[25px]">
           <a href="{{entry.submissionLink}}" class="primaryButton" target="_blank">Apply</a>
         </div>
+        {% endif %}
       </div>
     </div>
   </div>

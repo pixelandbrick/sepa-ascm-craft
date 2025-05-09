@@ -1,4 +1,4 @@
-dateModified: 1724304874
+dateModified: 1746758996
 elementSources:
   craft\commerce\elements\Order:
     -
@@ -149,12 +149,12 @@ elementSources:
       disabled: false
       key: '*'
       tableAttributes:
-        - ticketSku
         - eventId
         - ticketId
         - orderId
-        - checkedIn
         - dateCreated
+        - customer
+        - customerFullName
       type: native
 email:
   fromEmail: ryan@pixel-brick.com
@@ -215,6 +215,8 @@ meta:
     4b6f8d77-baac-4757-ba4d-f92f6f36018e: Scholarships # Scholarships
     4ba6d09f-8d1e-4c65-91f9-35b77e080b4a: Body # Body
     4e37e30d-d1e5-4f98-9181-e55cff026870: 'College Photo' # College Photo
+    4eb4ddf9-efcd-48bf-bb6c-e6f90c2967ad: 'Receipt-only Text' # Receipt-only Text
+    4ef4ac28-e3b7-4394-b83f-9c577d3db41c: 'Multiple Dates' # Multiple Dates
     4f19a1cf-7acb-4101-bea3-edea33a0ccf5: Colleges # Colleges
     5d028c1f-dc78-4cc5-bbb7-25a0f47a90ab: 'College Description' # College Description
     5dc608b2-0088-4005-b1e1-88ff0ad17f95: 'Meeting Description' # Meeting Description
@@ -332,8 +334,8 @@ plugins:
   commerce:
     edition: lite
     enabled: true
-    licenseKey: ZYEI2I95CHO1A0I5CDRPFC83
-    schemaVersion: 5.0.82
+    licenseKey: VHWI1E9XPN90UHP8QYFCLQS0
+    schemaVersion: 5.3.2.1
   commerce-paypal-checkout:
     edition: standard
     enabled: true
@@ -393,7 +395,7 @@ plugins:
     edition: standard
     enabled: true
     licenseKey: 62F8YRHKLE8DBUBJXI7L185F
-    schemaVersion: 3.4.6
+    schemaVersion: 3.4.8
     settings:
       ajaxTimeout: 10
       alertEmails: null
@@ -629,11 +631,6 @@ plugins:
     enabled: true
     licenseKey: 1TG3ETNFW6P4AI5PTH0GNLSK
     schemaVersion: 1.0.0
-  imager-x:
-    edition: lite
-    enabled: true
-    licenseKey: L28RX1EJGBSXYCU4CRXT1OXA
-    schemaVersion: 4.0.0
   internal-assets:
     edition: standard
     enabled: true
@@ -679,6 +676,52 @@ plugins:
     enabled: true
     licenseKey: 6MBF8Y0SRWNFYLPGVYZ6G9K6
     schemaVersion: 3.0.12
+    settings:
+      addHrefLang: true
+      addPaginatedHreflang: true
+      addXDefaultHrefLang: true
+      alwaysIncludeCanonicalUrls: false
+      cpTitlePrefix: '⚙ '
+      cspNonce: ''
+      cspScriptSrcPolicies:
+        -
+          __assoc__:
+            -
+              - policy
+              - '''self'''
+      devModeCpTitlePrefix: '🚧⚙ '
+      devModeTitlePrefix: '🚧 '
+      displayAnalysisSidebar: true
+      displayPreviewSidebar: true
+      enableDebugToolbarPanel: true
+      enableJsonLdEndpoint: false
+      enableMetaContainerEndpoint: false
+      enableSeoFileLinkEndpoint: false
+      environment: local
+      excludeNonCanonicalUrls: false
+      generatorEnabled: true
+      headersEnabled: true
+      includeHomepageInBreadcrumbs: true
+      lowercaseCanonicalUrl: true
+      manuallySetEnvironment: false
+      maxDescriptionLength: 155
+      maxTitleLength: 70
+      metaCacheDuration: 0
+      pluginName: SEO
+      regenerateSitemapsAutomatically: true
+      renderEnabled: true
+      separatorChar: '|'
+      sidebarDisplayPreviewTypes:
+        - google
+        - linkedin
+      siteGroupsSeparate: true
+      siteUrlOverride: ''
+      sitemapsEnabled: true
+      socialMediaPreviewTarget: false
+      submitSitemaps: true
+      truncateDescriptionTags: true
+      truncateTitleTags: true
+      xDefaultSite: 0
   simplemap:
     edition: lite
     enabled: true
@@ -713,5 +756,5 @@ system:
   live: true
   name: 'ASCM Southeastern Pennsylvania'
   retryDuration: null
-  schemaVersion: 5.3.0.2
+  schemaVersion: 5.6.0.2
   timeZone: America/New_York
