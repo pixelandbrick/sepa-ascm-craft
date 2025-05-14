@@ -27,7 +27,7 @@
     <div class="flex flex-row">
       <div class="bg-errigal w-full pl-[40px] pr-[80px] py-[35px] mb-[30px] rounded-t border-t-[5px] border-ficus">
         <h2>{{ thisEntry.title }}</h2>
-        {% if product.multipleDates == 0 %}<h3 class="font-bold text-ficus">{{thisEntry.startDate|date('F j, Y – g:i a T')}}</h3>{% endif %
+        {% if thisEntry.multipleDates == 0 %}<h3 class="font-bold text-ficus">{{thisEntry.startDate|date('F j, Y – g:i a T')}}</h3>{% endif %
         <br />
         <p class="text-lg">{{thisEntry.description}}</p>
         {% if defaultTicket != NULL %}
