@@ -1,9 +1,8 @@
 baseUrl: $PRIMARY_SITE_URL
-enabled: true
 handle: default
 hasUrls: true
 language: en-US
 name: 'ASCM Southeastern Pennsylvania'
 primary: true
-siteGroup: 99bd89d9-407f-438f-805b-c28668a036b9 # ASCM Southeastern Pennsylvania
+siteGroup: 432ea19b-8c63-4601-b4d9-bd1c4f6a4856 # ASCM Southeastern Pennsylvania
 sortOrder: 1

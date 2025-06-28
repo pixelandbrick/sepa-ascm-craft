@@ -118,7 +118,7 @@
       <div class="slick-fade flex place-items-center">
         {% for image in event.gallery %}
         <div>
-          <img src="{{image.getUrl()}}" />
+          <img src="{{image.getUrl()}}" alt="{{event.title}} photo" />
         </div>
         {% endfor %}
       </div>

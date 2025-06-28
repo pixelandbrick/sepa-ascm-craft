@@ -1,8 +1,0 @@
-allowPublicRegistration: true
-deactivateByDefault: false
-defaultGroup: 43457d50-918e-4bad-b5a7-939510b4da97 # Default
-photoSubpath: null
-photoVolumeUid: 1d1cac83-523d-465d-95dd-f268196920aa # Images
-require2fa: false
-requireEmailVerification: false
-validateOnPublicRegistration: true

@@ -1,9 +1,0 @@
-enabled: '1'
-handle: constantContact
-name: 'Constant Contact'
-settings:
-  apiKey: d783cd6f-2a2a-483f-a677-104915e43e1b
-  appSecret: ZRVXoGlnIR-uL1zakCFkvA
-sortOrder: 1
-tokenId: '1'
-type: verbb\formie\integrations\emailmarketing\ConstantContact
