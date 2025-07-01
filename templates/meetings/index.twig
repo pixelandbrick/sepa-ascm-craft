@@ -11,13 +11,13 @@
 
 <div class="bg-white">
   <div class="max-w-screen-xl min-w-screen-xl mx-auto py-[100px] px-6">
-  {% for product in craft.events.events({type: 'meetings'}) %}
-    {% set defaultTicket = craft.events.tickets().event(product).one() %}
+  {% set meetings = craft.events.events().type('Meetings').limit(10) %}
+  {% for product in meetings.all() %}
+    {% set defaultTicket = product.getTickets().one() %}
     {% if today <= product.startDate %}
     <div class="flex flex-row">
       <div class="bg-errigal w-full pl-[40px] pr-[80px] py-[35px] mb-[30px] rounded-t border-t-[5px] border-ficus">
         <h2>{{ product.title }}</h2>
-        {% if product.multipleDates == 0 %}<h3 class="font-bold text-ficus">{{product.startDate|date('F j, Y – g:i a T')}}</h3>{% endif %}
         <br />
         <p class="text-lg">{{product.description}}</p>
         {% if defaultTicket != NULL %}
@@ -52,10 +52,10 @@
                 ]
               } %}
                 
-                {% for ticket in craft.events.tickets().event(product) %}
+                {% for ticket in product.getTickets().all() %}
                   {# @var variant \craft\commerce\elements\Variant #}
                   {{ tag('option', {
-                    value: ticket.purchasableId,
+                    value: ticket.id,
                     text: ticket.title ~ ' - ' ~ ticket.salePrice|currency('USD')
                   }) }}
                 {% endfor %}

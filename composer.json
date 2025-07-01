@@ -12,31 +12,29 @@
     },
     "optimize-autoloader": true,
     "platform": {
-      "php": "8.2"
+      "php": "8.3"
     },
     "sort-packages": true
   },
   "require": {
     "bymayo/commerce-widgets": "5.0.1",
-    "craftcms/ckeditor": "4.6.0",
-    "craftcms/cms": "5.6.13",
-    "craftcms/commerce": "5.3.7",
-    "craftcms/commerce-paypal-checkout": "3.0.1",
+    "craftcms/ckeditor": "4.9.0",
+    "craftcms/cms": "5.7.11",
+    "craftcms/commerce": "5.4.0",
     "craftcms/commerce-stripe": "5.0.7",
-    "craftcms/redactor": "4.2.0",
     "craftcms/webhooks": "3.1.0",
     "mmikkel/cp-field-inspect": "2.0.4",
-    "nystudio107/craft-retour": "5.0.7",
-    "nystudio107/craft-seomatic": "5.1.2",
+    "nystudio107/craft-retour": "5.0.11",
+    "nystudio107/craft-seomatic": "5.1.16",
     "nystudio107/craft-vite": "5.0.1",
     "putyourlightson/craft-sendgrid": "3.0.0",
-    "spacecatninja/imager-x": "5.0.2",
-    "verbb/events": "3.0.0-beta.2",
+    "verbb/events": "3.0.7",
     "verbb/field-manager": "4.0.3",
-    "verbb/formie": "3.0.22",
-    "verbb/hyper": "2.2.3",
-    "verbb/super-table": "4.0.3",
+    "verbb/formie": "3.0.30",
+    "verbb/hyper": "2.2.6",
+    "verbb/super-table": "4.0.4",
     "vlucas/phpdotenv": "^5.4.0",
+    "webdna/reports": "2.4.2",
     "youandmedigital/breadcrumb": "3.0.0"
   },
   "require-dev": {
