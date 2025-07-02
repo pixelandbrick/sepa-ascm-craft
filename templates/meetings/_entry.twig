@@ -23,7 +23,7 @@
   <div class="max-w-screen-xl min-w-screen-xl mx-auto mt-8 md:pt-[60px] pb-[100px] px-6 md:px-0">
   {% set thisEntry = craft.events.events().slug(event.slug).one() %}
   {% if today <= thisEntry.startDate %}
-    {% set defaultTicket = craft.events.tickets().event(thisEntry).one() %}
+    {% set defaultTicket = thisEntry.getTickets().one() %}
     <div class="flex flex-row">
       <div class="bg-errigal w-full pl-[40px] pr-[80px] py-[35px] mb-[30px] rounded-t border-t-[5px] border-ficus">
         <h2>{{ thisEntry.title }}</h2>
@@ -62,10 +62,10 @@
                 ]
               } %}
                 
-                {% for ticket in craft.events.tickets().event(thisEntry) %}
+                {% for ticket in thisEntry.getTickets().all() %}
                   {# @var variant \craft\commerce\elements\Variant #}
                   {{ tag('option', {
-                    value: ticket.purchasableId,
+                    value: ticket.id,
                     text: ticket.title ~ ' - ' ~ ticket.salePrice|currency('USD')
                   }) }}
                 {% endfor %}

@@ -43,20 +43,14 @@
                     {% else %}
                       {% set thisEvUrl = "/meetings/" ~ ev.slug %}
                     {% endif %}
-                    {% if ev.eventDates|length >= 1 %}
-                        {% for evDate in ev.eventDates %}
+                    {% if ev.getSessions().all()|length >= 1 %}
+                        {% for evDate in ev.getSessions().all() %}
                           {{ '{ id: ' ~ ev.id ~ ',
                                 title:\'' ~ ev.title ~ '\',
-                                start: \'' ~ evDate.theEventDate|date('Y-m-d') ~ '\',
+                                start: \'' ~ evDate.startDate|date('Y-m-d') ~ '\',
                                 url: \'' ~ thisEvUrl ~ '\','
                               ~ '},'}}
                         {% endfor %}
-                    {% elseif ev.startDate != null %}
-                        {{ '{ id: ' ~ ev.id ~ ',
-                              title:\'' ~ ev.title ~ '\',
-                              start: \'' ~ ev.startDate|date('Y-m-d') ~ '\',
-                              url: \'' ~ thisEvUrl ~ '\','
-                            ~ '},'}}
                     {% endif %}
                 {% endfor %}
             ],

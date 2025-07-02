@@ -19,8 +19,8 @@
         <p>{{entry.courseDescription}}</p>
       </div>
       <div class="md:basis-1/3"><!--right sidebar-->
-        {% for product in craft.events.events({type: entry.slug}).all() %}
-          {% if product.eventDates.one() %}
+        {% for product in craft.events.events().type(entry.slug).all() %}
+          {% if product.getSessions().one() %}
           <div class="bg-errigal md:w-[404px] pl-[40px] pr-[20px] pt-[10px] pb-[35px] mb-[30px] border-t-[5px]
             {% switch entry.slug %}
               {% case 'cpim' %}
@@ -35,7 +35,7 @@
                 {{'border-[#006B36]'}}
               {% endswitch %}">
             <h2>{{ product.title }}</h2>
-            <p class="-mt-2 mb-[10px] font-bold text-ficus text-xl">Starts {{product.eventDates.one().theEventDate|date('F j')}}</p>
+            <p class="-mt-2 mb-[10px] font-bold text-ficus text-xl">Starts {{product.getSessions().one().startDate|date('F j')}}</p>
             {% if product.summary %}<p>{{ product.summary }}</p>{% endif %}
             <div class="mt-2 flex gap-[25px]">
               <form method="post" class="mt-6">
@@ -69,7 +69,7 @@
                       'focus:ring'
                     ]
                   } %}
-                    {% for ticket in product.tickets() %}
+                    {% for ticket in product.getTickets().all() %}
                       {# @var variant \craft\commerce\elements\Variant #}
                       {{ tag('option', {
                         value: ticket.id,
