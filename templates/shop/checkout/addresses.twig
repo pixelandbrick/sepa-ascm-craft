@@ -7,11 +7,6 @@ Outputs a form for collecting an order’s shipping and billing address.
 
 {# @var addresses \craft\commerce\models\Address[] #}
 
-
-{% if cart is not defined %}
-  {% set cart = craft.commerce.carts.cart %}
-{% endif %}
-
 {% set addresses = currentUser ? currentUser.getAddresses() : [] %}
 
 {% block main %}
@@ -25,6 +20,7 @@ Outputs a form for collecting an order’s shipping and billing address.
       <div class="mt-6">
         <form method="post" action="">
           {{ csrfInput() }}
+          {{ actionInput('commerce/cart/update-cart') }}
           {{ successMessageInput('Addresses selected.') }}
           {{ redirectInput(siteUrl('shop/checkout/payment')) }}
 
