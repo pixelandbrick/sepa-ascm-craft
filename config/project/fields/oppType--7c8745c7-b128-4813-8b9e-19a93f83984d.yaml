@@ -1,0 +1,56 @@
+columnSuffix: null
+contentColumnType: string(14)
+handle: oppType
+instructions: null
+name: 'Opportunity Type'
+searchable: false
+settings:
+  columnType: null
+  options:
+    -
+      __assoc__:
+        -
+          - label
+          - Employment
+        -
+          - value
+          - employment
+        -
+          - default
+          - '1'
+    -
+      __assoc__:
+        -
+          - label
+          - Internship
+        -
+          - value
+          - internship
+        -
+          - default
+          - ''
+    -
+      __assoc__:
+        -
+          - label
+          - Apprenticeship
+        -
+          - value
+          - apprenticeship
+        -
+          - default
+          - ''
+    -
+      __assoc__:
+        -
+          - label
+          - Temporary
+        -
+          - value
+          - temporary
+        -
+          - default
+          - ''
+translationKeyFormat: null
+translationMethod: none
+type: craft\fields\Dropdown

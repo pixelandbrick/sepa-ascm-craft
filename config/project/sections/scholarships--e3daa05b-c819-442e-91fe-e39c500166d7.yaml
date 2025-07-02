@@ -1,0 +1,18 @@
+defaultPlacement: end
+enableVersioning: true
+entryTypes:
+  - 4b6f8d77-baac-4757-ba4d-f92f6f36018e # Scholarships
+handle: scholarships
+maxAuthors: 1
+name: Scholarships
+propagationMethod: all
+siteSettings:
+  246ac9e2-0535-4ba5-b543-66b2eb9d969f: # ASCM Southeastern Pennsylvania
+    enabledByDefault: true
+    hasUrls: true
+    template: scholarships/_entry
+    uriFormat: 'scholarships/{slug}'
+structure:
+  maxLevels: null
+  uid: 899756b7-7434-4941-807f-f5c822e54cca
+type: structure

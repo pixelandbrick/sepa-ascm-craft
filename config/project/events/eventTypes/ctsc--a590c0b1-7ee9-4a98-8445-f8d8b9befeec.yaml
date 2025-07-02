@@ -1,0 +1,377 @@
+enableVersioning: false
+eventFieldLayouts:
+  d107dd14-7199-4604-80e8-2257bad32fea:
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            attribute: sessions
+            dateAdded: '2025-07-02T03:32:27+00:00'
+            elementCondition: null
+            id: null
+            includeInCards: false
+            instructions: null
+            label: null
+            mandatory: true
+            orientation: null
+            providesThumbs: false
+            requirable: false
+            required: false
+            tip: null
+            translatable: false
+            type: verbb\events\fieldlayoutelements\SessionsField
+            uid: f352a6c3-59e2-4384-8180-d79987e42061
+            userCondition: null
+            warning: null
+          -
+            attribute: ticketTypes
+            dateAdded: '2025-07-02T03:32:27+00:00'
+            elementCondition: null
+            id: null
+            includeInCards: false
+            instructions: null
+            label: null
+            mandatory: true
+            orientation: null
+            providesThumbs: false
+            requirable: false
+            required: false
+            tip: null
+            translatable: false
+            type: verbb\events\fieldlayoutelements\TicketTypesField
+            uid: dd769488-1869-4986-8cc6-f4d153e9e41c
+            userCondition: null
+            warning: null
+          -
+            autocapitalize: true
+            autocomplete: false
+            autocorrect: true
+            class: null
+            dateAdded: '2024-08-19T17:24:15+00:00'
+            disabled: false
+            elementCondition: null
+            id: null
+            includeInCards: false
+            inputType: null
+            instructions: null
+            label: null
+            max: null
+            min: null
+            name: null
+            orientation: null
+            placeholder: null
+            providesThumbs: false
+            readonly: false
+            requirable: false
+            size: null
+            step: null
+            tip: null
+            title: null
+            type: verbb\events\fieldlayoutelements\EventTitleField
+            uid: af8d971d-a01d-4844-8e1c-e94d3595ede1
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            dateAdded: '2024-08-19T17:25:26+00:00'
+            editCondition: null
+            elementCondition: null
+            fieldUid: a89c4748-13d5-41ba-b2b9-46e4feba446e # Summary
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: null
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 3a955634-fe13-46a8-a191-3801895ecd38
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            dateAdded: '2024-08-19T17:25:26+00:00'
+            editCondition: null
+            elementCondition: null
+            fieldUid: d580aec8-08d7-421b-9280-b4a7459f684b # Event Dates
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: null
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: ac7514cd-b267-4e42-9a0e-4bb694e7c891
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            attribute: tickets
+            dateAdded: '2025-07-02T03:32:27+00:00'
+            elementCondition: null
+            id: null
+            includeInCards: false
+            instructions: null
+            label: null
+            mandatory: false
+            orientation: null
+            providesThumbs: false
+            requirable: false
+            required: false
+            tip: null
+            translatable: false
+            type: verbb\events\fieldlayoutelements\TicketsField
+            uid: 999e082d-2a9f-491d-bd5b-309bd6c7c1d3
+            userCondition: null
+            warning: null
+          -
+            attribute: purchasedTickets
+            dateAdded: '2025-07-02T03:32:27+00:00'
+            elementCondition: null
+            id: null
+            includeInCards: false
+            instructions: null
+            label: null
+            mandatory: false
+            orientation: null
+            providesThumbs: false
+            requirable: false
+            required: false
+            tip: null
+            translatable: false
+            type: verbb\events\fieldlayoutelements\PurchasedTicketsField
+            uid: d2e8a4db-3392-452a-86d6-f58199583e42
+            userCondition: null
+            warning: null
+        name: Content
+        uid: 77e9090c-fb27-4e8e-9ab1-af5fc43db673
+        userCondition: null
+handle: ctsc
+icsDescriptionFieldHandle: ''
+icsLocationFieldHandle: ''
+icsTimezone: ''
+name: 'CTSC Course'
+purchasedTicketTitleFormat: '{event.title} - {ticket.title}'
+sessionFieldLayouts:
+  00206caf-7a45-4e19-9e12-9bccd61f67e8:
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            attribute: startDate
+            dateAdded: '2025-07-02T03:32:28+00:00'
+            defaultTime: null
+            elementCondition: null
+            id: null
+            includeInCards: false
+            instructions: null
+            label: null
+            mandatory: true
+            orientation: null
+            providesThumbs: false
+            requirable: false
+            required: true
+            showTimeZone: false
+            tip: null
+            translatable: false
+            type: verbb\events\fieldlayoutelements\SessionStartDateTimeField
+            uid: 64d6aeab-c065-4cb7-acf8-a7646eff61c2
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            attribute: endDate
+            dateAdded: '2025-07-02T03:32:28+00:00'
+            defaultTime: null
+            elementCondition: null
+            id: null
+            includeInCards: false
+            instructions: null
+            label: null
+            mandatory: true
+            orientation: null
+            providesThumbs: false
+            requirable: false
+            required: true
+            showTimeZone: false
+            tip: null
+            translatable: false
+            type: verbb\events\fieldlayoutelements\SessionEndDateTimeField
+            uid: 1650aeef-54aa-4187-8afa-6279a24bdd84
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            attribute: allDay
+            dateAdded: '2025-07-02T03:32:28+00:00'
+            elementCondition: null
+            id: null
+            includeInCards: false
+            instructions: null
+            label: null
+            mandatory: true
+            orientation: null
+            providesThumbs: false
+            requirable: false
+            required: false
+            tip: null
+            translatable: false
+            type: verbb\events\fieldlayoutelements\SessionAllDayField
+            uid: 13659290-ccb6-4967-a664-374e2f74350e
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            attribute: frequency
+            dateAdded: '2025-07-02T03:32:28+00:00'
+            elementCondition: null
+            id: null
+            includeInCards: false
+            instructions: null
+            label: null
+            mandatory: true
+            orientation: null
+            providesThumbs: false
+            requirable: false
+            required: false
+            tip: null
+            translatable: false
+            type: verbb\events\fieldlayoutelements\SessionFrequencyField
+            uid: 447b0e17-e078-4f09-aff9-b4f62e837e36
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            attribute: purchasedTickets
+            dateAdded: '2025-07-02T03:32:28+00:00'
+            elementCondition: null
+            id: null
+            includeInCards: false
+            instructions: null
+            label: null
+            mandatory: false
+            orientation: null
+            providesThumbs: false
+            requirable: false
+            required: false
+            tip: null
+            translatable: false
+            type: verbb\events\fieldlayoutelements\PurchasedTicketsField
+            uid: ce18ebfc-75cb-4a0f-840d-6f71f50d4c1d
+            userCondition: null
+            warning: null
+        name: Content
+        uid: e6cf471a-9402-41c8-9a40-bcb7cd5e0cbe
+        userCondition: null
+sessionTitleFormat: '{dateSummary}'
+shippingCategoryId: 1
+siteSettings:
+  246ac9e2-0535-4ba5-b543-66b2eb9d969f: # ASCM Southeastern Pennsylvania
+    enabledByDefault: true
+    hasUrls: true
+    template: ctsc/_event
+    uriFormat: 'ctsc/{slug}'
+taxCategoryId: 1
+ticketFieldLayouts:
+  53893a26-0492-47a2-825c-c79a28e5d3dc:
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            autocapitalize: true
+            autocomplete: false
+            autocorrect: true
+            class: null
+            dateAdded: '2025-07-02T03:32:28+00:00'
+            disabled: false
+            elementCondition: null
+            id: null
+            includeInCards: false
+            inputType: null
+            instructions: null
+            label: null
+            max: null
+            min: null
+            name: null
+            orientation: null
+            placeholder: null
+            providesThumbs: false
+            readonly: false
+            requirable: false
+            size: null
+            step: null
+            tip: null
+            title: null
+            type: verbb\events\fieldlayoutelements\TicketTypeTitleField
+            uid: 5492e3ef-7ff6-40d1-9300-d57a532e585e
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            attribute: capacity
+            dateAdded: '2025-07-02T03:32:28+00:00'
+            elementCondition: null
+            id: null
+            includeInCards: false
+            instructions: null
+            label: null
+            mandatory: true
+            orientation: null
+            providesThumbs: false
+            requirable: false
+            required: false
+            tip: null
+            translatable: false
+            type: verbb\events\fieldlayoutelements\TicketTypeCapacityField
+            uid: 95c98195-a2ff-4b3d-b398-61f540418624
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            attribute: price
+            dateAdded: '2025-07-02T03:32:28+00:00'
+            elementCondition: null
+            id: null
+            includeInCards: false
+            instructions: null
+            label: null
+            mandatory: true
+            orientation: null
+            providesThumbs: false
+            requirable: false
+            required: false
+            tip: null
+            translatable: false
+            type: verbb\events\fieldlayoutelements\TicketTypePriceField
+            uid: 71dd4eac-d40d-4095-bf5f-5257d14678d0
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            attribute: purchasedTickets
+            dateAdded: '2025-07-02T03:32:28+00:00'
+            elementCondition: null
+            id: null
+            includeInCards: false
+            instructions: null
+            label: null
+            mandatory: false
+            orientation: null
+            providesThumbs: false
+            requirable: false
+            required: false
+            tip: null
+            translatable: false
+            type: verbb\events\fieldlayoutelements\PurchasedTicketsField
+            uid: e8b8269e-425c-4fa6-ad2e-cf8570828747
+            userCondition: null
+            warning: null
+        name: Content
+        uid: ff648b4e-93ea-43f1-9f6a-2618075a8704
+        userCondition: null
+ticketSkuFormat: ''
+ticketTitleFormat: '{type.title}'

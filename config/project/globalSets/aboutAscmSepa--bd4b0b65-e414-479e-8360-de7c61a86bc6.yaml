@@ -1,0 +1,36 @@
+fieldLayouts:
+  b1b8ebe2-7956-4a33-b2bd-e9d217e91e4e:
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            elementCondition: null
+            fieldUid: 0002e9f1-02b1-4d7d-af54-ce03d4249aea # Description
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 652b8c7e-d729-4504-8178-06b19043be6b
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: b81c20ba-ef6a-4af9-a151-76676391b738 # Feature Image
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 1908d193-0d58-42f6-80a8-328a50842ade
+            userCondition: null
+            warning: null
+            width: 100
+        name: Main
+        uid: d2e8d17c-537f-4c9b-afc6-0222afde58f2
+        userCondition: null
+handle: aboutAscmSepa
+name: 'About ASCM SEPA'
+sortOrder: 6

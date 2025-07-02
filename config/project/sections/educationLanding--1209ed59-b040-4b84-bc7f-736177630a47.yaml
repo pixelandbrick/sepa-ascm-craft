@@ -1,0 +1,28 @@
+defaultPlacement: end
+enableVersioning: true
+entryTypes:
+  -
+    uid: e74057a6-26ab-4b66-ab9b-08330b6ada8e # Education
+handle: educationLanding
+maxAuthors: 1
+name: Education
+previewTargets:
+  -
+    __assoc__:
+      -
+        - label
+        - 'Primary entry page'
+      -
+        - urlFormat
+        - '{url}'
+      -
+        - refresh
+        - '1'
+propagationMethod: all
+siteSettings:
+  246ac9e2-0535-4ba5-b543-66b2eb9d969f: # ASCM Southeastern Pennsylvania
+    enabledByDefault: true
+    hasUrls: true
+    template: education/index.twig
+    uriFormat: education
+type: single

@@ -1,0 +1,15 @@
+handle: stripe
+isFrontendEnabled: '1'
+name: Stripe
+orderCondition:
+  class: craft\commerce\elements\conditions\orders\GatewayOrderCondition
+  elementType: craft\commerce\elements\Order
+  fieldContext: global
+paymentType: purchase
+settings:
+  apiKey: sk_test_51PVDqiEvhsTnSAbnfQwDozSqqP1pd4UbjUxFNkt10pF6PiiA7tMSZppayZlFc6gK6m5AJ8ruG3NfJLKHdwB0hGxS00agtAnb76
+  publishableKey: pk_test_51PVDqiEvhsTnSAbn9YRzRtFDktmHpork1CWEZKzdaUIPLQ84xtS4sdz7IgiIw3ZCqMy7vJ7Bd0Vt009CVdMANk1N00JwuHThjl
+  sendReceiptEmail: false
+  signingSecret: whsec_WnDE7AhIaqQujOLz1d1GhUt1enPERv7k
+sortOrder: 99
+type: craft\commerce\stripe\gateways\PaymentIntents

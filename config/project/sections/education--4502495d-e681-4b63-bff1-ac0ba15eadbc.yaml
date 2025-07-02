@@ -1,0 +1,19 @@
+defaultPlacement: end
+enableVersioning: true
+entryTypes:
+  -
+    uid: e610f2dd-2a10-4e51-8b47-31257ee4e64b # Courses - Default
+handle: education
+maxAuthors: 1
+name: Courses
+propagationMethod: all
+siteSettings:
+  246ac9e2-0535-4ba5-b543-66b2eb9d969f: # ASCM Southeastern Pennsylvania
+    enabledByDefault: true
+    hasUrls: true
+    template: education/_entry
+    uriFormat: 'education/{slug}'
+structure:
+  maxLevels: 2
+  uid: fe655518-c578-4e76-ac24-249b8885b795
+type: structure

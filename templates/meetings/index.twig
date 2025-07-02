@@ -11,8 +11,8 @@
 
 <div class="bg-white">
   <div class="max-w-screen-xl min-w-screen-xl mx-auto py-[100px] px-6">
-  {% set meetings = craft.events.events().type('Meetings').limit(10) %}
-  {% for product in meetings.all() %}
+  {% set meetings = craft.events.events().type('Meetings').all() %}
+  {% for product in meetings %}
     {% set defaultTicket = product.getTickets().one() %}
     {% if today <= product.startDate %}
     <div class="flex flex-row">
@@ -25,7 +25,6 @@
           <form method="post" class="mt-6">
             {{ csrfInput() }}
             {{ actionInput('commerce/cart/update-cart') }}
-            {{ hiddenInput('purchasableId', product.id) }}
             {{ redirectInput('shop/cart') }}
             {{ successMessageInput('{product} added to cart.'|t({
               product: product.title

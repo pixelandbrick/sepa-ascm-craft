@@ -1,0 +1,13 @@
+columnSuffix: sidxxcla
+contentColumnType: boolean
+handle: ascmMemberPending
+instructions: null
+name: 'ASCM Member Pending'
+searchable: false
+settings:
+  default: false
+  offLabel: null
+  onLabel: Pending
+translationKeyFormat: null
+translationMethod: none
+type: craft\fields\Lightswitch

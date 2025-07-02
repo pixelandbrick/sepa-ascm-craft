@@ -1,0 +1,17 @@
+columnSuffix: null
+contentColumnType: string
+handle: boardMembers
+instructions: null
+name: 'Board Members'
+searchable: false
+settings:
+  entryTypes:
+    - 504d9d35-669b-4aa7-9038-a73a05a1cd91
+  maxEntries: null
+  minEntries: null
+  propagationKeyFormat: null
+  propagationMethod: all
+  viewMode: blocks
+translationKeyFormat: null
+translationMethod: site
+type: craft\fields\Matrix

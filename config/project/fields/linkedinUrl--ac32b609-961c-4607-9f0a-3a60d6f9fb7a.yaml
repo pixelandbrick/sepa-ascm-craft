@@ -1,0 +1,12 @@
+columnSuffix: babcwvft
+handle: linkedinUrl
+instructions: null
+name: 'Board Members - Board Member - LinkedIn URL'
+searchable: false
+settings:
+  maxLength: 255
+  types:
+    - url
+translationKeyFormat: null
+translationMethod: none
+type: craft\fields\Url

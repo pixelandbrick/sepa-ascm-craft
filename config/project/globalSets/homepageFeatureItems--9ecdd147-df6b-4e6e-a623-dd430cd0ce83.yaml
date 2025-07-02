@@ -1,0 +1,46 @@
+fieldLayouts:
+  65e2e4c0-715f-4ab6-bfb4-a5659d8dc88f:
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            dateAdded: '2025-07-02T02:13:24+00:00'
+            editCondition: null
+            elementCondition: null
+            fieldUid: 84f2482a-8b1d-4ca1-9b76-f80674db009a # Featured Products
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: null
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 008b480c-6aa4-4cd2-b8e6-d83540d564fd
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            dateAdded: '2025-07-02T02:15:19+00:00'
+            editCondition: null
+            elementCondition: null
+            fieldUid: b8ae0c1a-ca36-4b2c-9610-3aa5ad50ea42 # Main Feature
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: null
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 74eac725-a1e2-4b6a-855f-3fc16b1f6b0c
+            userCondition: null
+            warning: null
+            width: 100
+        name: Main
+        uid: 39cda73b-9b63-4ac0-b244-166f3d528845
+        userCondition: null
+handle: homepageFeatureItems
+name: 'Homepage Feature Items'
+sortOrder: 7

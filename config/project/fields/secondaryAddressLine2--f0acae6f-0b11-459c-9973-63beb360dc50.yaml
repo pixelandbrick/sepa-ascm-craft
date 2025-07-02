@@ -1,0 +1,18 @@
+columnSuffix: kzqzbgec
+contentColumnType: text
+handle: secondaryAddressLine2
+instructions: null
+name: 'Secondary Address Line 2'
+searchable: false
+settings:
+  byteLimit: null
+  charLimit: null
+  code: false
+  columnType: null
+  initialRows: 4
+  multiline: false
+  placeholder: null
+  uiMode: normal
+translationKeyFormat: null
+translationMethod: none
+type: craft\fields\PlainText

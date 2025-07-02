@@ -1,0 +1,11 @@
+columnSuffix: evtssfif
+contentColumnType: char(7)
+handle: courseColor
+instructions: null
+name: 'Course Color'
+searchable: false
+settings:
+  defaultColor: null
+translationKeyFormat: null
+translationMethod: none
+type: craft\fields\Color

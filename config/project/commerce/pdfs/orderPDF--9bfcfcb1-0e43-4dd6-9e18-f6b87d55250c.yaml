@@ -1,0 +1,10 @@
+description: null
+enabled: true
+fileNameFormat: 'ASCM_SEPA_order_{number}'
+handle: orderPDF
+isDefault: true
+language: orderLanguage
+name: 'Order from ASCM Southeastern Pennsylvania'
+sortOrder: 9999
+store: 860f9494-ac4c-4585-a706-7d792745a4f9 # Primary Store
+templatePath: shop/customer/order.twig

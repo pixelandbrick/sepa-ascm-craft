@@ -1,0 +1,18 @@
+columnSuffix: orlufvef
+handle: initialRows
+instructions: null
+name: 'Basic Form Fields - Paragraph - Initial Rows'
+searchable: true
+settings:
+  decimals: 0
+  defaultValue: null
+  max: null
+  min: 2
+  prefix: null
+  previewCurrency: null
+  previewFormat: decimal
+  size: null
+  suffix: null
+translationKeyFormat: null
+translationMethod: site
+type: craft\fields\Number

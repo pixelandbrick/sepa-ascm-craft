@@ -1,22 +1,751 @@
-dateModified: 1751073935
+dateModified: 1751462728
+elementSources:
+  craft\commerce\elements\Order:
+    -
+      defaultSort:
+        - dateOrdered
+        - desc
+      disabled: false
+      key: '*'
+      tableAttributes:
+        - reference
+        - orderStatus
+        - dateOrdered
+        - datePaid
+        - totalPaid
+        - paidStatus
+        - totals
+      type: native
+    -
+      heading: 'Primary Store'
+      type: heading
+    -
+      key: 'carts:active:primaryStore'
+      type: native
+    -
+      key: 'carts:inactive:primaryStore'
+      type: native
+    -
+      key: 'carts:attempted-payment:primaryStore'
+      type: native
+  craft\elements\Entry:
+    -
+      defaultSort:
+        - postDate
+        - desc
+      disabled: true
+      key: '*'
+      tableAttributes:
+        - section
+        - postDate
+        - expiryDate
+        - author
+        - link
+      type: native
+    -
+      defaultSort:
+        - title
+        - asc
+      disabled: false
+      key: singles
+      tableAttributes:
+        - link
+      type: native
+    -
+      heading: Channels
+      type: heading
+    -
+      defaultSort:
+        - postDate
+        - desc
+      disabled: false
+      key: 'section:953c55cb-288a-4b71-9c39-335102a1ae30' # Articles
+      tableAttributes:
+        - postDate
+        - expiryDate
+        - author
+        - link
+      type: native
+    -
+      defaultSort:
+        - postDate
+        - desc
+      disabled: false
+      key: 'section:2872d74f-a99b-4b6b-ac63-bf7091d22c7a'
+      tableAttributes:
+        - postDate
+        - 'field:9e62e962-beab-4351-ac61-c273c0acc9cc' # Meeting Date
+        - link
+        - dateUpdated
+      type: native
+    -
+      key: 'section:10bc5384-4844-49dc-b8f1-948bbb791731' # Opportunities
+      type: native
+    -
+      heading: Structures
+      type: heading
+    -
+      key: 'section:4502495d-e681-4b63-bff1-ac0ba15eadbc' # Courses
+      type: native
+    -
+      defaultSort:
+        - structure
+        - asc
+      disabled: false
+      key: 'section:4f19a1cf-7acb-4101-bea3-edea33a0ccf5' # Colleges
+      tableAttributes:
+        - postDate
+        - expiryDate
+        - author
+        - link
+      type: native
+    -
+      key: 'section:e3daa05b-c819-442e-91fe-e39c500166d7' # Scholarships
+      type: native
+  craft\elements\User:
+    -
+      defaultSort:
+        - email
+        - asc
+      disabled: false
+      key: '*'
+      tableAttributes:
+        - email
+        - dateCreated
+        - lastLoginDate
+      type: native
+    -
+      key: admins
+      type: native
+    -
+      heading: 'Account Type'
+      type: heading
+    -
+      key: credentialed
+      type: native
+    -
+      key: inactive
+      type: native
+    -
+      heading: Groups
+      type: heading
+    -
+      key: 'group:6570fef7-dfa5-49de-8d15-7dc2f4641611'
+      type: native
+    -
+      key: 'group:f08ea618-5fd0-4ae0-9024-e6860c20e34b'
+      type: native
+    -
+      key: 'group:43457d50-918e-4bad-b5a7-939510b4da97' # Default
+      type: native
+    -
+      key: 'group:3a8d6f14-bb9e-4c92-aad4-1f9206b19448'
+      type: native
+  verbb\events\elements\PurchasedTicket:
+    -
+      defaultSort:
+        - dateCreated
+        - desc
+      disabled: false
+      key: '*'
+      tableAttributes:
+        - eventId
+        - ticketId
+        - orderId
+        - dateCreated
+        - customer
+        - customerFullName
+      type: native
 email:
-  fromEmail: ryan@pixel-brick.com
+  fromEmail: webmaster@sepa.ascm.org
   fromName: 'ASCM Southeastern Pennsylvania'
-  transportType: craft\mail\transportadapters\Sendmail
+  replyToEmail: null
+  template: ''
+  transportSettings:
+    apiKey: ''
+    categories: ''
+  transportType: putyourlightson\sendgrid\mail\SendgridAdapter
+fs:
+  boardMembers:
+    hasUrls: true
+    name: 'Board Members'
+    settings:
+      path: '@webroot/volumes/headshots'
+    type: craft\fs\Local
+    url: '@web/volumes/headshots'
+  colleges:
+    hasUrls: true
+    name: Colleges
+    settings:
+      path: '@webroot/volumes/colleges'
+    type: craft\fs\Local
+    url: '@web/volumes/colleges'
+  courses:
+    hasUrls: true
+    name: Courses
+    settings:
+      path: '@webroot/volumes/courses'
+    type: craft\fs\Local
+    url: '@web/volumes/courses'
+  images:
+    hasUrls: true
+    name: Images
+    settings:
+      path: '@webroot/volumes/img'
+    type: craft\fs\Local
+    url: '@web/volumes/img'
+graphql:
+  publicToken:
+    enabled: false
+    expiryDate: null
 meta:
   __names__:
-    432ea19b-8c63-4601-b4d9-bd1c4f6a4856: 'ASCM Southeastern Pennsylvania' # ASCM Southeastern Pennsylvania
-    aaad1390-39af-4043-be9b-1133437b5f8a: 'ASCM Southeastern Pennsylvania' # ASCM Southeastern Pennsylvania
+    0d75198f-7347-4438-9de1-7883c8f606fe: 'ASCM Member Join' # ASCM Member Join
+    0eadd193-10f9-4930-8a11-0436afcbc3e8: 'No Pay Checkout' # No Pay Checkout
+    1bfa717a-239a-4aa9-9b76-00d5936c193a: 'Course Color' # Course Color
+    1d1cac83-523d-465d-95dd-f268196920aa: Images # Images
+    1d13027e-37b7-40af-8369-2d3f7b624c10: 'Primary ZIP Code' # Primary ZIP Code
+    1e07231d-34bb-441b-ba8a-d7a4d389c027: 'Course Calendar' # Course Calendar
+    2b22202f-f018-4723-92d2-b6f342c83110: 'ASCM Member Photo' # ASCM Member Photo
+    2c5ec331-992c-4ac0-835a-d31b81fac3f8: 'Primary State' # Primary State
+    0002e9f1-02b1-4d7d-af54-ce03d4249aea: Description # Description
+    3a5ae57e-468f-4688-84d4-ea2608a3be1d: 'Course Description' # Course Description
+    3c145ccf-5ec5-4812-9e32-325c40157a82: Courses # Courses
+    4b6f8d77-baac-4757-ba4d-f92f6f36018e: Scholarships # Scholarships
+    4ba6d09f-8d1e-4c65-91f9-35b77e080b4a: Body # Body
+    4e37e30d-d1e5-4f98-9181-e55cff026870: 'College Photo' # College Photo
+    4eb4ddf9-efcd-48bf-bb6c-e6f90c2967ad: 'Receipt-only Text' # Receipt-only Text
+    4ef4ac28-e3b7-4394-b83f-9c577d3db41c: 'Multiple Dates' # Multiple Dates
+    4f19a1cf-7acb-4101-bea3-edea33a0ccf5: Colleges # Colleges
+    5d028c1f-dc78-4cc5-bbb7-25a0f47a90ab: 'College Description' # College Description
+    5dc608b2-0088-4005-b1e1-88ff0ad17f95: 'Meeting Description' # Meeting Description
+    5eff1da7-2e9a-4045-8747-de3b34bd9574: HTML # HTML
+    6a0974f0-8fab-48a9-91d1-2a2fbecd0fdb: 'Primary Address Line 1' # Primary Address Line 1
+    6f16a147-30bc-44cf-8467-a0eee2bb7cdb: 'Last Name' # Last Name
+    6f9063dc-4ac9-4274-b075-2344da29f9ef: New # New
+    7ab520da-9a2c-4dea-8176-b40f65e79334: 'ASCM Member ID' # ASCM Member ID
+    7b6443a5-03e0-4bfa-b087-c90474eba44f: 'Primary Address Line 2' # Primary Address Line 2
+    7bf3f660-5313-4487-a1e3-16248d4bce0b: Prefix # Prefix
+    7c8745c7-b128-4813-8b9e-19a93f83984d: 'Opportunity Type' # Opportunity Type
+    7d6d1b97-9aa8-4e47-b971-364fb3e55c19: 'Customer Confirmation' # Customer Confirmation
+    7f035222-2a22-4da2-842a-ee4bf1b36bde: 'Rich Text' # Rich Text
+    8feea80d-bdc5-40c4-a179-762e009a7dca: 'CLTD Course' # CLTD Course
+    9bfcfcb1-0e43-4dd6-9e18-f6b87d55250c: 'Order from ASCM Southeastern Pennsylvania' # Order from ASCM Southeastern Pennsylvania
+    9e62e962-beab-4351-ac61-c273c0acc9cc: 'Meeting Date' # Meeting Date
+    9ecdd147-df6b-4e6e-a623-dd430cd0ce83: 'Homepage Feature Items' # Homepage Feature Items
+    10bc5384-4844-49dc-b8f1-948bbb791731: Opportunities # Opportunities
+    12ab7a45-3af4-4057-8750-3c9c8f473ce5: FOSCM # FOSCM
+    20f7efab-d3ff-46c8-9b0f-90e4a1fc51f4: Bylaws # Bylaws
+    22da0d09-946b-40e6-98d3-e916a61eb1bc: 'Basic Form Fields' # Basic Form Fields
+    23bc5904-1ba2-4e6d-8897-d1364066e349: 'Middle Name' # Middle Name
+    38ab0050-d304-44cd-8737-ab3d7136a645: 'Inset Image' # Inset Image
+    53bdf7bf-5079-4837-b63c-1c842aa68784: College # College
+    59a7384d-5137-4ce6-a734-fbb0016cd5d7: 'Internal Order Confirmation' # Internal Order Confirmation
+    0068a536-dbd3-4e9d-bc90-33650bb713b0: 'Course Hero' # Course Hero
+    70b04f6d-65a9-4b13-982d-b1e4a54b5ebc: 'Secondary State' # Secondary State
+    73e24c7f-c14e-4960-aff3-ab77becc6777: 'Constant Contact' # Constant Contact
+    84e26cf3-9744-4ba1-abc7-802cca000ddb: Country # Country
+    84f2482a-8b1d-4ca1-9b76-f80674db009a: 'Featured Products' # Featured Products
+    91c1943e-9e80-4e2b-b609-4942ea83166c: 'Multiple Dates' # Multiple Dates
+    96bab796-5961-4252-88c6-defd8eb06d47: 'Meeting Category' # Meeting Category
+    99bd89d9-407f-438f-805b-c28668a036b9: 'ASCM Southeastern Pennsylvania' # ASCM Southeastern Pennsylvania
+    246ac9e2-0535-4ba5-b543-66b2eb9d969f: 'ASCM Southeastern Pennsylvania' # ASCM Southeastern Pennsylvania
+    339e05fa-565f-4fa4-98ad-05cc58243fb8: Bylaws # Bylaws
+    391a7a4d-10d6-448c-bb50-a2ad7ff21baf: 'About ASCM SEPA' # About ASCM SEPA
+    395c15b8-d0b9-4206-aa8f-71458954a24b: Calendar # Calendar
+    416e052a-ff8b-49b7-a84b-fc71a488e4ec: Company # Company
+    420cc52f-a056-4c9d-8c2e-6cb98c17fc65: 'Job Title' # Job Title
+    455b165d-4c95-4d41-9594-3b4b4861f3b1: 'ASCM Member Pending' # ASCM Member Pending
+    516a0b54-2d26-4290-85da-a4659660cceb: Microcertifications # Microcertifications
+    549efa07-4daf-4a9c-afa8-f88c6354057f: Pending # Pending
+    636bd5bf-6e10-4629-9034-5517fbd47346: 'Meeting Details Link' # Meeting Details Link
+    654b94d6-da06-434e-a77b-710078d84437: 'ASCM Member Notes' # ASCM Member Notes
+    661cb456-1ecc-4d4c-9f2f-c77d6643a200: 'ASCM Member Expiration' # ASCM Member Expiration
+    746a0ab8-83d0-4a8e-a2f6-2d0697922a0d: Articles # Articles
+    756ef385-0b26-4d21-829b-1f63926ba2aa: Dummy # Dummy
+    846c5a6a-33a2-442b-8bc8-2f8b49f47ea0: 'Meeting Registration Link' # Meeting Registration Link
+    860f9494-ac4c-4585-a706-7d792745a4f9: 'Primary Store' # Primary Store
+    953c55cb-288a-4b71-9c39-335102a1ae30: Articles # Articles
+    1209ed59-b040-4b84-bc7f-736177630a47: Education # Education
+    2647ba3f-f5c8-49b8-8fc6-5c9453acdd04: 'Meeting Types' # Meeting Types
+    2853b148-19f8-4d32-9e6f-0c41ece101e7: 'Secondary Phone' # Secondary Phone
+    6122ffed-ea86-411a-9ecc-a72d02707312: Registration # Registration
+    07755b8d-0f60-4669-b2d0-71f94d14bef8: Active # Active
+    17545c21-9a88-4805-a223-c771d695e3b4: 'College Location' # College Location
+    43457d50-918e-4bad-b5a7-939510b4da97: Default # Default
+    073642bd-0365-4cc6-b2b9-65d8d7bae7f7: Home # Home
+    150077d3-2f72-4b4e-bf25-7dae5415f67b: Default # Default
+    269305ec-6e91-4086-b457-fda2b804348f: 'Secondary ZIP Code' # Secondary ZIP Code
+    296383f5-bccf-4d0d-9058-520e952b3848: Processing # Processing
+    0652156b-8c55-44ad-b7f3-f6ad52da82d4: 'Secondary Address Line 1' # Secondary Address Line 1
+    4007408a-3829-47b4-a656-7714b8577322: 'Secondary City' # Secondary City
+    4502495d-e681-4b63-bff1-ac0ba15eadbc: Courses # Courses
+    57534821-f090-4486-ba30-8688e930f708: Rejected # Rejected
+    73578354-c792-4f1a-942d-271dc4715c4c: 'Article Category' # Article Category
+    77174520-99b3-46fa-a19a-157ce298f60e: 'Submission Link' # Submission Link
+    a67f388d-31d0-4a56-adbc-945b91ab2d27: 'Secondary Email' # Secondary Email
+    a89c4748-13d5-41ba-b2b9-46e4feba446e: Summary # Summary
+    a590c0b1-7ee9-4a98-8445-f8d8b9befeec: 'CTSC Course' # CTSC Course
+    af42fc91-6645-4eb5-b738-5798ede1a57e: 'College Feature Image' # College Feature Image
+    b06380ae-aba0-4e6c-be4f-7ebda04a3fe5: 'Article Types' # Article Types
+    b1af9faf-1b8b-4b11-9ad8-0c34976e4d1c: 'ASCM Member Bio' # ASCM Member Bio
+    b8ae0c1a-ca36-4b2c-9610-3aa5ad50ea42: 'Main Feature' # Main Feature
+    b81c20ba-ef6a-4af9-a151-76676391b738: 'Feature Image' # Feature Image
+    b4398781-df44-412a-8ce5-5f97d0be7fcc: 'Course Registration Type' # Course Registration Type
+    bafeb962-43fa-4ee4-829d-04accdd17112: Membership # Membership
+    bbcdeff7-1fe8-429b-b47c-34a269db0479: 'Board Members' # Board Members
+    bcff2c34-88ca-480f-bf39-57872d4636f1: 'About ASCM SEPA' # About ASCM SEPA
+    bd4b0b65-e414-479e-8360-de7c61a86bc6: 'About ASCM SEPA' # About ASCM SEPA
+    bdad7e2f-c8e4-4485-8e83-518e46e80157: New # New
+    c0be6cb8-b070-49eb-aef7-ff13ceec3bcf: 'CSCP Course' # CSCP Course
+    c80a5bbf-766f-4966-8484-f7494f33cd1b: 'ASCM Member Suspension' # ASCM Member Suspension
+    c501c3c9-4eb1-4c1e-ba93-7f69a515d72a: 'Calendar PDF' # Calendar PDF
+    cad9b5b7-7d7c-4497-b2c6-7d009fe495ba: 'Primary Email' # Primary Email
+    ce6a0c61-fef7-4b8b-b765-d687224a736c: Colleges # Colleges
+    d2cfea47-ae3e-42bb-93f1-78a50b4cb084: 'Meetings - Default' # Meetings - Default
+    d3f05c1e-f9b6-4657-9695-4c0ecdf3be48: 'Meeting Feature Image' # Meeting Feature Image
+    d7db7785-4e2d-480a-930a-c63fe7098402: Headshots # Headshots
+    d348dd30-7179-4a4e-b45e-cc72b17f29f7: 'Board Members' # Board Members
+    d580aec8-08d7-421b-9280-b4a7459f684b: 'Event Dates' # Event Dates
+    d4007a70-d156-41b9-8a51-76583fc3de34: 'Primary City' # Primary City
+    dca6f984-c80e-47b1-9494-9ee9ce74264e: 'Primary Phone' # Primary Phone
+    e0b41abb-d6ed-4b75-8db5-fdb3ed44e1cb: Stripe # Stripe
+    e04e2989-d605-408e-a827-8386c817f975: 'Contact Form' # Contact Form
+    e3daa05b-c819-442e-91fe-e39c500166d7: Scholarships # Scholarships
+    e3f3b2e7-74dd-4b61-bb34-6b6c1db021a6: Simple # Simple
+    e38e1844-97d5-4430-9cae-ed1acb665c21: Courses # Courses
+    e610f2dd-2a10-4e51-8b47-31257ee4e64b: 'Courses - Default' # Courses - Default
+    e74057a6-26ab-4b66-ab9b-08330b6ada8e: Education # Education
+    eb94b4b8-b05b-46ae-91cf-56b3063070ef: 'Pixel+Brick PayPal' # Pixel+Brick PayPal
+    ee292b0a-2565-4b8a-bbd6-302a5b58087c: 'CPIM Course' # CPIM Course
+    f0acae6f-0b11-459c-9973-63beb360dc50: 'Secondary Address Line 2' # Secondary Address Line 2
+    f0f41ce0-d3e1-4633-b3ca-f13bb04fdf93: Suffix # Suffix
+    f4c73025-98bb-4443-a0a0-26825873890b: 'Add Plan' # Add Plan
+    f4ea77a0-0e5b-4c89-bbce-ab4e1917b0a4: Home # Home
+    f16d6a02-5b8f-462e-814d-8fdfab7aca4e: 'First Name' # First Name
+    f8219dd0-8d5e-4a8d-95c0-43eb3d0509d8: Meeting # Meeting
+    fae24e8a-6aa9-455e-88f0-64d79cdc5f80: Gallery # Gallery
+    fd126eb2-2b8a-4251-b262-04e1f9b2cdc8: Students # Students
+plugins:
+  breadcrumb:
+    edition: standard
+    enabled: true
+    schemaVersion: 1.1.1
+  ckeditor:
+    edition: standard
+    enabled: true
+    schemaVersion: 3.0.0.0
+  commerce:
+    edition: lite
+    enabled: true
+    licenseKey: VHWI1E9XPN90UHP8QYFCLQS0
+    schemaVersion: 5.4.0.3
+  commerce-stripe:
+    edition: standard
+    enabled: true
+    schemaVersion: 3.0.0
+  cp-field-inspect:
+    edition: standard
+    enabled: true
+    schemaVersion: 1.0.0
+  enupal-paypal:
+    edition: standard
+    enabled: false
+    licenseKey: W7K304D3F5OHDOBWH416Y557
+    schemaVersion: 1.5.0
+    settings:
+      adminNotificationRecipients: 'ascmsepa@gmail.com, ryan@pixel-brick.com'
+      adminNotificationReplyToEmail: ''
+      adminNotificationSenderEmail: ''
+      adminNotificationSenderName: 'ASCM SEPA Web Order'
+      adminNotificationSubject: ''
+      adminNotificationTemplate: null
+      cancelUrl: null
+      customerNotificationReplyToEmail: null
+      customerNotificationSenderEmail: null
+      customerNotificationSenderName: null
+      customerNotificationSubject: null
+      customerNotificationTemplate: null
+      defaultCurrency: USD
+      enableAdminNotification: '1'
+      enableCustomerNotification: null
+      liveAccount: ascm_sepa_finance@gmail.com
+      returnToMerchantText: null
+      returnUrl: null
+      sandboxAccount: sb-lipo230325801@business.example.com
+      tax: null
+      taxType: 0
+      testMode: '1'
+      weightUnit: g
+  enupal-stripe:
+    edition: pro
+    enabled: false
+    licenseKey: 8RX3R5778P6BWWWZQ265RS50
+    schemaVersion: 5.5.0
+  events:
+    edition: standard
+    enabled: true
+    licenseKey: 818TA3P4L4MOGTH0WJ2NO09A
+    schemaVersion: 1.1.4
+  field-manager:
+    edition: standard
+    enabled: true
+    schemaVersion: 1.0.0
+  formie:
+    edition: standard
+    enabled: true
+    licenseKey: 62F8YRHKLE8DBUBJXI7L185F
+    schemaVersion: 3.4.8
+    settings:
+      ajaxTimeout: 10
+      alertEmails: null
+      captchas:
+        __assoc__:
+          -
+            - recaptcha
+            -
+              __assoc__:
+                -
+                  - type
+                  - verbb\formie\integrations\captchas\Recaptcha
+                -
+                  - enabled
+                  - '1'
+                -
+                  - saveSpam
+                  - true
+                -
+                  - settings
+                  -
+                    __assoc__:
+                      -
+                        - handle
+                        - recaptcha
+                      -
+                        - secretKey
+                        - 6Lef75YpAAAAAK_5MNS1q0J8DtEYBrLTtZ1qBgV-
+                      -
+                        - siteKey
+                        - 6Lef75YpAAAAAFjvsZFz95R1C5BH-n2W6h06SNv2
+                      -
+                        - type
+                        - v3
+                      -
+                        - size
+                        - normal
+                      -
+                        - theme
+                        - light
+                      -
+                        - badge
+                        - inline
+                      -
+                        - language
+                        - auto
+                      -
+                        - minScore
+                        - 0.6
+                      -
+                        - projectId
+                        - 'ASCM SEPA'
+                      -
+                        - scriptLoadingMethod
+                        - asyncDefer
+          -
+            - hcaptcha
+            -
+              __assoc__:
+                -
+                  - type
+                  - verbb\formie\integrations\captchas\Hcaptcha
+                -
+                  - enabled
+                  - '0'
+                -
+                  - saveSpam
+                  - true
+                -
+                  - settings
+                  -
+                    __assoc__:
+                      0:
+                        - handle
+                        - hcaptcha
+                      3:
+                        - size
+                        - normal
+                      4:
+                        - theme
+                        - light
+                      5:
+                        - language
+                        - en
+                      6:
+                        - minScore
+                        - 0.5
+                      7:
+                        - scriptLoadingMethod
+                        - asyncDefer
+          -
+            - friendlyCaptcha
+            -
+              __assoc__:
+                -
+                  - type
+                  - verbb\formie\integrations\captchas\FriendlyCaptcha
+                -
+                  - enabled
+                  - '0'
+                -
+                  - saveSpam
+                  - true
+                -
+                  - settings
+                  -
+                    __assoc__:
+                      0:
+                        - handle
+                        - friendlyCaptcha
+                      3:
+                        - language
+                        - en
+          -
+            - turnstile
+            -
+              __assoc__:
+                -
+                  - type
+                  - verbb\formie\integrations\captchas\Turnstile
+                -
+                  - enabled
+                  - '0'
+                -
+                  - saveSpam
+                  - true
+                -
+                  - settings
+                  -
+                    __assoc__:
+                      0:
+                        - handle
+                        - turnstile
+                      3:
+                        - scriptLoadingMethod
+                        - asyncDefer
+          -
+            - duplicate
+            -
+              __assoc__:
+                -
+                  - type
+                  - verbb\formie\integrations\captchas\Duplicate
+                -
+                  - enabled
+                  - '0'
+                -
+                  - saveSpam
+                  - true
+                -
+                  - settings
+                  -
+                    __assoc__:
+                      -
+                        - handle
+                        - duplicate
+          -
+            - honeypot
+            -
+              __assoc__:
+                -
+                  - type
+                  - verbb\formie\integrations\captchas\Honeypot
+                -
+                  - enabled
+                  - '0'
+                -
+                  - saveSpam
+                  - true
+                -
+                  - settings
+                  -
+                    __assoc__:
+                      -
+                        - handle
+                        - honeypot
+          -
+            - javascript
+            -
+              __assoc__:
+                -
+                  - type
+                  - verbb\formie\integrations\captchas\Javascript
+                -
+                  - enabled
+                  - '0'
+                -
+                  - saveSpam
+                  - true
+                -
+                  - settings
+                  -
+                    __assoc__:
+                      -
+                        - handle
+                        - javascript
+      defaultDateDisplayType: calendar
+      defaultDateTime: null
+      defaultDateValueOption: ''
+      defaultEmailTemplate: ''
+      defaultFileUploadVolume: ''
+      defaultFormTemplate: ''
+      defaultInstructionsPosition: verbb\formie\positions\AboveInput
+      defaultLabelPosition: verbb\formie\positions\AboveInput
+      defaultPage: forms
+      emptyValuePlaceholder: 'No response.'
+      enableBackSubmission: true
+      enableCsrfValidationForGuests: true
+      enableLargeFieldStorage: false
+      enableUnloadWarning: true
+      includeDraftElementUsage: false
+      includeRevisionElementUsage: false
+      maxIncompleteSubmissionAge: 30
+      maxSentNotificationsAge: 30
+      pdfPaperOrientation: portrait
+      pdfPaperSize: letter
+      pluginName: Forms
+      queuePriority: null
+      saveSpam: true
+      sendEmailAlerts: false
+      sentNotifications: true
+      setOnlyCurrentPagePayload: false
+      spamBehaviour: showSuccess
+      spamBehaviourMessage: ''
+      spamEmailNotifications: false
+      spamKeywords: ''
+      spamLimit: 500
+      useQueueForIntegrations: true
+      useQueueForNotifications: true
+      validateCustomTemplates: true
+  internal-assets:
+    edition: standard
+    enabled: true
+    schemaVersion: 1.0.0
+  postmark:
+    edition: standard
+    enabled: true
+    schemaVersion: 2.0.1
+  retour:
+    edition: standard
+    enabled: true
+    licenseKey: SSWJ9VTURUN6YBWT08ZWX2G4
+    schemaVersion: 3.0.12
+    settings:
+      alwaysStripQueryString: false
+      automaticallyTrimStatistics: true
+      createUriChangeRedirects: true
+      csvColumnDelimiter: ','
+      dynamicRedirectDisplayLimit: 100
+      enableApiEndpoint: false
+      enableStatistics: true
+      pluginName: Redirects
+      preserveQueryString: true
+      recordRemoteIp: true
+      refreshIntervalSecs: 5
+      setNoCacheHeaders: true
+      staticRedirectDisplayLimit: 100
+      statisticsRateLimitMs: 3600000
+      statsDisplayLimit: 1000
+      statsStoredLimit: 1000
+      stripQueryStringFromStats: true
+      uriChangeRedirectSrcMatch: pathonly
+  sendgrid:
+    edition: standard
+    enabled: true
+    schemaVersion: 1.0.0
+  seomatic:
+    edition: standard
+    enabled: true
+    licenseKey: 6MBF8Y0SRWNFYLPGVYZ6G9K6
+    schemaVersion: 3.0.13
+    settings:
+      addHrefLang: true
+      addPaginatedHreflang: true
+      addXDefaultHrefLang: true
+      alwaysIncludeCanonicalUrls: false
+      cpTitlePrefix: '⚙ '
+      cspNonce: ''
+      cspScriptSrcPolicies:
+        -
+          __assoc__:
+            -
+              - policy
+              - "'self'"
+      devModeCpTitlePrefix: '🚧⚙ '
+      devModeTitlePrefix: '🚧 '
+      displayAnalysisSidebar: true
+      displayPreviewSidebar: true
+      enableDebugToolbarPanel: true
+      enableJsonLdEndpoint: false
+      enableMetaContainerEndpoint: false
+      enableSeoFileLinkEndpoint: false
+      environment: local
+      excludeNonCanonicalUrls: false
+      generatorEnabled: true
+      headersEnabled: true
+      includeHomepageInBreadcrumbs: true
+      lowercaseCanonicalUrl: true
+      manuallySetEnvironment: false
+      maxDescriptionLength: 155
+      maxTitleLength: 70
+      metaCacheDuration: 0
+      pluginName: SEO
+      regenerateSitemapsAutomatically: true
+      renderEnabled: true
+      separatorChar: '|'
+      sidebarDisplayPreviewTypes:
+        - google
+        - linkedin
+      siteGroupsSeparate: true
+      siteUrlOverride: ''
+      sitemapsEnabled: true
+      socialMediaPreviewTarget: false
+      submitSitemaps: true
+      truncateDescriptionTags: true
+      truncateTitleTags: true
+      xDefaultSite: 0
+  simplemap:
+    edition: lite
+    enabled: true
+    schemaVersion: 3.4.2
+  sprout-data-studio:
+    edition: pro
+    enabled: false
+    licenseKey: MTTLKD3739GOJVSNKM5VVO5P
+    schemaVersion: 5.0.0
+  super-table:
+    edition: standard
+    enabled: true
+    schemaVersion: 4.0.0
+  vite:
+    edition: standard
+    enabled: true
+    schemaVersion: 1.0.0
+  webhooks:
+    edition: standard
+    enabled: true
+    schemaVersion: 2.4.0
+sprout:
+  sprout-module-core:
+    modules:
+      BarrelStrength\Sprout\datastudio\DataStudioModule:
+        enabled: true
+  sprout-module-data-studio:
+    defaultExportDelimiter: ','
+    defaultPageLength: 10
 system:
-  edition: solo
+  edition: pro
   live: true
   name: 'ASCM Southeastern Pennsylvania'
-  schemaVersion: 5.6.0.2
-  timeZone: America/Los_Angeles
-users:
-  allowPublicRegistration: false
-  defaultGroup: null
-  photoSubpath: null
-  photoVolumeUid: null
-  require2fa: false
-  requireEmailVerification: true
+  retryDuration: null
+  schemaVersion: 5.7.0.3
+  timeZone: America/New_York

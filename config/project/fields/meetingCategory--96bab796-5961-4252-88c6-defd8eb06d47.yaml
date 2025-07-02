@@ -1,0 +1,22 @@
+columnSuffix: null
+contentColumnType: string
+handle: meetingCategory
+instructions: null
+name: 'Meeting Category'
+searchable: false
+settings:
+  allowSelfRelations: false
+  branchLimit: null
+  localizeRelations: false
+  maintainHierarchy: false
+  maxRelations: 1
+  minRelations: 0
+  selectionLabel: null
+  showSiteMenu: false
+  source: 'group:2647ba3f-f5c8-49b8-8fc6-5c9453acdd04' # Meeting Types
+  targetSiteId: null
+  validateRelatedElements: false
+  viewMode: null
+translationKeyFormat: null
+translationMethod: site
+type: craft\fields\Categories

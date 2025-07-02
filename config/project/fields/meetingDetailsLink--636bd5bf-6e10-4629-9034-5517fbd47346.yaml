@@ -1,0 +1,13 @@
+columnSuffix: jyvgfxyg
+contentColumnType: string(255)
+handle: meetingDetailsLink
+instructions: null
+name: 'Meeting Details Link'
+searchable: false
+settings:
+  maxLength: 255
+  types:
+    - url
+translationKeyFormat: null
+translationMethod: none
+type: craft\fields\Url

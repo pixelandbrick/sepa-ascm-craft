@@ -1,0 +1,15 @@
+defaultPlacement: end
+enableVersioning: true
+entryTypes:
+  - f4ea77a0-0e5b-4c89-bbce-ab4e1917b0a4 # Home
+handle: home
+maxAuthors: 1
+name: Home
+propagationMethod: all
+siteSettings:
+  246ac9e2-0535-4ba5-b543-66b2eb9d969f: # ASCM Southeastern Pennsylvania
+    enabledByDefault: true
+    hasUrls: true
+    template: index.twig
+    uriFormat: __home__
+type: single

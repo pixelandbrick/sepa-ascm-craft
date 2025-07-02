@@ -1,0 +1,12 @@
+columnSuffix: qhxddbgh
+handle: required5
+instructions: 'This field is required?'
+name: 'Basic Form Fields - CheckBoxes - Required'
+searchable: true
+settings:
+  default: false
+  offLabel: null
+  onLabel: null
+translationKeyFormat: null
+translationMethod: site
+type: craft\fields\Lightswitch

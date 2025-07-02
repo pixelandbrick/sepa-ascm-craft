@@ -1,0 +1,94 @@
+fieldLayouts:
+  619f0ae4-3b46-4434-9184-222aea7d32a5:
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            autocapitalize: true
+            autocomplete: false
+            autocorrect: true
+            class: null
+            disabled: false
+            elementCondition: null
+            id: null
+            inputType: null
+            instructions: null
+            label: null
+            max: null
+            min: null
+            name: null
+            orientation: null
+            placeholder: null
+            readonly: false
+            requirable: false
+            size: null
+            step: null
+            tip: null
+            title: null
+            type: craft\fieldlayoutelements\entries\EntryTitleField
+            uid: d0eb9baa-eb8a-4ecd-aed6-0720f959615e
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: 0068a536-dbd3-4e9d-bc90-33650bb713b0 # Course Hero
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: db143757-84f7-4259-8b73-59e094adaddb
+            userCondition: null
+            warning: null
+            width: 50
+          -
+            elementCondition: null
+            fieldUid: 1bfa717a-239a-4aa9-9b76-00d5936c193a # Course Color
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: ecd5b1dc-94b4-48ca-aa25-8b7dda1eeab3
+            userCondition: null
+            warning: null
+            width: 50
+          -
+            elementCondition: null
+            fieldUid: 3a5ae57e-468f-4688-84d4-ea2608a3be1d # Course Description
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 45c98b15-e1e7-4693-a0df-fa79b3d9bf15
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: 1e07231d-34bb-441b-ba8a-d7a4d389c027 # Course Calendar
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 206d53ff-f6fe-4250-b83b-ed6fde316a31
+            userCondition: null
+            warning: null
+            width: 100
+        name: Content
+        uid: cedb1598-c3f8-4611-9c73-f7f81261f414
+        userCondition: null
+handle: education_default
+hasTitleField: true
+name: 'Courses - Default'
+showStatusField: true
+slugTranslationKeyFormat: null
+slugTranslationMethod: site
+sortOrder: 1
+titleFormat: null
+titleTranslationKeyFormat: null
+titleTranslationMethod: site
