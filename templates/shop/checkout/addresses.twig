@@ -7,6 +7,8 @@ Outputs a form for collecting an order’s shipping and billing address.
 
 {# @var addresses \craft\commerce\models\Address[] #}
 
+{% set cart = craft.commerce.carts.cart %}
+
 {% set addresses = currentUser ? currentUser.getAddresses() : [] %}
 
 {% block main %}
