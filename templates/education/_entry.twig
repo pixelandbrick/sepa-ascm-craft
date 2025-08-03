@@ -35,7 +35,7 @@
                 {{'border-[#006B36]'}}
               {% endswitch %}">
             <h2>{{ product.title }}</h2>
-            <p class="-mt-2 mb-[10px] font-bold text-ficus text-xl">Starts {{product.getSessions().one().startDate|date('F j')}}</p>
+            <p class="-mt-2 mb-[10px] font-bold text-ficus text-xl">Starts {{product.getSessions().orderBy('startDate ASC').one().startDate|date('F j')}}</p>
             {% if product.summary %}<p>{{ product.summary }}</p>{% endif %}
             <div class="mt-2 flex gap-[25px]">
               <form method="post" class="mt-6">
