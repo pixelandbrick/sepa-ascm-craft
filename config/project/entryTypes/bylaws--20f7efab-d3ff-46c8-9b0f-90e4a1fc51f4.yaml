@@ -1,3 +1,4 @@
+color: null
 fieldLayouts:
   b20e3b00-84ba-4506-b05d-0089295fd898:
     tabs:
@@ -5,41 +6,36 @@ fieldLayouts:
         elementCondition: null
         elements:
           -
-            autocapitalize: true
-            autocomplete: false
-            autocorrect: true
-            class: null
-            disabled: false
-            elementCondition: null
-            id: null
-            inputType: null
-            instructions: null
-            label: null
-            max: null
-            min: null
-            name: null
-            orientation: null
-            placeholder: null
-            readonly: false
-            requirable: false
-            size: null
-            step: null
-            tip: null
-            title: null
-            type: craft\fieldlayoutelements\entries\EntryTitleField
-            uid: 9297e07a-5678-458d-b143-c0fd078cab73
-            userCondition: null
-            warning: null
-            width: 100
-          -
+            dateAdded: '2025-08-03T03:24:31+00:00'
+            editCondition: null
             elementCondition: null
             fieldUid: 7f035222-2a22-4da2-842a-ee4bf1b36bde # Rich Text
+            handle: null
+            includeInCards: false
             instructions: null
             label: null
+            providesThumbs: false
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
             uid: 27dbad68-cccc-4cfc-9b97-ee12d44bc330
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            dateAdded: '2025-08-03T03:26:02+00:00'
+            editCondition: null
+            elementCondition: null
+            fieldUid: 13a02cb8-c2c2-42bb-80ac-907d8ef0e421 # Bylaws PDF
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: null
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 353c0fdf-5d61-4ee1-afd6-99c97d6db2d6
             userCondition: null
             warning: null
             width: 100
@@ -48,11 +44,12 @@ fieldLayouts:
         userCondition: null
 handle: bylaws
 hasTitleField: false
+icon: null
 name: Bylaws
+showSlugField: true
 showStatusField: true
 slugTranslationKeyFormat: null
 slugTranslationMethod: site
-sortOrder: 1
 titleFormat: '{section.name|raw}'
 titleTranslationKeyFormat: null
 titleTranslationMethod: site

@@ -13,7 +13,8 @@
   <div class="w-full h-[360px] bg-cover border-b-[5px] border-[#006B36]" style="background-image: url(/volumes/jpg/susq-bridge-hero.jpg)"></div>
   <h2 class="text-[28px] md:text-[38px] leading-10 mt-[50px] mb-[30px]">ASCM Southeastern Pennsylvania Alliance Chapter Bylaws</h2>
   <div class="bg-white"><p class="text-[18px] font-light leading-[24px] text-wolf mb-[10px]">
-  {{entry.richText}}
+  <a href="{{entry.bylawsPdf.one().url}}" class="text-ficus hover:underline"><i class="fa-solid fa-download mr-2"></i>Download PDF</a>
+  <p class="mt-4">Last updated: {{craft.app.request.getParam('lastUpdated')|date('F j, Y')}}</p>
   </div>
   </div>
 {% block footer %}{% include '_partials/footer.twig' %}{% endblock %}
