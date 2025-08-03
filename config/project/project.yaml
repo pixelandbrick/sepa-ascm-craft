@@ -1,4 +1,4 @@
-dateModified: 1751462728
+dateModified: 1754180937
 elementSources:
   craft\commerce\elements\Order:
     -
@@ -162,7 +162,7 @@ email:
   replyToEmail: null
   template: ''
   transportSettings:
-    apiKey: ''
+    apiKey: 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
     categories: ''
   transportType: putyourlightson\sendgrid\mail\SendgridAdapter
 fs:

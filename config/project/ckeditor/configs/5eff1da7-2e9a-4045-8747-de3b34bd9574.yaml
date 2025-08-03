@@ -9,6 +9,7 @@ name: HTML
 toolbar:
   - heading
   - '|'
+  - bulletedList
   - bold
   - italic
   - link

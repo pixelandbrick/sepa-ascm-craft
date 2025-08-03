@@ -18,7 +18,7 @@
  * your config/ folder, alongside this one.
  */
 
-use modules\sitemodule\SiteModule;
+// use modules\sitemodule\SiteModule;
 
 use craft\helpers\App;
 use craft\mail\transportadapters\Smtp;
@@ -35,10 +35,10 @@ return [
 				'ttr' => 15 * 60,
 			],
 		],
-        'modules' => [
-            'site-module' => SiteModule::class,
-        ],
-        'bootstrap' => ['site-module'],
+//        'modules' => [
+//            'site-module' => SiteModule::class,
+//        ],
+//        'bootstrap' => ['site-module'],
     ],
     'local' => [
         'components' => [

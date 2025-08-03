@@ -1,7 +1,8 @@
 {
   "autoload": {
     "psr-4": {
-      "modules\\sitemodule\\": "modules/sitemodule/src/"
+      "craft\\": "src/",
+      "yii2tech\\ar\\softdelete\\": "lib/ar-softdelete/src/"
     }
   },
   "config": {
