@@ -18,8 +18,6 @@ export default defineConfig(({command}) => ({
       input: {
         app: path.resolve(__dirname, 'src/js/app.js'),
       },
-      output: {
-      },
     },
   },
   plugins: [
