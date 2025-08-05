@@ -8,6 +8,7 @@ import ViteRestart from 'vite-plugin-restart';
 export default defineConfig(({command}) => ({
   base: command === 'serve' ? '' : '/dist/',
   build: {
+    sourcemap: true,
     commonjsOptions: {
       transformMixedEsModules: true,
     },
@@ -18,7 +19,6 @@ export default defineConfig(({command}) => ({
         app: path.resolve(__dirname, 'src/js/app.js'),
       },
       output: {
-        sourcemap: true
       },
     },
   },
